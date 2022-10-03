@@ -15,8 +15,13 @@ https://gephi.org/users/supported-graph-formats/graphml-format/
 https://github.com/anderspitman/graphml-js
 
 
-### literature review
-https://en.wikipedia.org/wiki/ENQUIRE
+## literature review
+### Data gathering&sharing projects
+
+
+### Debating projects
+
+
 https://www.reasoninglab.com/argument-mapping/
 https://direct.mit.edu/coli/article/45/4/765/93362/Argument-Mining-A-Survey
 http://www.argunet.org/
@@ -33,24 +38,35 @@ https://www.mindmup.com/
 https://github.com/nheist/CaLiGraph
 https://osf.io/
 https://twitter.com/interstar/status/1490983593417625601
+
 https://dl.acm.org/doi/10.1145/2448116.2448119
-https://en.wikipedia.org/wiki/Propositional_calculus
 https://www.journals.elsevier.com/data-in-brief/policies-and-guidelines/public-repositories-to-store-and-find-data
 https://www.rationaleonline.com/
 https://web.stanford.edu/~jurafsky/slp3/
 
-### logical languages
+### logical languages - from 'first principles'
+
+https://en.wikipedia.org/wiki/ENQUIRE
+
+### NLP systems - commercial
+https://lexikat.com/#/
+
+
+### Reasoning systems
+https://en.wikipedia.org/wiki/Propositional_calculus
 https://en.wikipedia.org/wiki/AgentSpeak
 https://en.wikipedia.org/wiki/Ciao_(programming_language)
 https://github.com/ciao-lang/ciao
-https://en.wikipedia.org/wiki/Distributed_multi-agent_reasoning_system
 https://en.wikipedia.org/wiki/Erlang_(programming_language)
+https://en.wikipedia.org/wiki/Distributed_multi-agent_reasoning_system
 https://en.wikipedia.org/wiki/Flora-2
+
 https://infranodus.com/
-https://github.com/johannesloetzsch/reasonablepy
-https://lexikat.com/#/
-https://github.com/nltk/nltk
 https://en.wikipedia.org/wiki/Planner_(programming_language)
+
+
+https://github.com/johannesloetzsch/reasonablepy
+https://github.com/nltk/nltk
 https://protege.stanford.edu/products.php#desktop-protege
 https://en.wikipedia.org/wiki/Prot%C3%A9g%C3%A9_(software)
 https://archive.ph/20130108094001/http://autopoiesis.foi.hr/
