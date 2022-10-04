@@ -1,81 +1,42 @@
 
 
-
-### debate sites
-https://hellomotions.com/
-
-
-https://idebate.net/
-
-
-
+## Visualization considerations
 ### graph ml format for the graph
 https://gephi.org/users/supported-graph-formats/graphml-format/
 
 https://github.com/anderspitman/graphml-js
 
-
-## literature review
-### Data gathering&sharing projects
-
-
-### Debating projects
-
-
-https://www.reasoninglab.com/argument-mapping/
-https://direct.mit.edu/coli/article/45/4/765/93362/Argument-Mining-A-Survey
-http://www.argunet.org/
-https://github.com/jromero132/bachelor_thesis_paper/blob/master/thesis.pdf
-https://twitter.com/brunowinck/status/1513789272708599809
-https://common.page/covid-19
-https://hellomotions.com/
-https://dl.acm.org/doi/10.1145/1378704.1378719
-https://github.com/doddle-owl/doddle-owl
-https://github.com/AndRossi/Kelpie
-https://research.ibm.com/interactive/project-debater/
-https://idebate.net/
-https://www.mindmup.com/
-https://github.com/nheist/CaLiGraph
-https://osf.io/
+### not too many nodes
+> Apart from "looks cool" can anyone give me an example of where they actually derived any practical use from visualization of a graph with over 50 nodes?
+> How did it work? Could you read what the nodes were when navigating? What information did the spatial view give you?
 https://twitter.com/interstar/status/1490983593417625601
 
-https://dl.acm.org/doi/10.1145/2448116.2448119
+## interactivity
+### data sources
+https://hellomotions.com/
 https://www.journals.elsevier.com/data-in-brief/policies-and-guidelines/public-repositories-to-store-and-find-data
-https://www.rationaleonline.com/
-https://web.stanford.edu/~jurafsky/slp3/
+https://www.icpsr.umich.edu/web/pages/
 
-### logical languages - from 'first principles'
+#### automatic ontology generation 
+github 2020 - automatic ontology generation - that's in the readings
+https://github.com/jromero132/bachelor_thesis_paper/blob/master/thesis.pdf
 
-https://en.wikipedia.org/wiki/ENQUIRE
+#### CaLiGraph
+A Large Semantic Knowledge Graph from Wikipedia Categories and Listings
+it uses owl ontology language
+it's semantic, not argumentational
+in python + Jupyter noteboook
+https://github.com/nheist/CaLiGraph
 
-### NLP systems - commercial
-https://lexikat.com/#/
-
-
-### Reasoning systems
-https://en.wikipedia.org/wiki/Propositional_calculus
-https://en.wikipedia.org/wiki/AgentSpeak
-https://en.wikipedia.org/wiki/Ciao_(programming_language)
-https://github.com/ciao-lang/ciao
-https://en.wikipedia.org/wiki/Erlang_(programming_language)
-https://en.wikipedia.org/wiki/Distributed_multi-agent_reasoning_system
-https://en.wikipedia.org/wiki/Flora-2
-
-https://infranodus.com/
-https://en.wikipedia.org/wiki/Planner_(programming_language)
+#### Kelpie
+> XAI framework for interpreting Link Predictions on Knowledge Graphs
+python and shell
+interesting, in active development
+https://github.com/AndRossi/Kelpie
 
 
-https://github.com/johannesloetzsch/reasonablepy
+#### NLTK - natural language toolkit
+>  NLTK is a leading platform for building Python programs to work with human language data. It provides easy-to-use interfaces to over 50 corpora and lexical resources such as WordNet, along with a suite of text processing libraries for classification, tokenization, stemming, tagging, parsing, and semantic reasoning, wrappers for industrial-strength NLP libraries, and an active discussion forum.
+very valid for the backend
+https://www.nltk.org/
 https://github.com/nltk/nltk
-https://protege.stanford.edu/products.php#desktop-protege
-https://en.wikipedia.org/wiki/Prot%C3%A9g%C3%A9_(software)
-https://archive.ph/20130108094001/http://autopoiesis.foi.hr/
-http://cliplab.org/papers/hermenegildo11:ciao-design-tplp.pdf
-https://www.visual-prolog.com/
-https://en.wikipedia.org/wiki/Visual_Prolog
-http://www.visualcomplexity.com/vc/
-http://www.visualcomplexity.com/vc/project_details.cfm?index=10&id=68&domain=Knowledge%20Networks
-https://en.wikipedia.org/wiki/Web_Ontology_Language
-https://en.wikipedia.org/wiki/XSB
-https://sourceforge.net/p/xsb/code/ci/git-origin/tree/
-https://en.wikipedia.org/wiki/X.690#BER_encoding
