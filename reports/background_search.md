@@ -11,6 +11,16 @@ https://github.com/anderspitman/graphml-js
 > How did it work? Could you read what the nodes were when navigating? What information did the spatial view give you?
 https://twitter.com/interstar/status/1490983593417625601
 
+
+### similar datasets
+https://odsc.medium.com/20-open-datasets-for-natural-language-processing-538fbfaf8e38
+
+
+# Gamification
+https://theirf.org/research_post/game-mechanics-incentives-recognition/#Behavioral%20Basics
+https://www.sciencedirect.com/science/article/pii/S1071581921000793
+https://www.researchgate.net/publication/261960850_Incentive_design_to_mould_online_behavior_-_A_game_mechanics_perspective
+
 ## interactivity
 ### data sources
 https://hellomotions.com/
