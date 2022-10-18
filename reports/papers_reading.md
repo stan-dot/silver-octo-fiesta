@@ -379,3 +379,9 @@ https://github.com/jromero132/bachelor_thesis_paper/blob/master/thesis.pdf
 
 automatic ontology creation from a a colleciton of doucmnets
 eHealth KD challenge
+
+# new papers
+
+## Kunz Rittel 70
+
+## class notes Talmage
