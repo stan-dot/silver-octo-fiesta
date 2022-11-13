@@ -363,16 +363,24 @@ https://en.wikipedia.org/wiki/Phetch#:~:text=Phetch%20is%20played%20by%20three,f
 ## phrase detectives - 44 pages
 Phrase detectives: Utilizing collective intelligence for internet-scale language resource creation
 https://dl.acm.org/doi/10.1145/2448116.2448119
+phrase detectives is a game
+collective interlligence, Wikipedia
 
+crowdflower, mechanical turk
+von Ahn and collegues mentioned
+1http://www.mturk.com. 2http://crowdflower.com. 3http://www.phrasedetectives.org.
 
+Wikipedia-style “citizen science,” crowdsourcing, and games-with-a-purpose
+
+there was a remark on adult themes
+
+need definitely 'Argument detectives' mode
 
 ## Survey on reinforcement learning for language processing - 37 pages
 https://arxiv.org/abs/2104.05565 (probably)
 
 ## Argument mining survey - 54 pages
 https://direct.mit.edu/coli/article/45/4/765/93362/Argument-Mining-A-Survey
-
-
 
 ## thesis (Habana) - automatic ontology generation - 90 pages
 https://github.com/jromero132/bachelor_thesis_paper/blob/master/thesis.pdf
@@ -384,4 +392,10 @@ eHealth KD challenge
 
 ## Kunz Rittel 70
 
-## class notes Talmage
+## class notes Talmage 46
+
+
+# second wave of papers
+
+
+
