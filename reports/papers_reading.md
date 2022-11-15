@@ -375,6 +375,82 @@ Wikipedia-style “citizen science,” crowdsourcing, and games-with-a-purpose
 there was a remark on adult themes
 
 need definitely 'Argument detectives' mode
+### papers mentioned
+SALSA [Burchadt et al 2009]
+ONTONOTES [Hovy et al 2009, Pradhan et al 2007]
+
+open mind common sense - Singh 2002 - 14,5k volunteers
+
+LEARNER [Chklovski and GIl 2005]
+
+concept netmedia mit edu
+freebase.com
+trueknowledge
+
+data for multimedia tagging
+FoldIt important
+onto tube, tag a tune - gwap com
+verbosity, ontogame, categorilla, free association - get all links
+
+15http://en.wikipedia.org/wiki/Google Image Labeler. 16http://ontogame.sti2.at/games. 17http://www.gwap.com/gwap/gamesPreview/tagatune. 18http://www.gwap.com/gwap/gamesPreview/verbosity. 19http://ontogame.sti2.at/games. 20http://www.doloreslabs.com/stanfordwordgame/categorilla.html. 21http://www.doloreslabs.com/stanfordwordgame/freeAssociation.html. 22The current GWAP from von Ahn’s lab are playable from http://www.gwap.com. 23http://fold.it/portal.
+
+Phylo, EteRNA
+
+
+underlie social incentive
+consistent metaphor
+ancientlives.org - university of Oxford
+
+
+
+ESP game - advertised in press and tv
+retainment - volunteer attrition - Lieberman and Teeters 2007]
+
+3.4 summary of von Ahn's theory - enjoymnet - timed response, scores, ELO system
+
+geoguesser?
+
+discourse model [Kamp and Reyle 1993]
+
+choice of algorithm aiming at maximum variety
+
+need to be able to commment about markables
+
+
+validating annotations fater than creating - [Chklovski and GIl 2005], bu not quite - almost twice as much time
+
+
+task completion, scoring and storyline as a seamless experience
+smalll prize campaign, monthly prizes
+any sumbission can do, so don't need to do a lot of them
+7http://www.modul.ac.at/nmt/sentiment-quiz. 38http://languagelog.ldc.upenn.edu/nll. 39http://lingpipe-blog.com.
+
+only 4$ indicate topic preference
+
+only 1 player generated content on their own
+
+game tips at random in waiting screen
+
+annotation + agreement - disagreemtn
+
+using social network to fitler out rogue players
+
+not much movement through Facebook advert
+
+on ARRAU corpus [Poesia and Artstein 2008]
+
+university of Bielefeld's Seregenti system [ Poesia et al. 2011a]
+
+preprocessing pipeline - Berkeley parser [Petrov et a 2006], openNLP toolkit
+http://incubator.apache.org/opennlp. 46http://saxon.sourceforge.net.
+
+51http://www.gutenberg.org. 52http://www.textfiles.com.
+
+average lifetime play 35 mins
+
+if truly entertaining no other incentives - need personal, social as well
+
+56http://galoap.codeplex.com.
 
 ## Survey on reinforcement learning for language processing - 37 pages
 https://arxiv.org/abs/2104.05565 (probably)
@@ -388,8 +464,6 @@ https://github.com/jromero132/bachelor_thesis_paper/blob/master/thesis.pdf
 automatic ontology creation from a a colleciton of doucmnets
 eHealth KD challenge
 
-# new papers
-
 ## Kunz Rittel 70
 
 ## class notes Talmage 46
@@ -398,4 +472,10 @@ eHealth KD challenge
 # second wave of papers
 
 
+## spoken dialogue system for argument exploration 
 
+## user interest modeling in argumenttaive dialogue systems
+
+## paper on 
+
+## paper on 
