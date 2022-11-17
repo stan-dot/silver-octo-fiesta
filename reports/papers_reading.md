@@ -789,9 +789,21 @@ The study was conducted online via the crowdsourcing platform “Crowdee” (htt
 Even though we are able to detect a slight tendency with an accuracy of 62,9% (see Table 2) for both modalities, the prediction is not significantly better than a random guess. This might again be due to the fact, that the users were not asked to state which polarity they would choose next
 
 
+# more resources
 
-# second wave of papers
+## benchmarks
+http://debategraph.org		
+http://www.mturk.com		
+https://fold.it/		
+https://psdoom.sourceforge.net/		
+https://www.crowdee.com		
 
-## paper on 
+## other resources
+a ready model for lemmatization
+https://spacy.io/models/en#en_core_web_md		
+library
+https://opennlp.apache.org/
 
-## paper on 
+resource
+https://www.gutenberg.org/help/mirroring.html		
+

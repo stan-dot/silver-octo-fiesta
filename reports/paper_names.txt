@@ -96,6 +96,4 @@ However, explicit user feedback (Su et al., 2012) requires user responses that a
 
 and their corresponding relations and encoded in an OWL ontology (Bechhofer, 2009) for further use.
 
-Figure 2 left to the dialogue history, the current root of the argument branch, the argument branch itself and the user’s current position (green bordered node) are displayed. Already visited nodes are shown in green and unknown ones in blue
-
 The study was conducted online via the crowdsourcing platform “Crowdee” (https:// www.crowdee.com/, 12-29th November 2021) with participants from the UK, US and Australia

@@ -1,104 +1,52 @@
-I. Mordatch and P. Abbeel. Emergence of Grounded Compositional Language in Multi-Agent Populations. Proceedings of the AAAI Conference on Artificial Intelligence, 32(1), Apr. 2018.
-
-Z. Shi, X. Chen, X. Qiu, and X. Huang. Toward Diverse Text Generation with Inverse Reinforcement Learning. In International Joint Conference on Artificial Intelligence (IJCAI), volume 27th, pages 4361–4367, Stockholm, Sweden, July 2018
-
- Metzinger (1999) notes that over 7,000 hours of work was required in order for Horn and his team to create these maps.
-(with ACL workshops on the topic being held annually, from the first in 2014,3 up to the most recent in 2019,4 which received a record number of 41 submissions. These have been complemented by further workshops organized in Warsaw,5 Dundee,6 Dagstuhl,7 and tutorials at IJCAI,8 ACL 2016,9 ACL 2019,10 and ESSLLI.11) This increasing activity makes a comprehensive review of both timely and practical value.
-https://aclweb.org/portal/content/first-workshop-corpus-based-research-humanities-crh
-
-Conflicting elements in an opinion tree are then used to generate a “conflict tree,” similar to the dialectical trees (Prakken 2005) used traditionally in defeasible argumentation (Pollock 1987)
-
-Boltuˇzi´c and ˇSnajder (2015), where argumentative statements are clustered based on their textual similarity, in order to identify prominent arguments in online debates
-
-Awadallah, Ramanath, and Weikum (2012) present the OpinioNetIt system, which
-
-Siddharthan, and Tidhar (2006) look at how this classification can be automated. A classification scheme is first developed using guidelines for twelve different categories (explicit statement of weakness, four types of contrast/comparison, six types of agreement/ usage, and neutral
-
-In Teufel, Siddharthan, and Batchelor (2009), an annotation scheme covering 14
-
-a wide range of specific argument diagramming tools (Scheuer et al. 2010) has been developed to allow an analyst to identify the argumentative sections of the text and diagram the structure that they represent (Kirschner, Buckingham-Shum, and Carr 2003; Okada, Shum, and Sherborne 2008). The
-Peldszus and Stede (2013a) refer to these argument segments as “argumentative discourse units” (ADUs)
-The Argument from Expert Opinion scheme (Walton 1996) 
-and commonly used schematic structures (Hastings 1963; Perelman and OlbrechtsTyteca 1969; Kienpointer 1992; Pollock 1995; Walton 1996; Grennan 1997; Katzav and Reed 2004; Walton, Reed, and Macagno 2008)
-
-Green (2014) aims to create a freely available corpus of open-access,
-
-Similarly, Habernal and Gurevych (2015) use large volumes of unlabeled data from online debate portals.
-
-Al-Khatib et al. (2016) likewise leverage online debate portals, generating annotations by automatically mapping source data, in this case the labeled text components from the idebate.org (e.g., “Introduction,” “point,” “counterpoint”), to a set of predefined class labels to create a large corpus with argumentative and non-argumentative text segments from several domains
-
-random sample of 102 essays taken from the AAEC have been further annotated, as described in Carlile et al. (2018)
-
-Kirschner, Eckle-Kohler, and Gurevych (2015) present a corpus of 24 German language articles, which were selected from the education research domain, and annotated using a custom designed tool (DiGAT). The annotation scheme used identifies binary relations between argument components, which in this work correspond to sentences from the original texts. Four types of relation are identified: support, attack, detail, and sequence. 
-
 The first two of these relations are argumentative, whereas the latter two are discourse relations similar to the sequence and background relations of Rhetorical Structure Theory (Mann and Thompson 1987).
-
-A different domain is considered in Kiesel et al. (2015), who present a corpus of 200 newspaper editorials annotated for their argumentative structure. The annotation is based on a model consisting of explicit argumentative units, and the implicit argumentative relations (i.e., support or attack) between them. In this case, an argumentative unit is understood to be a segment of the original text containing at least one proposition. Argumentative relations are considered as the links from one unit to the unit that it most directly supports or attacks
-
-Internet Argument Corpus (IAC) (Walker et al. 2012) is a corpus for research
-
-AIFdb17 (Lawrence et al. 2012), containing over 14,000 Argument Interchange Format (AIF) argument maps, with over 1.6m words and 160,000 claims in 14 different languages.18 These numbers are growing rapidly, thanks to both the increase in analysis tools interacting directly with AIFdb and the ability to import analyses produced with the Rationale and Carneades tools (Bex et al. 2012). Indeed, AIFdb aims to provide researchers with a facility to store large quantities of argument data in a uniform way. AIFdb Web services allow data to be imported and exported in a range of formats to encourage re-use and collaboration between researchers independent of the specific tools and data format that they require.
-
-The most striking example of such are recent data sets gathered from the ChangeMyView (CMV) Reddit subcommunity25 (Tan et al. 2016; Hidey and McKeown 2018; Musi, Ghosh, and Muresan 2018)
-
-meeting data from the AMIDA Meeting Corpus26 annotated using the Twente Argumentation Scheme (Rienks, Heylen, and Weijden 2005), and product reviews fromWeb sites such as Amazon and epinions.com.
-
-then combined with a smaller quantity of high quality, manually labeled data (strong labeled data). Using the combined strong and weak data set resulted in improved performance for topicdependent evidence detection, suggesting that this kind of data gathering can be a valuable asset, particularly in data-hungry neural network systems. The annotated data sets used in this and other Project Debater work are all available online.30
-
-DART (Data set of Arguments and their Relations on Twitter) data set containing 4,000 tweets annotated as argument/not-argument with 446 support and 122 attack relations.  https://aclanthology.org/L16-1200/
-
-if the goal is to reconstruct enthymemes (Razuvayevskaya and Teufel 2017) (see also the discussion of Feng and Hirst [2011] in Section 8.2) or ask critical questions about support relations, we also need to extract the nature of the argumentation schemes being used.
-
-Rumshisky et al. (2017) look at the dynamics of social or political conflict as it develops over time, automatically identifying controversial issues where such conflict is occurring
-
-Similarly, Goudas et al. (2014) look at extracting arguments from social media,
-
-Carstens and Toni (2015), who instead advocate classifying pairs of sentences according to their argumentative relation and, if the relation is classified as support or attack, considering both sentences to be argumentative.
-
-Similarly, Wachsmuth, Stein, and Ajjour (2017) propose a model for determining
-
+The Argument from Expert Opinion scheme (Walton 1996) 
 the relevance of arguments using PageRank (Brin and Page 1998). In this approach, the relevance of an argument’s conclusion is decided by what other arguments reuse it as a premise. These
-
+ Metzinger (1999) notes that over 7,000 hours of work was required in order for Horn and his team to create these maps.
 Soricut and Marcu (2003) as part of the SPADE system, which also operates on lexicalized syntactic trees
-
-Anand et al. (2011) consider a different level of intrinsic clausal properties than
-
+Conflicting elements in an opinion tree are then used to generate a “conflict tree,” similar to the dialectical trees (Prakken 2005) used traditionally in defeasible argumentation (Pollock 1987)
+meeting data from the AMIDA Meeting Corpus26 annotated using the Twente Argumentation Scheme (Rienks, Heylen, and Weijden 2005), and product reviews fromWeb sites such as Amazon and epinions.com.
+Siddharthan, and Tidhar (2006) look at how this classification can be automated. A classification scheme is first developed using guidelines for twelve different categories (explicit statement of weakness, four types of contrast/comparison, six types of agreement/ usage, and neutral
+and commonly used schematic structures (Hastings 1963; Perelman and OlbrechtsTyteca 1969; Kienpointer 1992; Pollock 1995; Walton 1996; Grennan 1997; Katzav and Reed 2004; Walton, Reed, and Macagno 2008)
 12 strategy types for securing behavioral compliance. A further six nonlogical “principles of influence” are covered in Cialdini (2001). By combining these with argumentative patterns inspired by Walton, Reed, and Macagno (2008), and removing overlapping tactics, Anand et al. produce a list of 16 types of rhetorical tactic for persuasive acts
-
-The Automatic Argumentative Analysis (A3) algorithm described in Pallotta and
-
-Delmonte (2011) provides an alternative approach to classifying statements according to rhetorical roles. A3 is a module developed based on the GETARUNS system (Delmonte 2007) for interaction mining (the discovery and extraction of insightful information from digital conversations, namely, those human–human information exchanges mediated by digital network technology).
-
-structure of a document are illustrated in Ong, Litman, and Brusilovsky (2014), where a series of simple rules are used to tag sentences with their role (either Current Study, Hypothesis, Claim, or Citation), for example, if the sentence contains a four-digit number, then it is tagged as Citation, if the sentence contains string prefixes from {suggest, evidence, shows, essentially, indicate}, then it is tagged as Claim. This approach again highlights the similarities between AZ (Section 2.4) and the determination of argumentative role. The ability to determine these roles offers the opportunity to link related elements, for example, a Claim may be backed by a nearby Citation
-
-manual analysis in Wyner, Peters, and Price (2015), which describes the development of Argument Workbench, a tool designed to help the analyst reconstruct arguments from textual sources by highlighting a range of discourse indicators, topics used in the text, domain terminology, and speech act terminology. The tool integrates with the DebateGraph software,33 to allow the user to produce detailed argument graphs
-
-, with Token Edit Distance performing significantly less well (accuracy= 0.53), suggesting that semantic similarity plays a more important role than syntactic similarity (a result backed up by the comparative analysis of Aker et al. [2017], who also found syntactic features to be the least informative in all of the experimental settings considered
-
+In Teufel, Siddharthan, and Batchelor (2009), an annotation scheme covering 14
+and their corresponding relations and encoded in an OWL ontology (Bechhofer, 2009) for further use.
+a wide range of specific argument diagramming tools (Scheuer et al. 2010) has been developed to allow an analyst to identify the argumentative sections of the text and diagram the structure that they represent (Kirschner, Buckingham-Shum, and Carr 2003; Okada, Shum, and Sherborne 2008). The
+Anand et al. (2011) consider a different level of intrinsic clausal properties than
+The Automatic Argumentative Analysis (A3) algorithm described in Pallotta and Delmonte (2011) provides an alternative approach to classifying statements according to rhetorical roles. A3 is a module developed based on the GETARUNS system (Delmonte 2007) for interaction mining (the discovery and extraction of insightful information from digital conversations, namely, those human–human information exchanges mediated by digital network technology).
 The ability to successfully extract premises and conclusions is built upon in Feng and Hirst (2011), which presents the first step in the long-term goal of a method to reconstruct enthymemes, by first, classifying to an argumentation scheme (Walton, Reed, and Macagno 2008)
-
-Green (2018b) then explores how argumentation schemes in this domain can be implemented as logic programs in Prolog and used to extract individual arguments. In this case, the schemes are formulated in terms of semantic predicates obtained from a text by use of BioNLP (biomedical/biological natural language processing) tools.
-
-automated analysis. To pick an example from a substantially different theoretical approach, Musi, Ghosh, and Muresan (2016) present a novel set of guidelines for the annotation of argument schemes based on the Argumentum Model of Topics (Rigotti and Morasso 2010)
+Awadallah, Ramanath, and Weikum (2012) present the OpinioNetIt system, which
+Internet Argument Corpus (IAC) (Walker et al. 2012) is a corpus for research
+AIFdb17 (Lawrence et al. 2012), containing over 14,000 Argument Interchange Format (AIF) argument maps, with over 1.6m words and 160,000 claims in 14 different languages.18 These numbers are growing rapidly, thanks to both the increase in analysis tools interacting directly with AIFdb and the ability to import analyses produced with the Rationale and Carneades tools (Bex et al. 2012). Indeed, AIFdb aims to provide researchers with a facility to store large quantities of argument data in a uniform way. AIFdb Web services allow data to be imported and exported in a range of formats to encourage re-use and collaboration between researchers independent of the specific tools and data format that they require.
+However, explicit user feedback (Su et al., 2012) requires user responses that are not content-related and disturb the dialogue flow. Due to the described drawbacks of explicit methods and to achieve our aim of a natural interaction we chose to assess user interest implicitly
+Peldszus and Stede (2013a) refer to these argument segments as “argumentative discourse units” (ADUs)
+Green (2014) aims to create a freely available corpus of open-access,
+Similarly, Goudas et al. (2014) look at extracting arguments from social media,
+structure of a document are illustrated in Ong, Litman, and Brusilovsky (2014), where a series of simple rules are used to tag sentences with their role (either Current Study, Hypothesis, Claim, or Citation), for example, if the sentence contains a four-digit number, then it is tagged as Citation, if the sentence contains string prefixes from {suggest, evidence, shows, essentially, indicate}, then it is tagged as Claim. This approach again highlights the similarities between AZ (Section 2.4) and the determination of argumentative role. The ability to determine these roles offers the opportunity to link related elements, for example, a Claim may be backed by a nearby Citation
 FIPA Agent Coordination Language (McBurney and Parsons 2009), the Dialogue Game Description Language (Bex, Lawrence, and Reed 2014), or the Lightweight Coordination Calculus (Robertson 2004)
+persuasive essays by Stab and Gurevych (2014). They structure arguments in three components: major claim, claim and premise.
+Boltuˇzi´c and ˇSnajder (2015), where argumentative statements are clustered based on their textual similarity, in order to identify prominent arguments in online debates
+Similarly, Habernal and Gurevych (2015) use large volumes of unlabeled data from online debate portals.
+Kirschner, Eckle-Kohler, and Gurevych (2015) present a corpus of 24 German language articles, which were selected from the education research domain, and annotated using a custom designed tool (DiGAT). The annotation scheme used identifies binary relations between argument components, which in this work correspond to sentences from the original texts. Four types of relation are identified: support, attack, detail, and sequence. 
+A different domain is considered in Kiesel et al. (2015), who present a corpus of 200 newspaper editorials annotated for their argumentative structure. The annotation is based on a model consisting of explicit argumentative units, and the implicit argumentative relations (i.e., support or attack) between them. In this case, an argumentative unit is understood to be a segment of the original text containing at least one proposition. Argumentative relations are considered as the links from one unit to the unit that it most directly supports or attacks
+Carstens and Toni (2015), who instead advocate classifying pairs of sentences according to their argumentative relation and, if the relation is classified as support or attack, considering both sentences to be argumentative.
+manual analysis in Wyner, Peters, and Price (2015), which describes the development of Argument Workbench, a tool designed to help the analyst reconstruct arguments from textual sources by highlighting a range of discourse indicators, topics used in the text, domain terminology, and speech act terminology. The tool integrates with the DebateGraph software,33 to allow the user to produce detailed argument graphs
+Al-Khatib et al. (2016) likewise leverage online debate portals, generating annotations by automatically mapping source data, in this case the labeled text components from the idebate.org (e.g., “Introduction,” “point,” “counterpoint”), to a set of predefined class labels to create a large corpus with argumentative and non-argumentative text segments from several domains
+automated analysis. To pick an example from a substantially different theoretical approach, Musi, Ghosh, and Muresan (2016) present a novel set of guidelines for the annotation of argument schemes based on the Argumentum Model of Topics (Rigotti and Morasso 2010)
+if the goal is to reconstruct enthymemes (Razuvayevskaya and Teufel 2017) (see also the discussion of Feng and Hirst [2011] in Section 8.2) or ask critical questions about support relations, we also need to extract the nature of the argumentation schemes being used.
+Rumshisky et al. (2017) look at the dynamics of social or political conflict as it develops over time, automatically identifying controversial issues where such conflict is occurring
+Similarly, Wachsmuth, Stein, and Ajjour (2017) propose a model for determining
+, with Token Edit Distance performing significantly less well (accuracy= 0.53), suggesting that semantic similarity plays a more important role than syntactic similarity (a result backed up by the comparative analysis of Aker et al. [2017], who also found syntactic features to be the least informative in all of the experimental settings considered
+Arguing chatbots such as Debbie, which used a similarity algorithm to retrieve counterarguments (Rakshit et al., 2017)
+I. Mordatch and P. Abbeel. Emergence of Grounded Compositional Language in Multi-Agent Populations. Proceedings of the AAAI Conference on Artificial Intelligence, 32(1), Apr. 2018.
+Z. Shi, X. Chen, X. Qiu, and X. Huang. Toward Diverse Text Generation with Inverse Reinforcement Learning. In International Joint Conference on Artificial Intelligence (IJCAI), volume 27th, pages 4361–4367, Stockholm, Sweden, July 2018
+random sample of 102 essays taken from the AAEC have been further annotated, as described in Carlile et al. (2018)
+The most striking example of such are recent data sets gathered from the ChangeMyView (CMV) Reddit subcommunity25 (Tan et al. 2016; Hidey and McKeown 2018; Musi, Ghosh, and Muresan 2018)
+Green (2018b) then explores how argumentation schemes in this domain can be implemented as logic programs in Prolog and used to extract individual arguments. In this case, the schemes are formulated in terms of semantic predicates obtained from a text by use of BioNLP (biomedical/biological natural language processing) tools.
 In these cases, software such as Arvina (Lawrence, Bex, and Reed 2012) or D-BAS (Krauthoff et al. 2018)
 Al Khatib et al. (2018) identify six distinct “discourse acts” (Socializing, Providing
 Harris et al. (2018) argue for the importance of rhetorical figures for argument
-
-
 Attempts are being made to overcome this lack of data, including the use of crowdsourced annotation (Ghosh et al. 2014; Skeppstedt, Peldszus, and Stede 2018) and automatic methods to extend the data currently annotated (Bilu, Hershcovich, and Slonim 2015).
-
-Arguing chatbots such as Debbie, which used a similarity algorithm to retrieve counterarguments (Rakshit et al., 2017)
-persuasive essays by Stab and Gurevych (2014). They structure arguments in three components: major claim, claim and premise.
-
-The nodes are updated recursively until the root node is reached. The difference between the sum of the strengths of the supporting children and the sum of the strengths of the attacking children of the root node displays the final “stance” of the user (Aicher et al., 2021). If it is greater than 0, the user supports the major claim, if it is smaller than 0, the user rejects it, and if it equals 0, the user is indifferent.
-
+(with ACL workshops on the topic being held annually, from the first in 2014,3 up to the most recent in 2019,4 which received a record number of 41 submissions. These have been complemented by further workshops organized in Warsaw,5 Dundee,6 Dagstuhl,7 and tutorials at IJCAI,8 ACL 2016,9 ACL 2019,10 and ESSLLI.11) This increasing activity makes a comprehensive review of both timely and practical value.
 First, collaborative filters (Pavlov and Pennock, 2002; Chien and George, 1999; Gazdar and Hidri, 2020) which use the useruser similarity principle stating that if a user highly rated an item, similar users would probably highly rate that item. Second, content-based filters (Pazzani and Billsus, 2007; Son and Kim, 2017) which recommend items based on the item-item similarity principle stating that if users highly rated an item, they would highly rate similar items.
-
-However, explicit user feedback (Su et al., 2012) requires user responses that are not content-related and disturb the dialogue flow. Due to the described drawbacks of explicit methods and to achieve our aim of a natural interaction we chose to assess user interest implicitly
-
-and their corresponding relations and encoded in an OWL ontology (Bechhofer, 2009) for further use.
-
-Figure 2 left to the dialogue history, the current root of the argument branch, the argument branch itself and the user’s current position (green bordered node) are displayed. Already visited nodes are shown in green and unknown ones in blue
-
+The nodes are updated recursively until the root node is reached. The difference between the sum of the strengths of the supporting children and the sum of the strengths of the attacking children of the root node displays the final “stance” of the user (Aicher et al., 2021). If it is greater than 0, the user supports the major claim, if it is smaller than 0, the user rejects it, and if it equals 0, the user is indifferent.
 The study was conducted online via the crowdsourcing platform “Crowdee” (https:// www.crowdee.com/, 12-29th November 2021) with participants from the UK, US and Australia
