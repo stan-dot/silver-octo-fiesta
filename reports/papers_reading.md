@@ -652,6 +652,17 @@ https://github.com/jromero132/bachelor_thesis_paper/blob/master/thesis.pdf
 automatic ontology creation from a a colleciton of doucmnets
 eHealth KD challenge
 
+this would be for the data processing bit - the output pipeline, not the input pipeline
+
+https://pypi.org/project/es-core-news-sm/
+
+
+I can definitely build on this. there could be a separate game where annontaions (whether a word or pharse is an entity, concept, action, etc) are done - then on the bassis of these annotations
+the ontology is created
+need to make it into some microservice, or just a package tbh fr fr
+
+microservice input - a chunk of documents
+output - ontology JSON and SVG
 
 
 
@@ -716,11 +727,6 @@ Principle of Charity -
 
 B some further types of ambiguity 
 add to that
-
-
-
-
-
 
 ## spoken dialogue system for argument exploration 
 Arguing chatbots such as Debbie, which used a similarity algorithm to retrieve counterarguments (Rakshit et al., 2017)

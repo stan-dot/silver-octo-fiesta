@@ -1,0 +1,63 @@
+https://web.stanford.edu/~jurafsky/slp3/
+https://research.ibm.com/interactive/project-debater/about/
+https://research.ibm.com/interactive/project-debater/how-it-works/
+http://www.aclweb.org/anthology/C/C14/C14-1141.pdf 
+http://aclweb.org/anthology/D15-1050
+http://www.aclweb.org/anthology/W15-05#page=96
+http://www.aclweb.org/anthology/P/P16/P16-2.pdf#page=559
+http://www.aclweb.org/anthology/W17-5110
+http://aclweb.org/anthology/C18-1176
+https://www.uni-weimar.de/medien/webis/publications/papers/stein_2017c.pdf
+https://www.uni-weimar.de/medien/webis/publications/papers/stein_2017g.pdf
+http://aclweb.org/anthology/W17-5107
+http://aclweb.org/anthology/W/W16/W16-2814.pdf
+http://www.aclweb.org/anthology/E/E17/E17-1024.pdf
+https://argmining2017.files.wordpress.com/2017/08/argmining2017-04.pdf
+http://www.aclweb.org/anthology/C18-1189
+http://www.lrec-conf.org/proceedings/lrec2018/pdf/602.pdf
+http://www.aclweb.org/anthology/C16-1260
+https://arxiv.org/pdf/1703.04650.pdf
+https://www.researchgate.net/publication/319184974_Weakly-Supervised_Phrase_Assignment_from_Text_in_a_Speech-Synthesis_System_Using_Noisy_Labels
+https://www.semanticscholar.org/paper/Emphatic-Speech-Prosody-Prediction-with-Deep-Lstm-Shechtman-Mordechay/8bfa38df475029dd09a25651d0dfdd5538963898
+https://www.isca-speech.org/archive/Interspeech_2018/pdfs/1159.pdf
+https://aclanthology.org/P18-2009/
+http://aclweb.org/anthology/P18-2095
+http://aclweb.org/anthology/C18-1176
+https://arxiv.org/abs/1809.01285
+https://www.semanticscholar.org/paper/Emphatic-Speech-Prosody-Prediction-with-Deep-Lstm-Shechtman-Mordechay/8bfa38df475029dd09a25651d0dfdd5538963898
+https://www.isca-speech.org/archive/Interspeech_2018/pdfs/1159.pdf
+https://research.ibm.com/interactive/project-debater/importance/
+https://research.ibm.com/interactive/project-debater/research/
+https://research.ibm.com/haifa/dept/vst/debating_data.shtml
+https://dl.acm.org/doi/10.1145/1378704.1378719
+https://en.wikipedia.org/wiki/Google_Image_Labeler#Issues_and_problems 
+-  https://en.wikipedia.org/wiki/ROUGE_(metric)
+https://en.wikipedia.org/wiki/Seq2seq
+https://arxiv.org/ftp/arxiv/papers/1905/1905.12884.pdf
+https://shivamrana.me/2020/02/gwap-2/
+https://www.cs.cmu.edu/~biglou/Peekaboom.pdf
+https://en.wikipedia.org/wiki/ESP_game
+https://www.mturk.com/
+https://openminds.harrys.com/
+https://psdoom.sourceforge.net/
+https://www.cs.cmu.edu/~biglou/Verbosity.pdf 
+https://en.wikipedia.org/wiki/Phetch#:~:text=Phetch%20is%20played%20by%20three,find%20the%20image%20being%20described.
+https://dl.acm.org/doi/10.1145/2448116.2448119
+1http://www.mturk.com. 2http://crowdflower.com. 3http://www.phrasedetectives.org.
+15http://en.wikipedia.org/wiki/Google Image Labeler. 16http://ontogame.sti2.at/games. 17http://www.gwap.com/gwap/gamesPreview/tagatune. 18http://www.gwap.com/gwap/gamesPreview/verbosity. 19http://ontogame.sti2.at/games. 20http://www.doloreslabs.com/stanfordwordgame/categorilla.html. 21http://www.doloreslabs.com/stanfordwordgame/freeAssociation.html. 22The current GWAP from von Ahn’s lab are playable from http://www.gwap.com. 23http://fold.it/portal.
+7http://www.modul.ac.at/nmt/sentiment-quiz. 38http://languagelog.ldc.upenn.edu/nll. 39http://lingpipe-blog.com.
+http://incubator.apache.org/opennlp. 46http://saxon.sourceforge.net.
+51http://www.gutenberg.org. 52http://www.textfiles.com.
+56http://galoap.codeplex.com.
+https://arxiv.org/abs/2104.05565 
+https://direct.mit.edu/coli/article/45/4/765/93362/Argument-Mining-A-Survey
+1 http://www.stanford.edu/~rhorn/a/topic/phil/artclTchngPhilosphy.html. 2 Sometimes also referred to as argumentation mining. 3 http://www.uncg.edu/cmp/ArgMining2014/. 4 https://argmining19.webis.de/. 5 http://argdiap.pl/argdiap2014. 6 http://www.arg-tech.org/swam2014/. 7 https://www.dagstuhl.de/en/program/calendar/semhp/?semnr=16161. 8 http://www.i3s.unice.fr/~villata/tutorialIJCAI2016.html. 9 http://acl2016tutorial.arg.tech/.
+https://aclanthology.org/L16-1200/
+10 http://arg.tech/~chris/acl2019tut/index.html. 11 https://www.irit.fr/esslli2017/courses/20.
+17 http://www.aifdb.org. 18 Chinese, Dutch, English, French, German, Hindi, Italian, Japanese, Korean, Polish, Portuguese, Russian, Spanish, and Ukrainian.
+19 http://debategraph.org 20 https://www.truthmapping.com 21 http://www.debatepedia.org 22 http://agora.gatech.edu/ 23 http://www.argunet.org/ 24 https://www.rationaleonline.com/ 25 https://www.reddit.com/r/changemyview/
+https://www.kurzweilai.net/introducing-a-new-feature-of-ibms-watson-the-debater
+36 http://www.debatepedia.org.
+https://github.com/jromero132/bachelor_thesis_paper/blob/master/thesis.pdf
+https://pypi.org/project/es-core-news-sm/
+The study was conducted online via the crowdsourcing platform “Crowdee” (https:// www.crowdee.com/, 12-29th November 2021) with participants from the UK, US and Australia
