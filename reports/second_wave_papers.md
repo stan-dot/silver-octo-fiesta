@@ -1,4 +1,17 @@
 
+
+# myu topic
+type ntpoation = my statement{srouce, year}
+
+
+need to have a suggestion system - to empower the user to make better arguments
+
+
+a shilling promotion page
+
+
+# list
+
 ## Phetch
 https://en.wikipedia.org/wiki/Phetch#:~:text=Phetch%20is%20played%20by%20three,find%20the%20image%20being%20described.
 75% of images don't have ALT text labels
@@ -11,6 +24,11 @@ discontinued in 2008
 ## Mann and Thompson 1987
 
 
+- might to a game identifying evidence sentences in the text!
+- 
+
+effectively it's a platform for different word-games
+
 
 
 
@@ -20,7 +38,7 @@ discontinued in 2008
 
 
 
-## Soricut and Marcu 2003
+## Soricut and Marcu 2003 sentence level discourse parsing
 
 
 
