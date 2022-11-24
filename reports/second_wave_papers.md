@@ -8,6 +8,9 @@ need to have a suggestion system - to empower the user to make better arguments
 
 
 a shilling promotion page
+o
+need a handy place to build ontologies too
+maybe then properties can be arguments?
 
 
 # list
@@ -76,11 +79,13 @@ effectively it's a platform for different word-games
 
 ## Bechhofer 2009
 
+https://www.w3.org/TR/skos-reference/
+
+reading this should be secondary - thta's not the primary funcion of the system
 
 
 
-
-## Anand et al 2011
+## Anand et al 2011 How can you say such things?!?: Recognizing Disagreement in Informal Political Argument
 
 
 
@@ -91,151 +96,159 @@ effectively it's a platform for different word-games
 
 
 
-## Awadallah, Ramanath, and Weikum 2012
+## Awadallah, Ramanath, and Weikum 2012 Harmony and dissonance: organizing the people's voices on political controversies
 
 
 
 
 
-## Walker et al 2012
+
+## Walker, Anand et al 2012 - corpus for debate
+
+this one was kind of redundant
 
 
 
 
 
-## Su et al 2012
 
+## Su et al 2012 online reward
+
+not relevant, as for bots - and heavy in maths and ML
 
 
 
 
 ## Peldszus and Stede 2013a
 
+important
 
 
 
 
 ## Green 2014
 
+done, not much - give a quick browse
+
 
 
 # 15 done
 
 
-## Ong, Litman, and Brusilovsky 2014
+## Ong, Litman, and Brusilovsky 2014 - ontyology based argument mining
 
 
 
 
 
-## Stab and Gurevych 2014
+## Stab and Gurevych 2014 - identifying argumentative discourse structures in persuasive essays
 
 
 
 
 
-## Boltuˇzi´c and ˇSnajder 2015
+## Boltuˇzi´c and ˇSnajder 2015 - identifying prominent arguments in online debates using sematic textual similarity
 
 
 
 
 
-## Habernal and Gurevych 2015
+## Habernal and Gurevych 2015 - exploiting debate portals for semi-supervised
 
 
 
 
 
-## Kirschner, Eckle-Kohler, and 
+## Kirschner, Eckle-Kohler, and Gurevych - linking the thorughts - in scientifici publications
+
+need to give annotation power to the masses!
 
 
 
 # 20 done
 
-### Gurevych 2015
+
+## Kiesel et al 2015 - shared task on argumentation mining in newspaper editorials
 
 
 
 
 
-## Kiesel et al 2015
+## Carstens and Toni 2015 - towards relation based Argumentation Mining
 
 
 
 
 
-## Carstens and Toni 2015
+
+## Wyner, Peters, and Price 2015 - arugment discovery and extraction with the Argument Workbench
 
 
 
 
 
-## Wyner, Peters, and Price 2015
+
+## Al-Khatib et al 2016 - crossdomain mining fo arguemntatinve text through Distant Supervision
 
 
 
 
 
-## Al-Khatib et al 2016
+## Razuvayevskaya and Teufel 2017 - finding enthymemes in real-world text - a feasibility study
 
 
 
 # 25 done
 
 
-## Razuvayevskaya and Teufel 2017
+
+
+## Wachsmuth, Stein, and Ajjour 2017 - buildign an argument search engine for the WEB
 
 
 
 
 
-## Wachsmuth, Stein, and Ajjour 2017
+
+## Rakshit et al 2017 - Debbie, the debate bot of the future
 
 
 
 
 
-## Rakshit et al 2017
+## I. Mordatch and P. Abbeel 2018 - emergence of grounded compositional lanaguege in Multi-Agent populations
 
 
 
 
 
-## I. Mordatch and P. Abbeel 2018
+## Z. Shi et al 2018 - toward diverse text generation with Inverse Reingorcement Learning
 
 
 
 
 
-## Z. Shi et al 2018
+
+## Carlile et al 2018 - give me more feedback: annotating argument persuasiveness and related attributes in Student Essays
 
 
 
 # 30 done
 
 
-## Carlile et al 2018
+
+
+## Green 2018b - towards mining sceintific discourse using arugmentation shcemes
 
 
 
 
 
-## Green 2018b
+## Al Khatib et al 2018 - argumentation synthesis following rhetorical strategies
 
 
+## DART: a dataset of argumetns and their relations on Twitter
 
-
-
-## Al Khatib et al 2018
-
-
-
-
-
-## Harris et al 2018
-
-
-
-# done!
+# 33 and done!
 
 
