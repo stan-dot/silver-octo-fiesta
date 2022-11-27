@@ -1,5 +1,7 @@
 
 
+easily split a node across some line
+
 
 introspective mood - green or warm orange
 battle mood - red
@@ -46,6 +48,8 @@ explain how my approach is different from other papers
 
 
 ## paper on trees
+
+
 
 
 ## list of people to contact - should have a monthly limit to contact them, with my website
