@@ -48,8 +48,6 @@ elements
 
 antithesis relation - but author is not dead
 
-
-
 ## Brin and Page 1998
 
 advantages of a centralized system
@@ -83,8 +81,6 @@ training section is a set of triples
 s, tree, discourse tree
 
 83% accuracy on discourse segmentation not enough
-
-
 
 ## Prakken 2005 - coherence and flexibility in dialogue games for argumentation
 
@@ -145,11 +141,8 @@ Pleadings Game http://www.tud.ttu.ee/im/Ermo.Taks/IDK0310/Reading/p10-gordon.pdf
 the need for investigative approach
 
 
-
-
 ## Rienks, Heylen and Weijden 2005 - argument diagramming of meeting conversations
 > relations and the forthcoming structure between the arguments. In this paper we introduce the Twente Argument Schema, a diagramming model, developed in order to structure textual units by providing an annotation enabling people as well as automatic systems to find answers to questions related to the decision making process
-
 
 > Argument diagrams provide a representation leading to quicker cognitive comprehension, deeper understanding and enhances detection of weaknesses [Schum and Martin, 1982, Kanselaar et al., 2003].
 • Argument diagrams aid the decision making process, as an interface for communication to maintain focus, prevent redundant information and to save time. [Yoshimi, 2004, Veerman, 2000].
@@ -161,8 +154,7 @@ the need for investigative approach
 > Several diagramming techniques have been developed, all with their own goals in mind and their own ways of creation. We discuss three of them : Wigmore’s charting method, Toulmin’s model and the model developed for the EUCLID project.
 
 [on EUCLID model]
-> This model is rather simple as the resulting claims can only be related to each other by either ‘support’ or ‘refute’ links [Smolensky et al., 1988
-
+> This model is rather simple as the resulting claims can only be related to each other by either ‘support’ or ‘refute’ links [Smolensky et al., 1988]
 
 > These components can be used to model argument trees. In the resulting argument trees, a ‘child’ is always evidence for or against a parent. Similar trees can be constructed with software package such as Athena2 and Belvedere [Suthers et al., 1995].
 
@@ -209,26 +201,20 @@ On average, our papers contain 26.8 citation instances in running text3.
 > We observe that more PMot categories appear towards the beginning of the paper, as do Weak citations, whereas comparative results (CoCoR0, CoCoR-) appear towards the end of articles. More fine-grained location features, such as the location within the paragraph and the section, have also been implemented.
 
 
-
-
-
 ## Cialdini 2001 - the science of persuasion
 > Six basic tendencies of human behavior come into play in generating a positive response: reciprocation, consistency, social validation, liking, authority and scarcity.
 >
 >A 1998 study in the New England Journal of Medicine found that only 37 percent of researchers who published conclusions critical of the safety of calcium channel blockers had received prior drug company support. Among researchers whose conclusions supported the drugs’ safety, however, the number of those who had received free trips, research funding or employment skyrocketed—to 100 percent.
 
 > “Will you please call if you have to change your plans?”
->
 > An example is the understandable but potentially misguided tendency of health educators to call attention to a problem by depicting it as regrettably frequent
 
 need to say people are doing the DESIRABLE thing
 
 > a Tupperware party begins somewhere in the world every 2.7 seconds. In fact, 75 percent of all Tupperware parties today occur outside the individualistic U.S., in countries where group social bonding is even more important than it is here
->
 > Physical attractiveness can be such a tool. In a 1993 study conducted by Peter H. Reingen of Arizona State University and Jerome B. Kernan of the University of Cincinnati, good-looking fund-raisers for the American Heart Association generated nearly twice as many donations (42 versus 23 percent) as did other requesters. In the 1970s researchers Michael G. Efran and E.W.J. Patterson of the University of Toronto found that voters in Canadian federal elections gave physically attractive candidates several times as many votes as unattractive ones. Yet such voters insisted that their choices would never be influenced by something as superficial as appearance.
 
 > Research at the University of North Carolina at Chapel Hill found that compliments produced just as much liking for the flatterer when they were untrue as when they were genuine
->
 > scarcity double whammy: not only was the beef scarce, but the information that the beef was scarce was itself scarce
 
 
@@ -236,13 +222,9 @@ about the author
 > He attributes his long-standing interest in the intricacies of influence to the fact that he was raised in an entirely Italian family, in a predominantly Polish neighborhood, in a historically German city (Milwaukee), in an otherwise rural state
 
 
-
-
-
 ## Teufel, Siddharthan and Batchelor  2009 - towards discipline - independent argumentative zoning - evidence from chemistry and computationl linguistics
 
 > knowledge claim (Myers, 1992; Luukkonen, 1992): the act of writing a paper corresponds to an attempt of claiming ownership for a new piece of knowledge, which is to be integrated into the repository of scientific knowledge in the authors’ field by the process of peer review and publication.
->
 > Category AIM
 Description Statement of research goal.
 BACKGROUND Description of generally accepted background knowledge.
@@ -257,8 +239,7 @@ Indication of paper’s textual structure.
 
 > decidable, in principle, without specific domain knowledge about what is discussed in detail in the paper
 
-
->Our annotation guidelines are 111 sides ofA4 and contain a decision tree, detailed description of the semantics of the 15 categories, 75 rules for pairwise distinction of the categories and copious examples from both chemistry and computational linguistics.
+> Our annotation guidelines are 111 sides ofA4 and contain a decision tree, detailed description of the semantics of the 15 categories, 75 rules for pairwise distinction of the categories and copious examples from both chemistry and computational linguistics.
 
 #### lots of rules
 
@@ -287,23 +268,17 @@ created for the biomedical domain (Mizuta and Collier, 2004) and for computer sc
 > The discipline-specific generics in chemistry
 come in the form of a “chemistry primer”, a 10page collection of high-level scientific domain knowledge. It contains: a glossary ofwords a nonchemist would not have heard about or would not necessarily recognise as chemical terminology; a list of possible types of experiments performed in chemistry; a list of commonly used machinery; a list of non-obvious negative characterisations of experiments and compounds (“sluggish”, “inert”); and a list of possible types of knowledge claims.
 
-very val;uable list
+very valuable list
 
 > As agreement measure we choose the Kappa
 coefficient κ (Fleiss, 1971; Siegel and Castellan, 1988), the agreement measure predominantly used in natural language processing research (Carletta, 1996). κ corrects raw agreement P(A) for agreement by chance P(E)
 
 Kappa coefficient for agreement
 
-> To solve this in a fundamentally sound way, there seems to be no other way than to annotate more texts, at the cost ofmore human effort.
->
+> To solve this in a fundamentally sound way, there seems to be no other way than to annotate more texts, at the cost of more human effort.
 > This might point to the fact that Annotators A and B might have used a certain amount of domain-knowledge which the chemistry primer in the guidelines does not yet, but should, cover
->
 > There is also the faint possibility that discourse
 annotation of chemistry is intrinsically easier than discourse annotation of CL, because it is a more established discipline and not despite of it. For instance, it is likely that the problem-solving categories OWN FAIL, OWN MTHD, OWN RES and OWN CONC are easier to describe in a discipline with an established methodology (such as chemistry), than they are in a younger, developing discipline such as computational linguistics
-
-
-
-
 
 
 ## Bechhofer 2009
@@ -313,14 +288,12 @@ https://www.w3.org/TR/skos-reference/
 reading this should be secondary - thta's not the primary funcion of the system
 
 
-
 ## Anand et al 2011 How can you say such things?!?: Recognizing Disagreement in Informal Political Argument
 
 > In this paper, we focus on an important initial task
 for the recognition of argumentative structure: automatic identification of agreement and disagreement. We introduce the ARGUE corpus, an annotated collection of 109,553 forum posts (11,216 discussion threads) from the debate website 4forums.com. On 4forums, a person starts a discussion by posting a topic or a question in a particular category, such as society, politics, or religion
 
 > This work has treated each post as a text to be classified in terms of stance, for a particular topic, and shown that discourse relations such as concessions and the identification of argumentation triggers improves performance .
->
 > . It is a typical internet forum built on the vBulletin software. People initiate discussions (threads) and respond to
 vbulletin
 
@@ -344,15 +317,10 @@ Nice/Nasty: Is the respondent attempting to be nice or is their attitude fairly 
 discourse markers
 
 > For our experiments we used the Weka machine learning toolkit
->
 > People on these forums get to know one another and often enjoy repeatedly arguing with the same person. In addition, we hypothesized that the “heat” of a particular conversation could be correlated with rapid-fire exchanges, as indicated by short time periods between posts.
 
 
 # 10 done
-
-
-
-
 
 ## Awadallah, Ramanath, and Weikum 2012 Harmony and dissonance: organizing the people's voices on political controversies
 
@@ -360,7 +328,6 @@ discourse markers
 where the triple: hpersoni hsupport/opposei htopici is extracted from the textual context.
 
 > Finally, we show use-case scenarios for identifying flip-flop politicians who change their opinions on the same topic, and for discovering people with divergent opinions on otherwise highly correlated topics
->
 > DEFINITION 2.1. A facet fi is denoted by a string str(fi). Examples of facets on the controversial topic “Iran’s Nuclear Program, 2010” include “military strikes on Iran” and “sanctions on Iran”. We use the term facet name to refer to str(fi).
 
 facet system
@@ -369,32 +336,26 @@ facet system
 
 could use this automatic processing for input
 
-> For matching names in text sources against canonical entities, we leverage existing knowledge bases like DBpedia, Freebase, or Yago. We specifically make use of the means relation that Yago [18
->
-other knowledge bases
+> For matching names in text sources against canonical entities, we leverage existing knowledge bases like DBpedia, Freebase, or Yago. We specifically make use of the means relation that Yago [18]
 
+other knowledge bases
 
 
 ## Walker, Anand et al 2012 - corpus for research on deliberation and debate
 
 this one was kind of redundant
 
-
 ## Su et al 2012 online reward
 
 not relevant, as for bots - and heavy in maths and ML
-
 
 ## Peldszus and Stede 2013a - from argument disgrams to argumentatio mninig in texts: a survey
 
 > A very useful earlier overview of the use of argument diagramming techniques to represent the structure of arguments has been given by Reed et al. (2007). They review the theories and diagramming schemes in logic, law and artificial intelligence and cover many important aspects relevant to (automatic) evaluation of arguments. In contrast, our aim is of a rather descriptive nature and our second focus is on the linguistic realization of argumentation, especially on the representation of argumentative opposition
 
 > Stephen E. Toulmin’s influential analysis of argument (Toulmin, 1958).
->
 > Similarly, Klein (1980) argued for a recursively applicable argumentation scheme. Furthermore, he claimed that the distinction between Toulmin’s data and warrant cannot always be drawn precisely
->
-> > Wunderlich (1980) thus interpreted Klein’s support-tree as a ’decision’-tree, where the root node is the ’quaestio’, i.e. the question to be decided on. From there, not only arguments for and but also against the decision unfold recursively. Since there can be pro and contra for every node in the tree, the opponents role is integral to this representation.
-
+> Wunderlich (1980) thus interpreted Klein’s support-tree as a ’decision’-tree, where the root node is the ’quaestio’, i.e. the question to be decided on. From there, not only arguments for and but also against the decision unfold recursively. Since there can be pro and contra for every node in the tree, the opponents role is integral to this representation.
 
 > Recently, an updated but compatible version of the theory has been presented in (Freeman, 2011
 
@@ -426,7 +387,6 @@ can leave an attack unreflected
 objection strategies
 > The theory is integrated as a diagramming technique in argument visualization tools such as Carneades (Gordon, 2010)
 
-
 > The approach that obviously is a candidate for representing argument structure is Rhetorical Structure Theory (RST; Mann and Thompson (1988)), which has been conceived as an empirical tool for practical text analysis, and the developers originally justified their design decisions with the claim that a fairly large number of texts from different genres have been successfully analyzed.
 
 > Finding arguments in text automatically is a relatively new research area. It is potentially relevant to any kind of text mining application that is directed at argumentative text; in particular, promising applications have been suggested for the following types:
@@ -439,7 +399,6 @@ probvlems in argumentation mining
 2. segment classificiation
 3. relation identification
 4. argument completion - postulation of cinlucit ADUs
-
 
 > While there are no specific results for argumentative text, we can expect that the argumentative support (‘causal’) relations will often go unsignalled, whereas the rebuttal/counter-rebuttal configurations usually require a lexical signal so that the reader can identify the contrastive argumentative move
  
@@ -458,7 +417,6 @@ AML language
 
 why only 1 thesis?!
 
-
 ## Green 2014 - towards creation fo a corpus for argumentation mining the biomedical genetics research literature
 
 done, not much - give a quick browse
@@ -475,9 +433,6 @@ with the Araucaria corpus and a legal corpus. They developed a multi-stage appro
 > An extension of AZ (AZ-II) developed for application to chemistry articles, refined AZ‟s distinctions into fifteen categories (Teufel, 2010)
 
 > The CoreSC (Core Scientific Concepts) annotation scheme was developed for automatic classification of sentences in terms of the components of a scientific investigation: Hypothesis, Motivation, Goal, Object, Background, Method, Experiment, Model, Observation, Result and Conclusion (Liakata et al., 2012a). An
-
-
-
 
 # 15 done
 
@@ -501,17 +456,14 @@ using the 8 rules
 
 ## Stab and Gurevych 2014 - identifying argumentative discourse structures in persuasive essays
 > Argumentation is a crucial aspect of writing skills acquisition. The ability of formulating persuasive arguments is not only the foundation for convincing an audience of novel ideas but also plays a major role in general decision making and analyzing different stances. However, current writing support is limited to feedback about spelling, grammar, or stylistic properties and there is currently no system that provides feedback about written argumentation. By integrating argumentation mining in writing environments, students will be able to inspect their texts for plausibility and to improve the quality of their argumentation.
->
 > Grammarly for arguments
 
 > that should not be accepted by the reader without additional support.1 The premise underpins the validity of the claim. It is a reason given by an author for persuading readers of the claim. Argumentative relations model the discourse structure of arguments
 
 tutorial expressions
-
 Penn Discourse Treebank (PDTB) (Prasad et al., 2008
 
 > Previous research on argumentation mining spans several subtasks, including (1) the separation of argumentative from non-argumentative text units (Moens et al., 2007; Florou et al., 2013),
-
 
 pre-processing step
 
@@ -524,7 +476,6 @@ pre-processing step
 > However, our experiments revealed that the current accuracy for identifying argument components is not sufficient for increasing the performance of argumentative
 
 then accuracy not enough
-
 
 ## Boltuˇzi´c and ˇSnajder 2015 - identifying prominent arguments in online debates using sematic textual similarity
 
@@ -541,7 +492,6 @@ supervised learning
 
 neural network model
 
-
 ## Habernal and Gurevych 2015 - exploiting debate portals for semi-supervised
 
 > We propose novel features that exploit clustering of unlabeled data from debate portals based on a word embeddings representation. Using these features, we significantly outperform several baselines in the cross-validation, cross-domain, and cross-register evaluation scenarios
@@ -551,12 +501,13 @@ neural network model
 problems with annotation
 
 > Analysis of argumentation has been an active topic in numerous research areas, such as philosophy (van Eemeren et al., 2014), communication studies (Mercier and Sperber, 2011), and informal logic (Blair, 2004), among others
+#### Blair, informal logic
 
 > There are five different components in this model, namely, the claim (the statement about to be established in the argument which conveys author’s stance towards the topic), the premise(s) (propositions that are intended to give reasons of some kind for the claim), the backing (additional information used to back-up the argument), the rebuttal (attacks the claim), and the refutation (which attacks the rebuttal). Relations between the argument components are encoded implicitly in the function of the particular component type, for instance, premises are always attached to the claim.
 
 limited nesting
 
-> 7In only 1% of the sentences there are two or more argument components in it; we arbitrarily choose the largest one
+> In only 1% of the sentences there are two or more argument components in it; we arbitrarily choose the largest one
 
 > The data were then indexed using the Lucene framework and the top 100 debates for each of the 6 domains were retrieved which resulted into 5,759 posts (≈ 35k sentences) in the unlabeled data in total. Our approach is formalized in the following paragraph.
 
@@ -574,9 +525,7 @@ need to give annotation power to the masses!
 details relation, a different one from the support and attack ones
 
 > For instance, Liakata et al. (2012) proposed CoreSC (“Core Scientific Concepts“), an annotation scheme consisting of 11 categories1. Mizuta and Collier (2004) provide a scheme consisting of 7 categories (plus 5 subcategories) for the biology domain. In addition Yepes et al. (2013) provide a scheme to categorize sentences in abstracts of articles from biomedicine with 5 categories.
->
 > the studies, the annotators are at least semi-experts in the particular domain and get detailed annotation guidelines
->
 > detailed guidelines, ngmi
 
 > All in all, the annotation study extended over several months part time work. The annotation of one single document took about two hours
@@ -585,16 +534,13 @@ lots of time, like medieval monks
 > There are four types of relations: the directed relations support, attack, detail, and the undirected sequence relation
 4 types of relation
 
-
 # 20 done
-
 
 ## Al-Khatib Kiesel et al 2015 - shared task on argumentation mining in newspaper editorials
 
 > The automatic analysis of this discourse structure has several applications, such as supporting writing skills or assisting informationseeking users in constructing a solid personal standpoint on controversial topics.
 
 > An (argumentative) relation in our model is a directed link from one base unit to the target unit it supports or attacks most directly
->
 > Our proposed model for the shared task does not explicitly categorize argumentative units into premises and claims since such a distinction gets problematic when claims are premises for further claims
 
 finally, no explicit difference from claims!
@@ -607,8 +553,6 @@ also no division here
 > We plan to use the same system as the CoNLL task, TIRA (Gollub et al., 2012),5
 
 
-
-
 ## Carstens and Toni 2015 - towards relation based Argumentation Mining
 > We consider any sentence which supports or attacks another sentence to be argumentative
 
@@ -618,34 +562,23 @@ also no division here
 >
 > If this relation is classified as an attack or support relation we consider both sentences to be argumentative, irrespective of their individual quality
 
-
 >2www.BBCNewsLabs.co.uk
-
-
 
 ## Wyner, Peters, and Price 2015 - arugment discovery and extraction with the Argument Workbench
 
 > ArgumentWorkbench, which is a interactive, integrated, modular tool set to extract, reconstruct, and visualise arguments.
->
 > The Argument Workbench is a processing cascade, developed in collaboration with DebateGraph.
 > analysis, and then building an argument graph. We harvest and preprocess comments; highlight argument indicators, speech act and epistemic terminology; model topics; and identify domain terminology.
->
 > we use the GATE framework (Cunningham et al.(2002)) for the production of semantic metadata in the form of annotations
 > it is an open source desktop application written in Java that provides a user interface for professional linguists and text engineers to bring together a wide variety of natural language processing tools and apply them to a set of documents
 
 #### copy the argument workbench workflow
 
 > The ANNIC interface thus uses the annotations to reduce the search space for human engineers, and focuses their attention on passages that are relevant for sourcing arguments
->
-> 
-
 
 ## Al-Khatib et al 2016 - crossdomain mining fo arguemntatinve text through Distant Supervision
 > We freely provide the underlying corpus for research
->
-> tive text segments relevant to the topic. Among others, a classifier is needed for this task that can distinguish argumentative from non-argumentative segments. Since we cannot presuppose a specific domain or register within a general retrieval scenario, the classifier needs to robustly deal with documents from diverse domains and registers. In this regard the following two key issues arise
->
-> 
+> text segments relevant to the topic. Among others, a classifier is needed for this task that can distinguish argumentative from non-argumentative segments. Since we cannot presuppose a specific domain or register within a general retrieval scenario, the classifier needs to robustly deal with documents from diverse domains and registers. In this regard the following two key issues arise
 another input flow, also suggestion
 > Second, all major existing approaches follow a supervised learning scheme based on manual annotation of argumentative text segments
 
@@ -654,14 +587,12 @@ another input flow, also suggestion
 very important about outsourcing
 #### Habernal et al must do
 
-> In addition, we observe that n-grams seem to be most domain-dependent, while syntax features turn out to be more robust.
->
+> In addition, we observe that n-grams seem to be most do main-dependent, while syntax features turn out to be more robust.
 > then this should be available out there!
 http://www.uni-weimar.de/medien/webis/corpora
 no, it's not available there
 > Starting point is a complex and often expensive manual annotation of argumentative text segments in a collection of documents, including the segments’ roles (e.g., premise or conclusion) and their relations (e.g., support or attack).
->
-> this is trivial tbh
+this is trivial tbh
 
 #### another architecture diagram
 > The idea of relying on idebate.org for argument annotation acquisition is in line with related research of Cabrio and Villata (2012c) and Gottipati et al. (2013).
@@ -671,25 +602,18 @@ no, it's not available there
 removals
 
 > In this regard, we propose a “PageRank for arguments” based on the link network of support and attack relations between arguments.
->
 PageRank for arguments - needs to be added fr fr
 also here the API, right?
 
-
-
 ## Razuvayevskaya and Teufel 2017 - finding enthymemes in real-world text - a feasibility study
 > According to the Aristotelian definition [6], enthymemes are standard-form syllogisms with one missing proposition. But in the modern usage of this term in argumentation theory, enthymemes are often defined as any
->
 > ad task - enthymeme detection
 
 > mining: argument extraction, segmentation, i.e. identification of minimal argumentative discourse units (ADUs), segment classification, i.e. labeling of ADUs based on their argumentative roles, identification ofrelations between these segments, and argument completion, i.e. automatic construction of statements from implicit propositions
->
-> 
 all 5 steps
 > The automatic reconstruction of enthymemes would be highly desirable for various applications, such as knowledge mining, i.e. the automated acquisition of common knowledge information that can potentially be stored in knowledge bases, argument validity verification, and automatic simplification of written texts for children or adult readers of lower reading age. It would also further our insights into the process of text understanding and argument interpretation, in particular into the question which inference steps are necessary when reading and understanding atext.
 
 uses
-
 
 > Agreement on whether the given argument is enthymematic, i.e., whether there exists a missing inference;
 • Agreement on which subtype of inference is concerned; • Agreement on the missing premise explicitly stated in natural language
@@ -715,8 +639,7 @@ holonym vs meronym
 Kappa for agreement for ENUM values
 
 > While one of the annotators classified this relation as a strike is smaller than a revolution, the second participant preferred the easier than category (a strike is easier than a revolution).
->
-> 
+
 could lower the number of these for the ENUM task
 Part of Smaller than Precondition for
 8 9
@@ -729,7 +652,6 @@ More extreme case than Easier than
 
 size of the enthymeme - should always be the smaller one - from that smaller also create the larger one, but 2 different truth-able statements
 
-
 only 1 fallback category in the future
 
 > We therefore intend to outsource the decision of whether two paraphrases are identical or near-identical to unrelated humans, e.g., on Mechanical Turk [26], thus eliminating any possible bias.
@@ -737,7 +659,6 @@ only 1 fallback category in the future
 outsourcing, Mechanical Turk used once more
 
 # 25 done
-
 
 ## Wachsmuth, Stein, and Ajjour 2017 - buildign an argument search engine for the WEB
 > Based on the framework, we build a prototype search engine, called args, that relies on an initial, freely accessible index of nearly 300k arguments crawled from reliable web resources. The framework and the argument search
@@ -780,7 +701,6 @@ noisy nature - need specific statements, that's the clearest
 args. Notice that the prototype is under ongoing development and periodically updated
 
 > Issue list: https://en.wikipedia.org/wiki/Wikipedia:List_of_controversial_issues
->
 > search result personalization — all problems with intricate ethical issues attached
 personalization and user modeling ethical
 
@@ -794,7 +714,6 @@ should be able to choose mode
 
 ## Rakshit et al 2017 - Debbie, the debate bot of the future
 > Our initial prototype of Debbie works with three topics: death penalty, gun control, gay marriage
->
 > Using agglomerative clustering from scikit-learn, we created 15 clusters.
 
 that is a bad chatbot
@@ -802,14 +721,10 @@ that is a bad chatbot
 lol, not true
 
 > Lukin et al.(2017) talk about the role of personality in persuasion
->
 #### Lukin et al
-
-
 
 ## I. Mordatch and P. Abbeel 2018 - emergence of grounded compositional lanaguege in Multi-Agent populations
 > We adopt a view of (Gauthier and Mordatch 2016) that an agent possesses an understanding of language when it can use language (along with other tools such as non-verbal communication or physical acts) to accomplish goals in its environment.
->
 > definition
 
 > There are no pre-designed meanings associated with the uttered symbols - the agents form concepts relevant to the task and environment and assign arbitrary symbols to communicate them
@@ -820,11 +735,9 @@ important to poast
 
 > This is consistent with analysis in evolutionary linguistics (Nowak, Plotkin, and Jansen 2000) that finds composition to emerge only when number of concepts to be expressed becomes greater than a factor of agent’s symbol vocabulary capacity.
 
-> In addition to performing physical actions, agents utter
-verbal communication symbols c at every timestep. These utterances are discrete elements of an abstract symbol vocabulary C of size K. We do not assign any significance or meaning to these symbols. They are treated as abstract categorical variables that are emitted by each agent and observed by all other agents
+> In addition to performing physical actions, agents utter verbal communication symbols c at every timestep. These utterances are discrete elements of an abstract symbol vocabulary C of size K. We do not assign any significance or meaning to these symbols. They are treated as abstract categorical variables that are emitted by each agent and observed by all other agents
 
 > These models would require agents learning to perform visual processing and source separation, which are orthogonal to this work
->
 > At the end of the episode, we add a reward for predicting other agent’s goals, which in turn encourages communication utterances that convey the agent’s goals clearly to other agents
 
 > Alternatively, (Nowak, Plotkin, and Jansen 2000) observed that emergence of compositionality requires the number of concepts describable by a language to be above a factor of vocabulary size
@@ -835,9 +748,6 @@ need complex environment generation then
 > While there is recent work on interpreting continuous machine languages (Andreas, Dragan, and Klein 2017)
 
 > In this set of experiments we enable agents to observe other agents’ position and gaze location, and in turn disable communication capability via symbol utterances
->
-> 
-
 
 
 ## Z. Shi et al 2018 - toward diverse text generation with Inverse Reingorcement Learning
@@ -850,8 +760,6 @@ need complex environment generation then
 > sentence will get 1 point when it is viewed as a real one, otherwise 0 point. We perform the test on frameworks of MLE, SeqGAN, LeakGAN and our method on COCO Image captions dataset and IMDB movie review dataset
 
 imitation game mode
-
-
 
 ## Carlile Gurrapadi et al 2018 - give me more feedback: annotating argument persuasiveness and related attributes in Student Essays
 > The corpus we chose to annotate is composed of 102 essays randomly chosen from the Argument Annotated Essays corpus (Stab and Gurevych, 2014a). This collection of essays was taken from essayforum3
@@ -874,7 +782,6 @@ oh no, prolog, cringe
 
 > Lawrence and Reed [18] investigated the problem of recognizing the “proposition type” of argument components in the AIFdb corpus [17]. In this corpus, the premises of an argument are subclassified according to type, e.g., the two premises of Practical Reasoning are labeled as Goal or GoalPlan. Thus, the proposition type provides a limited amount of semantic information. Using the labeling of premise type, conclusion, and argument scheme of text in the corpus, Lawrence and Reed built classifiers to recognize individual premises and conclusions based upon text features. They then experimented with identifying instances of schemes in a corpus of arguments extracted from a 19th century philosophy text
 
-
 ## Al Khatib et al 2018 - argumentation synthesis following rhetorical strategies
 > We argue that such a strategy means to select, arrange, and phrase a set of argumentative discourse units.
 > We find that the experts agree in the selection significantly more when following the same strategy
@@ -882,8 +789,7 @@ oh no, prolog, cringe
 > logos (providing logically reasoned arguments), ethos (demonstrating good character and credibility), and pathos (evoking the right emotions). Listeners or readers then decode the encoding, forming their view of the author’s logos, ethos, and pathos
 > As Aristotle, we target argumentation that aims for persuasion — as opposed to critical discussions where strategic maneuvering is needed to achieve reasonableness (van Eemeren et al., 2014). Joviˇci´c (2006) proposed a procedure to evaluate the effectiveness of persuasive argumentation, though not in a computational way
 > Similarly, Wang et al. (2017) reveal the importance of selecting the right framing of a discussion topic for winning classical debates
-> Studying persuasive blog posts, Anand et al. (2011) develop a scheme with 16 persuasion tactics of four
-> types: those that postulate outcomes of an uptake, those that generalize in some way, those that appeal to external authorities, and those that rely on interpersonal factors
+> Studying persuasive blog posts, Anand et al. (2011) develop a scheme with 16 persuasion tactics of four types: those that postulate outcomes of an uptake, those that generalize in some way, those that appeal to external authorities, and those that rely on interpersonal factors
 > For giving a persuasive speech, Aristotle (2007) postulates five consecutive canons ofrhetoric: (1) inventio, the selection of arguments, (2) dispositio, the arrangement of the arguments to achieve maximum impact, (3) elocutio, the phrasing of the arguments in a clear and appropriate style, (4) memoria, the memorization of the speech, and (5) actio, the delivery of the speech with gestures, prosody, and further means
 
 5 elements
@@ -895,14 +801,10 @@ strategy for writing in general
 
 > We provide it at http://arguana.com/data
 
-
-
 ## DART: a dataset of argumetns and their relations on Twitter
 > In the reconciliation phase among the three students annotators to build the final dataset, we chose the label that was annotated by at least 2 annotators out of 3 (majority voting mechanism).
 
 how generous of them
-
-
 
 # 33 and done!
 
