@@ -11,3 +11,9 @@ duolingo has many tasks interpolated in a lesson, in some order
 - translate a singular word
 
 feedback button after every execrise
+
+
+Investigations - 'who', 'what', 'how' questions, that can have many contenders in the form of TOPICS
+
+and topics have a crown node, which is a boolean
+
