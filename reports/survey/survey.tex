@@ -1,4 +1,3 @@
-
 \documentclass{article}
 
 \title{Dissertation Project Description}
@@ -17,13 +16,10 @@ and the following statement: This report is submitted in partial fulfilment of t
 \section*{Contents}
 \tableofcontents
 \newpage
-
 \section{Dissertation Project: Survey and Analysis Stage}
-
 
 \section{Declaration}
 All sentences or passages quoted in this report from other people's work have been specifically acknowledged by clear cross-referencing to author, work and page(s). Any illustrations that are not the work of the author of this report have been used with the explicit permission of the originator and are specifically acknowledged. I understand that failure to do this amounts to plagiarism and will be considered grounds for failure in this project and the degree examination as a whole
-
 \newpage
 
 \section{Abstract}
@@ -32,92 +28,54 @@ All sentences or passages quoted in this report from other people's work have be
 - achievements to date
 
 \section{Chapter 1: Introduction}
-how to got beyond bag-of-words approaches for meaning and sentiment analysis? how to get to the structure of the argument, that may escape even the utterer?
-this is a question that has interested researches in discouse analysis for many years.
+How to get beyond bag-of-words approaches for meaning and sentiment analysis? 
+How to get to the structure of the argument, that may escape even the utterer?
+These are questions that interested researches in discourse analysis for many years.
 
-In this work I focus on data gathering.
-
-\subsection{short of prior research}
-Previous studies inlcuded attempts to automativally derive representations fo the discourse structure (Anand et al 2011)
-
-Many of annotation undertakings have already had success in research. The main drawback is the annotation cost, using dozens of hours of expert work, and tens of pages of annotation manuals.
-
-I believe that the benefits of crowdsourcing are underexplored in this area.
-
-\subsection{why improtant}
-many annotation shcems for citation motivation have been created.
-exposure to alien view is much more common in online commmunities compared to offline ones (Anand et al, 2012)
-That often breeds hostilities.
-In any topic, a relatively small number of arguments is repeated multiple times in 'echo chamber's. Most users base their stance with those most common arguments. 
-Thse are often expressed in different wording.
-Linking textual statements to these abstract arguments is non-triuvbiel (Boltuzic, Snajder 2015)
-
-Discussions topics inlcude current political controversies, religious questions and [lore discussions]
-These discussions form the core of the modern public discourse in civil society. 
-
-\subsection{outline}
-
-There has been put forward an argumnet in the field that automatic processing is preffered due to the cost, unreliablity of annoatinos and scarcity of trained personnel
-(Stab and Gurevych, 2014a; Habernal et al., 2014)
-
-This undertking has involved a study of 'games with purpose' and human annotation schemas, and semi-supervised learning approaches.
-
-... have received some attentionin the discourse literature.
-
-In this paper I show that a ... makes it posissible to achieve
-Data science has been applied with incredible success in many NLP tasks, sentiment analysis market valued at \$3.15 billion in 2021 (https://www.polarismarketresearch.com/industry-analysis/sentiment-analytics-market#:~:text=Report%20Summary,14.4%25%20during%20the%20forecast%20period.)
-the results are limimted. Opinions gathered in this way are devoid of reasoning structure.
-online platforms, such as reddit, quora, twitter are host to the most resounding debates, heard by hundreds of millions. That increases the importance for automatic processing of that data.
-Expressing arguments for, negotiating compromises, pursuing social shifts, finding - or - failing to find common ground - are all different types of discourses. The theatre of these exchanges is the online platform.
-The usual output is a series of posts, comments or tweets, that are understructured. Monologues are represented better on twitter, with threads being a linear structure. Branching structures are less legible.
-manual analysis not feasuble some studies (Habernal and Gurevych 2015 - exploiting debate portals for semi-supervised) have attempted to bypass that problem by using semi-supervised learning, having given up on crowdsourcing.
-The act of commenting online corrsponds to 'claiming ownership for a new piece of knowledge' (Teufel et al, 2009)
-
-it was remarked ( Carstens and Toni 2015) that there are outlined many applications of the automatic processing of argumentative data, such as automated decision making (Bench-Capon et al., 2009) or pro-and-con search engines (Cabrio and Villata, 2012c)
-
+Data science has been applied with incredible success in many NLP tasks, sentiment analysis market valued at \$3.15 billion in 2021 (https://www.polarismarketresearch.com/industry-analysis/sentiment-analytics-market)
+The results are limited. Opinions gathered in this way are devoid of reasoning structure.
 The problem in many studies of argumentation is the undersupply of data.
-- medieval times section
+Yet there is plenty of online discourse.
+Online platforms, such as reddit, quora, twitter are host to the most resounding debates, heard by hundreds of millions. 
+Discussions topics inlcude current political controversies, religious questions and [lore discussions].
+These discussions form the core of the public discourse in modern society. 
+The act of commenting online corresponds to 'claiming ownership for a new piece of knowledge' (Teufel et al, 2009).
+Expressing arguments for, negotiating compromises, pursuing social shifts, finding or failing-to-find common ground - are all different types of discourses. 
+The usual output is a series of posts, comments or tweets, that are understructured. 
+Previous studies included attempts to automativally derive representations of the discourse structure from unstructrued text (Anand et al 2011).
+The main drawback is the annotation cost, using dozens of hours of expert work, and tens of pages of annotation manuals.
 
-This report will go over the relevant literature, then review similar software. Based on that an outline of requirements is given. That section will be the basis for development of a more technical design document on a later date.
-
+This project is focused on data gathering. The goal is to investigae the 'games with purpose' paradigm to make crowdsourcing viable in this area.
+This report will go over the relevant literature, inlcuding human annotation schemas, and semi-supervised learning approaches, then review similar software. Based on that an outline of requirements is given. 
+That section will be the basis for development of a more technical design document on a later date.
 Report will end with a description of achievements to date and plans for the future.
 
-- adding small amont of high quality and manually labeled data
-Will it Blend? Blending Weak and Strong Labeled Data in a Neural Network for Argumentation Mining
-Eyal Shnarch et al.
-
-ACL, 2018
-http://aclweb.org/anthology/P18-2095
-
-
 \section{Chapter 2: Literature Survey}
-\subsection{static argumentation schemes}
+Argument structure analysis goes back to antiquity. I. Angelelli. The techniques of disputation in the history of logic, 1970.
 Analysis of argumentation has been an active topic in numerous research areas, such as philosophy (van Eemeren et al., 2014), communication studies (Mercier and Sperber, 2011), and informal logic (Blair, 2004), among others
-> Systems for argumentation dialogues were studied in medieval times 
-I. Angelelli. The techniques of disputation in the history of logic. The Journal ofPhilosophy, 67, 800–815, 1970.
+This chapter will cover the areas that this project uses.
 
-\subsection{ games iwth purpose papaers}
-Designing games with a purpose
-https://dl.acm.org/doi/10.1145/1378704.1378719
-enjoyment, timed response, ELO system
+There are types of approaches. Fully annotated and  semi-supervised approaches.
 
-metrics
-- labels per human hour
-- Average Lifetime Play
+There are different strategies for annotation
 
-Phrase detectives: Utilizing collective intelligence for internet-scale language resource creation
-https://dl.acm.org/doi/10.1145/2448116.2448119
-What they excel at is: 'task completion, scoring and storyline as a seamless experience'
+\subsection{annotations - static argumentation schemes}
+Many of annotation undertakings have already had success in research. 
+Many annotation schemas for citation motivation have been created (Teufel et al 2010, Mann and Thompson 1987). 
+
+\subsection{annotation with crowdsourcing}
 
 Wyner, Peters, and Price 2015 - arugment discovery and extraction with the Argument Workbench
 
-\subsection{works with crowdsourcing}
 Anand et al 2011 How can you say such things?!?: Recognizing Disagreement in Informal Political Argument
 using Mechanical Turk
 
 also proprietary software VBulletin
 
-\subsection{Citation focused papers}
+There has been an argument that automatic processing is preffered due to the cost, unreliablity of annoatinos and scarcity of trained personnel
+(Stab and Gurevych, 2014a; Habernal et al., 2014)
+
+\subsection{annotation by few experts}
 
 work on citations, such also
 Siddarthan and Tidhar 2006 - automatic classicification of citation function
@@ -127,40 +85,52 @@ use of Kappa coefficeint
 coefficient κ (Fleiss, 1971; Siegel and Castellan, 1988), the agreement measure predominantly used in natural language processing research (Carletta, 1996). κ corrects raw agreement P(A) for agreement by chance P(E)
 
 \subsection{online current corpora}
+THere are some ready corpora for argumnet minig.
 
 Awadallah, Ramanath, and Weikum 2012 Harmony and dissonance: organizing the people's voices on political controversies
-> For matching names in text sources against canonical entities, we leverage existing knowledge bases like DBpedia, Freebase, or Yago. We specifically make use of the means relation that Yago [18]
+> For matching names in text sources against canonical entities, we leverage existing knowledge bases like DBpedia, Freebase, or Yago.
 
-Argument mining survey
+Argument mining survey () mentions many of them.
 https://direct.mit.edu/coli/article/45/4/765/93362/Argument-Mining-A-Survey
 they focus here on manual labeling
-Internet Argument Corpus (IAC) (Walker et al. 2012) is a corpus for research
-in political debate on Internet forums. It consists of approximately 11,000 discussions, 390,000 posts, and some 73,000,000 words
-
-AIFdb17 (Lawrence et al. 2012), containing over 14,000 Argument Interchange Format (AIF) argument maps, with over 1.6m words and 160,000 claims in 14 different languages.18 These numbers are growing rapidly, thanks to both the increase in analysis tools interacting directly with AIFdb and the ability to import analyses produced with the Rationale and Carneades tools (Bex et al. 2012). Indeed, AIFdb aims to provide researchers with a facility to store large quantities of argument data in a uniform way. AIFdb Web services allow data to be imported and exported in a range of formats to encourage re-use and collaboration between researchers independent of the specific tools and data format that they require.
+> Internet Argument Corpus (IAC) (Walker et al. 2012) is a corpus for research in political debate on Internet forums. It consists of approximately 11,000 discussions, 390,000 posts, and some 73,000,000 words
+> AIFdb17 (Lawrence et al. 2012), containing over 14,000 Argument Interchange Format (AIF) argument maps, with over 1.6m words and 160,000 claims in 14 different languages.18 These numbers are growing rapidly, thanks to both the increase in analysis tools interacting directly with AIFdb and the ability to import analyses produced with the Rationale and Carneades tools (Bex et al. 2012). Indeed, AIFdb aims to provide researchers with a facility to store large quantities of argument data in a uniform way. AIFdb Web services allow data to be imported and exported in a range of formats to encourage re-use and collaboration between researchers independent of the specific tools and data format that they require.
 https://corpora.aifdb.org/
 
-here a standardized JSON graph and transmission
+It is worth noting that AIFdb seems to have a standardized JSON graph format. That puts a compatibility requirement on the project. 
+Another resource of arguments online is the `args.me` online resource. 
+Its creation was described in Wachsmuth, Stein, and Ajjour 2017 - buildign an argument search engine for the WEB.
+Args.me has an exposed search API and database schemas. The paper also emphasises the ethical choice contained in the construction of personalized search.
+It also mentions the high cost of the long hours of expert time.
 
-https://www.zooniverse.org/projects
+Another resource is the Araucaria program, mentioned by several papers. Link provided seems to be broken, though. http://araucaria.computing.dundee.ac.uk/
 
-Wachsmuth, Stein, and Ajjour 2017 - buildign an argument search engine for the WEB
-they have an api, provide database schemas
-they emphasise the ethical choice contained in the construction of personalized search
-long hours of expert time - very expensive
+\subsection{mixed approaches}
 
-Araucaria - broken link
-http://araucaria.computing.dundee.ac.uk/
+adding small amont of high quality and manually labeled data
+Will it Blend? Blending Weak and Strong Labeled Data in a Neural Network for Argumentation Mining Eyal Shnarch et al.
+ACL, 2018 http://aclweb.org/anthology/P18-2095
 
-\subsection{limited supervision}
-Habernal and Gurevych 2015 - exploiting debate portals for semi-supervised
+manual analysis not feasuble some studies (Habernal and Gurevych 2015 - exploiting debate portals for semi-supervised) have attempted to bypass that problem by using semi-supervised learning, having given up on crowdsourcing.
+
 Only few publicly available argumentation corpora exist, as annotations are costly, error-prone, and require skilled human annotators (Stab and Gurevych, 2014a; Habernal et al., 2014).
-Although argumentation mining in usergenerated Web discourse has a long way to go (our methods currently achieve only about 50% of human performance
+Although argumentation mining in user-generated Web discourse has a long way to go (our methods currently achieve only about 50\% of human performance)
 
 Al-Khatib et al 2016 - crossdomain mining fo arguemntatinve text through Distant Supervision
+This study makes the strongest case for the exclusion of crowdsourcing as a means of data acquisition.
 > Studies reveal that annotators need multiple training sessions to identify and classify argumentative segments with moderate inter-annotator agreement, and crowdsourcing-based annotation does not help notably (Habernal et al., 2014)
-
 they also use 'pagerank' for arguments
+
+\subsection{Games with purpose to the rescue}
+Designing games with a purpose
+https://dl.acm.org/doi/10.1145/1378704.1378719
+
+Main takeaways from this paper is what makes games successfull.
+enjoyment, timed response, ELO system
+
+The other takewaway is a set of metrics. These are
+- labels per human hour
+- Average Lifetime Play
 
 \section{Chapter 4: Similar software review}
 
@@ -175,10 +145,14 @@ Tere is also a record of software developed specifically for research.
 
 \subsection{Research-grade software}
 
+Zooniverse is another platform on which crowd
+https://www.zooniverse.org/projects
+
+Phrase detectives: Utilizing collective intelligence for internet-scale language resource creation
+https://dl.acm.org/doi/10.1145/2448116.2448119
 Phrase detectives as the leading example of the use of the 'game with purpose' paradigm in order to gather data for NLP research.
 AVL of only 30 minutes. It seems there is a a headspeace to improve on that. nothing indicates that this area has hit a ceiling.
-https://dl.acm.org/doi/10.1145/2448116.2448119
-
+What they excel at is: 'task completion, scoring and storyline as a seamless experience'
 
 \section{Chapter 3: Requirements and analysis}
 
@@ -243,4 +217,5 @@ http://ova.arg-tech.org/analyse.php?url=local&aifdb=1238&akey=dd8dd1dfd567f735f4
 \section{Citations}
 \newpage
 
+\section{bin}
 \end{document}
