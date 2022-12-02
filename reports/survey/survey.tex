@@ -20,69 +20,225 @@ and the following statement: This report is submitted in partial fulfilment of t
 
 \section{Dissertation Project: Survey and Analysis Stage}
 
-For students taking COM3610 the report should be between 3000 and 6000 words.
+
 \section{Declaration}
 All sentences or passages quoted in this report from other people's work have been specifically acknowledged by clear cross-referencing to author, work and page(s). Any illustrations that are not the work of the author of this report have been used with the explicit permission of the originator and are specifically acknowledged. I understand that failure to do this amounts to plagiarism and will be considered grounds for failure in this project and the degree examination as a whole
 
 \newpage
 
 \section{Abstract}
-
-This should be two or three short paragraphs (100-150 words total), summarising the report.
-A suggested flow is background, project aims, and achievements to date. It should not simply be a restatement of the original project outline.
+- background
+- project aims
+- achievements to date
 
 \section{Chapter 1: Introduction}
-- set the scene for the project by giving a little relevant background information - try to grab the reader's interest early.
--  Another is to clearly elucidate the aims and objectives of the project and the constraints 
-- If the project involves the solution of a specific problem or the production of a specific system this should be clearly specified in an informal way.
-- ginally, the introduction should summarise the remaining chapters of the report, in effect giving the reader an overview of what is to come.
+how to got beyond bag-of-words approaches for meaning and sentiment analysis? how to get to the structure of the argument, that may escape even the utterer?
+this is a question that has interested researches in discouse analysis for many years.
+
+In this work I focus on data gathering.
+
+\subsection{short of prior research}
+Previous studies inlcuded attempts to automativally derive representations fo the discourse structure (Anand et al 2011)
+
+Many of annotation undertakings have already had success in research. The main drawback is the annotation cost, using dozens of hours of expert work, and tens of pages of annotation manuals.
+
+I believe that the benefits of crowdsourcing are underexplored in this area.
+
+\subsection{why improtant}
+many annotation shcems for citation motivation have been created.
+exposure to alien view is much more common in online commmunities compared to offline ones (Anand et al, 2012)
+That often breeds hostilities.
+In any topic, a relatively small number of arguments is repeated multiple times in 'echo chamber's. Most users base their stance with those most common arguments. 
+Thse are often expressed in different wording.
+Linking textual statements to these abstract arguments is non-triuvbiel (Boltuzic, Snajder 2015)
+
+Discussions topics inlcude current political controversies, religious questions and [lore discussions]
+These discussions form the core of the modern public discourse in civil society. 
+
+\subsection{outline}
+
+There has been put forward an argumnet in the field that automatic processing is preffered due to the cost, unreliablity of annoatinos and scarcity of trained personnel
+(Stab and Gurevych, 2014a; Habernal et al., 2014)
+
+This undertking has involved a study of 'games with purpose' and human annotation schemas, and semi-supervised learning approaches.
+
+... have received some attentionin the discourse literature.
+
+In this paper I show that a ... makes it posissible to achieve
+Data science has been applied with incredible success in many NLP tasks, sentiment analysis market valued at \$3.15 billion in 2021 (https://www.polarismarketresearch.com/industry-analysis/sentiment-analytics-market#:~:text=Report%20Summary,14.4%25%20during%20the%20forecast%20period.)
+the results are limimted. Opinions gathered in this way are devoid of reasoning structure.
+online platforms, such as reddit, quora, twitter are host to the most resounding debates, heard by hundreds of millions. That increases the importance for automatic processing of that data.
+Expressing arguments for, negotiating compromises, pursuing social shifts, finding - or - failing to find common ground - are all different types of discourses. The theatre of these exchanges is the online platform.
+The usual output is a series of posts, comments or tweets, that are understructured. Monologues are represented better on twitter, with threads being a linear structure. Branching structures are less legible.
+manual analysis not feasuble some studies (Habernal and Gurevych 2015 - exploiting debate portals for semi-supervised) have attempted to bypass that problem by using semi-supervised learning, having given up on crowdsourcing.
+The act of commenting online corrsponds to 'claiming ownership for a new piece of knowledge' (Teufel et al, 2009)
+
+it was remarked ( Carstens and Toni 2015) that there are outlined many applications of the automatic processing of argumentative data, such as automated decision making (Bench-Capon et al., 2009) or pro-and-con search engines (Cabrio and Villata, 2012c)
+
+The problem in many studies of argumentation is the undersupply of data.
+- medieval times section
+
+This report will go over the relevant literature, then review similar software. Based on that an outline of requirements is given. That section will be the basis for development of a more technical design document on a later date.
+
+Report will end with a description of achievements to date and plans for the future.
+
+- adding small amont of high quality and manually labeled data
+Will it Blend? Blending Weak and Strong Labeled Data in a Neural Network for Argumentation Mining
+Eyal Shnarch et al.
+
+ACL, 2018
+http://aclweb.org/anthology/P18-2095
+
 
 \section{Chapter 2: Literature Survey}
-Think of the review as writing an essay on the background literature for your project. 
-A good literature survey should demonstrate your awareness and understanding of the background literature to your topic. 
-- begin by setting the proposed research in a wide context
-intersection of 2 areas, need to talk about both
+\subsection{static argumentation schemes}
+Analysis of argumentation has been an active topic in numerous research areas, such as philosophy (van Eemeren et al., 2014), communication studies (Mercier and Sperber, 2011), and informal logic (Blair, 2004), among others
+> Systems for argumentation dialogues were studied in medieval times 
+I. Angelelli. The techniques of disputation in the history of logic. The Journal ofPhilosophy, 67, 800–815, 1970.
 
+\subsection{ games iwth purpose papaers}
+Designing games with a purpose
+https://dl.acm.org/doi/10.1145/1378704.1378719
+enjoyment, timed response, ELO system
 
-the data gathering problem
-- long guides
-- need more data
-- that 2014 study that it's hard
+metrics
+- labels per human hour
+- Average Lifetime Play
 
+Phrase detectives: Utilizing collective intelligence for internet-scale language resource creation
+https://dl.acm.org/doi/10.1145/2448116.2448119
+What they excel at is: 'task completion, scoring and storyline as a seamless experience'
 
-- progress to a more detailed account of the most relevant work in the area, taking care to include some up-to-date references. 
+Wyner, Peters, and Price 2015 - arugment discovery and extraction with the Argument Workbench
 
-- unanswered questions and issues
-- if criticisms, they must come from a place of understanding
+\subsection{works with crowdsourcing}
+Anand et al 2011 How can you say such things?!?: Recognizing Disagreement in Informal Political Argument
+using Mechanical Turk
 
-You should not just provide a list of references followed by a short summary of each of them.
-Instead the review should be organised and structured in a meaningful way, and the themes and relationships between the references identified. 
-You should expect to redraft the review several times in order to arrive at a text that is clearly written, easy to understand, but that displays an in-depth understanding of the topic. 
+also proprietary software VBulletin
+
+\subsection{Citation focused papers}
+
+work on citations, such also
+Siddarthan and Tidhar 2006 - automatic classicification of citation function
+Teufel, Siddharthan and Batchelor  2009 - towards discipline - independent argumentative zoning - evidence from chemistry and computationl linguistics
+they had 111 sides of A4 worth of annotation guidelines
+use of Kappa coefficeint
+coefficient κ (Fleiss, 1971; Siegel and Castellan, 1988), the agreement measure predominantly used in natural language processing research (Carletta, 1996). κ corrects raw agreement P(A) for agreement by chance P(E)
+
+\subsection{online current corpora}
+
+Awadallah, Ramanath, and Weikum 2012 Harmony and dissonance: organizing the people's voices on political controversies
+> For matching names in text sources against canonical entities, we leverage existing knowledge bases like DBpedia, Freebase, or Yago. We specifically make use of the means relation that Yago [18]
+
+Argument mining survey
+https://direct.mit.edu/coli/article/45/4/765/93362/Argument-Mining-A-Survey
+they focus here on manual labeling
+Internet Argument Corpus (IAC) (Walker et al. 2012) is a corpus for research
+in political debate on Internet forums. It consists of approximately 11,000 discussions, 390,000 posts, and some 73,000,000 words
+
+AIFdb17 (Lawrence et al. 2012), containing over 14,000 Argument Interchange Format (AIF) argument maps, with over 1.6m words and 160,000 claims in 14 different languages.18 These numbers are growing rapidly, thanks to both the increase in analysis tools interacting directly with AIFdb and the ability to import analyses produced with the Rationale and Carneades tools (Bex et al. 2012). Indeed, AIFdb aims to provide researchers with a facility to store large quantities of argument data in a uniform way. AIFdb Web services allow data to be imported and exported in a range of formats to encourage re-use and collaboration between researchers independent of the specific tools and data format that they require.
+https://corpora.aifdb.org/
+
+here a standardized JSON graph and transmission
+
+https://www.zooniverse.org/projects
+
+Wachsmuth, Stein, and Ajjour 2017 - buildign an argument search engine for the WEB
+they have an api, provide database schemas
+they emphasise the ethical choice contained in the construction of personalized search
+long hours of expert time - very expensive
+
+Araucaria - broken link
+http://araucaria.computing.dundee.ac.uk/
+
+\subsection{limited supervision}
+Habernal and Gurevych 2015 - exploiting debate portals for semi-supervised
+Only few publicly available argumentation corpora exist, as annotations are costly, error-prone, and require skilled human annotators (Stab and Gurevych, 2014a; Habernal et al., 2014).
+Although argumentation mining in usergenerated Web discourse has a long way to go (our methods currently achieve only about 50% of human performance
+
+Al-Khatib et al 2016 - crossdomain mining fo arguemntatinve text through Distant Supervision
+> Studies reveal that annotators need multiple training sessions to identify and classify argumentative segments with moderate inter-annotator agreement, and crowdsourcing-based annotation does not help notably (Habernal et al., 2014)
+
+they also use 'pagerank' for arguments
 
 \section{Chapter 4: Similar software review}
 
+There is a plethora of similar software. 
+There are commrecial B2B SAAS solutions, aiming to help in meetings, by providing a way to write structured notes and diagrams.
+There are also hacker-ethics personal knowledge management tools.
+Tere is also a record of software developed specifically for research.
+
+\subsection{Business solutions}
+
+\subsection{Personal knowledge management tools}
+
+\subsection{Research-grade software}
+
+Phrase detectives as the leading example of the use of the 'game with purpose' paradigm in order to gather data for NLP research.
+AVL of only 30 minutes. It seems there is a a headspeace to improve on that. nothing indicates that this area has hit a ceiling.
+https://dl.acm.org/doi/10.1145/2448116.2448119
+
 
 \section{Chapter 3: Requirements and analysis}
-- landing page
-- browsing topics page
-- app page
-- algorithm
 
-- what will not be done, but can be more than in the end
-- success criteria  - very important
+\subsection{Requirements}
+to avoid the pitfalls of human annotation, a quantitative approach should be pursued. 
+A diverse range of both source texts and human participants is needed.
+Through the 'games with purpose' paradigm, w ecan expect users/ players to contribute for their own enjoyment (von Ahn, 2014).
+Enjoyment maximization should result in a higher number of Average Lifetime Contribution(ibid.).
 
-- tests and experiments for testing for success
+A spotless user flow and an intuivie application are of the highest priority to achieve that.
+
+A sample user flow can be imaged as the following:
+- Player finds the landing page
+- Browses the list of topics popular at the moment
+- clicks to read more, is redirected to the app page
+- there is presented with a tutorial how to engage with the systemn: read, and contirbute.
+
+Over the next week
+- user completes a small number of interactions with the application
+- user intergrates the app importing some content on their own, be it from Twitter or other dynamic corpora (for instance a blog article to annotate to understand it better)
+- user continues to grow their use of the app, perhaps using it as a note taking app
+
+
+\subsection{Design decisions to be taken}
+Prakken 2005 - different types of reply protocols - unique vs multi-reply, immediate and non-immediate, uniqe, multi-move
+unique-reply unfair
+Coherence and Flexibility in Dialogue Games for Argumentation 
+
+Rienks, Heylen and Weijden 2005 - argument diagramming of meeting conversations
+A/B isses, yes-no issue, open issue
+
+\subsection{success criteria}
+The final criteria is the volume of quality annotated corpus. It could be uploaded to AIFdb. 
+This will be known after performing quality control on the main argument database created through the lifetime of the app. 
+
+number of downloads - if larger than 150 better than global average, if more thatn 1300, over global average.
+https://www.statista.com/statistics/1119893/average-number-downloads-united-states-app-publishers/
+
+These data will be achieved from app publisher analytics.
+
 
 \section{Chapter 4: Conclusions, progress to date and project plan}
-
 \subsection{Achievements to date}
+- a demo of a drag-and-drop - proved harder than expected
+also OVA platform laready performs that service quite well
+http://ova.arg-tech.org/analyse.php?url=local&aifdb=1238&akey=dd8dd1dfd567f735f46df14ff08a0fc5
 
 \subsection{Gantt Chart until the end}
+% todo add gantt chart from here https://www.mjr19.org.uk/IT/gantt_latex.html
 
 \section{Appendices}
-- class interfaces
-- database schemas
-- log of milestones
+\subsection{App use sample screen}
+% todo this weekend https://wireframe.cc/
+
+\subsection{database schemas}
+% todo this weekend
+
+\subsection{log of milestones}
+- mock ready milestone 
+- preliminary reading finished
 
 \section{Citations}
 \newpage

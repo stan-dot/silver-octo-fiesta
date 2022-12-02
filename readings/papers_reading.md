@@ -9,8 +9,6 @@ https://research.ibm.com/interactive/project-debater/about/
 > How does the Debater system know if a claim is for or against the topic it's given?
 > This is one of the many aspects that make Project Debater unique. It has been taught to understand the nuances of language and decide the stance of an argument given the topic. Imagine debating the pros and cons of the use of traffic enforcement cameras. When given the claim 'the photo radar program fails to provide any clear safety benefit,' a human debater instinctively understands it contests the use of traffic cameras. But this type of understanding is very hard for AI. The Debater system approaches this by breaking it down into smaller tasks. The system understands that 'the photo radar program' is associated with 'traffic enforcement cameras' and further understands that the rest of the sentence—even though it includes positive words like 'safety' and 'benefit'—is, in fact, contesting the use of traffic enforcement cameras
 
-
-
 ### how does it work
 https://research.ibm.com/interactive/project-debater/how-it-works/
 > The third is the system’s ability to model human dilemmas and form principled arguments made by humans in different debates based on a unique knowledge graph.
@@ -18,10 +16,8 @@ https://research.ibm.com/interactive/project-debater/how-it-works/
 step 1 undertstanding the topic
 10 billion sentences, newspapers, journals
 
-
 step 2 argument construction
 into few hundred relevant arguments
-
 
 step 3 content organization
 deleting weak and repetitive arguments
@@ -29,7 +25,6 @@ deleting weak and repetitive arguments
 arrangement by theme
 // is the theme some emotion?
 knowledge graph to support general human dilemmas
-
 
 step 4 constructing an argument and rebuttal
 rebutal the hardest part
@@ -43,7 +38,6 @@ Ran Levy et al.
 
 COLING, 2014
 http://www.aclweb.org/anthology/C/C14/C14-1141.pdf 
-
 
 - detecting evidence inside documents
 http://aclweb.org/anthology/D15-1050
@@ -63,7 +57,6 @@ Yonatan Bilu et al.
 
 2nd Argument Mining Workshop, NAACL, 2015
 
-
 - novel claims - through recycling - text extraction
 - Claim Synthesis via Predicate Recycling
 Yonatan Bilu and Noam Slonim
@@ -77,7 +70,6 @@ Ran Levy, Shai Gretz, Benjamin Sznajder, Shay Hummel, Ranit Aharonov, and Noam S
 
 Argument Mining, 2017
 http://www.aclweb.org/anthology/W17-5110
-
 
 - improving the detecxtion
 - argumentative content search engine - DNNs with weak supervision, automatic labeling
@@ -105,8 +97,6 @@ Yufang Hou and Charles Jochim
 
 4th Argument Mining Workshop, EMNLP, 2017
 http://aclweb.org/anthology/W17-5107
-
-
 
 
 #### stance classification and sentiment analysis
@@ -149,7 +139,6 @@ Charles Jochim et al.
 LREC, 2018
 http://www.lrec-conf.org/proceedings/lrec2018/pdf/602.pdf
 
-
 #### DNNs and weak supervision
 weak supervision, also for speaking and listening
 - scoring arguments - 19 DNN based methods
@@ -169,11 +158,10 @@ https://arxiv.org/pdf/1703.04650.pdf
 - phrase breaks prediction to have intelligibile, natural expressive speech
 - Weakly-Supervised Phrase Assignment from Text in a Speech-Synthesis System Using Noisy Labels
 Asaf Rendel et al.
-
 Interspeech, 2017
 https://www.researchgate.net/publication/319184974_Weakly-Supervised_Phrase_Assignment_from_Text_in_a_Speech-Synthesis_System_Using_Noisy_Labels
 
-- emhasis on word na dsentence level
+- emhasis on word and sentence levels
 - Emphatic Speech Prosody Prediction with Deep LSTM Networks Slava Shechtman and Moran Mordechay
 ICASSP, 2018
 https://www.semanticscholar.org/paper/Emphatic-Speech-Prosody-Prediction-with-Deep-Lstm-Shechtman-Mordechay/8bfa38df475029dd09a25651d0dfdd5538963898
@@ -199,15 +187,12 @@ Eyal Shnarch et al.
 ACL, 2018
 http://aclweb.org/anthology/P18-2095
 
-
 - whole corpus search
 - waek supervision - not human intervention
-
 Towards an Argumentative Content Search Engine Using Weak Supervision 
 Ran Levy et al.
 COLING, 2018
 http://aclweb.org/anthology/C18-1176
-
 
 - seeing if abstract or concrete
 - Learning Concept Abstractness Using Weak Supervision 
@@ -215,7 +200,6 @@ Rabinovich et al.
 
 EMNLP, 2018
 https://arxiv.org/abs/1809.01285
-
 
 
 #### TTS systems
@@ -232,14 +216,12 @@ Emphatic Speech Prosody Prediction with Deep LSTM Networks Slava Shechtman and M
 ICASSP, 2018
 https://www.semanticscholar.org/paper/Emphatic-Speech-Prosody-Prediction-with-Deep-Lstm-Shechtman-Mordechay/8bfa38df475029dd09a25651d0dfdd5538963898
 
-
 - improvbing speech patterns
 - prediction with DNN, 1 module for emphasis, another for speech patterns
 
 Emphatic Speech Prosody Prediction with Deep LSTM Networks Yosi Mass et al.
 Interspeech, 2018
 https://www.isca-speech.org/archive/Interspeech_2018/pdfs/1159.pdf
-
 
 ### importantcce
 https://research.ibm.com/interactive/project-debater/importance/
@@ -285,16 +267,15 @@ inversion problem games - one side describes, the other guesses input
 - a level of transparency after the results
 - alternation
 
-
 display time remaining
 
 > We know from the literature on motivation in psychology and organizational behavior that goals that are both well-specified and challenging lead to higher levels of effort and task performance than goals that are too easy or vague.
-
 
 player ranks and points 
 high score list
 
 randomness
+
 #### output accuracy
 - random matching to prevent pre-match agreement
 - player testing - with known outputs - 50% of the tasks can be tests
@@ -304,7 +285,6 @@ randomness
 diff than 2 players
 - pairing with pre-recorded responses
 - more than 2 - first 2 to agree win the round
-
 
 #### metrics for evaluation
 - algorithm - liuke efficincy
@@ -318,12 +298,10 @@ contagion not factored in in this model
 - bite sized
 > The “bite-size” nature of these games adds to their popularity and appeal to casual gamers in particular, since such players typically go for games they can play “just one more time” without having to make too much of a time commitment
 
-
 ## rl for nlp - 53 slides
 -  https://en.wikipedia.org/wiki/ROUGE_(metric)
 -  the standard approach
 https://en.wikipedia.org/wiki/Seq2seq
-
 
 # additional GWAP papers
 > M-GWAP: An Online and Multimodal Game With A
@@ -333,24 +311,20 @@ https://arxiv.org/ftp/arxiv/papers/1905/1905.12884.pdf
 > How to Design a Game With a Purpose
 https://shivamrana.me/2020/02/gwap-2/
 
-
 Peekabum
 https://www.cs.cmu.edu/~biglou/Peekaboom.pdf
 
 ESP game
 https://en.wikipedia.org/wiki/ESP_game
 
-
 Amazon Mechanical Turk
 https://www.mturk.com/
-
 
 openminds
 https://openminds.harrys.com/
 
 psdoom
 https://psdoom.sourceforge.net/
-
 
 verbosity
 https://www.cs.cmu.edu/~biglou/Verbosity.pdf 
@@ -396,12 +370,10 @@ verbosity, ontogame, categorilla, free association - get all links
 
 Phylo, EteRNA
 
-
 underlie social incentive
 consistent metaphor
 ancientlives.org - university of Oxford
-
-
+https://www.ancientlives.org/
 
 ESP game - advertised in press and tv
 retainment - volunteer attrition - Lieberman and Teeters 2007]
@@ -416,9 +388,7 @@ choice of algorithm aiming at maximum variety
 
 need to be able to commment about markables
 
-
 validating annotations fater than creating - [Chklovski and GIl 2005], bu not quite - almost twice as much time
-
 
 task completion, scoring and storyline as a seamless experience
 smalll prize campaign, monthly prizes
@@ -472,7 +442,6 @@ Sentence generation is also difficult for supervised sentence embeddings such as
 
 For example, it could be desired to maximize the positive sentiment of an upcoming utterance which can be estimated by a differentiable neural network [6].
 
-
 ## Argument mining survey - 54 pages
 https://direct.mit.edu/coli/article/45/4/765/93362/Argument-Mining-A-Survey
 
@@ -486,7 +455,6 @@ For example, Robert Horn, talking about the argument maps he produced on the deb
 Finally, in Section 2.4, we look at argumentative zoning, where scientific papers are annotated at the sentence level with labels that indicate the rhetorical role of the sentence (criticism or support for previous work, comparison of methods, results or goals, etc.).
 
 Negation tagging is also performed using a technique from Das and Chen (2001) whereby the tag NOT_ is prepended to each of the words between a negation word (“not,” “isn’t,” “didn’t,” etc.) and the first punctuation mark occurring after the negation word. In terms of relative performance, the support vector machines (SVMs) achieved the best results, with average 3-fold cross-validation accuracies over 0.82 using the presence of unigrams and bigrams as features.
-
 
 Conflicting elements in an opinion tree are then used to generate a “conflict tree,” similar to the dialectical trees (Prakken 2005) used traditionally in defeasible argumentation (Pollock 1987)
 
@@ -519,11 +487,9 @@ Expertise Question: How credible is E as an expert source? Field Question: Is E 
 4. Trustworthiness Question: Is E personally reliable as a source? 5.
 Consistency Question: Is A consistent with what other experts assert? 6. Backup Evidence Question: Is E’s assertion based on evidence?
 
-
 Recent study has resulted in the identification and analysis of the most important
 and commonly used schematic structures (Hastings 1963; Perelman and OlbrechtsTyteca 1969; Kienpointer 1992; Pollock 1995; Walton 1996; Grennan 1997; Katzav and Reed 2004; Walton, Reed, and Macagno 2008)
 Araucaria, for example, supports theWalton, Grennan, Perelman and Olbrechts-Tyteca, Katzav and Reed, and Pollock scheme sets.
-
 
 One of the challenges faced by current approaches to argument mining is the lack of large quantities of appropriately annotated arguments to serve as training and test data. Several recent efforts have been made to improve this situation by the creation of corpora across a range of different domains.
 
@@ -550,7 +516,6 @@ as DebateGraph,19 TruthMapping,20 Debatepedia,21 Agora,22 Argunet23 and Rational
 
 At the moment, some research projects continue to introduce ad hoc, idiosyncratic data representation languages for argumentation and debate, which can limit reusability, integration, and longevity of the data sets.
 
-
 The most striking example of such are recent data sets gathered from the ChangeMyView (CMV) Reddit subcommunity25 (Tan et al. 2016; Hidey and McKeown 2018; Musi, Ghosh, and Muresan 2018
 
 17 http://www.aifdb.org. 18 Chinese, Dutch, English, French, German, Hindi, Italian, Japanese, Korean, Polish, Portuguese, Russian, Spanish, and Ukrainian.
@@ -560,10 +525,9 @@ meeting data from the AMIDA Meeting Corpus26 annotated using the Twente Argument
 
 https://www.kurzweilai.net/introducing-a-new-feature-of-ibms-watson-the-debater
 
-then combined with a smaller quantity of high quality, manually labeled data (strong labeled data). Using the combined strong and weak data set resulted in improved performance for topicdependent evidence detection, suggesting that this kind of data gathering can be a valuable asset, particularly in data-hungry neural network systems. The annotated data sets used in this and other Project Debater work are all available online.30
+then combined with a smaller quantity of high quality, manually labeled data (strong labeled data). Using the combined strong and weak data set resulted in improved performance for topic dependent evidence detection, suggesting that this kind of data gathering can be a valuable asset, particularly in data-hungry neural network systems. The annotated data sets used in this and other Project Debater work are all available online.30
 
 DART (Data set of Arguments and their Relations on Twitter) data set containing 4,000 tweets annotated as argument/not-argument with 446 support and 122 attack relations.
-
 
 if the goal is to reconstruct enthymemes (Razuvayevskaya and Teufel 2017) (see also the discussion of Feng and Hirst [2011] in Section 8.2) or ask critical questions about support relations, we also need to extract the nature of the argumentation schemes being used.
 
@@ -586,7 +550,6 @@ Persuasion involves the change in mental state of the other party classed as eit
 
 12 strategy types for securing behavioral compliance. A further six nonlogical “principles of influence” are covered in Cialdini (2001). By combining these with argumentative patterns inspired by Walton, Reed, and Macagno (2008), and removing overlapping tactics, Anand et al. produce a list of 16 types of rhetorical tactic for persuasive acts
 
-
 The Automatic Argumentative Analysis (A3) algorithm described in Pallotta and
 Delmonte (2011) provides an alternative approach to classifying statements according to rhetorical roles. A3 is a module developed based on the GETARUNS system (Delmonte 2007) for interaction mining (the discovery and extraction of insightful information from digital conversations, namely, those human–human information exchanges mediated by digital network technology).
 
@@ -604,7 +567,6 @@ S
 ...vaguely/implicitly supports the argument ...explicitly supports the argument
 semantic textual similarity features with the best models outperforming the baselines and giving a 0.71 to 0.82 micro-averaged F-score. Although these results give a promising indication of the ability to determine how a comment relates to the argument being made, the topics studied are limited and the training data taken from procon.org and idebate.org would not extend to general topics.
 
-
 Topic: There She Is, Miss America
 Additional info: In 1968, feminists gathered in Atlantic City to protest the Miss America pageant, calling it racist and sexist. Is this beauty contest bad for women?)
 Argument: Miss America gives honors and education scholarships. And since . . . , Miss America is good for women.
@@ -616,13 +578,11 @@ Although the assumption of a tree structure does not hold for all arguments, it 
 
 36 http://www.debatepedia.org.
 
-
 The ability to successfully extract premises and conclusions is built upon in Feng and Hirst (2011), which presents the first step in the long-term goal of a method to reconstruct enthymemes, by first, classifying to an argumentation scheme (Walton, Reed, and Macagno 2008)
 
 Green (2018b) then explores how argumentation schemes in this domain can be implemented as logic programs in Prolog and used to extract individual arguments. In this case, the schemes are formulated in terms of semantic predicates obtained from a text by use of BioNLP (biomedical/biological natural language processing) tools.
 
 automated analysis. To pick an example from a substantially different theoretical approach, Musi, Ghosh, and Muresan (2016) present a novel set of guidelines for the annotation of argument schemes based on the Argumentum Model of Topics (Rigotti and Morasso 2010)
-
 
 FIPA Agent Coordination Language (McBurney and Parsons 2009), the Dialogue Game Description Language (Bex, Lawrence, and Reed 2014), or the Lightweight Coordination Calculus (Robertson 2004)
 
@@ -644,8 +604,6 @@ SEMEVAL 2020 focusing on the detection of “propaganda techniques” in news ar
 
 Attempts are being made to overcome this lack of data, including the use of crowdsourced annotation (Ghosh et al. 2014; Skeppstedt, Peldszus, and Stede 2018) and automatic methods to extend the data currently annotated (Bilu, Hershcovich, and Slonim 2015).
 
-
-
 ### thesis (Habana) - automatic ontology generation - 90 pages
 https://github.com/jromero132/bachelor_thesis_paper/blob/master/thesis.pdf
 
@@ -656,7 +614,6 @@ this would be for the data processing bit - the output pipeline, not the input p
 
 https://pypi.org/project/es-core-news-sm/
 
-
 I can definitely build on this. there could be a separate game where annontaions (whether a word or pharse is an entity, concept, action, etc) are done - then on the bassis of these annotations
 the ontology is created
 need to make it into some microservice, or just a package tbh fr fr
@@ -664,14 +621,11 @@ need to make it into some microservice, or just a package tbh fr fr
 microservice input - a chunk of documents
 output - ontology JSON and SVG
 
-
-
 ## Kunz Rittel 70
 
 Elements of the system are topics, issues, questions of fact, positions, arguments, and model problems.
 
 It is not possible to separate “understanding the problem” as a phase from “information” or “solution” since every formulation of the problem is also a statement about a potential solution.
-
 
 Issues have the form of questions. • The origins of issues are controversial statements. • Issues are specific to particular situations; positions are developed by utilizing particular information from the problem environment and from other cases claimed to be similar.
 • Issues are raised, argued, settled, “dodged,” or substituted.
@@ -681,13 +635,9 @@ distinguished: • factual issues: “Is X the case?” • deontic issues: “S
 
 The most astonishing result is the eager acceptance by the users, although the implementation induced major changes in organization and working style
 
-
-
-
 ## class notes Talmage 46
 pint 1.2 - goal was to determine author's position
 1.3 ii separating out argument from non-argument
-
 
 1.4 types of non-arguments
 
@@ -766,12 +716,10 @@ the permission of the International Debating Education Association. Copyright ©
 
 “The system should suggest new arguments, it would be more diversified.”) was stressed much more in the speech system. This might explained by the more natural appearance of the speech system which rose higher expectations with regard to its flexibility in contrast to the quite static appearance of the menu system.
 
-
-
-
-
-
 ## user interest modeling in argumenttaive dialogue systems
+https://aclanthology.org/2022.lrec-1.14.pdf
+Annalena Aicher , Nadine Gerstenlauer , Wolfgang Minker , Stefan Ultes
+
 First, collaborative filters (Pavlov and Pennock, 2002; Chien and George, 1999; Gazdar and Hidri, 2020) which use the useruser similarity principle stating that if a user highly rated an item, similar users would probably highly rate that item. Second, content-based filters (Pazzani and Billsus, 2007; Son and Kim, 2017) which recommend items based on the item-item similarity principle stating that if users highly rated an item, they would highly rate similar items.
 
 However, explicit user feedback (Su et al., 2012) requires user responses that are not content-related and disturb the dialogue flow. Due to the described drawbacks of explicit methods and to achieve our aim of a natural interaction we chose to assess user interest implicitly

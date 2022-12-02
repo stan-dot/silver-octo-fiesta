@@ -1,5 +1,24 @@
 
-Assessment
+
+
+
+## outline
+For students taking COM3610 the report should be between 3000 and 6000 words.
+Instead the review should be organised and structured in a meaningful way, and the themes and relationships between the references identified. 
+You should expect to redraft the review several times in order to arrive at a text that is clearly written, easy to understand, but that displays an in-depth understanding of the topic. 
+
+This should be two or three short paragraphs (100-150 words total), summarising the report.
+A suggested flow is background, project aims, and achievements to date. It should not simply be a restatement of the original project outline.
+- set the scene for the project by giving a little relevant background information - try to grab the reader's interest early.
+- ginally, the introduction should summarise the remaining chapters of the report, in effect giving the reader an overview of what is to come.
+
+Think of the review as writing an essay on the background literature for your project. 
+A good literature survey should demonstrate your awareness and understanding of the background literature to your topic. 
+- begin by setting the proposed research in a wide context
+
+
+
+## Assessment
 
 Quality of literature review / technology survey / review of similar software tools:
  The ability to understand/synthesize/combine/evaluate/analyse/categorise relevant work is being considered here.
@@ -47,3 +66,19 @@ Well-organised with a sensible subdivision of material into chapters and section
 50-59
 
 Logical structure with sensible subdivision into chapters and sections. Introduction chapter is generally ok. Review is competent but generally exhibits a basic understanding of the subject. Largely focussed on topic. Largely factually correct, but may contain some irrelevant material or miss some important points. Analysis and requirements are adequate. Evaluation and testing is covered. Some use of diagrams/maths/tables, but may be poorly organised. Clearly written overall, but may be ambiguous in places and show lapses of grammar.
+
+
+## bin
+
+intersection of 2 areas, need to talk about both
+
+
+the data gathering problem
+- long guides
+- need more data
+- that 2014 study that it's hard
+
+- progress to a more detailed account of the most relevant work in the area, taking care to include some up-to-date references. 
+
+- unanswered questions and issues
+- if criticisms, they must come from a place of understanding

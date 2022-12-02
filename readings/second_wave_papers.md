@@ -3,15 +3,12 @@
 # myu topic
 type ntpoation = my statement{srouce, year}
 
-
 need to have a suggestion system - to empower the user to make better arguments
-
 
 a shilling promotion page
 o
 need a handy place to build ontologies too
 maybe then properties can be arguments?
-
 
 # list
 
@@ -29,10 +26,7 @@ discontinued in 2008
 nucleus and satellite, one nucleau in every sentence, nucleus with vertical notation
 
 - might to a game identifying evidence sentences in the text!
-- 
-
 effectively it's a platform for different word-games
-
 
 elements
 - nuclear unit
@@ -44,7 +38,6 @@ elements
   - whole - part
   - process - step
   - object - attribute
-
 
 antithesis relation - but author is not dead
 
@@ -67,19 +60,14 @@ conclusions - quality first, optimizing on one specific bottleneck
 
 were hoping this would be a step for many researchers - ended becoming that step
 
-
 ## Soricut and Marcu 2003 sentence level discourse parsing
 
 discourse parsing model
-
 Marus 1993 syntactic trees
-
 each document paired with a dicourse structure manually built using Mann and Thompsoe 1988
 
 training section is a set of triples
-
 s, tree, discourse tree
-
 83% accuracy on discourse segmentation not enough
 
 ## Prakken 2005 - coherence and flexibility in dialogue games for argumentation
@@ -109,18 +97,15 @@ for every unanswered challenge, claim can be defended or not
 
 need to assume perfect play for the purely exact reasoning to be valid.
 
-
 unique--reply protocols can be unfair
 
 > The structure ofweakly relevant dialogues differs in two main respects from that ofstrongly relevant dialogues. First, a player has some freedom to make additional moves after he has made himself the current winner, possibly creating additional winning parts. Second, each player must counterattack all attacks of the other player in order to make himself the current winner.
 
 maybe social voting on who's winning?
 
-
 maybe only one type of element at a time?
 
 only put one challenge
-
 
 liberal vs strict protocols
 > Thus four categories of dialogue rules can be distinguished. Basic protocol rules should be respected in all discussions. Context-dependent protocol rules hold whenever this is appropriate in a certain context of application. Conventions formulate behaviour that participants should ideally have to promote coherence of the dialogue, for example, ‘do not challenge too much or retract too rapidly’. Finally, player strategies and heuristics are meant to promote the player’s individual goal, i.e. to win the dialogue: for example, ‘no irrational surrenders’, that is, surrenders when one is not losing. The assertion and concession attitudes of [25] ( for example ‘concede a proposition only if you cannot construct a counterargument’) can also be regarded as player heuristics.
@@ -139,7 +124,6 @@ Pleadings Game http://www.tud.ttu.ee/im/Ermo.Taks/IDK0310/Reading/p10-gordon.pdf
 > It may be that an approach with an explicit reply structure is more suitable for ‘verbal struggles’ but less suitable for dialogues where investigation and inquiry are more important than ‘winning'.
 
 the need for investigative approach
-
 
 ## Rienks, Heylen and Weijden 2005 - argument diagramming of meeting conversations
 > relations and the forthcoming structure between the arguments. In this paper we introduce the Twente Argument Schema, a diagramming model, developed in order to structure textual units by providing an annotation enabling people as well as automatic systems to find answers to questions related to the decision making process
@@ -162,7 +146,6 @@ the need for investigative approach
 
 > A somewhat different tool is Compendium [Selvin et al., 2001], which was designed as a tool to support the real time mapping of discussions in meetings, collaborative modelling, and the longer term management of this information as organizational memory.
 
-
 > Another observation is that in all of the tools, except compendium, the main conclusion or thesis that was debated is represented as the uppermost node.
 
 uppermost node - tthat's why this convention chosen
@@ -170,7 +153,6 @@ uppermost node - tthat's why this convention chosen
 Boolean questions, Enum questions, open questions
 open questions need to have hypotheses and questioning assumptions
 > In our Schema we have defined three different labels for our nodes to represent the issues: The ‘Open issue’, the ‘A/B issue’ and the ‘Yes-No issue’. The open issue allows for any number of possible replies possibly revealing positions or options that were not considered beforehand. This in contrast with the A/B issue, that allows participants to take a position for a countable number of positions which should be known from the context (c.f. ‘Would you say ants, cats or cows?’). The yes-no issue, in line with the yes-no question directly requests whether the participants positions agree or disagree with the issue. The reader should note that we leave out the why question. This is done because a why question can be modelled as an open question with a clarification relation, explained in the next section
-
 
 # 5 done
 ## Siddarthan and Tidhar 2006 - automatic classicification of citation function
@@ -183,7 +165,6 @@ obviously, funcional> motivations
 
 or Kulbach−Leibler (KL) distance, bet−
 https://en.wikipedia.org/wiki/Kullback%E2%80%93Leibler_divergence
-
 
 annotation schmee about citations - many types
 
@@ -199,7 +180,6 @@ feature space not clearly cut clean
 On average, our papers contain 26.8 citation instances in running text3.
 
 > We observe that more PMot categories appear towards the beginning of the paper, as do Weak citations, whereas comparative results (CoCoR0, CoCoR-) appear towards the end of articles. More fine-grained location features, such as the location within the paragraph and the section, have also been implemented.
-
 
 ## Cialdini 2001 - the science of persuasion
 > Six basic tendencies of human behavior come into play in generating a positive response: reciprocation, consistency, social validation, liking, authority and scarcity.
@@ -217,13 +197,11 @@ need to say people are doing the DESIRABLE thing
 > Research at the University of North Carolina at Chapel Hill found that compliments produced just as much liking for the flatterer when they were untrue as when they were genuine
 > scarcity double whammy: not only was the beef scarce, but the information that the beef was scarce was itself scarce
 
-
 about the author
 > He attributes his long-standing interest in the intricacies of influence to the fact that he was raised in an entirely Italian family, in a predominantly Polish neighborhood, in a historically German city (Milwaukee), in an otherwise rural state
 
 
 ## Teufel, Siddharthan and Batchelor  2009 - towards discipline - independent argumentative zoning - evidence from chemistry and computationl linguistics
-
 > knowledge claim (Myers, 1992; Luukkonen, 1992): the act of writing a paper corresponds to an attempt of claiming ownership for a new piece of knowledge, which is to be integrated into the repository of scientific knowledge in the authors’ field by the process of peer review and publication.
 > Category AIM
 Description Statement of research goal.
@@ -236,9 +214,7 @@ An existing KC is contrasted, compared, or presented as weak.
 Description of existing KC.
 Description of any other aspect of new KC.
 Indication of paper’s textual structure.
-
 > decidable, in principle, without specific domain knowledge about what is discussed in detail in the paper
-
 > Our annotation guidelines are 111 sides ofA4 and contain a decision tree, detailed description of the semantics of the 15 categories, 75 rules for pairwise distinction of the categories and copious examples from both chemistry and computational linguistics.
 
 #### lots of rules
@@ -280,13 +256,11 @@ Kappa coefficient for agreement
 > There is also the faint possibility that discourse
 annotation of chemistry is intrinsically easier than discourse annotation of CL, because it is a more established discipline and not despite of it. For instance, it is likely that the problem-solving categories OWN FAIL, OWN MTHD, OWN RES and OWN CONC are easier to describe in a discipline with an established methodology (such as chemistry), than they are in a younger, developing discipline such as computational linguistics
 
-
 ## Bechhofer 2009
 
 https://www.w3.org/TR/skos-reference/
 
 reading this should be secondary - thta's not the primary funcion of the system
-
 
 ## Anand et al 2011 How can you say such things?!?: Recognizing Disagreement in Informal Political Argument
 
@@ -340,7 +314,6 @@ could use this automatic processing for input
 
 other knowledge bases
 
-
 ## Walker, Anand et al 2012 - corpus for research on deliberation and debate
 
 this one was kind of redundant
@@ -350,7 +323,6 @@ this one was kind of redundant
 not relevant, as for bots - and heavy in maths and ML
 
 ## Peldszus and Stede 2013a - from argument disgrams to argumentatio mninig in texts: a survey
-
 > A very useful earlier overview of the use of argument diagramming techniques to represent the structure of arguments has been given by Reed et al. (2007). They review the theories and diagramming schemes in logic, law and artificial intelligence and cover many important aspects relevant to (automatic) evaluation of arguments. In contrast, our aim is of a rather descriptive nature and our second focus is on the linguistic realization of argumentation, especially on the representation of argumentative opposition
 
 > Stephen E. Toulmin’s influential analysis of argument (Toulmin, 1958).
@@ -360,11 +332,9 @@ not relevant, as for bots - and heavy in maths and ML
 > Recently, an updated but compatible version of the theory has been presented in (Freeman, 2011
 
 > Freeman’s diagramming technique is not perfect, though, especially for certain complex combinations of features: For some reason, Freeman lists all rebuttals of one argument in a single rebuttal-box. In order to relate the counter-rebuttals to their target, co-indexation is introduced instead of representing the relation by links in the diagram
->
 uselss structure
 
 > While Freeman (1991, p. 173) argued that such counterconsiderations need not to be represented in argument structure, because they could be seen as rhetorical accessory, logically not effecting the case for the claim, they are now represented as a special ’even though’ rebuttal in (Freeman, 2011, p. 29). This extension
->
 why disregard this???
 
 basic argument (b) linked support, multiple support, serial support, example support
@@ -373,7 +343,6 @@ basic argument (b) linked support, multiple support, serial support, example sup
 rebut a conclusion, rebut a premise, undercut an argument, support a rebutter
 
 > However, the challenger is not allowed to assert a proposition in the basic dialectical situation. His role is defined very restrictively as that of a constructive partner testing the proponent’s argumentation by asking critical questions. His goal is to wrench the best possible argument for the main claim from the proponent
->
 only defense mode
 
 rebut a rebutter, rebut an undercuter, undercut a rebutter, undercut an undercutter
@@ -439,7 +408,6 @@ with the Araucaria corpus and a legal corpus. They developed a multi-stage appro
 
 ## Ong, Litman, and Brusilovsky 2014 - ontyology based argument mining
 > concretely visualize their argumentation structure. Our work is part of the ArgumentPeer project (Falakmassir et al., 2013), which combines computer-supported argument diagramming
->
 what school is following
 
 > Potentially, answering these questions in the affirmative would allow us to assist students with their writing by allowing computer tutors to label sentences with the ontology, determine which elements are missing, and suggest adding these missing elements to improve essay qualit
@@ -501,6 +469,8 @@ neural network model
 problems with annotation
 
 > Analysis of argumentation has been an active topic in numerous research areas, such as philosophy (van Eemeren et al., 2014), communication studies (Mercier and Sperber, 2011), and informal logic (Blair, 2004), among others
+
+
 #### Blair, informal logic
 
 > There are five different components in this model, namely, the claim (the statement about to be established in the argument which conveys author’s stance towards the topic), the premise(s) (propositions that are intended to give reasons of some kind for the claim), the backing (additional information used to back-up the argument), the rebuttal (attacks the claim), and the refutation (which attacks the rebuttal). Relations between the argument components are encoded implicitly in the function of the particular component type, for instance, premises are always attached to the claim.
@@ -552,17 +522,13 @@ also no division here
 
 > We plan to use the same system as the CoNLL task, TIRA (Gollub et al., 2012),5
 
-
 ## Carstens and Toni 2015 - towards relation based Argumentation Mining
 > We consider any sentence which supports or attacks another sentence to be argumentative
-
 > including the automatic construction of Argument Frameworks (AFs) (Cabrio and Villata, 2012; Feng and Hirst, 2011)
-
 > Park and Cardie, 2014) use multi-class Support Vector Machines (SVM) (Crammer and Singer, 2002) to identify different classes of argumentative propositions in online user comments. (Ghosh et al., 2014) use SVM to analyse multilogue, instead, classifying relations between user comments
->
 > If this relation is classified as an attack or support relation we consider both sentences to be argumentative, irrespective of their individual quality
 
->2www.BBCNewsLabs.co.uk
+>www.BBCNewsLabs.co.uk
 
 ## Wyner, Peters, and Price 2015 - arugment discovery and extraction with the Argument Workbench
 
@@ -585,7 +551,9 @@ another input flow, also suggestion
 > Studies reveal that annotators need multiple training sessions to identify and classify argumentative segments with moderate inter-annotator agreement, and crowdsourcing-based annotation does not help notably (Habernal et al., 2014)
 
 very important about outsourcing
+
 #### Habernal et al must do
+https://aclanthology.org/N18-1175.pdf
 
 > In addition, we observe that n-grams seem to be most do main-dependent, while syntax features turn out to be more robust.
 > then this should be available out there!
@@ -662,13 +630,12 @@ outsourcing, Mechanical Turk used once more
 
 ## Wachsmuth, Stein, and Ajjour 2017 - buildign an argument search engine for the WEB
 > Based on the framework, we build a prototype search engine, called args, that relies on an initial, freely accessible index of nearly 300k arguments crawled from reliable web resources. The framework and the argument search
->
 > Initially, we crawled and indexed a total of 291,440 arguments from five diverse online debate portals, exploiting the portals’ structure to avoid mining errors and manual annotation while unifying the arguments based on the model (Section 4).
 
 > An argument search index. We provide an index of 291,440 arguments, to our knowledge the largest argument resource available so far
 > Unlike IBM, we build an open research environment, not a commercial application
 > Argumentation theory proposes a number of major models: Toulmin (1958) focuses on fine-grained roles of an argument’s units, Walton et al. (2008) capture the inference scheme that an argument uses, and Freeman (2011) investigates how units support or attack other units or arguments
->
+
 #### different models, I pick Freeman 2011
 
 > No approach, however, seems robust enough, yet, to obtain arguments reliably from the web. Therefore, we decided not to mine at all for our initial index. Instead, we follow the distant supervision idea to obtain arguments automatically
