@@ -1,4 +1,15 @@
 \documentclass{article}
+\usepackage{forloop}
+\newcounter{loopcntr}
+\newcommand{\rpt}[2][1]{%
+  \forloop{loopcntr}{0}{\value{loopcntr}<#1}{#2}%
+}
+\newcommand{\on}[1][1]{
+  \forloop{loopcntr}{0}{\value{loopcntr}<#1}{&\cellcolor{gray}}
+}
+\newcommand{\off}[1][1]{
+  \forloop{loopcntr}{0}{\value{loopcntr}<#1}{&}
+}
 
 \title{Dissertation Project Description}
 \author{Stanislaw Malinowski}
@@ -337,6 +348,29 @@ http://ova.arg-tech.org/analyse.php?url=local&aifdb=1238&akey=dd8dd1dfd567f735f4
 % adding new tasks 
 % adding new source datasets
 % promotion
+\definecolor{orange}{RGB}{255,127,0}
+
+\noindent\begin{tabular}{p{0.17\textwidth}*{20}{|p{0.01\textwidth}}|}
+
+\noindent\begin{tabular}{p{0.17\textwidth}
+!{\vrule width 0.4mm}p{0.01\textwidth}*{3}{|p{0.01\textwidth}}
+!{\vrule width 0.4mm}p{0.01\textwidth}*{3}{|p{0.01\textwidth}}
+!{\vrule width 0.4mm}p{0.01\textwidth}*{3}{|p{0.01\textwidth}}
+!{\vrule width 0.4mm}p{0.01\textwidth}*{3}{|p{0.01\textwidth}}
+!{\vrule width 0.4mm}p{0.01\textwidth}*{3}{|p{0.01\textwidth}}
+|}
+% The top line
+\textbf{Gantt chart} & \multicolumn{4}{c!{\vrule width 0.4mm}}{Week 1} 
+           & \multicolumn{4}{c!{\vrule width 0.4mm}}{Week 2} 
+           & \multicolumn{4}{c!{\vrule width 0.4mm}}{Week 3} 
+           & \multicolumn{4}{c!{\vrule width 0.4mm}}{Week 4} 
+           & \multicolumn{4}{c|}{Week 5} \\
+PhD 1     \on[16] \off[4]\\
+\hline
+Squashing Bugs \off[2] \on[4] \off[4] \on[1] \off[9] \\
+\hline
+\textbf{Work \mbox{packages}} & \multicolumn{20}{c|}{} \\
+
 
 \section{Citations}
 \bibliographystyle{}
