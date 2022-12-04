@@ -53,106 +53,216 @@ Report will end with a description of achievements to date and plans for the fut
 \section{Chapter 2: Literature Survey}
 Argument structure analysis goes back to antiquity. I. Angelelli. The techniques of disputation in the history of logic, 1970.
 Analysis of argumentation has been an active topic in numerous research areas, such as philosophy (van Eemeren et al., 2014), communication studies (Mercier and Sperber, 2011), and informal logic (Blair, 2004), among others
-This chapter will cover the areas that this project uses.
+This chapter will cover the areas that this project touches.
 
 There are types of approaches. Fully annotated and  semi-supervised approaches.
 
-There are different strategies for annotation
-
 \subsection{annotations - static argumentation schemes}
-Many of annotation undertakings have already had success in research. 
-Many annotation schemas for citation motivation have been created (Teufel et al 2010, Mann and Thompson 1987). 
+There are different strategies for annotation. Much of the study of annotation has focused on citation function in scientific papers.
+Many annotation schemas for argumentcitation motivation have been created (Teufel et al 2010, Mann and Thompson 1987) and had success in research.
+These studies work by outlining analytically from a sample of essays, articles or other texts, an exhaustive list of types of roles of statements.
+Then the researchers proceed to create a long, multi-page annotation guidelines. Up to 111 sides of A4 in some cases! (Teufel et al 2009).
+As the next step, annotators are selected. Some studies choose discipline experts, some on purpose select persons not familiar with the discipline.
+That is done in order to increase domain-independence of the annotation schema.
+The following step is usually to collate the annotations created by the annotators. 
+
+Study by Siddarthan and Tidhar from 2006 'automatic classicification of citation function' describes use of Kappa coefficeint for that purpose.
+The paper describes the use of Kappa coefficeint thus:
+> coefficient κ (Fleiss, 1971; Siegel and Castellan, 1988), the agreement measure predominantly used in natural language processing research (Carletta, 1996). κ corrects raw agreement P(A) for agreement by chance P(E)
+
+In summary, the pure annotation strategy is costly but its experiences are quite helpful. The basic information flow pipeline is shown in (Razuvayevskaya and Teufel 2017 - finding enthymemes in real-world text - a feasibility study).
+> mining: argument extraction, segmentation, i.e. identification of minimal argumentative discourse units (ADUs), segment classification, i.e. labeling of ADUs based on their argumentative roles, identification of relations between these segments, and argument completion, i.e. automatic construction of statements from implicit propositions
+The latter part includes enthymeme decection, which is defined as:
+> According to the Aristotelian definition [6], enthymemes are standard-form syllogisms with one missing proposition.  (ibid.)
+
+For the crowdsourced model the 5 steps can be traced for each of the parts of the test corpus. 
 
 \subsection{annotation with crowdsourcing}
+A number of researchers explored the crowdsourcing area of the potential solution space to the problem of argument structure extraction.
+Following (von Ahn, 2008), we can distinguish between 3 types of approches to crowdsourcing with respect to the type of incentive provided to the participants.
+There is the financial approach, the altruistic approach, and the gamification (enjoyment) approach. Papers reviewed did not feature the enjoyment approach.
 
-Wyner, Peters, and Price 2015 - arugment discovery and extraction with the Argument Workbench
+Starting chronologically, the first paper is Anand et al 2011 "How can you say such things?!?: Recognizing Disagreement in Informal Political Argument".
+One of the features of this paper to note is its use of Amazon's "Mechanical Turk" service for contributions. Paid experts did the annotations.
+Another one is the choice of possible labels. Thse are 'agree/disagree', 'fact/emotion/, 'attack/insult', 'sarcasm', 'nice/nasty'
 
-Anand et al 2011 How can you say such things?!?: Recognizing Disagreement in Informal Political Argument
-using Mechanical Turk
+Another example comes from (Wyner, Peters, and Price 2015 - arugment discovery and extraction with the Argument Workbench).
+Quotes are a description of the tool
+> ArgumentWorkbench, which is a interactive, integrated, modular tool set to extract, reconstruct, and visualise arguments. [...]
+> The Argument Workbench is a processing cascade, developed in collaboration with DebateGraph. [...]
+> it is an open source desktop application written in Java that provides a user interface for professional linguists and text engineers to bring together a wide variety of natural language processing tools and apply them to a set of documents
+It is worth noticing that they used a desktop application. The other option being mobile application, there are tradeoffs visible.
+Mobile applications don't have the 'screen real estate' for complex interfaces, yet higher number of people use them. Over 50\% more people use mobile.
+https://gs.statcounter.com/platform-market-share/desktop-mobile-tablet
+For low-entry-cost crowdsourcing approach that is essential.
 
-also proprietary software VBulletin
-
-There has been an argument that automatic processing is preffered due to the cost, unreliablity of annoatinos and scarcity of trained personnel
-(Stab and Gurevych, 2014a; Habernal et al., 2014)
-
-\subsection{annotation by few experts}
-
-work on citations, such also
-Siddarthan and Tidhar 2006 - automatic classicification of citation function
-Teufel, Siddharthan and Batchelor  2009 - towards discipline - independent argumentative zoning - evidence from chemistry and computationl linguistics
-they had 111 sides of A4 worth of annotation guidelines
-use of Kappa coefficeint
-coefficient κ (Fleiss, 1971; Siegel and Castellan, 1988), the agreement measure predominantly used in natural language processing research (Carletta, 1996). κ corrects raw agreement P(A) for agreement by chance P(E)
+Then the authors mention the workflow, and attach a diagram.
+> We harvest and preprocess comments; highlight argument indicators, speech act and epistemic terminology; model topics; and identify domain terminology.
+> we use the GATE framework (Cunningham et al.(2002)) for the production of semantic metadata in the form of annotations
 
 \subsection{online current corpora}
-THere are some ready corpora for argumnet minig.
+There are some ready corpora for argumnet minig.
+This section will focus on their formats, topics and limitatinos.
 
-Awadallah, Ramanath, and Weikum 2012 Harmony and dissonance: organizing the people's voices on political controversies
+Studies mention source data themselves. 
+For instance, (Awadallah, Ramanath, and Weikum 2012 Harmony and dissonance: organizing the people's voices on political controversies)
+say the following:
 > For matching names in text sources against canonical entities, we leverage existing knowledge bases like DBpedia, Freebase, or Yago.
 
-Argument mining survey () mentions many of them.
+Moreover, Argument mining survey () mentions many of them.
 https://direct.mit.edu/coli/article/45/4/765/93362/Argument-Mining-A-Survey
-they focus here on manual labeling
 > Internet Argument Corpus (IAC) (Walker et al. 2012) is a corpus for research in political debate on Internet forums. It consists of approximately 11,000 discussions, 390,000 posts, and some 73,000,000 words
 > AIFdb17 (Lawrence et al. 2012), containing over 14,000 Argument Interchange Format (AIF) argument maps, with over 1.6m words and 160,000 claims in 14 different languages.18 These numbers are growing rapidly, thanks to both the increase in analysis tools interacting directly with AIFdb and the ability to import analyses produced with the Rationale and Carneades tools (Bex et al. 2012). Indeed, AIFdb aims to provide researchers with a facility to store large quantities of argument data in a uniform way. AIFdb Web services allow data to be imported and exported in a range of formats to encourage re-use and collaboration between researchers independent of the specific tools and data format that they require.
 https://corpora.aifdb.org/
-
-It is worth noting that AIFdb seems to have a standardized JSON graph format. That puts a compatibility requirement on the project. 
+Both corpora focus on manual labeling.
+The Argument Interchange Format seems as a valid standard for any argument crowdsourcing project to follow.
+This standardized JSON graph format make data transport and display easier. That is a great opportunity as their platform features a display tool. 
+The project can leverage this external tool and standard and focus on other features of the crowdsourcing process.
 Another resource of arguments online is the `args.me` online resource. 
 Its creation was described in Wachsmuth, Stein, and Ajjour 2017 - buildign an argument search engine for the WEB.
 Args.me has an exposed search API and database schemas. The paper also emphasises the ethical choice contained in the construction of personalized search.
 It also mentions the high cost of the long hours of expert time.
-
 Another resource is the Araucaria program, mentioned by several papers. Link provided seems to be broken, though. http://araucaria.computing.dundee.ac.uk/
 
-\subsection{mixed approaches}
-
-adding small amont of high quality and manually labeled data
-Will it Blend? Blending Weak and Strong Labeled Data in a Neural Network for Argumentation Mining Eyal Shnarch et al.
-ACL, 2018 http://aclweb.org/anthology/P18-2095
-
-manual analysis not feasuble some studies (Habernal and Gurevych 2015 - exploiting debate portals for semi-supervised) have attempted to bypass that problem by using semi-supervised learning, having given up on crowdsourcing.
-
+There are cons to the current corpora, though.
 Only few publicly available argumentation corpora exist, as annotations are costly, error-prone, and require skilled human annotators (Stab and Gurevych, 2014a; Habernal et al., 2014).
 Although argumentation mining in user-generated Web discourse has a long way to go (our methods currently achieve only about 50\% of human performance)
 
-Al-Khatib et al 2016 - crossdomain mining fo arguemntatinve text through Distant Supervision
+\subsection{mixed approaches}
+The above approaches were deemed to be limited. In fact, there seems to have been a shift in approaches around 2014.
+There has been an argument that automatic processing is preffered due to the cost, unreliablity of annotations and scarcity of trained personnel
+(Stab and Gurevych, 2014a; Habernal et al., 2014)
+With that being the turining point, the efforts thereafter have focused on putting the main weight of the process on automatized process. 
+That reflects the wider industry shift towards the use of Machine Learning over the past 10 years.
+
+Researchers conceded that manual analysis is not feasuble some studies (Habernal and Gurevych 2015 - exploiting debate portals for semi-supervised).
+They attempted to bypass that problem using semi-supervised learning.
+
+Another approach is a blending approach. That consists in adding small amount of high quality and manually labeled data.
+That vein of thoought is explored in (Will it Blend? Blending Weak and Strong Labeled Data in a Neural Network for Argumentation Mining Eyal Shnarch et al.
+ACL, 2018 http://aclweb.org/anthology/P18-2095)
+Existence of this approach fares well for the crowdsourcing approach. Primarily the data will be strongly labeled, but if it proves weak for training using ML techniques, 
+supplementation with weakly labeled data will be saving the utility of crowdsourced data.
+
+Another attempt was this paper (Al-Khatib et al 2016 - crossdomain mining of argumentative text through Distant Supervision).
 This study makes the strongest case for the exclusion of crowdsourcing as a means of data acquisition.
 > Studies reveal that annotators need multiple training sessions to identify and classify argumentative segments with moderate inter-annotator agreement, and crowdsourcing-based annotation does not help notably (Habernal et al., 2014)
-they also use 'pagerank' for arguments
+Of note is also the source of the data. Authors say
+> we acquire a large corpus with 28,689 argumentative text segments from the online debate portal idebate.org. The corpus covers 14 separate domains with strongly varying feature distributions.
+This source is highly specifc. That argumentative discourse is not a representative sample of human argument space. Verbal arguments
+also experts 
+
+These arguments are put into the search system using the PageRank algorithm (Brin et al 1998). 
+That gives grounds to considering that algorithm a good basis for a ranking of arugments in other circumstances.
+
 
 \subsection{Games with purpose to the rescue}
-Designing games with a purpose
-https://dl.acm.org/doi/10.1145/1378704.1378719
-
-Main takeaways from this paper is what makes games successfull.
-enjoyment, timed response, ELO system
+How to apply GWP approach?
+A guiding paper to this area of literature review was 2008 paper by von Ahn et al, Designing games with a purpose https://dl.acm.org/doi/10.1145/1378704.1378719
+Main takeaways from this paper is what makes games successful.
+These are three main factors: enjoyment, timed response, ELO system.
+"Enjoyment" is not defined formally there, but simply a result of knowing the games by their fruits:
+> The key property of games is that people want to play them. We therefore sidestep any philosophical discussions about “fun” and “enjoyable,” defining a game as “successful” if enough human-hours are spent playing it
+That  *a posteriori* feature can be predicted by keeping the right level of challenge in front of the player. (Locke, E.A. and Latham, G.P. A Theory of Goal Setting and Task Performance. Prentice Hall, Englewood Cliffs, NJ, 1990.)
+Right level of challenge is measured through a 'timed response' mechanic built into the game.
+The player's skill is evaulated on the basis of duration of the task. 
+Self awareness of the speed of execution and the increasingly narrowing bar representing time left provides live feedback.
+ELO system ensures that in player versus player games there is balance. Each player can't go against player very far from their own skill level.
+Moreover, it exploits the competitive desire in humans.
+The social factor seems valued in games as competitive sports are a growing market, with nearly 2 million US dollars revenue predicted in 2025
+https://www.statista.com/statistics/490522/global-esports-market-revenue/
+Social factors have not been observed to feature in the studies mentioned so far.
+There was no competitiveness, the workflow was each annotator working individually.
+There was no incentive for agreement between annotators.
+This is a limnitation that could be overcome.
 
 The other takewaway is a set of metrics. These are
 - labels per human hour
 - Average Lifetime Play
+While the first one is self-explanatory, the second might not be.
+Study describes the latter as 
+> ALP is the overall amount of time the game is played by each player averaged across all people who have played it. For instance, on average, each player of the ESP Game plays for a total of 91 minutes.
+Average score of 91 minutes is a good benchmark to compare with.
+
+https://dl.acm.org/doi/10.1145/2448116.2448119
+Phrase detectives as the leading example of the use of the 'game with purpose' paradigm in order to gather data for NLP research.
+ALP of only 30 minutes. It seems there is a a headspeace to improve on that. nothing indicates that this area has hit a ceiling.
+What they excel at is: 'task completion, scoring and storyline as a seamless experience'
+These are qualities worth emulating. Task completion and scoring are the easiest to implement. 
+In contrast, creating a coherent and engaging storyline would require a specific skillset that might not always be available.
+Possibly emphasizing social features could substitute this.
 
 \section{Chapter 4: Similar software review}
-
 There is a plethora of similar software. 
 There are commrecial B2B SAAS solutions, aiming to help in meetings, by providing a way to write structured notes and diagrams.
 There are also hacker-ethics personal knowledge management tools.
-Tere is also a record of software developed specifically for research.
+There is also a record of software developed specifically for research.
 
 \subsection{Business solutions}
+There are many companies offering business-to-business services in NLP. 
+These range from meeting minutes or report summaries, live structured note taking, visualization software, or customer sentiment analysis.
+Business model is frequently 'freemium', where users can use the app for free, but some features are hidden behind a paywall.
+
+I will only give a brief summary of each:
+
+Lexikat provides "no-code concept maps and text analysis models from any document."
+https://lexikat.com/#/
+
+Infranodus is a multi-purpose analytics tool, extracting arguments and enhancing it through various AI techniques. 
+It is unknown whether the analysis uses argument mining.
+https://infranodus.com/
+
+Lexisnexis provides analytic tools in the legal domain, also providing visualization
+https://www.lexisnexis.com/en-us/home.page
+
+Summetix uses Argument Mining to provide summaries of trends in customer behaviour.
+https://www.summetix.com/
+
+
+Reasoning lab is the creator of the Rationaleonline service described below
+https://www.reasoninglab.com/argument-mapping/
+
+Rationaleonline - a huge collection of public maps. Of limited use as a dataset for studies in English, as most of the data is not in English.
+https://www.rationaleonline.com/browse/all
+
+Mindup - a tool for creating 'mind maps'.
+https://www.mindmup.com/
+
+Crowdee is a service providing crowdsourced contributions to business customers, with the specific niche of creating ML training datasets.
+https://www.crowdee.com/
+
+Amazon Mechanical Turk is a service acting as a middleman between business seeking temporary increase in workforce to solve a specific issue.
+The service accomplishes this through splitting the workload into 'microtasks' that are then handled by a destributed workforce.
+https://www.mturk.com/
+
 
 \subsection{Personal knowledge management tools}
+this is from 2013 latest, a desktop tool for tree manipulation
+http://www.argunet.org/
+https://sourceforge.net/projects/argunet/files/
+
+### Planner
+planner was created in 1969 for forward and backward chaining of statements to prove some goal from the database
+https://en.wikipedia.org/wiki/Planner_(programming_language)
+
+### XSB 
+Prolog based, still in active development, can interact with in Java
+https://en.wikipedia.org/wiki/XSB
+https://sourceforge.net/p/xsb/code/ci/git-origin/tree/
+Flora2 is a system for knowledge representation using XSB for inference
+https://en.wikipedia.org/wiki/Flora-2
+
 
 \subsection{Research-grade software}
 
 Zooniverse is another platform on which crowd
 https://www.zooniverse.org/projects
 
-Phrase detectives: Utilizing collective intelligence for internet-scale language resource creation
-https://dl.acm.org/doi/10.1145/2448116.2448119
-Phrase detectives as the leading example of the use of the 'game with purpose' paradigm in order to gather data for NLP research.
-AVL of only 30 minutes. It seems there is a a headspeace to improve on that. nothing indicates that this area has hit a ceiling.
-What they excel at is: 'task completion, scoring and storyline as a seamless experience'
+> XAI framework for interpreting Link Predictions on Knowledge Graphs
+python and shell
+interesting, in active development
+https://github.com/AndRossi/Kelpie
+
 
 \section{Chapter 3: Requirements and analysis}
 
@@ -184,6 +294,9 @@ Coherence and Flexibility in Dialogue Games for Argumentation
 Rienks, Heylen and Weijden 2005 - argument diagramming of meeting conversations
 A/B isses, yes-no issue, open issue
 
+\subsection{Tools }
+As mentioned in the literature section, AIFdb format may be used for data portability.
+
 \subsection{success criteria}
 The final criteria is the volume of quality annotated corpus. It could be uploaded to AIFdb. 
 This will be known after performing quality control on the main argument database created through the lifetime of the app. 
@@ -192,7 +305,6 @@ number of downloads - if larger than 150 better than global average, if more tha
 https://www.statista.com/statistics/1119893/average-number-downloads-united-states-app-publishers/
 
 These data will be achieved from app publisher analytics.
-
 
 \section{Chapter 4: Conclusions, progress to date and project plan}
 \subsection{Achievements to date}
@@ -204,17 +316,14 @@ http://ova.arg-tech.org/analyse.php?url=local&aifdb=1238&akey=dd8dd1dfd567f735f4
 % todo add gantt chart from here https://www.mjr19.org.uk/IT/gantt_latex.html
 
 \section{Appendices}
-\subsection{App use sample screen}
-% todo this weekend https://wireframe.cc/
-
-\subsection{database schemas}
-% todo this weekend
-
 \subsection{log of milestones}
 - mock ready milestone 
 - preliminary reading finished
 
 \section{Citations}
+\bibliographystyle{}
+\bibliography{}
+Teufel, Siddharthan and Batchelor  2009 - towards discipline - independent argumentative zoning - evidence from chemistry and computationl linguistics
 \newpage
 
 \section{bin}

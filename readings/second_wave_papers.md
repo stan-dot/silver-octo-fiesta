@@ -189,7 +189,7 @@ On average, our papers contain 26.8 citation instances in running text3.
 > “Will you please call if you have to change your plans?”
 > An example is the understandable but potentially misguided tendency of health educators to call attention to a problem by depicting it as regrettably frequent
 
-need to say people are doing the DESIRABLE thing
+need to say people are doing the DESIRABLE thingi
 
 > a Tupperware party begins somewhere in the world every 2.7 seconds. In fact, 75 percent of all Tupperware parties today occur outside the individualistic U.S., in countries where group social bonding is even more important than it is here
 > Physical attractiveness can be such a tool. In a 1993 study conducted by Peter H. Reingen of Arizona State University and Jerome B. Kernan of the University of Cincinnati, good-looking fund-raisers for the American Heart Association generated nearly twice as many donations (42 versus 23 percent) as did other requesters. In the 1970s researchers Michael G. Efran and E.W.J. Patterson of the University of Toronto found that voters in Canadian federal elections gave physically attractive candidates several times as many votes as unattractive ones. Yet such voters insisted that their choices would never be influenced by something as superficial as appearance.
