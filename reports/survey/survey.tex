@@ -155,7 +155,6 @@ also experts
 These arguments are put into the search system using the PageRank algorithm (Brin et al 1998). 
 That gives grounds to considering that algorithm a good basis for a ranking of arugments in other circumstances.
 
-
 \subsection{Games with purpose to the rescue}
 How to apply GWP approach?
 A guiding paper to this area of literature review was 2008 paper by von Ahn et al, Designing games with a purpose https://dl.acm.org/doi/10.1145/1378704.1378719
@@ -237,41 +236,47 @@ https://www.mturk.com/
 
 
 \subsection{Personal knowledge management tools}
-this is from 2013 latest, a desktop tool for tree manipulation
+Argunet (started in 2006) and the successsor project argdown is a tool for argument representation.
+What is exceptional about the Argdown is that it provides a textual standard to represent arguments of any complexity.
 http://www.argunet.org/
-https://sourceforge.net/projects/argunet/files/
+https://argdown.org/
 
-### Planner
-planner was created in 1969 for forward and backward chaining of statements to prove some goal from the database
+Planner is the pioneer in the field, even if not exactly with *personal* applications in mind.
+It was created in 1969 for forward and backward chaining of statements to prove some goal from the database.
 https://en.wikipedia.org/wiki/Planner_(programming_language)
-
-### XSB 
-Prolog based, still in active development, can interact with in Java
-https://en.wikipedia.org/wiki/XSB
-https://sourceforge.net/p/xsb/code/ci/git-origin/tree/
-Flora2 is a system for knowledge representation using XSB for inference
-https://en.wikipedia.org/wiki/Flora-2
-
+The function of it was thus *synthetic*, not analytic - so the reverse of argument mining. 
+Nevertheless, it is an interesting reference point.
 
 \subsection{Research-grade software}
 
-Zooniverse is another platform on which crowd
+Started in 2000 and with the latest release in 2020, Flora2 is a system for knowledge representation using XSB for inference
+As it is clear from the website look and feel, this software is not for mass adoption.
+With less thatn 600 downloads over the last year it does not seem to have taken off.
+https://sourceforge.net/projects/flora/files/stats/timeline?dates=2021-12-04\%20to\%202022-12-03&period=daily
+
+https://flora.sourceforge.net/
+
+Zooniverse is a thriving  crowsourcing platform. 
+There are many projects in the categories such as medicine, nature, climate and history.
+Not many projects in language processing domain have been found yet.
+One example is an Optical Character Recognition crowdscouring dealing with 19th cenutryo newspapers.
+https://www.zooniverse.org/projects/bldigital/living-with-machines
 https://www.zooniverse.org/projects
 
-> XAI framework for interpreting Link Predictions on Knowledge Graphs
-python and shell
-interesting, in active development
-https://github.com/AndRossi/Kelpie
+Insofar as the argument mining relates to Knowledge Graphs and Ontology extraction, Kelpie is one of the frameworks for the former.
 
+Authors say Kelpie is a:
+> XAI framework for interpreting Link Predictions on Knowledge Graphs
+https://github.com/AndRossi/Kelpie
+It is in active development and it might be useful for downstream processing of the data obtained through crowdsourcing.
 
 \section{Chapter 3: Requirements and analysis}
 
 \subsection{Requirements}
-to avoid the pitfalls of human annotation, a quantitative approach should be pursued. 
+To avoid the pitfalls of human annotation, a quantitative approach should be pursued. 
 A diverse range of both source texts and human participants is needed.
-Through the 'games with purpose' paradigm, w ecan expect users/ players to contribute for their own enjoyment (von Ahn, 2014).
+Through the 'games with purpose' paradigm, we can expect users/ players to contribute for their own enjoyment (von Ahn, 2014).
 Enjoyment maximization should result in a higher number of Average Lifetime Contribution(ibid.).
-
 A spotless user flow and an intuivie application are of the highest priority to achieve that.
 
 A sample user flow can be imaged as the following:
@@ -280,51 +285,53 @@ A sample user flow can be imaged as the following:
 - clicks to read more, is redirected to the app page
 - there is presented with a tutorial how to engage with the systemn: read, and contirbute.
 
-Over the next week
+Over the following week:
 - user completes a small number of interactions with the application
 - user intergrates the app importing some content on their own, be it from Twitter or other dynamic corpora (for instance a blog article to annotate to understand it better)
 - user continues to grow their use of the app, perhaps using it as a note taking app
 
 
 \subsection{Design decisions to be taken}
-Prakken 2005 - different types of reply protocols - unique vs multi-reply, immediate and non-immediate, uniqe, multi-move
-unique-reply unfair
-Coherence and Flexibility in Dialogue Games for Argumentation 
+There is the option for a debate mode for the app.
+That would be a type of game, where addition of a node to the argument tree would constitute a move.
+That type of games was examined in Prakken 2005.
+There were distinguished different types of 'reply protocols' - unique vs multi-reply, immediate and non-immediate, uniqe, multi-move.
+The configuration space is non-trivial, and the choice which of these protocols would be implemented in the game needs to be pondered.
 
-Rienks, Heylen and Weijden 2005 - argument diagramming of meeting conversations
-A/B isses, yes-no issue, open issue
+(Prakken 2005, Coherence and Flexibility in Dialogue Games for Argumentation)
 
-\subsection{Tools }
-As mentioned in the literature section, AIFdb format may be used for data portability.
+Another distinction between game-states comes from Rienks, Heylen and Weijden 2005 - argument diagramming of meeting conversations.
+That is the observations that there are more types of issues than just 'yes/no' issues.
+They call them: A/B isses, yes-no issue, open issue.
+It is obvious that the yes-no issue might be the simplest to implement, yet it would be a lost opportunity to forsake the other modes.
+Some consideration should be given to incorporating them into the space of possible arguments on the app.
+
+As mentioned above, AIFdb format may be used for data portability, and Argdown for markdown notation.
 
 \subsection{success criteria}
 The final criteria is the volume of quality annotated corpus. It could be uploaded to AIFdb. 
 This will be known after performing quality control on the main argument database created through the lifetime of the app. 
 
-number of downloads - if larger than 150 better than global average, if more thatn 1300, over global average.
+The other criterion is the number of downloads - if larger than 150 better than global average, if more thatn 1300, over global average.
 https://www.statista.com/statistics/1119893/average-number-downloads-united-states-app-publishers/
 
 These data will be achieved from app publisher analytics.
 
 \section{Chapter 4: Conclusions, progress to date and project plan}
 \subsection{Achievements to date}
-- a demo of a drag-and-drop - proved harder than expected
-also OVA platform laready performs that service quite well
+To date the main achievement is exploration of the possibilities of mobile app development. 
+Expo library was chosen for the simplicty of deployment to host the app https://expo.dev/, while a Nextjs website will serve as a landing page.
+There was some work - a demo of a drag-and-drop implemented in Reactjs. The full interactive interfce proved harder than expected, and in the light of further discoveries of extant work, has proven superfluous.
+Therefore it was not finished.
+The OVA platform laready performs graph visualization quite well.
 http://ova.arg-tech.org/analyse.php?url=local&aifdb=1238&akey=dd8dd1dfd567f735f46df14ff08a0fc5
 
 \subsection{Gantt Chart until the end}
 % todo add gantt chart from here https://www.mjr19.org.uk/IT/gantt_latex.html
-
-\section{Appendices}
-\subsection{log of milestones}
-- mock ready milestone 
-- preliminary reading finished
 
 \section{Citations}
 \bibliographystyle{}
 \bibliography{}
 Teufel, Siddharthan and Batchelor  2009 - towards discipline - independent argumentative zoning - evidence from chemistry and computationl linguistics
 \newpage
-
-\section{bin}
 \end{document}
