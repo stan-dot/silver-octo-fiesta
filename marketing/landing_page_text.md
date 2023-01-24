@@ -42,8 +42,15 @@ not mobile enough
 only 1 goal - subscribe to email updates - need a short form
 
 
-
 # actual text
+
+my sections
+- landing 
+- history? timeline (interactive?)
+- story of Alice and Bob talking, resolving an issue
+
+- thesis: many disagreemtns are about not understanding another's position, not bad faith. There are true disagreements, but it should be clear what they're about.
+- debate graph and rationale-online essay planning
 
 
 ## header and hook
