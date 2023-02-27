@@ -82,3 +82,28 @@ the data gathering problem
 
 - unanswered questions and issues
 - if criticisms, they must come from a place of understanding
+
+
+The theatre of these exchanges is the online platform.
+That increases the importance for automatic processing of that data.
+Monologues are represented better on twitter, with threads being a linear structure. Branching structures are less legible.
+That can hostilities.
+
+Exposure to alien views is much more common in online communities compared to offline ones (Anand et al, 2012).
+On the other hand, homophily is also present (Cinelli et al, 2021) https://www.pnas.org/doi/10.1073/pnas.2023301118
+In any topic, a relatively small number of arguments is repeated multiple times in 'echo chambers'.
+Many users base their stance on those most common arguments. These are often expressed in different wording.
+Linking textual statements to these abstract arguments is non-trivial. (Boltuzic, Snajder 2015)
+
+There are more appplications to this automatization.
+It was remarked ( Carstens and Toni 2015) that there are many applications of the automatic processing of argumentative data,
+ such as automated decision making (Bench-Capon et al., 2009) or pro-and-con search engines (Cabrio and Villata, 2012c).
+
+
+
+\subsection{App use sample screen}
+% todo this weekend https://wireframe.cc/
+
+\subsection{database schemas}
+% todo this weekend
+
