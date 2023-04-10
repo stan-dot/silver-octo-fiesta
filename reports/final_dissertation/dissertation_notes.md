@@ -91,7 +91,6 @@ This should explain the design technique chosen (and justify why it is appropria
 In addition to illustrating "coding traps", this should highlight particular novel aspects to algorithms. Testing should be according to the scheme presented in the Analysis chapter and should follow some suitable model - e.g. category partition, state machine-based. Both functional testing and user-acceptance testing are appropriate. For experimental/investigative projects, techniques developed should be evaluated against a standard result set for calibration, as well as the "live" data set. For theoretical projects, the relative power/expressiveness of the theory should be evaluated with respect to competing approaches.
 
 
-
 ### Chapter 6: Results and discussion
 
 The main results of your work should be presented, together with critical discussion. The chapter should cover three things (although these would not be used as section headings):
