@@ -1,4 +1,5 @@
 https://sites.google.com/sheffield.ac.uk/comughandbook/your-study/dissertation-project/dissertation-structure?pli=1&authuser=1
+between 7 and 14k
 
 ### disclaimers
 There are many different types of project and so it is difficult to produce a detailed set of recommendations to suit every single dissertation. The dissertation structure below is only a suggestion.
