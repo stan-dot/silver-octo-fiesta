@@ -1,24 +1,51 @@
 \documentclass{article}
-
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    pdftitle={Overleaf Example},
+    pdfpagemode=FullScreen,
+    }
+    
 \title{Dissertation Project Description}
-\author{Stanislaw Malinowski}
-\subitem{Rob Gaizauskas}
-\subitem {COM3610}
+\author{Stanislaw Malinowski
+\\[1cm]{\small Advisor: Rob Gaizauskas}
+\\[1cm]{\small Module Code: COM3610}
+}
+
+\urlstyle{same}
 \date{October 2022}
 
+\usepackage{array}
+
+\newenvironment{conditions}
+  {\par\vspace{\abovedisplayskip}\noindent\begin{tabular}{>{$}l<{$} @{${}={}$} l}}
+  {\end{tabular}\par\vspace{\belowdisplayskip}}
+
+\usepackage{biblatex}
+\addbibresource{references.bib}
+
+\usepackage{booktabs}
+\usepackage{enumitem}
+
+\linespread{1.25}
+
 \begin{document}
+
 \maketitle
-\section*{Contents}
+
 \tableofcontents
 \newpage
 
 \section{Introduction}
 
-\subsection*{Background}
+\subsection{Background}
 There is a scarcity of open datasets in many domains of data science. In NLP there is an abundance of linear textual archives, but adversarial, debate-like data is scarce.
-That is an obstacle to development of adversarial NLP models and bots. Notable projects in the area include IBM's Project Debater \cite[]{https://research.ibm.com/interactive/project-debater/}, yet these are not open sourced.
+That is an obstacle to development of adversarial NLP models and bots. Notable projects in the area include IBM's \href{https://research.ibm.com/interactive/project-debater/}{Project Debater} \cite{slonim2021autonomous}, yet these are not open sourced.
 
-\subsection*{Short description}
+\subsection{Short description}
 The goal of this project is to build a tool to crowdsource a dataset of structured argument data, to be used by NLP researchers as a labeled dataset.
 NLP programs trained with it should be able to comprehend and create debate-like discourses across domains.
 
@@ -27,67 +54,102 @@ That will be obtained by driving user engagement through various incentives.
 Structure of incentives is the more non-standard part of the project, more novel than just construing the interactive website.
 
 \section{Analysis}
-\subsection[]{Final purpose - data collection}
-The essential equation that this project is optimizing is the volume & quality of the data.
+
+This analysis is split into two parts; first an analysis of the aims of the project in Section \ref{sec:purpose}, and then an analysis of the techniques used to implement the app in section \ref{sec:techniques}.
+
+\subsection{Final purpose - data collection}\label{sec:purpose}
+The essential equation that this project is optimizing is the volume and quality of the data.
+
+%\begin{equation}
+%  {Monthly Users} * {Average Time Spent by User} * {\% of App usage that generates data} = {Volume of Raw Data}
+%\end{equation}
+
 \begin{equation}
-  {Monthly Users} * {Average Time Spent by User} * {\% of App usage that generates data} = {Volume of Raw Data}
+U \times T_{m}  \times G = D_{m}
 \end{equation}
+where:
+\begin{conditions}
+ U     &  Number of users \\
+ T_{m}     &  Average time spent by user per month \\   
+ G &  \% of app usage that generates data \\
+ D_{m} & Volume of data gathered per month
+\end{conditions}
 
 It can be expected that achieving viral status would increase the first two factors. The percentage of the App that generates data is the factor that is most impacted by the design.
 
-Based on the combination of the factors we can imagine two approaches, the Expert Approach and Crowdsoucrcing Approach. 
-Expert Approach puts nearly all of App functionality into data-creation. The third factor is above {90\%}.
-On the other hand, Crowdsoucrcing Approach is about optimizing the User Experience to get a high number in the Monthly Users and Average Time factor, with a lower third factor.
+Based on the combination of the factors we can imagine two approaches, the Expert Approach and Crowdsourcing Approach. 
+Expert Approach puts nearly all of App functionality into data-creation. The third factor is probably above {90\%}.
+On the other hand, Crowdsourcing Approach is about optimizing the User Experience to get a high number in the Monthly Users and Average Time factor, with a lower third factor.
 Under this approach, a substantial minority, or even majority of app functionalities would be about structuring gamified incentives: progression, competition, achievement and altruism.
 
 These approaches are not exclusive in any respect besides developer time.
-Literature on 'games with purpose' will be consulted in this direction.
+Literature on `games with purpose' will be consulted in this direction.
 
 It should be noted that some degree of publicity would be an excellent driver of user engagement. There are huge marginal gains in the number of users if the marketing of the App is handled well.
 
-\subsubsection*{Ensuring data quality}
+\subsubsection{Ensuring data quality}
 Data quality is a necessary property of the output dataset. Debate data of poor quality is readily available on the internet.
 
-Potential approaches to ensuring data is of sufficient quality can be split into pre-collection and post-collection measures. Collection is the moment of addition of data into the database.
+Potential approaches to ensuring data is of sufficient quality can be split into pre-collection and post-collection measures. Collection is the moment of addition of data into the database. These collection methods are summarized in Table \ref{tab:collection}.
 
-Pre-collection measures
-\begin{itemize}
-  \item only verified users being able to use the App
+  \begin{table}[h!]
+      \centering
+    \begin{tabular}{|l|p{8cm}|}
+\toprule
+Pre-collection measures:  & \begin{itemize}[left=0pt,topsep=0pt]\item only verified users being able to use the App
   \item automatic detection of invalid inputs (empty strings, etc)
   \item not sending the data created by the first time users to the database to prevent mistakes on the early stage of usage.
-  \item putting users in adversarial scenarios where their performance is assessed by peers (social status as 'skin in the game) \cite{https://dictionary.cambridge.org/dictionary/english/have-skin-in-the-game}
-\end{itemize}
-
-Post-collection measures
-\begin{itemize}
+  \item putting users in adversarial scenarios where their performance is assessed by peers (social status as \href{https://dictionary.cambridge.org/dictionary/english/have-skin-in-the-game}{`skin in the game'})
+\end{itemize} \\
+\midrule
+       Post-collection measures:  & \begin{itemize}[left=0pt,topsep=0pt]
   \item validation of each input by multiple validators.  
-  \item rewarding user input on the basis of agreement with other users (adapting the Keynesian Beauty Contest \cite{https://en.wikipedia.org/wiki/Keynesian_beauty_contest})
-\end{itemize}
+  \item rewarding user input on the basis of agreement with other users (adapting the \href{https://en.wikipedia.org/wiki/Keynesian_beauty_contest}{Keynesian Beauty Contest}\cite{Keynes1936})
+\end{itemize} \\
+\bottomrule
+    \end{tabular}
+    \caption{A summary of collection measures}
 
-Google Crowdsource \cite{https://crowdsource.google.com/about/how-it-works/} appears to be the largest similar dataset-creating project, it will be used as a benchmark for the App.
+ \end{table}\label{tab:collection}
 
-\subsection*{Possible Techniques}
-\subsubsection*{Technical Stack}
+% Pre-collection measures:
+% \begin{itemize}
+%   \item only verified users being able to use the App
+%   \item automatic detection of invalid inputs (empty strings, etc)
+%   \item not sending the data created by the first time users to the database to prevent mistakes on the early stage of usage.
+%   \item putting users in adversarial scenarios where their performance is assessed by peers (social status as \href{https://dictionary.cambridge.org/dictionary/english/have-skin-in-the-game}{`skin in the game'})
+% \end{itemize}
+
+% Post-collection measures:
+% \begin{itemize}
+%   \item validation of each input by multiple validators.  
+%   \item rewarding user input on the basis of agreement with other users (adapting the \href{https://en.wikipedia.org/wiki/Keynesian_beauty_contest}{Keynesian Beauty Contest}\cite{Keynes1936})
+% \end{itemize}
+
+\href{https://crowdsource.google.com/about/how-it-works/}{Google Crowdsource}  appears to be the largest similar dataset-creating project, it will be used as a benchmark for the App.
+
+\subsection{Possible Techniques}\label{sec:techniques}
+\subsubsection{Technical Stack}
 A frontend might be a web app and/or a mobile application. It can be expected that a mobile application would fare better in terms of user volume.
-A React Native solution should work for \cite[]{https://necolas.github.io/react-native-web/docs/activity-indicator/} 
+A \href{https://necolas.github.io/react-native-web/}{React Native} solution should work for both platforms.
 
-\subsubsection*{Technical Base  - Interactive interface with graph visualization}
+\subsubsection{Technical Base  - Interactive interface with graph visualization}
 A simple app made inside a framework is not sufficient for the App goals. A key part of the App will be the feature of interactive graph display.
 Graph visualization is a nontrivial and infrequent part of web development. Ecosystem isn't that fully developed. Creating a powerful yet easy to use UI is going to be the base for the App's success.
 
 Literature for this aspect of the App will be a benchmark analysis of similar tools.
 
 \section{Plan of action}
-\subsection*{SMART goals}
+\subsection{SMART goals}
 
-\subsubsection*{Specific}
+\subsubsection{Specific}
 The deliverable will be a working full stack application that allows users to engage with the Database, with the Minimium Viable Product being creation of new data nodes.
 
-\subsubsection*{Measurable}
-  The metric will be the number of new nodes created in the database. There should be at least 200 'question' nodes and 1000 'statement' nodes created by the users by the end of April 2023.
-  These should all be easily displayable by any new App user.
+\subsubsection{Measurable}
+  The metric will be the number of new nodes created in the database. There should be at least 200 `question' nodes and 1000 `statement' nodes created by the users by the end of April 2023.
+  These should all be easily viewed by any new App user.
 
-\subsubsection*{Achievable}
+\subsubsection{Achievable}
 Subgoals to achieve the metric are:
 \begin{itemize}
   \item start of December 2022 - Minimum Viable Product demo - ensures the qualitative potential for user engagement
@@ -95,43 +157,43 @@ Subgoals to achieve the metric are:
   \item start of March 2023 - Gamification Additions - encourage users to use the app more
 \end{itemize}
 
-\subsubsection*{Relevant}
+\subsubsection{Relevant}
 The App will fill the niche of the Dataset landscape and provide NLP researchers will a valuable resource.
 
-\subsubsection*{Time-bound}
+\subsubsection{Time-bound}
 The author (S Malinowski) will deliver the App by May 2023, as in the University description of the Dissertation process.
 
-\subsection*{Weekly plan of work for Semester 1}
+\subsection{Weekly plan of work for Semester 1}
 
 \begin{itemize}
-  \item week 3 - week ending on friday the 07.10 - this document
-  \item week 4 - proof of concept - displayable argument tree
-  \item week 5 - literature review - comparison of existing site for similar purposes
-  \item week 6 - literature review 2, discussion on the output data format
-  \item week 7 - MVP construction for argument tree interaction
-  \item week 8 - App development
-  \item week 9 - App development
-  \item week 10 - App polishing before demo, 
-  \item week 11 - by Monday Survery and Analysis report
-  \item week 12 - week terminating on friday the 16.12
+  \item Week 3 - week ending on Friday 7 October - this document
+  \item Week 4 - proof of concept - displayable argument tree
+  \item Week 5 - literature review - comparison of existing site for similar purposes
+  \item Week 6 - literature review 2, discussion on the output data format
+  \item Week 7 - MVP construction for argument tree interaction
+  \item Week 8 - App development
+  \item Week 9 - App development
+  \item Week 10 - App polishing before demo, 
+  \item Week 11 - by Monday Survey and Analysis report
+  \item Week 12 - week terminating on Friday 16 December
 \end{itemize}
 
-\subsection*{Weekly plan of work for Semester 2}
+\subsection{Weekly plan of work for Semester 2}
 
 \begin{itemize}
-  \item week 1 - -week starting 06.12 February 2023, preparing the repository for Vendor Publish stage
-  \item week 2 - Vendor Publish preparation, marketing efforts
-  \item week 3 - Vendor Publishing
-  \item week 4 - implementation of 1 of the gamification constructs
-  \item week 5 - further implementation of gamification constructs
-  \item week 6 - implementation of gamification constructs
-  \item week 7 - implementation of gamification constructs
-  \item week 8 - implementation of gamification constructs
-  \item week 9 - implementation of gamification constructs
-  \item week 10 - on Wednesday 03.05 Project Presentation
-  \item week 11 - on Wednesday 10.05 Final Dissertation Deadline
+  \item Week 1 - week starting 6 February 2023, preparing the repository for Vendor Publish stage
+  \item Week 2 - Vendor Publish preparation, marketing efforts
+  \item Week 3 - Vendor Publishing
+  \item Week 4 - implementation of 1 of the gamification constructs
+  \item Week 5 - further implementation of gamification constructs
+  \item Week 6 - implementation of gamification constructs
+  \item Week 7 - implementation of gamification constructs
+  \item Week 8 - implementation of gamification constructs
+  \item Week 9 - implementation of gamification constructs
+  \item Week 10 - on Wednesday 3 May Project Presentation
+  \item Week 11 - on Wednesday 10 May Final Dissertation Deadline
 \end{itemize}
 
 \newpage
-
+\printbibliography
 \end{document}

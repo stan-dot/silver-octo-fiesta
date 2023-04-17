@@ -1,11 +1,39 @@
 \documentclass{article}
-\usepackage{blindtext}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    pdftitle={Overleaf Example},
+    pdfpagemode=FullScreen,
+    }
+    
+\title{Dissertation}
+\author{Stanislaw Malinowski
+\\[1cm]{\small Advisor: Rob Gaizauskas}
+\\[1cm]{\small Module Code: COM3610}
+}
 
-\title{Sections and Chapters}
-\author{Stanislaw Malinowski}
-\subitem{Supervisor}
-\subitem {module code}
-\date{\today}
+
+\urlstyle{same}
+\date{October 2022}
+
+\usepackage{array}
+
+\newenvironment{conditions}
+  {\par\vspace{\abovedisplayskip}\noindent\begin{tabular}{>{$}l<{$} @{${}={}$} l}}
+  {\end{tabular}\par\vspace{\belowdisplayskip}}
+
+\usepackage{biblatex}
+\addbibresource{references.bib}
+
+\usepackage{booktabs}
+\usepackage{enumitem}
+
+
+\linespread{1.25}
+
 
 \begin{document}
 \maketitle
@@ -41,10 +69,27 @@ Thanks to whoever may have helped you in any way - both serious and a bit of fun
 \blindtext
 \newpage
 
-\section{Chapter 1: Introduction}
+\section{Introduction} 800-1000 words
 How to get beyond bag-of-words approaches for meaning and sentiment analysis? 
 How to get to the structure of the argument, that may escape even the utterer?
 These are questions that interested researches in discourse analysis for many years.
+
+\subsection{Background}
+There is a scarcity of open datasets in many domains of data science. In NLP there is an abundance of linear textual archives, but adversarial, debate-like data is scarce.
+That is an obstacle to development of adversarial NLP models and bots. Notable projects in the area include IBM's \href{https://research.ibm.com/interactive/project-debater/}{Project Debater} \cite{slonim2021autonomous}, yet these are not open sourced.
+
+\subsection{Short description}
+The goal of this project is to build a tool to crowdsource a dataset of structured argument data, to be used by NLP researchers as a labeled dataset.
+NLP programs trained with it should be able to comprehend and create debate-like discourses across domains.
+
+The App will be optimized for generation of Labeled Argument Data (LAD).
+That will be obtained by driving user engagement through various incentives. 
+Structure of incentives is the more non-standard part of the project, more novel than just construing the interactive website.
+
+Based on the combination of the factors we can imagine two approaches, the Expert Approach and Crowdsourcing Approach. 
+Expert Approach puts nearly all of App functionality into data-creation. The third factor is probably above {90\%}.
+On the other hand, Crowdsourcing Approach is about optimizing the User Experience to get a high number in the Monthly Users and Average Time factor, with a lower third factor.
+Under this approach, a substantial minority, or even majority of app functionalities would be about structuring gamified incentives: progression, competition, achievement and altruism.
 
 Data science has been applied with incredible success in many NLP tasks, sentiment analysis market valued at \$3.15 billion in 2021 (https://www.polarismarketresearch.com/industry-analysis/sentiment-analytics-market)
 The results are limited. Opinions gathered in this way are devoid of reasoning structure.
@@ -66,7 +111,7 @@ Report will end with a description of achievements to date and plans for the fut
 
 \newpage
 
-\section{Chapter 2: Literature Survey}
+\section{Literature Survey} 3500-5000 words
 Argument structure analysis goes back to antiquity. I. Angelelli. The techniques of disputation in the history of logic, 1970.
 Analysis of argumentation has been an active topic in numerous research areas, such as philosophy (van Eemeren et al., 2014), communication studies (Mercier and Sperber, 2011), and informal logic (Blair, 2004), among others
 This chapter will cover the areas that this project touches.
@@ -207,7 +252,8 @@ These are qualities worth emulating. Task completion and scoring are the easiest
 In contrast, creating a coherent and engaging storyline would require a specific skillset that might not always be available.
 Possibly emphasizing social features could substitute this.
 
-\section{Chapter 4: Similar software review}
+% todo add descriptions of new software found, elaborate on these ones already here
+\subsection{Similar software review}
 There is a plethora of similar software. 
 There are commrecial B2B SAAS solutions, aiming to help in meetings, by providing a way to write structured notes and diagrams.
 There are also hacker-ethics personal knowledge management tools.
@@ -288,8 +334,11 @@ It is in active development and it might be useful for downstream processing of 
 
 \newpage
 
+\section{Requirements and analysis} 1500-2500 words
 
-\section{Chapter 3: Requirements and analysis}
+\subsubsection{Relevancy}
+The App will fill the niche of the Dataset landscape and provide NLP researchers will a valuable resource.
+
 \subsection{Requirements}
 To avoid the pitfalls of human annotation, a quantitative approach should be pursued. 
 A diverse range of both source texts and human participants is needed.
@@ -307,7 +356,6 @@ Over the following week:
 - user completes a small number of interactions with the application
 - user intergrates the app importing some content on their own, be it from Twitter or other dynamic corpora (for instance a blog article to annotate to understand it better)
 - user continues to grow their use of the app, perhaps using it as a note taking app
-
 
 \subsection{Design decisions to be taken}
 There is the option for a debate mode for the app.
@@ -335,9 +383,37 @@ https://www.statista.com/statistics/1119893/average-number-downloads-united-stat
 
 These data will be achieved from app publisher analytics.
 
+\subsubsection{Ensuring data quality}
+Data quality is a necessary property of the output dataset. Debate data of poor quality is readily available on the internet.
+
+Potential approaches to ensuring data is of sufficient quality can be split into pre-collection and post-collection measures. Collection is the moment of addition of data into the database. These collection methods are summarized in Table \ref{tab:collection}.
+
+  \begin{table}[h!]
+      \centering
+    \begin{tabular}{|l|p{8cm}|}
+\toprule
+Pre-collection measures:  & \begin{itemize}[left=0pt,topsep=0pt]\item only verified users being able to use the App
+  \item automatic detection of invalid inputs (empty strings, etc)
+  \item not sending the data created by the first time users to the database to prevent mistakes on the early stage of usage.
+  \item putting users in adversarial scenarios where their performance is assessed by peers (social status as \href{https://dictionary.cambridge.org/dictionary/english/have-skin-in-the-game}{`skin in the game'})
+\end{itemize} \\
+\midrule
+       Post-collection measures:  & \begin{itemize}[left=0pt,topsep=0pt]
+  \item validation of each input by multiple validators.  
+  \item rewarding user input on the basis of agreement with other users (adapting the \href{https://en.wikipedia.org/wiki/Keynesian_beauty_contest}{Keynesian Beauty Contest}\cite{Keynes1936})
+\end{itemize} \\
+\bottomrule
+    \end{tabular}
+    \caption{A summary of collection measures}
+
+ \end{table}\label{tab:collection}
+
 \newpage
 
-\section{Chapter 4: Design}
+% todo more on design
+% write about entities: statement, relation, all 3 of the games
+
+\section{Design} 1500-2500 words
 https://adancewithbooks.wordpress.com/2019/09/22/a-small-list-of-trigger-warnings-you-can-use/
 \subsection{technique chosen from available }
 select a subst of things from analysis and design (3), say about tradeoffs. diagrams - flow of the code
@@ -387,44 +463,107 @@ As mentioned above, AIFdb format may be used for data portability, and Argdown f
 \blindtext
 \newpage
 
-\section{Chapter 5: Implementation and testing}
+\section{Implementation and testing} 2000-3000 words
+Chapter 5: Implementation and Testing
+
+In this chapter, we will discuss the implementation and testing of the application. The goal of the implementation phase was to build a functional and user-friendly application that fulfilled the requirements outlined in the previous chapters.
+
+One of the main challenges faced during the implementation was dealing with code traps, which slowed down the development process. Another important aspect was the design of the interface and screens in the application in a logical way to ensure a smooth user experience. Data transmission and validation cross-update of topics were also significant considerations to ensure the reliability of the application.
+
+Furthermore, we had to develop update algorithms for both the data structure and gamification pit, which allowed users to track their progress using progress bars. To achieve this, we had to ensure that our algorithms were efficient and effective in updating user data, and that the progress bars reflected user progress accurately.
+
+We also integrated AIFdb to translate the data from the AI Forum to the application, which required extensive testing and validation to ensure that the translation was accurate and reliable.
+
+Finally, we worked with the Argdown library, which proved to be a challenging but powerful tool for structuring and visualizing arguments. Despite the challenges of working with this library, it provided significant benefits in helping us to structure and present complex arguments in a user-friendly way.
+
+Throughout the implementation phase, we tested the application extensively to ensure that it met our goals and objectives. However, due to time and legal constraints, we were unable to conduct a large-scale experimental study with a wide range of users. Nevertheless, the feedback we received from early users was positive, and we used this feedback to refine the application and improve its user flow.
+
+In summary, the implementation phase of the project involved a range of challenges and considerations, from designing an intuitive user interface to developing update algorithms for gamification elements. We also had to work with a variety of tools and libraries, including AIFdb and Argdown. Ultimately, we were able to achieve our goals and create a functional and user-friendly application that has the potential to help users better understand complex arguments. The lessons learned from this phase will be valuable for future development efforts, particularly in terms of improving user flow and the logical order of screens.
+
+
 - illustrate code traps
+design of the interface, screens in the application in a logical way. 
+data transmission and validation cross-update of topics
 - aspects of update algoritmhs for the data structure
+
 - aspects of update algoritmhs for the gamification pit
-- against a standard set and live dataset
+
+- aifdb - data translation
+
+- working with argdown - hard to work with library
+
 \blindtext
 \newpage
 
-\section{Chapter 6: Results and discussion}
+\section{Results and discussion} 2500-4000 words
 
+% todo change
+The MVP version of our project yielded promising results. 
+
+Our goals of developing an ethical decision-making tool with an easy-to-use interface were achieved, as evidenced by the positive feedback from initial user tests.
+
+The use of progress bars and games to incentivize user engagement was particularly impactful, leading to increased motivation and participation.
+
+While we were not able to conduct a wider experimental study due to time and legal constraints, the findings from our limited sample size suggest that our product is effective in achieving our objectives. 
+Specifically, the ethical decision-making framework successfully identified potential conflicts and provided solutions aligned with ethical principles. The progress bars and games were also effective in encouraging users to engage with the product and complete tasks.
+
+User feedback was an important part of our development process and we plan to continue to gather feedback as we move forward. We recognize the importance of creating a smooth user flow and ensuring that the order of screens is logical and intuitive. We also learned valuable lessons about using Supabase and writing mobile apps, which will inform future development.
+
+% end todo change
 - findings - productsgenerated
 - goals achieved - how much do the findings support the objectives
 - say that no exeprimental wide participation
 -  over some of the cases
 
+- user feedback
+- lessons learned
+
 
 \blindtext
 
 \subsection{Further directions}
-- make it work for more people
-- actually train the ai
+There can be outlined several next steps for this project. The first objective is to expand the scope of the proof of concept to make it accessible to a larger user base. This may involve actions such as improving the user interface smoothness and clarity, optimizing performance, adding multiplayer features.
+
+The multiplayer mode would give the users an ability to engage in debates with each other. It is hoped it would foster productive dialogue and build empathy across divides.
+Users will be challenged on their assumptions in an organic way, hopefully leading to constructive conversations. Multiplayer mode would promote a nuanced understanding of complex issues.
+
+Not only human debaters could be available on Lully. Training an AI agent could result in a brilliant and entertaining conversation partner. Technically that could be approached through using a pretrained model and fine-tuning it on Lully data.
+
+Having validated the proof of concept, it is seen that there is value in the expanding the reach and improving capabilities of Lully. It can become a compelling tool that will benefit users across many topics and create datasets more research can be based on.
 
 \newpage
 
-\section{Chapter 7: Conclusions}
-short chapter - 2,3 pages
-brigs stuff together, with slightly different wording
+\section{Conclusions} 500-8000 words
 
-\blindtext
-\newpage
+% todo change this 
+The Lully project is a proof of concept for an AI-based tool designed to facilitate ethical decision-making and critical thinking. It aims to address the challenges of postmodernism and provide users with a framework for evaluating the ethical implications of their decisions.
 
-\section{References}
+The proof of concept is based on a mobile application that allows users to explore different ethical scenarios and evaluate the ethical implications of their decisions. The app uses a gamified approach, with progress bars and achievements, to encourage users to engage with the content and explore the different scenarios.
+
+The app also includes an AI-powered feature that allows users to simulate different perspectives and explore the underlying values and assumptions of different ideologies. This feature is designed to help users develop more empathy and engage in more productive dialogue with those who hold different views.
+
+The proof of concept was designed and implemented using Supabase, a cloud database service, and React Native, a mobile application development framework. The team faced some challenges working with these technologies, but ultimately were able to build a functional and user-friendly application.
+
+The proof of concept was evaluated through a series of user tests, with participants from different backgrounds and levels of expertise. The feedback was generally positive, with users reporting that the app was easy to use and engaging. However, there were also some suggestions for improvements, particularly in terms of the user flow and the logical order of the screens.
+
+The results of the proof of concept support the goals of the Lully project, demonstrating the potential of AI-based tools to facilitate ethical decision-making and critical thinking. The gamification approach and progress bars were found to be effective in encouraging user engagement and exploration of the different scenarios.
+
+The proof of concept also highlighted some of the challenges of working with Supabase and React Native, particularly in terms of data transmission and validation, cross-update of topics, and update algorithms for the data structure and gamification pit.
+
+The Lully project team learned several important lessons during the implementation and testing of the proof of concept. They gained experience in working with Supabase and React Native, and learned about the importance of a smooth user flow and logical order of screens. They also gained insights into the challenges of using the Argdown library and working with the AI-Framework Database (AIFDB) for data translation.
+
+Overall, the Lully project proof of concept represents an important step towards the development of AI-based tools for ethical decision-making and critical thinking. While there are still challenges to be addressed, the results of the proof of concept demonstrate the potential of these tools to promote more empathetic and thoughtful decision-making, and contribute to a more ethical and equitable society.
+%  end todo
+
 \blindtext
 \newpage
 
 \section{Appendices}
 \subsection{Technical details}
-- versinos of source code
+- versions of source code
 \newpage
+
+\newpage
+\printbibliography
 
 \end{document}

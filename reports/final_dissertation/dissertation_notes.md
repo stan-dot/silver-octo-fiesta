@@ -50,7 +50,6 @@ It is often best include a separate list of all the figures in the dissertation 
 
 ## Chapters
 ### Chapter 1: Introduction
-
 The introduction has several purposes. Clearly one is to set the scene for the project by giving a little relevant background information - try to grab the reader's interest early. Another is to clearly elucidate the aims and objectives of the project and the constraints that might affect the way in which the project is carried out. If the project involves the solution of a specific problem or the production of a specific system this should be clearly specified in an informal way. Finally, the introduction should summarise the remaining chapters of the dissertation, in effect giving the reader an overview of what is to come.
 
 The type of project will dictate the content and structure of the following chapters and you should discuss this with your supervisor. For example, for a theoretical project it is likely that several chapters will be devoted to constructing the theoretical foundations for the project and will consist of your own interpretation and synthesis of existing work with suitable examples discussed throughout. A sequence of chapters that cover theoretical framework, conditions and assumptions and theory application and comparisons may be appropriate. For an experimental project, the experimental goals, design, execution and evaluation might be covered. What now follows is a typical structure for a 'design and build' project.
@@ -60,7 +59,6 @@ At the end of chapter 1, you should include a brief discussion of your view of t
 
 
 ### Chapter 2: Literature Review
-
 The title of this chapter is open to discussion. Literature review is a bit simplistic and it may be that you can title the chapter better, based on the particular type of project that you are doing.
 
 It is often useful to start this chapter with an overview of its contents, giving the reasoning behind why you have structured it in a particular way. The main thrust of the chapter is a review of relevant work by other authors and the relationship between this and your own work. If several other people have done closely related work in a different way then the reasons for your approach should be summarised here.
@@ -69,10 +67,7 @@ A good literature review is synthetic: general trends and positions in your rese
 
 Everything that you write must be your own words and you must cite other people using references. You may also quote sentences from the work of others. These must be included in quotation marks and again the relevant work must be cited. Your signed declaration means that you will fail your dissertation if you do not acknowledge the work of others.
 
-
-
 ### Chapter 3: Requirements and analysis
-
 This should state, in a more detailed way, the objectives of the project by requirement and the analysis should break the problem down into manageable steps. There may be more than one suitable approach; the analysis may cover more of the area than is finally implemented.
 
 Testing and evaluation should be given due consideration. It is important that you state how you will evaluate your work - not just whether what you build works but to what extent you have satisfied your original aims. For a design project it is appropriate to consider testing at the same time as specification.
@@ -80,19 +75,15 @@ Testing and evaluation should be given due consideration. It is important that y
 In this chapter, you should also include a statement about any legal and ethical considerations relevant to your project work.
 
 
-
 ### Chapter 4: Design
-
 This should explain the design technique chosen (and justify why it is appropriate) from the various ones available; it should select a suitable subset of the things described in the analysis chapter and develop a design. Where trade-offs exist between different designs, the chosen approach should be justified. Suitable diagram-techniques (e.g. UML, other drawings) should be used where appropriate. If a method is applied selectively, explain which parts were used and why. Experimental projects should pay careful attention to control conditions, samples selected, etc. to ensure a valid result.
 
 
 ### Chapter 5: Implementation and testing
-
 In addition to illustrating "coding traps", this should highlight particular novel aspects to algorithms. Testing should be according to the scheme presented in the Analysis chapter and should follow some suitable model - e.g. category partition, state machine-based. Both functional testing and user-acceptance testing are appropriate. For experimental/investigative projects, techniques developed should be evaluated against a standard result set for calibration, as well as the "live" data set. For theoretical projects, the relative power/expressiveness of the theory should be evaluated with respect to competing approaches.
 
 
 ### Chapter 6: Results and discussion
-
 The main results of your work should be presented, together with critical discussion. The chapter should cover three things (although these would not be used as section headings):
 
 Findings - present all the results (products, experimental findings, theories, etc.) generated during the project. This may also include some off-topic findings that were not expected, or which were side-effects of other explorations.

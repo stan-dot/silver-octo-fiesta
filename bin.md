@@ -46,3 +46,6 @@ a 'shadow place' for possible additions to the graph
 - inflows from different datasets
 - gamification database
 - temporary events - in partnership would be the best!
+- make it work for more people
+- actually train the ai
+- against a standard set and live dataset
