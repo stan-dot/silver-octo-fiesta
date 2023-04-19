@@ -123,3 +123,10 @@ data transmission and validation cross-update of topics
 I also learned valuable lessons about using Supabase and writing mobile apps, which will inform future development.
   \item altruism
   \item progression - new capabilities unlocked  
+
+mining: argument extraction, segmentation, i.e. identification of minimal argumentative discourse units (ADUs), segment classification, i.e. labeling of ADUs based on their argumentative roles, identification of relations between these segments, and argument completion, i.e. automatic construction of statements from implicit propositions
+Some consideration should be given to incorporating them into the space of possible arguments on the app.
+
+As mentioned above, AIFdb format may be used for data portability, and Argdown for markdown notation.
+[ add about future plans]
+[add challenges and obstacles]
