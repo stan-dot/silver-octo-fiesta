@@ -33,28 +33,27 @@
 
 \linespread{1.25}
 
-% todo add bibliography
 
 \begin{document}
 \maketitle
-\chapter*{Title page}
+\section*{Title page}
 This report is submitted in partial fulfillment of the requirement for the degree of BSc in Computer Science by Stanislaw Malinowski.
 \newpage
 
-\chapter*{Declaration}
+\section*{Declaration}
 All sentences or passage quoted in this report from other people's work have been specifically acknowledged by clear cross-referencing to author, work and page(s). Any illustrations that are not the work of the author of this report have been used with the explicit permission of the originator and are specifically acknowledged. I understand that failure to do this amounts to plagiarism and will be considered grounds for failure in this project and the degree examination as a whole.
 
 Stanislaw Malinowski
 \newpage
 
-\chapter*{Abstract}
+\section*{Abstract}
 
 Lully project is a gamified crowdsource data capture tool with the goal of creating argument databases. Gamification follows the Game With A Purpose paradigm pioneered by von Ahn, and present in applications such as Google Crowdsource and Duolingo. The created argument database could be used to create machine learning models that can extract argument structure from raw text.
 The achieved status of the project is a proof-of-concept with 6 games that create the corpus and a rudimentary gamification layer. That falls short from the original project outline that assumed deployment and testing the application with real users, and creating a corpus of structured arguments. 
 
 \newpage
 
-\chapter*{Acknowledgements}
+\section*{Acknowledgements}
 I would like to thank my supervisor, Rob, for his patience and guidance, and Jonathan, a PhD student, for reviewing my work. Their feedback and support have been invaluable to my academic progress.
 
 \newpage
@@ -107,7 +106,7 @@ Report will end with a description of achievements to date and plans for the fut
 
 \newpage
 
-\chapter{Literature Survey} 1992-3723 words 3451
+\chapter{Literature Survey}
 Argument structure analysis goes back to antiquity. I. Angelelli. The techniques of disputation in the history of logic, 1970.
 Analysis of argumentation has been an active topic in numerous research areas, such as philosophy (van Eemeren et al., 2014), communication studies (Mercier and Sperber, 2011), and informal logic (Blair, 2004), among others This chapter will cover the areas that this project touches. There are several types of approaches. Fully annotated and semi-supervised approaches.
 
@@ -333,7 +332,7 @@ These numbers highlight the difficult nature of these projects and the scale reu
 
 \newpage
 
-\chapter{Requirements and analysis} 854-1862 words 1058
+\chapter{Requirements and analysis}
 \href{https://en.wikipedia.org/wiki/Semantic_network}{Semantic network} are graphical representations of concepts and their interrelationships, often used in natural language processing and artificial intelligence. It is closely related to 'formal concept analysis', which is an activity in philosophy aiming at a similar results. Finally ontology languages are the static, completed equivalent. They are often created synthetically, as opposed to the analytic origin of the previous ones.
 
 \subsection{Stakeholder analysis}
@@ -438,7 +437,7 @@ Pre-collection measures:  & \begin{itemize}[left=0pt,topsep=0pt]\item only verif
 
 \newpage
 
-\chapter{Design} 854-1862 words 1282
+\chapter{Design}
 
 \subsection{Backend data structures related to the arguments}
 By sectioning off the data structured related to the purpose, excluded are authentication structures such as passwords and gamification structures.
@@ -467,7 +466,6 @@ It is structured into these PostgresSQL tables:
 Achievements is a simple table listing possible achievements each user may have. They are referenced to the gamer_profiles in a linker table. Gamer_profiles recounts the number of user's contributions as experience points.
 Top_gamers is a PostgresSQL View, that is a custom query, which in this case returns a leaderboard of all players, sorted by number of experience points.
 
-% todo diagram for flow of code
 
 \subsection{Frontend interactions with the backend}
 
@@ -541,7 +539,7 @@ User can access their account panel and see their achievements as well as experi
 For optimization of user satisfaction a tagging system is added to the topics and the source text tables, which points at various \href{https://adancewithbooks.wordpress.com/2019/09/22/a-small-list-of-trigger-warnings-you-can-use/}{trigger warnings}.
 \newpage
 
-\chapter{Implementation and testing} 1138-2234 words 455
+\chapter{Implementation and testing}
 
 The proof of concept also highlighted some of the challenges of working with Supabase and React Native, particularly in terms of data transmission and validation, cross-update of topics, and update algorithms for the data structure and gamification part.
 
@@ -561,7 +559,7 @@ Ultimately, I was unable to achieve the goals and create a functional and user-f
 
 \newpage
 
-\chapter{Results and discussion} 1423 - 2979 words 1067
+\chapter{Results and discussion}
 
 The proof of concept version of the  project yielded cautiously optimistic results. While I was not able to conduct a wider experimental study due to time and ethics constraints, the findings from the limited sample size suggest that Lully is effective in achieving project objectives. 
 
@@ -624,7 +622,7 @@ Having validated the proof of concept, it is seen that there is value in the exp
 
 \newpage
 
-\chapter{Conclusions} 285-596 words 328
+\chapter{Conclusions}
 
 The Lully project is a proof of concept for mobile app crowdsourcing tool designed to create argument datasets while improving the critical thinking skills of the users. 
 
@@ -632,20 +630,11 @@ The proof of concept is on a mobile application that allows users to explore dif
 
 The proof of concept was designed and implemented using Supabase, a cloud database service, and React Native, a mobile application development framework. React Native was used with Expo library, an open source configuration suite that allows developers to code once and deploy to both mobile and web. I faced some challenges working with these technologies, as it took some time to work out edge cases and get intuition for how some aspects work.
 
-% todo add playtesting results 
 
 The Lully project team learned several important lessons during the implementation and testing of the proof of concept. They gained experience in working with Supabase and React Native, and learned about the importance of a smooth user flow and logical order of screens. They also gained insights into the challenges of using the Argdown library and working with the AI-Framework Database (AIFDB) for data translation.
 
 Overall, the Lully project proof of concept represents an important step towards the development of crowdsourced tools for dataset generation critical thinking. While there are still challenges to be addressed, the results of the proof of concept demonstrate the potential of the approach.
 
 \newpage
-
-% \chapter{Appendices}
-% \subsection{Technical details}
-% - versions of source code
-% \newpage
-
-\newpage
-\printbibliography
 
 \end{document}
