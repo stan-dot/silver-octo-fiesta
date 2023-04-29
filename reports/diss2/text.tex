@@ -61,11 +61,26 @@ I would like to thank my supervisor, Rob, for his patience and guidance, and Jon
 
 \newpage
 
-\chapter{Introduction} 455-745 words. 490
+\chapter{Introduction}
+% todo change this
 How to get beyond bag-of-words approaches for meaning and sentiment analysis? How to get to the structure of the argument, that may escape even the utterer?
 These are questions that interested researches in discourse analysis for many years.
 
-\section{Short description}
+This is an exploratory project, as the design and functionalities list is not avaialbatble rightnow.
+Design is provided and some of the functoinalities were done as a proof-of-concept. 
+That is on the spectrum of design -> proof of concept -> prototype -> MVP.
+
+goal - besides argumetn mining - is critical thinking skills imporovement
+
+Argument mining is importnat,
+% todo add reasons
+add bottleneck is the data
+
+list of capabilities
+- argument tree view
+- import from a format
+- games design
+
 The goal of this project is to build a tool to crowdsource a dataset of structured argument data, to be used by NLP researchers as a labeled dataset.
 NLP programs trained with it should be able to comprehend and create debate-like discourses across domains.
 Data science has been applied with incredible success in many NLP tasks, sentiment analysis market \href{https://www.polarismarketresearch.com/industry-analysis/sentiment-analytics-market}{valued} at \$3.15 billion in 2021 
@@ -137,8 +152,7 @@ Artem Chernodub, Oleksiy Oliynyk, Philipp Heidenreich, Alexander Bondarenko, Mat
 Chernodub, Artem N., Oleksiy Oliynyk, Philipp Heidenreich, Alexander Bondarenko, Matthias Hagen, Chris Biemann and Alexander Panchenko. “TARGER: Neural Argument Mining at Your Fingertips.” Annual Meeting of the Association for Computational Linguistics (2019).
 \href{https://aclanthology.org/P19-3031/}{paper pdf}
 
-
-\section{Annotations - static argumentation schemes}
+\section{Annotation}
 There are different strategies for annotation. Much of the study of argument annotation has focused on citation function in scientific papers.
 Many annotation schemas for argument citation motivation have been created (Teufel et al 2010, Mann and Thompson 1987) and had success in research.
 These studies work by outlining analytically from a sample of essays, articles or other texts, an exhaustive list of types of roles of statements.
@@ -146,6 +160,10 @@ Then the researchers proceed to create a long, multi-page annotation guidelines.
 As the next step, annotators are selected. Some studies choose discipline experts, some on purpose select persons not familiar with the discipline.
 That is done in order to increase domain-independence of the annotation schema.
 The following step is usually to collate the annotations created by the annotators. 
+
+% todo write this out, need to implement
+inter-annotator agreemetn from 2008
+https://direct.mit.edu/coli/article/34/4/555/1999/Inter-Coder-Agreement-for-Computational
 
 Study by Siddarthan and Tidhar from 2006 'automatic classification of citation function' describes use of Kappa coefficient for that purpose.
 The paper describes the use of Kappa coefficient thus:
@@ -157,13 +175,15 @@ In summary, the pure annotation strategy is costly but its experiences are quite
 \begin{quote}
    mining: argument extraction, segmentation, i.e. identification of minimal argumentative discourse units (ADUs), segment classification, i.e. labeling of ADUs based on their argumentative roles, identification of relations between these segments, and argument completion, i.e. automatic construction of statements from implicit propositions
 \end{quote}
+\cite[page 114]{Tefuel2017}
+
 
 The latter part includes enthymeme decection, which is defined as:
 \begin{quote}
 According to the Aristotelian definition [6], enthymemes are standard-form syllogisms with one missing proposition.  (ibid.)
 \end{quote}
+\cite[page 113]{Tefuel2017}
 
-For the crowdsourced model the 5 steps can be traced for each of the parts of the test corpus. 
 
 \section{Annotation with crowdsourcing}
 A number of researchers have explored the crowdsourcing area of the potential solution space to the problem of argument structure extraction.
@@ -171,7 +191,9 @@ Following (von Ahn, 2008), we can distinguish between 3 types of approches to cr
 There is the financial approach, the altruistic approach, and the gamification (enjoyment) approach. Papers reviewed did not feature the enjoyment approach.
 
 Starting chronologically, the first paper is Anand et al 2011 "How can you say such things?!?: Recognizing Disagreement in Informal Political Argument".
-One of the features of this paper to note is its use of Amazon's "Mechanical Turk" service for contributions. Paid experts did the annotations.
+One of the features of this paper to note is its use of Amazon's "Mechanical Turk" service for contributions. Paid volunteers did the annotations. THat was compared to expert performance
+
+% todo elaborate on this
 Another one is the choice of possible labels. Thse are 'agree/disagree', 'fact/emotion/, 'attack/insult', 'sarcasm', 'nice/nasty'
 
 Another example comes from (Wyner, Peters, and Price 2015 - arugment discovery and extraction with the Argument Workbench).
@@ -319,6 +341,7 @@ On the other hand, \href{https://infranodus.com/}{Infranodus} is a multi-purpose
 \href{https://en.wikipedia.org/wiki/Crowdsource_(app)}{Google Crowdsource} is a tool created by Google to create datasets for their ML team. The app features multiple tasks of varying difficulty, focusing mainly on image labeling, but also audio recognition. What is the most relevant in this project in the context of Lully is the reward scheme, or gamification. It is quite simple indeed, especially compared to many purely games. The whole mechanism has two parts: stats and badges. Stats are for number of contributions and their accuracy. There is little use in data from a user that does creates many labels that aren't validated by others as correct. Badges provide more of the granular feedback, encouraging the user to explore different areas of the application. These features are quite easy to transplant.
 
 \section{Single vs multi reply}
+% todo write out more
 There is the option for a debate mode for the app.  That would be a type of game, where addition of a node to the argument tree would constitute a move.
 That type of games was examined in Prakken 2005. Distinguished different types of 'reply protocols' were shown: unique vs multi-reply, immediate and non-immediate, uniqe, multi-move.
 The configuration space is non-trivial, and the choice which of these protocols would be implemented in the game needs to be pondered.
@@ -379,6 +402,15 @@ These numbers highlight the difficult nature of these projects and the scale reu
 
 \newpage
 
+\section{literature survey summary}
+
+% todo expert vs crowdsourced model
+For the crowdsourced model the 5 steps can be traced for each of the parts of the test corpus. 
+
+\section{Argdown}
+% todo create the example here
+\section{AIFdb}
+
 \chapter{Requirements and analysis}
 
 \section{Stakeholder analysis}
@@ -398,6 +430,9 @@ And the other categories:
 To avoid the pitfalls of human annotation, a quantitative approach should be pursued. A diverse range of both source texts and human participants is needed.  Through the 'games with purpose' paradigm, we can expect users/ players to contribute for their own enjoyment (von Ahn, 2014). Enjoyment maximization should result in a higher number of Average Lifetime Contribution(ibid.).  A spotless user flow and an intuivie application are of the highest priority to achieve that.
 
 \subsection{Functional requirements}
+global opinions on every statement
+% todo describe interaction with AIFdb
+
 A sample user flow can be imaged as the following:
 - Player finds the landing page
 - Browses the list of topics popular at the moment
@@ -418,6 +453,26 @@ If the project progresses beyond the proof-of-concept stage:
 - provide administrative analytics 
 - provide a way for information outflow for the researchers to access data
 
+\subsubsection{Games}
+\begin{itemize}
+  \item Make ADUs game
+  \item Swipe Game
+  \item TruthGame 
+  \item (pending) Syllogism based games
+  \item (pending) Tree confirmation game
+  \item (pending) combined game SwipeTruth
+\end{itemize}
+Swipe game is about deciding whether 2 statemnts are in support or attack relation to one another, or altogether not related.
+TruthGame is about the user telling their opinion about a given statement. It is not the core feature compared to the relation one, but logically necessary.
+
+SwipeTruth is a combination of the two games, SwipeGame and TruthGame, where the user first orients themselves with respect to a statement and then is presented with multiple statements that can either support it or reject it.
+Make ADUs (Argumentative Discourse Units) is about performing the argument extraction from a given section.
+Syllogism based games serve to uncover enthymemes as mentioned in (Razuvayevskaya and Teufel 2017). 
+Tree confirmation is when user sees an argument and can confirm whether it makes sense as a whole. If not, the user can adjust relations between individual statements within the argument tree.
+
+These games cover most of the 5 steps of argument mining. 
+Argument extraction is not covered, or is covered implicitly when users submit sections from source texts. Argument segmentation is handled in the makeADUS game. Identification of relations and labeling is done through SwipeGame. The last step, argument completion is performed through the syllogism based games, and confirmed through the tree confirmation game.
+
 \subsection{Non-Functional requirements}
 Performance: The system shall respond to user presses under half a second for most of the interactions.
 Usability: The user interface shall be intuitive and easy to navigate
@@ -425,6 +480,11 @@ Security and data privacy: The system shall implement robust user authentication
 Compatibility: The system shall be compatible with a range of devices, including iOS and Android and web.
 Maintainability: The codebase shall be well-documented with consistent coding standards to make it easy to maintain and update in the future.
 
+\section{Stretch goals}
+% todo fill this in
+- multiplayer
+- deployment
+- annotation in debate - also a global snapshot
 
 \section{Success criteria}
 The final criteria is the volume of quality annotated corpus. It could be uploaded to AIFdb. 
@@ -463,6 +523,21 @@ Pre-collection measures:  & \begin{itemize}[left=0pt,topsep=0pt]\item only verif
 \newpage
 
 \chapter{Design}
+This section will be aboud...... top down view of organization and functional cpaaiblitites
+% todo fill more
+
+\section{User journey}
+\begin{itemize}
+  \item user discovers Lully through channels such as app stores or word of the mouth
+  \item user downdloads tha app and makes a account
+  \item user logs in
+  \item user browses the available topics
+  \item user click on topic they like
+  \item user plays the SwipeGame for a couple of minutes in the context of that topic
+  \item user adds more arguments
+  \item user earns points and progresses on the ladder
+  \item user can share game results and be active in the community
+\end{itemize}
 
 \section{Backend data structures related to the arguments}
 By sectioning off the data structured related to the purpose, excluded are authentication structures such as passwords and gamification structures.
@@ -491,7 +566,6 @@ It is structured into these PostgresSQL tables:
 Achievements is a simple table listing possible achievements each user may have. They are referenced to the gamer_profiles in a linker table. Gamer_profiles recounts the number of user's contributions as experience points.
 Top_gamers is a PostgresSQL View, that is a custom query, which in this case returns a leaderboard of all players, sorted by number of experience points.
 
-
 \section{Frontend interactions with the backend}
 
 Frontend is an \href{https://expo.dev/}{Expo} React Native application that uses supabase-js library to interact with the backend.
@@ -499,26 +573,6 @@ Contents of the tables about source texts (with their authors) and topics are re
 Notable packages include Tailwindcss for styling, Typescript for types and Jest for testing. 
 
 \section{Data inputs - Game Modes}
-\subsection{Single player features}
-\begin{itemize}
-  \item Make ADUs game
-  \item Swipe Game
-  \item TruthGame 
-  \item (pending) Syllogism based games
-  \item (pending) Tree confirmation game
-  \item (pending) combined game SwipeTruth
-\end{itemize}
-Swipe game is about deciding whether 2 statemnts are in support or attack relation to one another, or altogether not related.
-TruthGame is about the user telling their opinion about a given statement. It is not the core feature compared to the relation one, but logically necessary.
-
-SwipeTruth is a combination of the two games, SwipeGame and TruthGame, where the user first orients themselves with respect to a statement and then is presented with multiple statements that can either support it or reject it.
-Make ADUs (Argumentative Discourse Units) is about performing the argument extraction from a given section.
-Syllogism based games serve to uncover enthymemes as mentioned in (Razuvayevskaya and Teufel 2017). 
-Tree confirmation is when user sees an argument and can confirm whether it makes sense as a whole. If not, the user can adjust relations between individual statements within the argument tree.
-
-These games cover most of the 5 steps of argument mining. 
-Argument extraction is not covered, or is covered implicitly when users submit sections from source texts. Argument segmentation is handled in the makeADUS game. Identification of relations and labeling is done through SwipeGame. The last step, argument completion is performed through the syllogism based games, and confirmed through the tree confirmation game.
-
 \subsection{Multiplayer features}
 \begin{itemize}
   \item Daily challenge mode
@@ -538,6 +592,7 @@ Another distinction between game-states comes from Rienks, Heylen and Weijden 20
 Such issues are defined as Investigations, with many possible Statements being the candidate solutions to them. After a certain time elapses the Investigation is closed. As a community event this can be expected to be quite engaging.
 
 \section{Gamification design}
+
 \section{User Resources}
 \begin{itemize}
   \item experience points 
@@ -546,20 +601,6 @@ Such issues are defined as Investigations, with many possible Statements being t
 \end{itemize}
 
 User can access their account panel and see their achievements as well as experience points. These are not public. The leaderboard is public though, and a user's place can be seen, alongside the list of top 10 players. On the backend a trigger happens whenever a user makes an action so that their experience points are updated.
-
-\section{User journey}
-\begin{itemize}
-  \item user discovers Lully through channels such as app stores or word of the mouth
-  \item user downdloads tha app and makes a account
-  \item user logs in
-  \item user browses the available topics
-  \item user click on topic they like
-  \item user plays the SwipeGame for a couple of minutes in the context of that topic
-  \item user adds more arguments
-  \item user earns points and progresses on the ladder
-  \item user can share game results and be active in the community
-\end{itemize}
-
 \section{User satisfaction}
 For optimization of user satisfaction a tagging system is added to the topics and the source text tables, which points at various \href{https://adancewithbooks.wordpress.com/2019/09/22/a-small-list-of-trigger-warnings-you-can-use/}{trigger warnings}.
 \newpage
@@ -571,6 +612,20 @@ The proof of concept also highlighted some of the challenges of working with Sup
 
 In this chapter, I will discuss the implementation and testing of the application. The goal of the implementation phase was to build a functional and user-friendly application that fulfilled the design outlined in the previous chapter.
 
+\section{Software choice}
+% todo copmare supabase with alternatives
+
+\section{Architecture}
+
+\section{Frontend screenshots and snippets}
+% todo add the example here
+
+\section{Backend screenshots and snippets}
+% todo add the example here
+
+
+\section{Code traps}
+% todo examples of code traps
 One of the main challenges faced during the implementation was dealing with code traps, which slowed down the development process. Another important aspect was the design of the interface and screens in the application in a logical way to ensure a smooth user experience. Data transmission and validation cross-update of topics were also significant considerations to ensure the reliability of the application.
 
 Furthermore, I had to develop update algorithms for both the data structure and gamification bit. These allowed the users to track their progress using their place on the contributor leaderboard. To achieve this, I had to ensure that the algorithms were efficient and effective in updating user data, and that the progress bars reflected user progress accurately.

@@ -12,8 +12,6 @@ move multi-reply vs unique into literature review
 3.4 requiremnets design decisions to be taken - need to move into 4
 6.2 into literature overview
 
-
-
 # introductio
 exploratory proejct, both theoretical and practical difficulties
 functionality and design not known in advance
