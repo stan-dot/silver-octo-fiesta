@@ -1,4 +1,5 @@
 
+- [x] contractions expansion with ctrl+f
 - [x] move all notes into one place
 - [ ] divide notes into ordered changes to areas of the text
 - [ ] do all the big restructuring required

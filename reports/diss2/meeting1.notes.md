@@ -23,7 +23,6 @@ capabilities better if no discrete prototypes
 
 clear design needed - as in the document.
 elements of the system screen
-<!--  -->
 
 screenshots of the app
 structure of the app - different.
@@ -37,7 +36,6 @@ clearer discintion between new argument and using an existing text
 not end the abstract on a negative, mention in the discussion
 
 leave deployment, mulitplayer as non-mandatory
-
 
 end of introduction - needs to be clear
 <!-- say that  -->
@@ -56,8 +54,6 @@ not enou9gh data - the core problem - short description is alright, the most cle
 as milestones
 
 identifying the framework.
-
-contractions expansion with ctrl+f
 
 subsection 2.6 and 2.7, 2.8 subsubsections
 
@@ -119,18 +115,6 @@ chapter 6 - multiplayer reference - aware that it's a stretch goal
 exploratory project with rapid prototyping
 
 6.2 could go to literature overview, could be referenced later
-
-
-
-# pic
-1 slie on motivation and introduction
-2 requirements, design flow 
-3 conlucions
-also a demo setup that runs quickly
-
-few diagrams
-
-meeting on TUesday with a draft of that
 
 # extracted froim the text
 - intro make objective that functionality and design - not known than in advance
@@ -199,7 +183,6 @@ examples of code traps
 
 positive decisiong to exclude multipleyer features
 name and number of each prototy.e
-
 
 mention the aim of critical thinkign skills earlier
 
