@@ -1,6 +1,18 @@
 
 # from final text
 
+It then moves on to describe the backend data structures and gamification system, which serve as the foundation for the app's functionality.
+
+The frontend of the app is detailed next, including the UI and responsive design, followed by a discussion of the various game modes and challenges available to users. The chapter then explores the gamification design philosophy and available resources for users.
+
+Finally, the chapter discusses the measures taken to ensure user satisfaction, such as feedback mechanisms and user testing. Overall, this chapter provides a concise and graceful overview of the proposed mobile gaming application's design, functionality, and user experience.
+
+% todo complete after testing available
+\section{Testing results}
+The proof of concept was evaluated through short playtesting sessions. The feedback was generally [], with users reporting that the app [] . There were also some suggestions for improvements, such as [].
+The gamification system was rated as [].
+
+The games were also effective in encouraging users to engage with the product and complete tasks.
 This project is focused on data gathering. The goal is to investigate the 'games with purpose' paradigm to make crowdsourcing viable in this area.
 These are questions that interested researches in discourse analysis for many years.
 How to get beyond bag-of-words approaches for meaning and sentiment analysis? How to get to the structure of the argument, that may escape even the utterer?

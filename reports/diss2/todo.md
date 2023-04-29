@@ -4,16 +4,16 @@
 - [x] divide notes into ordered changes to areas of the text
 - [x] do all the big restructuring required
 - [x] do the examples
-- [ ] make the diagrams needed
-- [ ] work through small changes in
-  - [ ] introduction
-  - [ ] literature section
-  - [ ] requirements
-  - [ ] design
-  - [ ] implementation
-  - [ ] results and discussion
-  - [ ] conclusion
+- [x] work through small changes in
+  - [x] introduction
+  - [x] literature section
+  - [x] requirements
+  - [x] design
+  - [x] implementation
+  - [x] results and discussion
+  - [x] conclusion
 - [ ] add bibliography
 - [ ] add correct citations for research papers
 - [ ] add correct citations for links
-- [ ] 
+- [ ] make the diagrams needed
+- [ ] get a beta reader 

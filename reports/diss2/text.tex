@@ -338,16 +338,39 @@ vs. non-immediate-reply protocols)
 \end{quotation}
 \cite[page 1010]{Prakken2005}
 
-% todo add example with different reply modes
 The configuration space is non-trivial, and the choice which of these protocols would be implemented in the game needs to be pondered.
 Playtesting is needed to make sure these assumptions work out, maybe 2 or 3 move points per player (new node allowance) would be better.
+These can be conceputalized as restrictions compared to a 'multi-reply, multi-move, non-immediate-reply' variant.
+
+Let us illustrate this with an example using the above UBI statement. Imagine two players, Alice and Bob in a game.
+Alice supports the statement ("Universal basic income should be implemented."). And presented an argument for it, A:
+UBI can reduce poverty and inequality.
+
+
+She has one more argument to support it in mind, B.
+UBI can promote entrepreneurship and innovation by allowing individuals to take risks without the fear of financial insecurity.
+
+Bob has in mind the following arguments against the root statement, let us call this set X:
+- UBI can lead to inflation and decrease the value of currency, causing more harm than good.
+- UBI can discourage people from working and contribute to a decline in productivity, which can have negative effects on the economy.
+
+And the following responses to Alice's new statement, let us call this set Y:
+- UBI can create a disincentive for work, as individuals may choose not to work if they have a guaranteed basic income, which can actually increase poverty levels.
+- UBI can be expensive to implement and may require significant tax increases, which can be a burden on working individuals and families.
+
+Now depending on the different reply protocols, different things can happen
+- under single-reply restriction he can only respond with one of set Y to statement B
+- under immediate reply restriction he cannot respond to the root node A
+- under multi-move he can add all 4 statements, from sets X and Y to the argument tree
 
 Another distinction between game-states comes from Rienks, Heylen and Weijden 2005 - argument diagramming of meeting conversations.
 That is the observations that there are more types of issues than just 'yes/no' issues.
 They call them: A/B issues, yes-no issue, open issue.
 It is obvious that the yes-no issue might be the simplest to implement, yet it would be a lost opportunity to forsake the other modes.
 Some consideration should be given to incorporating them into the space of possible arguments on the app.
+
 As mentioned above, AIFdb format may be used for data portability, and Argdown for markdown notation.
+
 
 \subsection{Consultancies}
 \href{https://www.summetix.com/}{Summetix} uses Argument Mining to provide summaries of trends in customer behaviour, and other business related research. They specialize in summaries of customer reviews, to extract trends and identify main problems. They do not provide an open source SDK, their code is closed source.
@@ -437,7 +460,6 @@ The UBI topic could be represented like this in Argdown:
     - UBI can provide a safety net for individuals who may have difficulty finding work or need to take time off to care for family members, which can actually increase productivity by reducing financial stress.
     - UBI can provide a more stable source of income, which can encourage individuals to pursue creative and entrepreneurial endeavors that can contribute to the economy.
     `
-
 
 \section{AIFdb}
 
@@ -532,7 +554,6 @@ Debate handled there could be reflected live in the tree. This would not necessa
 Impact of the debate could be measured empirically by usingthe global statustics feature to guage the agreement status on a debate item before and after the debate
 This could be narrowed to only the users who have been watching the debate as well.
 
-
 \section{Success criteria}
 The final criteria is the volume of quality annotated corpus. It could be uploaded to AIFdb. 
 This will be known after performing quality control on the main argument database created through the lifetime of the app. 
@@ -570,8 +591,9 @@ Pre-collection measures:  & \begin{itemize}[left=0pt,topsep=0pt]\item only verif
 \newpage
 
 \chapter{Design}
-This section will be aboud...... top down view of organization and functional cpaaiblitites
-% todo fill more
+This section will be aboud...... top down view of organization and functional capabilities.
+Design of the app is before all about the user journey. That process is outlined below. Based on that as a constraint, we can plan out the frontend and then a compatible backend.
+Frontend is composed of 2 parts, 2 different capabilities - the games for data collection and the experience points system. The first is gamification on small timescale, the latter on long.
 
 \section{User journey}
 \begin{itemize}
@@ -661,29 +683,41 @@ In this chapter, I will discuss the implementation and testing of the applicatio
 \section{Software choice}
 
 \subsection{Frontend}
+The choice of the platoform is the first concern. The best way is to address many of them - that is a website and mobile format. Choosing only one would drive away some users. 
+There is a limited but developed choice in software solutions that allow developers to deliver multi-platform software. They all offer roughly similar levels of user experience, performance, crossplatforms, customizabiltiy. Likewise, accessibility and community support are all attested for these libraries.
+Therefore other considerations can come into play, taking into account the constraints of the projects. Frameworks with easier onboarding experience and more automation are easier to fit in given the limited time. Easy onboarding experience means good documentation and familiar syntax.
+Author is the most familiar with the Javascript / Typescript language and React as the state management system.
 
-FLutter is a popular frameowrk, yet it is written in Dart. Learning a new language would be a bottleneck on the whole project
+FLutter is a popular multi-platform framework from Google, yet it is written in Dart. Learning a new language would be a bottleneck on the whole project.
 https://en.wikipedia.org/wiki/Flutter_(software)
 
-NativeScript isanother frontend mobile frameowkr, rejected because of
+NativeScript is another frontend mobile framework, enjoyed by many developers. It can be combined with Angular or Vue for state management.
 https://en.wikipedia.org/wiki/NativeScript
+Given author's skills presented above, that is less than optimal. Yet there is another framework that does not have this disadvantage.
 
-
+Expo SDK is a multiplatform library and SDK that uses Typescript and ReactNative.
+Moreover it provids deployment options as part of the SDK. That is the feature that lead to choice of expo as the frontend framework of choice. 
 https://expo.dev/
 
 \subsection{Backend}
-The usual desiderata for software choice in this doman
 
-% todo copmare supabase with alternatives
-pocketbase - only self-hosted, so harder setup. also no cloud functions, so a bit limited.
+Bakcend needs to be able to maange the data, and integrate well with the frontend, implying a well-maintained javascript client library.
+Moreover, the usual desiderata for software choice in this domain apply, which are: scalablity, security, reliablity, cost-effectiveness, degree of technical support, flexibility. 
+
+comparison of SDKs
+https://github.com/firebase/firebase-js-sdk
+https://github.com/supabase/supabase-js
+https://github.com/pocketbase/js-sdk
+https://github.com/aws-amplify/amplify-js
+
+Platforms that have these features are many, most notably AWS Amplify and Firebase. WHat is problematic about these two is that they are closed source and force vendor lock-in. 
+That is inflexible. There is a number of open source alternatives, most prominently Supabase and Pocketbase. The advantage of the latter is that is a more mature project. What is more, a free tier hosting is offered, offering an escape from the complexities of self-hosting. 
 
 https://pocketbase.io/faq
 
 AWS Amplify
 https://aws.amazon.com/amplify/
 
-hasura io - graphql interface, possibly a new thing ot learn
-https://hasura.io/
 
 \section{Architecture}
 
@@ -693,9 +727,14 @@ https://hasura.io/
 \section{Backend screenshots and snippets}
 % todo add the example here
 
+\section{challenges}
+% todo outline this more, delete from code traps
+- reading AIFdb and the 80 characters 
+- choosing the backend data representation
+- readign in files from remote to use many possible text sources for arguments
+- not using supabase types from the start, but doing a frontend only prototype. that created more work for later.
 
 \section{Code traps}
-% todo examples of code traps
 One of the main challenges faced during the implementation was dealing with code traps, which slowed down the development process. Another important aspect was the design of the interface and screens in the application in a logical way to ensure a smooth user experience. Data transmission and validation cross-update of topics were also significant considerations to ensure the reliability of the application.
 
 Furthermore, I had to develop update algorithms for both the data structure and gamification bit. These allowed the users to track their progress using their place on the contributor leaderboard. To achieve this, I had to ensure that the algorithms were efficient and effective in updating user data, and that the progress bars reflected user progress accurately.
@@ -727,12 +766,6 @@ Theere is a number of pitfalls I ran into concerning both the frontend and the b
 Overall the authentication flow was less plug-and-play than expected and required some tweaking. 
 
 Argdown implementation is one of the biggest failures of the project. The repository is not developed fully and not updated regularily. The API is not complete, that is not all of the operations thatn can be done through text interface can be done with Argdown. Another effort to create a complete interfacing library would be necessary.
-
-% todo complete after testing available
-\section{Testing results}
-The proof of concept was evaluated through short playtesting sessions. The feedback was generally [], with users reporting that the app [] . There were also some suggestions for improvements, such as [].
-The gamification system was rated as [].
-The games were also effective in encouraging users to engage with the product and complete tasks.
 
 
 \section{Further directions}
