@@ -1,4 +1,6 @@
 \documentclass{article}
+\usepackage{graphicx}
+
 \usepackage[utf8]{inputenc}
 \usepackage{hyperref}
 \hypersetup{
@@ -82,6 +84,11 @@ This report will go over the relevant literature, including human annotation sch
 That section will be the basis for development of a more technical design document on a later date.
 Report will end with a description of achievements to date and plans for the future.
 
+\section{Guding example}
+
+Let us take a topic frequently mentioned in current debates: Universal basic income should be implemented.
+Various iterations of the arguments for this statement and associated data structures will accompany many sections of this paper.
+
 \newpage
 
 \chapter{Literature Survey}
@@ -161,7 +168,6 @@ The latter part includes enthymeme decection, which is defined as:
 According to the Aristotelian definition [6], enthymemes are standard-form syllogisms with one missing proposition.  (ibid.)
 \end{quote}
 \cite[page 113]{Tefuel2017}
-
 
 \section{Annotation with crowdsourcing}
 A number of researchers have explored the crowdsourcing area of the potential solution space to the problem of argument structure extraction.
@@ -390,17 +396,49 @@ These numbers highlight the difficult nature of these projects and the scale reu
 
 \newpage
 
-\section{literature survey summary}
-
+\section{Literature survey summary}
 
 Based on the combination of the factors we can imagine two approaches, the Expert Approach and Crowdsourcing Approach.  Expert Approach puts nearly all of App functionality into data-creation. 
 On the other hand, Crowdsourcing Approach is about optimizing the User Experience to get a high number in the Monthly Users and Average Time factor, with a lower third factor.  Under this approach, a substantial minority, or even majority of app functionalities would be about structuring gamified incentives: progression, competition, achievement and altruism.
 
-% todo a pros and cons table
 For the crowdsourced model the 5 steps can be traced for each of the parts of the test corpus. 
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.5\textwidth]{../good-data/experts-vs-crowdsource.png}
+    \caption{Differences between approaches}
+    \label{fig:example}
+\end{figure}
+
 
 \section{Argdown}
-% todo create the example here
+
+The UBI topic could be represented like this in Argdown:
+
+`[Statement 1]: Universal basic income should be implemented.
+  + UBI can reduce poverty and inequality.
+    + UBI can provide a safety net for individuals who are struggling to make ends meet, which can help reduce poverty and inequality.
+    + UBI can reduce the bureaucratic costs associated with means-tested welfare programs, which can make it easier and more cost-effective to provide assistance to those in need.
+    - UBI can create a disincentive for work, as individuals may choose not to work if they have a guaranteed basic income, which can actually increase poverty levels.
+    - UBI can be expensive to implement and may require significant tax increases, which can be a burden on working individuals and families.
+  + UBI can promote entrepreneurship and innovation.
+    + UBI can provide a financial cushion that allows individuals to take risks and pursue entrepreneurial ventures without worrying about financial insecurity.
+    + UBI can reduce income inequality, which can provide more opportunities for individuals from all socioeconomic backgrounds to start businesses and innovate.
+    - UBI can decrease the incentive for individuals to work hard and innovate, as they may feel comfortable living off their basic income and not pursuing other opportunities.
+    - UBI can increase taxes and government spending, which can stifle economic growth and discourage innovation.
+  - UBI can lead to inflation and decrease the value of currency, causing more harm than good.
+    + UBI can increase demand for goods and services, which can lead to price increases and inflation.
+    + UBI can reduce the incentive to work and increase consumption, leading to an excess of money in the economy which can also contribute to inflation.
+    - UBI can provide a more stable source of income for individuals, which can lead to less economic volatility and decrease the likelihood of inflation.
+    - UBI can reduce the need for government welfare programs, which can lead to cost savings and help to mitigate inflationary pressures.
+    - UBI can discourage people from working and contribute to a decline in productivity, which can have negative effects on the economy.
+  - UBI can discourage people from working and contribute to a decline in productivity, which can have negative effects on the economy.
+    + UBI can reduce the incentive for individuals to work, leading to a decrease in productivity and economic output.
+    + UBI can create a disincentive for individuals to pursue higher education and acquire skills that can contribute to the economy.
+    - UBI can provide a safety net for individuals who may have difficulty finding work or need to take time off to care for family members, which can actually increase productivity by reducing financial stress.
+    - UBI can provide a more stable source of income, which can encourage individuals to pursue creative and entrepreneurial endeavors that can contribute to the economy.
+    `
+
+
 \section{AIFdb}
 
 \chapter{Requirements and analysis}
@@ -423,12 +461,13 @@ And the other categories:
 To avoid the pitfalls of human annotation, a quantitative approach should be pursued. A diverse range of both source texts and human participants is needed. Through the 'games with purpose' paradigm, we can expect users/ players to contribute for their own enjoyment (von Ahn, 2014). Enjoyment maximization should result in a higher number of Average Lifetime Contribution(ibid.).  A spotless user flow and an intuivie application are of the highest priority to achieve that.
 
 
-
 \subsection{Functional requirements}
 
 Annotation takes two fundamental forms: the opinions on particular statements, and the judgement on the relations between any two given statements.
-% todo elaborate
-global opinions on every statement
+The former can  take a boolean form, as under classical logic, or more exotic ones, such as four valued logic, as outlined in  \cite{Priest2008}
+Having collection of such data points would allow to gauge global opinions on every statement in the database.
+
+Judgement on the relations of two statment has been tried many times before, as is outlined above. That could be whether the relation is expressing agreement, disagreement, sarcasm, or an emotion.
 
 Application should be able to import data from other formats, such as Argdown or AIFdb. That import could be user side, when a file conforming to either standard is uploaded, or on the backend as a admin tool where big chunks of data can be imported.
 There is also the export angle, where arguments made in Lully can be safely exported into a file conforming to either standard. That would allow researchers that use the data downstream to more easily feed it into their processing pipelines.
@@ -484,10 +523,15 @@ Compatibility: The system shall be compatible with a range of devices, including
 Maintainability: The codebase shall be well-documented with consistent coding standards to make it easy to maintain and update in the future.
 
 \section{Stretch goals}
-% todo fill this in
-- multiplayer
-- deployment
-- annotation in debate - also a global snapshot
+The goal of creating a full fledge application, an 'argument suite' so to speak, comparable to products like Microsoft Word or Miscrosoft Powerpoint, but for arguments is a collosal one.
+Greatly outside of the scope of a BSc project, possibly requiring thousands of person-hours with more experience.
+Given that, many of the features of the complete data collection system can be only outlined without implementation.
+That type centers on the live multiplayer features. Two players would be able to adversarially create 2 branches of a root node, one for support and one in response, as mentioned in the literature reivew. 
+This could be extended for the purpose of live streamed debates, with stakes. Such events have a niche following on platforms such as Twitch or Twitter Spaces.
+Debate handled there could be reflected live in the tree. This would not necessarily require the speakers themselves would type - the moderators could fill that role.
+Impact of the debate could be measured empirically by usingthe global statustics feature to guage the agreement status on a debate item before and after the debate
+This could be narrowed to only the users who have been watching the debate as well.
+
 
 \section{Success criteria}
 The final criteria is the volume of quality annotated corpus. It could be uploaded to AIFdb. 
@@ -628,6 +672,8 @@ https://en.wikipedia.org/wiki/NativeScript
 https://expo.dev/
 
 \subsection{Backend}
+The usual desiderata for software choice in this doman
+
 % todo copmare supabase with alternatives
 pocketbase - only self-hosted, so harder setup. also no cloud functions, so a bit limited.
 
@@ -720,5 +766,18 @@ Overall, the Lully project proof of concept represents an important step towards
 inter-annotator agreemetn from 2008
 https://direct.mit.edu/coli/article/34/4/555/1999/Inter-Coder-Agreement-for-Computational
 (Prakken 2005, Coherence and Flexibility in Dialogue Games for Argumentation)
+
+@article{Priest2008-PRIMML-2,
+	title = {Many-Valued Modal Logics: A Simple Approach: Many-Valued Modal Logics: A Simple Approach},
+	year = {2008},
+	doi = {10.1017/s1755020308080179},
+	publisher = {Cambridge University Press},
+	journal = {Review of Symbolic Logic},
+	volume = {1},
+	author = {Graham Priest},
+	pages = {190--203},
+	number = {2}
+}
+
 
 \end{document}

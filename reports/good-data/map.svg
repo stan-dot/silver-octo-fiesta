@@ -1,0 +1,166 @@
+<?xml version="1.0" standalone="no"?>
+<svg width="768px" height="695px" viewBox="0 0 768 695" preserveAspectRatio="xMinYMin meet" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="map-svg">
+<g id="graph0" class="graph" transform="translate(0,408.1364766917509) scale(0.45176470588235296)" height="96.48298572996707">
+<title>Argument Map</title>
+<!-- n0 -->
+<g id="node1" class="node">
+<title>n0</title>
+<path fill="white" stroke="#1b9e77" stroke-width="2" d="M937,-268C937,-268 765,-268 765,-268 759,-268 753,-262 753,-256 753,-256 753,-228 753,-228 753,-222 759,-216 765,-216 765,-216 937,-216 937,-216 943,-216 949,-222 949,-228 949,-228 949,-256 949,-256 949,-262 943,-268 937,-268"/>
+<text text-anchor="start" x="824.05" y="-254" font-family="arial" font-weight="bold" font-size="10.00" fill="#000000">Statement 1</text>
+<text text-anchor="start" x="776.54" y="-237" font-family="arial" font-size="10.00" fill="#000000">Universal basic income should be</text>
+<text text-anchor="start" x="819.61" y="-225" font-family="arial" font-size="10.00" fill="#000000"> implemented.</text>
+</g>
+<!-- n1 -->
+<g id="node2" class="node">
+<title>n1</title>
+<path fill="white" stroke="#1b9e77" stroke-width="2" d="M616,-168C616,-168 444,-168 444,-168 438,-168 432,-162 432,-156 432,-156 432,-144 432,-144 432,-138 438,-132 444,-132 444,-132 616,-132 616,-132 622,-132 628,-138 628,-144 628,-144 628,-156 628,-156 628,-162 622,-168 616,-168"/>
+<text text-anchor="start" x="444.14" y="-147" font-family="arial" font-size="10.00" fill="#000000">UBI can reduce poverty and inequality.</text>
+</g>
+<!-- n1&#45;&gt;n0 -->
+<g id="edge5" class="edge">
+<title>n1-&gt;n0</title>
+<path fill="none" stroke="#00ff00" d="M590.76,-168.03C636.18,-180.77 699.28,-198.46 751.96,-213.23"/>
+<polygon fill="#00ff00" stroke="#00ff00" points="751.1,-216.63 761.67,-215.96 752.99,-209.89 751.1,-216.63"/>
+</g>
+<!-- n2 -->
+<g id="node3" class="node">
+<title>n2</title>
+<path fill="white" stroke="#1b9e77" stroke-width="2" d="M184,-72C184,-72 12,-72 12,-72 6,-72 0,-66 0,-60 0,-60 0,-24 0,-24 0,-18 6,-12 12,-12 12,-12 184,-12 184,-12 190,-12 196,-18 196,-24 196,-24 196,-60 196,-60 196,-66 190,-72 184,-72"/>
+<text text-anchor="start" x="27.98" y="-57" font-family="arial" font-size="10.00" fill="#000000">UBI can provide a safety net for</text>
+<text text-anchor="start" x="11.87" y="-45" font-family="arial" font-size="10.00" fill="#000000"> individuals who are struggling to make</text>
+<text text-anchor="start" x="20.75" y="-33" font-family="arial" font-size="10.00" fill="#000000"> ends meet, which can help reduce</text>
+<text text-anchor="start" x="46.6" y="-21" font-family="arial" font-size="10.00" fill="#000000"> poverty and inequality.</text>
+</g>
+<!-- n2&#45;&gt;n1 -->
+<g id="edge1" class="edge">
+<title>n2-&gt;n1</title>
+<path fill="none" stroke="#00ff00" d="M168.8,-72.04C180.77,-76.4 193.15,-80.57 205,-84 276.22,-104.61 358.09,-120.94 421.84,-132.08"/>
+<polygon fill="#00ff00" stroke="#00ff00" points="421.46,-135.56 431.91,-133.82 422.65,-128.67 421.46,-135.56"/>
+</g>
+<!-- n3 -->
+<g id="node4" class="node">
+<title>n3</title>
+<path fill="white" stroke="#1b9e77" stroke-width="2" d="M401.5,-78C401.5,-78 226.5,-78 226.5,-78 220.5,-78 214.5,-72 214.5,-66 214.5,-66 214.5,-18 214.5,-18 214.5,-12 220.5,-6 226.5,-6 226.5,-6 401.5,-6 401.5,-6 407.5,-6 413.5,-12 413.5,-18 413.5,-18 413.5,-66 413.5,-66 413.5,-72 407.5,-78 401.5,-78"/>
+<text text-anchor="start" x="229.76" y="-63" font-family="arial" font-size="10.00" fill="#000000">UBI can reduce the bureaucratic costs</text>
+<text text-anchor="start" x="229.76" y="-51" font-family="arial" font-size="10.00" fill="#000000"> associated with means-tested welfare</text>
+<text text-anchor="start" x="224.76" y="-39" font-family="arial" font-size="10.00" fill="#000000"> programs, which can make it easier and</text>
+<text text-anchor="start" x="247.54" y="-27" font-family="arial" font-size="10.00" fill="#000000"> more cost-effective to provide</text>
+<text text-anchor="start" x="251.14" y="-15" font-family="arial" font-size="10.00" fill="#000000"> assistance to those in need.</text>
+</g>
+<!-- n3&#45;&gt;n1 -->
+<g id="edge2" class="edge">
+<title>n3-&gt;n1</title>
+<path fill="none" stroke="#00ff00" d="M385.33,-78C418.59,-94.33 457.12,-113.24 486.05,-127.43"/>
+<polygon fill="#00ff00" stroke="#00ff00" points="484.57,-130.6 495.09,-131.87 487.65,-124.32 484.57,-130.6"/>
+</g>
+<!-- n4 -->
+<g id="node5" class="node">
+<title>n4</title>
+<path fill="white" stroke="#1b9e77" stroke-width="2" d="M616,-78C616,-78 444,-78 444,-78 438,-78 432,-72 432,-66 432,-66 432,-18 432,-18 432,-12 438,-6 444,-6 444,-6 616,-6 616,-6 622,-6 628,-12 628,-18 628,-18 628,-66 628,-66 628,-72 622,-78 616,-78"/>
+<text text-anchor="start" x="444.71" y="-63" font-family="arial" font-size="10.00" fill="#000000">UBI can create a disincentive for work,</text>
+<text text-anchor="start" x="444.43" y="-51" font-family="arial" font-size="10.00" fill="#000000"> as individuals may choose not to work</text>
+<text text-anchor="start" x="459.14" y="-39" font-family="arial" font-size="10.00" fill="#000000"> if they have a guaranteed basic</text>
+<text text-anchor="start" x="448.87" y="-27" font-family="arial" font-size="10.00" fill="#000000"> income, which can actually increase</text>
+<text text-anchor="start" x="496.66" y="-15" font-family="arial" font-size="10.00" fill="#000000"> poverty levels.</text>
+</g>
+<!-- n4&#45;&gt;n1 -->
+<g id="edge3" class="edge">
+<title>n4-&gt;n1</title>
+<path fill="none" stroke="#ff0000" d="M530,-78C530,-92.14 530,-108.21 530,-121.48"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="526.5,-121.87 530,-131.87 533.5,-121.87 526.5,-121.87"/>
+</g>
+<!-- n5 -->
+<g id="node6" class="node">
+<title>n5</title>
+<path fill="white" stroke="#1b9e77" stroke-width="2" d="M830,-72C830,-72 658,-72 658,-72 652,-72 646,-66 646,-60 646,-60 646,-24 646,-24 646,-18 652,-12 658,-12 658,-12 830,-12 830,-12 836,-12 842,-18 842,-24 842,-24 842,-60 842,-60 842,-66 836,-72 830,-72"/>
+<text text-anchor="start" x="655.64" y="-57" font-family="arial" font-size="10.00" fill="#000000">UBI can be expensive to implement and</text>
+<text text-anchor="start" x="660.38" y="-45" font-family="arial" font-size="10.00" fill="#000000"> may require significant tax increases,</text>
+<text text-anchor="start" x="666.75" y="-33" font-family="arial" font-size="10.00" fill="#000000"> which can be a burden on working</text>
+<text text-anchor="start" x="689.83" y="-21" font-family="arial" font-size="10.00" fill="#000000"> individuals and families.</text>
+</g>
+<!-- n5&#45;&gt;n1 -->
+<g id="edge4" class="edge">
+<title>n5-&gt;n1</title>
+<path fill="none" stroke="#ff0000" d="M685.24,-72.11C649.99,-89.57 605.91,-111.4 573.73,-127.34"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="571.98,-124.3 564.57,-131.88 575.09,-130.57 571.98,-124.3"/>
+</g>
+<!-- n6 -->
+<g id="node7" class="node">
+<title>n6</title>
+<path fill="white" stroke="#1b9e77" stroke-width="2" d="M1260,-180C1260,-180 1084,-180 1084,-180 1078,-180 1072,-174 1072,-168 1072,-168 1072,-132 1072,-132 1072,-126 1078,-120 1084,-120 1084,-120 1260,-120 1260,-120 1266,-120 1272,-126 1272,-132 1272,-132 1272,-168 1272,-168 1272,-174 1266,-180 1260,-180"/>
+<text text-anchor="start" x="1081.98" y="-165" font-family="arial" font-size="10.00" fill="#000000">UBI can discourage people from working</text>
+<text text-anchor="start" x="1106.7" y="-153" font-family="arial" font-size="10.00" fill="#000000"> and contribute to a decline in</text>
+<text text-anchor="start" x="1087.81" y="-141" font-family="arial" font-size="10.00" fill="#000000"> productivity, which can have negative</text>
+<text text-anchor="start" x="1117.54" y="-129" font-family="arial" font-size="10.00" fill="#000000"> effects on the economy.</text>
+</g>
+<!-- n6&#45;&gt;n0 -->
+<g id="edge10" class="edge">
+<title>n6-&gt;n0</title>
+<path fill="none" stroke="#ff0000" d="M1071.75,-179.11C1033,-189.97 988.77,-202.37 950.13,-213.21"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="949.12,-209.86 940.43,-215.93 951.01,-216.6 949.12,-209.86"/>
+</g>
+<!-- n7 -->
+<g id="node8" class="node">
+<title>n7</title>
+<path fill="white" stroke="#1b9e77" stroke-width="2" d="M1044,-72C1044,-72 872,-72 872,-72 866,-72 860,-66 860,-60 860,-60 860,-24 860,-24 860,-18 866,-12 872,-12 872,-12 1044,-12 1044,-12 1050,-12 1056,-18 1056,-24 1056,-24 1056,-60 1056,-60 1056,-66 1050,-72 1044,-72"/>
+<text text-anchor="start" x="886.87" y="-57" font-family="arial" font-size="10.00" fill="#000000">UBI can reduce the incentive for</text>
+<text text-anchor="start" x="887.15" y="-45" font-family="arial" font-size="10.00" fill="#000000"> individuals to work, leading to a</text>
+<text text-anchor="start" x="871.59" y="-33" font-family="arial" font-size="10.00" fill="#000000"> decrease in productivity and economic</text>
+<text text-anchor="start" x="941.32" y="-21" font-family="arial" font-size="10.00" fill="#000000"> output.</text>
+</g>
+<!-- n7&#45;&gt;n6 -->
+<g id="edge6" class="edge">
+<title>n7-&gt;n6</title>
+<path fill="none" stroke="#00ff00" d="M1016.76,-72.11C1043.89,-85.54 1076.26,-101.58 1104.4,-115.51"/>
+<polygon fill="#00ff00" stroke="#00ff00" points="1102.86,-118.66 1113.37,-119.96 1105.96,-112.38 1102.86,-118.66"/>
+</g>
+<!-- n8 -->
+<g id="node9" class="node">
+<title>n8</title>
+<path fill="white" stroke="#1b9e77" stroke-width="2" d="M1258,-72C1258,-72 1086,-72 1086,-72 1080,-72 1074,-66 1074,-60 1074,-60 1074,-24 1074,-24 1074,-18 1080,-12 1086,-12 1086,-12 1258,-12 1258,-12 1264,-12 1270,-18 1270,-24 1270,-24 1270,-60 1270,-60 1270,-66 1264,-72 1258,-72"/>
+<text text-anchor="start" x="1100.04" y="-57" font-family="arial" font-size="10.00" fill="#000000">UBI can create a disincentive for</text>
+<text text-anchor="start" x="1086.7" y="-45" font-family="arial" font-size="10.00" fill="#000000"> individuals to pursue higher education</text>
+<text text-anchor="start" x="1089.76" y="-33" font-family="arial" font-size="10.00" fill="#000000"> and acquire skills that can contribute</text>
+<text text-anchor="start" x="1135.04" y="-21" font-family="arial" font-size="10.00" fill="#000000"> to the economy.</text>
+</g>
+<!-- n8&#45;&gt;n6 -->
+<g id="edge7" class="edge">
+<title>n8-&gt;n6</title>
+<path fill="none" stroke="#00ff00" d="M1172,-72.25C1172,-83.83 1172,-97.33 1172,-109.74"/>
+<polygon fill="#00ff00" stroke="#00ff00" points="1168.5,-109.85 1172,-119.85 1175.5,-109.85 1168.5,-109.85"/>
+</g>
+<!-- n9 -->
+<g id="node10" class="node">
+<title>n9</title>
+<path fill="white" stroke="#1b9e77" stroke-width="2" d="M1472,-84C1472,-84 1300,-84 1300,-84 1294,-84 1288,-78 1288,-72 1288,-72 1288,-12 1288,-12 1288,-6 1294,0 1300,0 1300,0 1472,0 1472,0 1478,0 1484,-6 1484,-12 1484,-12 1484,-72 1484,-72 1484,-78 1478,-84 1472,-84"/>
+<text text-anchor="start" x="1315.98" y="-69" font-family="arial" font-size="10.00" fill="#000000">UBI can provide a safety net for</text>
+<text text-anchor="start" x="1308.21" y="-57" font-family="arial" font-size="10.00" fill="#000000"> individuals who may have difficulty</text>
+<text text-anchor="start" x="1305.42" y="-45" font-family="arial" font-size="10.00" fill="#000000"> finding work or need to take time off</text>
+<text text-anchor="start" x="1300.44" y="-33" font-family="arial" font-size="10.00" fill="#000000"> to care for family members, which can</text>
+<text text-anchor="start" x="1314.04" y="-21" font-family="arial" font-size="10.00" fill="#000000"> actually increase productivity by</text>
+<text text-anchor="start" x="1329.6" y="-9" font-family="arial" font-size="10.00" fill="#000000"> reducing financial stress.</text>
+</g>
+<!-- n9&#45;&gt;n6 -->
+<g id="edge8" class="edge">
+<title>n9-&gt;n6</title>
+<path fill="none" stroke="#ff0000" d="M1302.96,-84.13C1282.07,-94.48 1259.9,-105.46 1239.86,-115.39"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="1238.22,-112.3 1230.81,-119.87 1241.32,-118.57 1238.22,-112.3"/>
+</g>
+<!-- n10 -->
+<g id="node11" class="node">
+<title>n10</title>
+<path fill="white" stroke="#1b9e77" stroke-width="2" d="M1688,-78C1688,-78 1514,-78 1514,-78 1508,-78 1502,-72 1502,-66 1502,-66 1502,-18 1502,-18 1502,-12 1508,-6 1514,-6 1514,-6 1688,-6 1688,-6 1694,-6 1700,-12 1700,-18 1700,-18 1700,-66 1700,-66 1700,-72 1694,-78 1688,-78"/>
+<text text-anchor="start" x="1511.81" y="-63" font-family="arial" font-size="10.00" fill="#000000">UBI can provide a more stable source of</text>
+<text text-anchor="start" x="1533.48" y="-51" font-family="arial" font-size="10.00" fill="#000000"> income, which can encourage</text>
+<text text-anchor="start" x="1525.42" y="-39" font-family="arial" font-size="10.00" fill="#000000"> individuals to pursue creative and</text>
+<text text-anchor="start" x="1522.09" y="-27" font-family="arial" font-size="10.00" fill="#000000"> entrepreneurial endeavors that can</text>
+<text text-anchor="start" x="1540.7" y="-15" font-family="arial" font-size="10.00" fill="#000000"> contribute to the economy.</text>
+</g>
+<!-- n10&#45;&gt;n6 -->
+<g id="edge9" class="edge">
+<title>n10-&gt;n6</title>
+<path fill="none" stroke="#ff0000" d="M1512.1,-78.05C1505.67,-80.18 1499.26,-82.19 1493,-84 1423.78,-104 1344.43,-120.13 1281.95,-131.32"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="1281.3,-127.88 1272.07,-133.07 1282.53,-134.77 1281.3,-127.88"/>
+</g>
+</g>
+</svg>

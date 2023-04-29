@@ -1,0 +1,1348 @@
+{
+  "arguments": {},
+  "statements": {
+    "Statement 1": {
+      "type": "equivalence-class",
+      "title": "Statement 1",
+      "relations": [
+        {
+          "type": "relation",
+          "relationType": "support",
+          "from": "Untitled 1",
+          "fromType": "equivalence-class",
+          "to": "Statement 1",
+          "toType": "equivalence-class"
+        },
+        {
+          "type": "relation",
+          "relationType": "support",
+          "from": "Untitled 6",
+          "fromType": "equivalence-class",
+          "to": "Statement 1",
+          "toType": "equivalence-class"
+        },
+        {
+          "type": "relation",
+          "relationType": "attack",
+          "from": "Untitled 11",
+          "fromType": "equivalence-class",
+          "to": "Statement 1",
+          "toType": "equivalence-class"
+        },
+        {
+          "type": "relation",
+          "relationType": "attack",
+          "from": "Untitled 17",
+          "fromType": "equivalence-class",
+          "to": "Statement 1",
+          "toType": "equivalence-class"
+        }
+      ],
+      "members": [
+        {
+          "type": "statement",
+          "role": "top-level-statement",
+          "isTopLevel": true,
+          "title": "Statement 1",
+          "text": "Universal basic income should be implemented.",
+          "startLine": 2,
+          "startColumn": 1,
+          "endLine": 23,
+          "endColumn": 171
+        }
+      ],
+      "isUsedAsTopLevelStatement": true,
+      "fontColor": "#000000",
+      "color": "#1b9e77"
+    },
+    "Untitled 1": {
+      "type": "equivalence-class",
+      "title": "Untitled 1",
+      "relations": [
+        {
+          "type": "relation",
+          "relationType": "support",
+          "from": "Untitled 2",
+          "fromType": "equivalence-class",
+          "to": "Untitled 1",
+          "toType": "equivalence-class"
+        },
+        {
+          "type": "relation",
+          "relationType": "support",
+          "from": "Untitled 3",
+          "fromType": "equivalence-class",
+          "to": "Untitled 1",
+          "toType": "equivalence-class"
+        },
+        {
+          "type": "relation",
+          "relationType": "attack",
+          "from": "Untitled 4",
+          "fromType": "equivalence-class",
+          "to": "Untitled 1",
+          "toType": "equivalence-class"
+        },
+        {
+          "type": "relation",
+          "relationType": "attack",
+          "from": "Untitled 5",
+          "fromType": "equivalence-class",
+          "to": "Untitled 1",
+          "toType": "equivalence-class"
+        },
+        {
+          "type": "relation",
+          "relationType": "support",
+          "from": "Untitled 1",
+          "fromType": "equivalence-class",
+          "to": "Statement 1",
+          "toType": "equivalence-class"
+        }
+      ],
+      "members": [
+        {
+          "type": "statement",
+          "role": "relation-statement",
+          "text": "UBI can reduce poverty and inequality.",
+          "title": "Untitled 1",
+          "startLine": 3,
+          "startColumn": 5,
+          "endLine": 7,
+          "endColumn": 142
+        }
+      ],
+      "isUsedAsRelationStatement": true,
+      "fontColor": "#000000",
+      "color": "#1b9e77"
+    },
+    "Untitled 2": {
+      "type": "equivalence-class",
+      "title": "Untitled 2",
+      "relations": [
+        {
+          "type": "relation",
+          "relationType": "support",
+          "from": "Untitled 2",
+          "fromType": "equivalence-class",
+          "to": "Untitled 1",
+          "toType": "equivalence-class"
+        }
+      ],
+      "members": [
+        {
+          "type": "statement",
+          "role": "relation-statement",
+          "text": "UBI can provide a safety net for individuals who are struggling to make ends meet, which can help reduce poverty and inequality.",
+          "startLine": 4,
+          "startColumn": 7,
+          "endLine": 4,
+          "endColumn": 135,
+          "title": "Untitled 2"
+        }
+      ],
+      "isUsedAsRelationStatement": true,
+      "fontColor": "#000000",
+      "color": "#1b9e77"
+    },
+    "Untitled 3": {
+      "type": "equivalence-class",
+      "title": "Untitled 3",
+      "relations": [
+        {
+          "type": "relation",
+          "relationType": "support",
+          "from": "Untitled 3",
+          "fromType": "equivalence-class",
+          "to": "Untitled 1",
+          "toType": "equivalence-class"
+        }
+      ],
+      "members": [
+        {
+          "type": "statement",
+          "role": "relation-statement",
+          "text": "UBI can reduce the bureaucratic costs associated with means-tested welfare programs, which can make it easier and more cost-effective to provide assistance to those in need.",
+          "startLine": 5,
+          "startColumn": 7,
+          "endLine": 5,
+          "endColumn": 180,
+          "title": "Untitled 3"
+        }
+      ],
+      "isUsedAsRelationStatement": true,
+      "fontColor": "#000000",
+      "color": "#1b9e77"
+    },
+    "Untitled 4": {
+      "type": "equivalence-class",
+      "title": "Untitled 4",
+      "relations": [
+        {
+          "type": "relation",
+          "relationType": "attack",
+          "from": "Untitled 4",
+          "fromType": "equivalence-class",
+          "to": "Untitled 1",
+          "toType": "equivalence-class"
+        }
+      ],
+      "members": [
+        {
+          "type": "statement",
+          "role": "relation-statement",
+          "text": "UBI can create a disincentive for work, as individuals may choose not to work if they have a guaranteed basic income, which can actually increase poverty levels.",
+          "startLine": 6,
+          "startColumn": 7,
+          "endLine": 6,
+          "endColumn": 168,
+          "title": "Untitled 4"
+        }
+      ],
+      "isUsedAsRelationStatement": true,
+      "fontColor": "#000000",
+      "color": "#1b9e77"
+    },
+    "Untitled 5": {
+      "type": "equivalence-class",
+      "title": "Untitled 5",
+      "relations": [
+        {
+          "type": "relation",
+          "relationType": "attack",
+          "from": "Untitled 5",
+          "fromType": "equivalence-class",
+          "to": "Untitled 1",
+          "toType": "equivalence-class"
+        }
+      ],
+      "members": [
+        {
+          "type": "statement",
+          "role": "relation-statement",
+          "text": "UBI can be expensive to implement and may require significant tax increases, which can be a burden on working individuals and families.",
+          "startLine": 7,
+          "startColumn": 7,
+          "endLine": 7,
+          "endColumn": 142,
+          "title": "Untitled 5"
+        }
+      ],
+      "isUsedAsRelationStatement": true,
+      "fontColor": "#000000",
+      "color": "#1b9e77"
+    },
+    "Untitled 6": {
+      "type": "equivalence-class",
+      "title": "Untitled 6",
+      "relations": [
+        {
+          "type": "relation",
+          "relationType": "support",
+          "from": "Untitled 7",
+          "fromType": "equivalence-class",
+          "to": "Untitled 6",
+          "toType": "equivalence-class"
+        },
+        {
+          "type": "relation",
+          "relationType": "support",
+          "from": "Untitled 8",
+          "fromType": "equivalence-class",
+          "to": "Untitled 6",
+          "toType": "equivalence-class"
+        },
+        {
+          "type": "relation",
+          "relationType": "attack",
+          "from": "Untitled 9",
+          "fromType": "equivalence-class",
+          "to": "Untitled 6",
+          "toType": "equivalence-class"
+        },
+        {
+          "type": "relation",
+          "relationType": "attack",
+          "from": "Untitled 10",
+          "fromType": "equivalence-class",
+          "to": "Untitled 6",
+          "toType": "equivalence-class"
+        },
+        {
+          "type": "relation",
+          "relationType": "support",
+          "from": "Untitled 6",
+          "fromType": "equivalence-class",
+          "to": "Statement 1",
+          "toType": "equivalence-class"
+        }
+      ],
+      "members": [
+        {
+          "type": "statement",
+          "role": "relation-statement",
+          "text": "UBI can promote entrepreneurship and innovation.",
+          "title": "Untitled 6",
+          "startLine": 8,
+          "startColumn": 5,
+          "endLine": 12,
+          "endColumn": 114
+        }
+      ],
+      "isUsedAsRelationStatement": true,
+      "fontColor": "#000000",
+      "color": "#1b9e77"
+    },
+    "Untitled 7": {
+      "type": "equivalence-class",
+      "title": "Untitled 7",
+      "relations": [
+        {
+          "type": "relation",
+          "relationType": "support",
+          "from": "Untitled 7",
+          "fromType": "equivalence-class",
+          "to": "Untitled 6",
+          "toType": "equivalence-class"
+        }
+      ],
+      "members": [
+        {
+          "type": "statement",
+          "role": "relation-statement",
+          "text": "UBI can provide a financial cushion that allows individuals to take risks and pursue entrepreneurial ventures without worrying about financial insecurity.",
+          "startLine": 9,
+          "startColumn": 7,
+          "endLine": 9,
+          "endColumn": 161,
+          "title": "Untitled 7"
+        }
+      ],
+      "isUsedAsRelationStatement": true,
+      "fontColor": "#000000",
+      "color": "#1b9e77"
+    },
+    "Untitled 8": {
+      "type": "equivalence-class",
+      "title": "Untitled 8",
+      "relations": [
+        {
+          "type": "relation",
+          "relationType": "support",
+          "from": "Untitled 8",
+          "fromType": "equivalence-class",
+          "to": "Untitled 6",
+          "toType": "equivalence-class"
+        }
+      ],
+      "members": [
+        {
+          "type": "statement",
+          "role": "relation-statement",
+          "text": "UBI can reduce income inequality, which can provide more opportunities for individuals from all socioeconomic backgrounds to start businesses and innovate.",
+          "startLine": 10,
+          "startColumn": 7,
+          "endLine": 10,
+          "endColumn": 162,
+          "title": "Untitled 8"
+        }
+      ],
+      "isUsedAsRelationStatement": true,
+      "fontColor": "#000000",
+      "color": "#1b9e77"
+    },
+    "Untitled 9": {
+      "type": "equivalence-class",
+      "title": "Untitled 9",
+      "relations": [
+        {
+          "type": "relation",
+          "relationType": "attack",
+          "from": "Untitled 9",
+          "fromType": "equivalence-class",
+          "to": "Untitled 6",
+          "toType": "equivalence-class"
+        }
+      ],
+      "members": [
+        {
+          "type": "statement",
+          "role": "relation-statement",
+          "text": "UBI can decrease the incentive for individuals to work hard and innovate, as they may feel comfortable living off their basic income and not pursuing other opportunities.",
+          "startLine": 11,
+          "startColumn": 7,
+          "endLine": 11,
+          "endColumn": 177,
+          "title": "Untitled 9"
+        }
+      ],
+      "isUsedAsRelationStatement": true,
+      "fontColor": "#000000",
+      "color": "#1b9e77"
+    },
+    "Untitled 10": {
+      "type": "equivalence-class",
+      "title": "Untitled 10",
+      "relations": [
+        {
+          "type": "relation",
+          "relationType": "attack",
+          "from": "Untitled 10",
+          "fromType": "equivalence-class",
+          "to": "Untitled 6",
+          "toType": "equivalence-class"
+        }
+      ],
+      "members": [
+        {
+          "type": "statement",
+          "role": "relation-statement",
+          "text": "UBI can increase taxes and government spending, which can stifle economic growth and discourage innovation.",
+          "startLine": 12,
+          "startColumn": 7,
+          "endLine": 12,
+          "endColumn": 114,
+          "title": "Untitled 10"
+        }
+      ],
+      "isUsedAsRelationStatement": true,
+      "fontColor": "#000000",
+      "color": "#1b9e77"
+    },
+    "Untitled 11": {
+      "type": "equivalence-class",
+      "title": "Untitled 11",
+      "relations": [
+        {
+          "type": "relation",
+          "relationType": "support",
+          "from": "Untitled 12",
+          "fromType": "equivalence-class",
+          "to": "Untitled 11",
+          "toType": "equivalence-class"
+        },
+        {
+          "type": "relation",
+          "relationType": "support",
+          "from": "Untitled 13",
+          "fromType": "equivalence-class",
+          "to": "Untitled 11",
+          "toType": "equivalence-class"
+        },
+        {
+          "type": "relation",
+          "relationType": "attack",
+          "from": "Untitled 14",
+          "fromType": "equivalence-class",
+          "to": "Untitled 11",
+          "toType": "equivalence-class"
+        },
+        {
+          "type": "relation",
+          "relationType": "attack",
+          "from": "Untitled 15",
+          "fromType": "equivalence-class",
+          "to": "Untitled 11",
+          "toType": "equivalence-class"
+        },
+        {
+          "type": "relation",
+          "relationType": "attack",
+          "from": "Untitled 16",
+          "fromType": "equivalence-class",
+          "to": "Untitled 11",
+          "toType": "equivalence-class"
+        },
+        {
+          "type": "relation",
+          "relationType": "attack",
+          "from": "Untitled 11",
+          "fromType": "equivalence-class",
+          "to": "Statement 1",
+          "toType": "equivalence-class"
+        }
+      ],
+      "members": [
+        {
+          "type": "statement",
+          "role": "relation-statement",
+          "text": "UBI can lead to inflation and decrease the value of currency, causing more harm than good.",
+          "title": "Untitled 11",
+          "startLine": 13,
+          "startColumn": 5,
+          "endLine": 18,
+          "endColumn": 138
+        }
+      ],
+      "isUsedAsRelationStatement": true,
+      "fontColor": "#000000",
+      "color": "#1b9e77"
+    },
+    "Untitled 12": {
+      "type": "equivalence-class",
+      "title": "Untitled 12",
+      "relations": [
+        {
+          "type": "relation",
+          "relationType": "support",
+          "from": "Untitled 12",
+          "fromType": "equivalence-class",
+          "to": "Untitled 11",
+          "toType": "equivalence-class"
+        }
+      ],
+      "members": [
+        {
+          "type": "statement",
+          "role": "relation-statement",
+          "text": "UBI can increase demand for goods and services, which can lead to price increases and inflation.",
+          "startLine": 14,
+          "startColumn": 7,
+          "endLine": 14,
+          "endColumn": 103,
+          "title": "Untitled 12"
+        }
+      ],
+      "isUsedAsRelationStatement": true,
+      "fontColor": "#000000",
+      "color": "#1b9e77"
+    },
+    "Untitled 13": {
+      "type": "equivalence-class",
+      "title": "Untitled 13",
+      "relations": [
+        {
+          "type": "relation",
+          "relationType": "support",
+          "from": "Untitled 13",
+          "fromType": "equivalence-class",
+          "to": "Untitled 11",
+          "toType": "equivalence-class"
+        }
+      ],
+      "members": [
+        {
+          "type": "statement",
+          "role": "relation-statement",
+          "text": "UBI can reduce the incentive to work and increase consumption, leading to an excess of money in the economy which can also contribute to inflation.",
+          "startLine": 15,
+          "startColumn": 7,
+          "endLine": 15,
+          "endColumn": 154,
+          "title": "Untitled 13"
+        }
+      ],
+      "isUsedAsRelationStatement": true,
+      "fontColor": "#000000",
+      "color": "#1b9e77"
+    },
+    "Untitled 14": {
+      "type": "equivalence-class",
+      "title": "Untitled 14",
+      "relations": [
+        {
+          "type": "relation",
+          "relationType": "attack",
+          "from": "Untitled 14",
+          "fromType": "equivalence-class",
+          "to": "Untitled 11",
+          "toType": "equivalence-class"
+        }
+      ],
+      "members": [
+        {
+          "type": "statement",
+          "role": "relation-statement",
+          "text": "UBI can provide a more stable source of income for individuals, which can lead to less economic volatility and decrease the likelihood of inflation.",
+          "startLine": 16,
+          "startColumn": 7,
+          "endLine": 16,
+          "endColumn": 155,
+          "title": "Untitled 14"
+        }
+      ],
+      "isUsedAsRelationStatement": true,
+      "fontColor": "#000000",
+      "color": "#1b9e77"
+    },
+    "Untitled 15": {
+      "type": "equivalence-class",
+      "title": "Untitled 15",
+      "relations": [
+        {
+          "type": "relation",
+          "relationType": "attack",
+          "from": "Untitled 15",
+          "fromType": "equivalence-class",
+          "to": "Untitled 11",
+          "toType": "equivalence-class"
+        }
+      ],
+      "members": [
+        {
+          "type": "statement",
+          "role": "relation-statement",
+          "text": "UBI can reduce the need for government welfare programs, which can lead to cost savings and help to mitigate inflationary pressures.",
+          "startLine": 17,
+          "startColumn": 7,
+          "endLine": 17,
+          "endColumn": 139,
+          "title": "Untitled 15"
+        }
+      ],
+      "isUsedAsRelationStatement": true,
+      "fontColor": "#000000",
+      "color": "#1b9e77"
+    },
+    "Untitled 16": {
+      "type": "equivalence-class",
+      "title": "Untitled 16",
+      "relations": [
+        {
+          "type": "relation",
+          "relationType": "attack",
+          "from": "Untitled 16",
+          "fromType": "equivalence-class",
+          "to": "Untitled 11",
+          "toType": "equivalence-class"
+        }
+      ],
+      "members": [
+        {
+          "type": "statement",
+          "role": "relation-statement",
+          "text": "UBI can discourage people from working and contribute to a decline in productivity, which can have negative effects on the economy.",
+          "startLine": 18,
+          "startColumn": 7,
+          "endLine": 18,
+          "endColumn": 138,
+          "title": "Untitled 16"
+        }
+      ],
+      "isUsedAsRelationStatement": true,
+      "fontColor": "#000000",
+      "color": "#1b9e77"
+    },
+    "Untitled 17": {
+      "type": "equivalence-class",
+      "title": "Untitled 17",
+      "relations": [
+        {
+          "type": "relation",
+          "relationType": "support",
+          "from": "Untitled 18",
+          "fromType": "equivalence-class",
+          "to": "Untitled 17",
+          "toType": "equivalence-class"
+        },
+        {
+          "type": "relation",
+          "relationType": "support",
+          "from": "Untitled 19",
+          "fromType": "equivalence-class",
+          "to": "Untitled 17",
+          "toType": "equivalence-class"
+        },
+        {
+          "type": "relation",
+          "relationType": "attack",
+          "from": "Untitled 20",
+          "fromType": "equivalence-class",
+          "to": "Untitled 17",
+          "toType": "equivalence-class"
+        },
+        {
+          "type": "relation",
+          "relationType": "attack",
+          "from": "Untitled 21",
+          "fromType": "equivalence-class",
+          "to": "Untitled 17",
+          "toType": "equivalence-class"
+        },
+        {
+          "type": "relation",
+          "relationType": "attack",
+          "from": "Untitled 17",
+          "fromType": "equivalence-class",
+          "to": "Statement 1",
+          "toType": "equivalence-class"
+        }
+      ],
+      "members": [
+        {
+          "type": "statement",
+          "role": "relation-statement",
+          "text": "UBI can discourage people from working and contribute to a decline in productivity, which can have negative effects on the economy.",
+          "title": "Untitled 17",
+          "startLine": 19,
+          "startColumn": 5,
+          "endLine": 23,
+          "endColumn": 171
+        }
+      ],
+      "isUsedAsRelationStatement": true,
+      "fontColor": "#000000",
+      "color": "#1b9e77"
+    },
+    "Untitled 18": {
+      "type": "equivalence-class",
+      "title": "Untitled 18",
+      "relations": [
+        {
+          "type": "relation",
+          "relationType": "support",
+          "from": "Untitled 18",
+          "fromType": "equivalence-class",
+          "to": "Untitled 17",
+          "toType": "equivalence-class"
+        }
+      ],
+      "members": [
+        {
+          "type": "statement",
+          "role": "relation-statement",
+          "text": "UBI can reduce the incentive for individuals to work, leading to a decrease in productivity and economic output.",
+          "startLine": 20,
+          "startColumn": 7,
+          "endLine": 20,
+          "endColumn": 119,
+          "title": "Untitled 18"
+        }
+      ],
+      "isUsedAsRelationStatement": true,
+      "fontColor": "#000000",
+      "color": "#1b9e77"
+    },
+    "Untitled 19": {
+      "type": "equivalence-class",
+      "title": "Untitled 19",
+      "relations": [
+        {
+          "type": "relation",
+          "relationType": "support",
+          "from": "Untitled 19",
+          "fromType": "equivalence-class",
+          "to": "Untitled 17",
+          "toType": "equivalence-class"
+        }
+      ],
+      "members": [
+        {
+          "type": "statement",
+          "role": "relation-statement",
+          "text": "UBI can create a disincentive for individuals to pursue higher education and acquire skills that can contribute to the economy.",
+          "startLine": 21,
+          "startColumn": 7,
+          "endLine": 21,
+          "endColumn": 134,
+          "title": "Untitled 19"
+        }
+      ],
+      "isUsedAsRelationStatement": true,
+      "fontColor": "#000000",
+      "color": "#1b9e77"
+    },
+    "Untitled 20": {
+      "type": "equivalence-class",
+      "title": "Untitled 20",
+      "relations": [
+        {
+          "type": "relation",
+          "relationType": "attack",
+          "from": "Untitled 20",
+          "fromType": "equivalence-class",
+          "to": "Untitled 17",
+          "toType": "equivalence-class"
+        }
+      ],
+      "members": [
+        {
+          "type": "statement",
+          "role": "relation-statement",
+          "text": "UBI can provide a safety net for individuals who may have difficulty finding work or need to take time off to care for family members, which can actually increase productivity by reducing financial stress.",
+          "startLine": 22,
+          "startColumn": 7,
+          "endLine": 22,
+          "endColumn": 212,
+          "title": "Untitled 20"
+        }
+      ],
+      "isUsedAsRelationStatement": true,
+      "fontColor": "#000000",
+      "color": "#1b9e77"
+    },
+    "Untitled 21": {
+      "type": "equivalence-class",
+      "title": "Untitled 21",
+      "relations": [
+        {
+          "type": "relation",
+          "relationType": "attack",
+          "from": "Untitled 21",
+          "fromType": "equivalence-class",
+          "to": "Untitled 17",
+          "toType": "equivalence-class"
+        }
+      ],
+      "members": [
+        {
+          "type": "statement",
+          "role": "relation-statement",
+          "text": "UBI can provide a more stable source of income, which can encourage individuals to pursue creative and entrepreneurial endeavors that can contribute to the economy.",
+          "startLine": 23,
+          "startColumn": 7,
+          "endLine": 23,
+          "endColumn": 171,
+          "title": "Untitled 21"
+        }
+      ],
+      "isUsedAsRelationStatement": true,
+      "fontColor": "#000000",
+      "color": "#1b9e77"
+    }
+  },
+  "relations": [
+    {
+      "type": "relation",
+      "relationType": "support",
+      "from": "Untitled 2",
+      "fromType": "equivalence-class",
+      "to": "Untitled 1",
+      "toType": "equivalence-class"
+    },
+    {
+      "type": "relation",
+      "relationType": "support",
+      "from": "Untitled 3",
+      "fromType": "equivalence-class",
+      "to": "Untitled 1",
+      "toType": "equivalence-class"
+    },
+    {
+      "type": "relation",
+      "relationType": "attack",
+      "from": "Untitled 4",
+      "fromType": "equivalence-class",
+      "to": "Untitled 1",
+      "toType": "equivalence-class"
+    },
+    {
+      "type": "relation",
+      "relationType": "attack",
+      "from": "Untitled 5",
+      "fromType": "equivalence-class",
+      "to": "Untitled 1",
+      "toType": "equivalence-class"
+    },
+    {
+      "type": "relation",
+      "relationType": "support",
+      "from": "Untitled 1",
+      "fromType": "equivalence-class",
+      "to": "Statement 1",
+      "toType": "equivalence-class"
+    },
+    {
+      "type": "relation",
+      "relationType": "support",
+      "from": "Untitled 7",
+      "fromType": "equivalence-class",
+      "to": "Untitled 6",
+      "toType": "equivalence-class"
+    },
+    {
+      "type": "relation",
+      "relationType": "support",
+      "from": "Untitled 8",
+      "fromType": "equivalence-class",
+      "to": "Untitled 6",
+      "toType": "equivalence-class"
+    },
+    {
+      "type": "relation",
+      "relationType": "attack",
+      "from": "Untitled 9",
+      "fromType": "equivalence-class",
+      "to": "Untitled 6",
+      "toType": "equivalence-class"
+    },
+    {
+      "type": "relation",
+      "relationType": "attack",
+      "from": "Untitled 10",
+      "fromType": "equivalence-class",
+      "to": "Untitled 6",
+      "toType": "equivalence-class"
+    },
+    {
+      "type": "relation",
+      "relationType": "support",
+      "from": "Untitled 6",
+      "fromType": "equivalence-class",
+      "to": "Statement 1",
+      "toType": "equivalence-class"
+    },
+    {
+      "type": "relation",
+      "relationType": "support",
+      "from": "Untitled 12",
+      "fromType": "equivalence-class",
+      "to": "Untitled 11",
+      "toType": "equivalence-class"
+    },
+    {
+      "type": "relation",
+      "relationType": "support",
+      "from": "Untitled 13",
+      "fromType": "equivalence-class",
+      "to": "Untitled 11",
+      "toType": "equivalence-class"
+    },
+    {
+      "type": "relation",
+      "relationType": "attack",
+      "from": "Untitled 14",
+      "fromType": "equivalence-class",
+      "to": "Untitled 11",
+      "toType": "equivalence-class"
+    },
+    {
+      "type": "relation",
+      "relationType": "attack",
+      "from": "Untitled 15",
+      "fromType": "equivalence-class",
+      "to": "Untitled 11",
+      "toType": "equivalence-class"
+    },
+    {
+      "type": "relation",
+      "relationType": "attack",
+      "from": "Untitled 16",
+      "fromType": "equivalence-class",
+      "to": "Untitled 11",
+      "toType": "equivalence-class"
+    },
+    {
+      "type": "relation",
+      "relationType": "attack",
+      "from": "Untitled 11",
+      "fromType": "equivalence-class",
+      "to": "Statement 1",
+      "toType": "equivalence-class"
+    },
+    {
+      "type": "relation",
+      "relationType": "support",
+      "from": "Untitled 18",
+      "fromType": "equivalence-class",
+      "to": "Untitled 17",
+      "toType": "equivalence-class"
+    },
+    {
+      "type": "relation",
+      "relationType": "support",
+      "from": "Untitled 19",
+      "fromType": "equivalence-class",
+      "to": "Untitled 17",
+      "toType": "equivalence-class"
+    },
+    {
+      "type": "relation",
+      "relationType": "attack",
+      "from": "Untitled 20",
+      "fromType": "equivalence-class",
+      "to": "Untitled 17",
+      "toType": "equivalence-class"
+    },
+    {
+      "type": "relation",
+      "relationType": "attack",
+      "from": "Untitled 21",
+      "fromType": "equivalence-class",
+      "to": "Untitled 17",
+      "toType": "equivalence-class"
+    },
+    {
+      "type": "relation",
+      "relationType": "attack",
+      "from": "Untitled 17",
+      "fromType": "equivalence-class",
+      "to": "Statement 1",
+      "toType": "equivalence-class"
+    }
+  ],
+  "map": {
+    "nodes": [
+      {
+        "id": "n0",
+        "title": "Statement 1",
+        "type": "statement-map-node",
+        "labelTitle": "Statement 1",
+        "labelText": "Universal basic income should be implemented.",
+        "color": "#1b9e77",
+        "fontColor": "#000000"
+      },
+      {
+        "id": "n1",
+        "title": "Untitled 1",
+        "type": "statement-map-node",
+        "labelText": "UBI can reduce poverty and inequality.",
+        "color": "#1b9e77",
+        "fontColor": "#000000"
+      },
+      {
+        "id": "n2",
+        "title": "Untitled 2",
+        "type": "statement-map-node",
+        "labelText": "UBI can provide a safety net for individuals who are struggling to make ends meet, which can help reduce poverty and inequality.",
+        "color": "#1b9e77",
+        "fontColor": "#000000"
+      },
+      {
+        "id": "n3",
+        "title": "Untitled 3",
+        "type": "statement-map-node",
+        "labelText": "UBI can reduce the bureaucratic costs associated with means-tested welfare programs, which can make it easier and more cost-effective to provide assistance to those in need.",
+        "color": "#1b9e77",
+        "fontColor": "#000000"
+      },
+      {
+        "id": "n4",
+        "title": "Untitled 4",
+        "type": "statement-map-node",
+        "labelText": "UBI can create a disincentive for work, as individuals may choose not to work if they have a guaranteed basic income, which can actually increase poverty levels.",
+        "color": "#1b9e77",
+        "fontColor": "#000000"
+      },
+      {
+        "id": "n5",
+        "title": "Untitled 5",
+        "type": "statement-map-node",
+        "labelText": "UBI can be expensive to implement and may require significant tax increases, which can be a burden on working individuals and families.",
+        "color": "#1b9e77",
+        "fontColor": "#000000"
+      },
+      {
+        "id": "n6",
+        "title": "Untitled 6",
+        "type": "statement-map-node",
+        "labelText": "UBI can promote entrepreneurship and innovation.",
+        "color": "#1b9e77",
+        "fontColor": "#000000"
+      },
+      {
+        "id": "n7",
+        "title": "Untitled 7",
+        "type": "statement-map-node",
+        "labelText": "UBI can provide a financial cushion that allows individuals to take risks and pursue entrepreneurial ventures without worrying about financial insecurity.",
+        "color": "#1b9e77",
+        "fontColor": "#000000"
+      },
+      {
+        "id": "n8",
+        "title": "Untitled 8",
+        "type": "statement-map-node",
+        "labelText": "UBI can reduce income inequality, which can provide more opportunities for individuals from all socioeconomic backgrounds to start businesses and innovate.",
+        "color": "#1b9e77",
+        "fontColor": "#000000"
+      },
+      {
+        "id": "n9",
+        "title": "Untitled 9",
+        "type": "statement-map-node",
+        "labelText": "UBI can decrease the incentive for individuals to work hard and innovate, as they may feel comfortable living off their basic income and not pursuing other opportunities.",
+        "color": "#1b9e77",
+        "fontColor": "#000000"
+      },
+      {
+        "id": "n10",
+        "title": "Untitled 10",
+        "type": "statement-map-node",
+        "labelText": "UBI can increase taxes and government spending, which can stifle economic growth and discourage innovation.",
+        "color": "#1b9e77",
+        "fontColor": "#000000"
+      },
+      {
+        "id": "n11",
+        "title": "Untitled 11",
+        "type": "statement-map-node",
+        "labelText": "UBI can lead to inflation and decrease the value of currency, causing more harm than good.",
+        "color": "#1b9e77",
+        "fontColor": "#000000"
+      },
+      {
+        "id": "n12",
+        "title": "Untitled 12",
+        "type": "statement-map-node",
+        "labelText": "UBI can increase demand for goods and services, which can lead to price increases and inflation.",
+        "color": "#1b9e77",
+        "fontColor": "#000000"
+      },
+      {
+        "id": "n13",
+        "title": "Untitled 13",
+        "type": "statement-map-node",
+        "labelText": "UBI can reduce the incentive to work and increase consumption, leading to an excess of money in the economy which can also contribute to inflation.",
+        "color": "#1b9e77",
+        "fontColor": "#000000"
+      },
+      {
+        "id": "n14",
+        "title": "Untitled 14",
+        "type": "statement-map-node",
+        "labelText": "UBI can provide a more stable source of income for individuals, which can lead to less economic volatility and decrease the likelihood of inflation.",
+        "color": "#1b9e77",
+        "fontColor": "#000000"
+      },
+      {
+        "id": "n15",
+        "title": "Untitled 15",
+        "type": "statement-map-node",
+        "labelText": "UBI can reduce the need for government welfare programs, which can lead to cost savings and help to mitigate inflationary pressures.",
+        "color": "#1b9e77",
+        "fontColor": "#000000"
+      },
+      {
+        "id": "n16",
+        "title": "Untitled 16",
+        "type": "statement-map-node",
+        "labelText": "UBI can discourage people from working and contribute to a decline in productivity, which can have negative effects on the economy.",
+        "color": "#1b9e77",
+        "fontColor": "#000000"
+      },
+      {
+        "id": "n17",
+        "title": "Untitled 17",
+        "type": "statement-map-node",
+        "labelText": "UBI can discourage people from working and contribute to a decline in productivity, which can have negative effects on the economy.",
+        "color": "#1b9e77",
+        "fontColor": "#000000"
+      },
+      {
+        "id": "n18",
+        "title": "Untitled 18",
+        "type": "statement-map-node",
+        "labelText": "UBI can reduce the incentive for individuals to work, leading to a decrease in productivity and economic output.",
+        "color": "#1b9e77",
+        "fontColor": "#000000"
+      },
+      {
+        "id": "n19",
+        "title": "Untitled 19",
+        "type": "statement-map-node",
+        "labelText": "UBI can create a disincentive for individuals to pursue higher education and acquire skills that can contribute to the economy.",
+        "color": "#1b9e77",
+        "fontColor": "#000000"
+      },
+      {
+        "id": "n20",
+        "title": "Untitled 20",
+        "type": "statement-map-node",
+        "labelText": "UBI can provide a safety net for individuals who may have difficulty finding work or need to take time off to care for family members, which can actually increase productivity by reducing financial stress.",
+        "color": "#1b9e77",
+        "fontColor": "#000000"
+      },
+      {
+        "id": "n21",
+        "title": "Untitled 21",
+        "type": "statement-map-node",
+        "labelText": "UBI can provide a more stable source of income, which can encourage individuals to pursue creative and entrepreneurial endeavors that can contribute to the economy.",
+        "color": "#1b9e77",
+        "fontColor": "#000000"
+      }
+    ],
+    "edges": [
+      {
+        "id": "e1",
+        "type": "map-edge",
+        "relationType": "support",
+        "from": "n2",
+        "to": "n1",
+        "fromEquivalenceClass": "Untitled 2",
+        "toEquivalenceClass": "Untitled 1"
+      },
+      {
+        "id": "e2",
+        "type": "map-edge",
+        "relationType": "support",
+        "from": "n3",
+        "to": "n1",
+        "fromEquivalenceClass": "Untitled 3",
+        "toEquivalenceClass": "Untitled 1"
+      },
+      {
+        "id": "e3",
+        "type": "map-edge",
+        "relationType": "attack",
+        "from": "n4",
+        "to": "n1",
+        "fromEquivalenceClass": "Untitled 4",
+        "toEquivalenceClass": "Untitled 1"
+      },
+      {
+        "id": "e4",
+        "type": "map-edge",
+        "relationType": "attack",
+        "from": "n5",
+        "to": "n1",
+        "fromEquivalenceClass": "Untitled 5",
+        "toEquivalenceClass": "Untitled 1"
+      },
+      {
+        "id": "e5",
+        "type": "map-edge",
+        "relationType": "support",
+        "from": "n1",
+        "to": "n0",
+        "fromEquivalenceClass": "Untitled 1",
+        "toEquivalenceClass": "Statement 1"
+      },
+      {
+        "id": "e6",
+        "type": "map-edge",
+        "relationType": "support",
+        "from": "n7",
+        "to": "n6",
+        "fromEquivalenceClass": "Untitled 7",
+        "toEquivalenceClass": "Untitled 6"
+      },
+      {
+        "id": "e7",
+        "type": "map-edge",
+        "relationType": "support",
+        "from": "n8",
+        "to": "n6",
+        "fromEquivalenceClass": "Untitled 8",
+        "toEquivalenceClass": "Untitled 6"
+      },
+      {
+        "id": "e8",
+        "type": "map-edge",
+        "relationType": "attack",
+        "from": "n9",
+        "to": "n6",
+        "fromEquivalenceClass": "Untitled 9",
+        "toEquivalenceClass": "Untitled 6"
+      },
+      {
+        "id": "e9",
+        "type": "map-edge",
+        "relationType": "attack",
+        "from": "n10",
+        "to": "n6",
+        "fromEquivalenceClass": "Untitled 10",
+        "toEquivalenceClass": "Untitled 6"
+      },
+      {
+        "id": "e10",
+        "type": "map-edge",
+        "relationType": "support",
+        "from": "n6",
+        "to": "n0",
+        "fromEquivalenceClass": "Untitled 6",
+        "toEquivalenceClass": "Statement 1"
+      },
+      {
+        "id": "e11",
+        "type": "map-edge",
+        "relationType": "support",
+        "from": "n12",
+        "to": "n11",
+        "fromEquivalenceClass": "Untitled 12",
+        "toEquivalenceClass": "Untitled 11"
+      },
+      {
+        "id": "e12",
+        "type": "map-edge",
+        "relationType": "support",
+        "from": "n13",
+        "to": "n11",
+        "fromEquivalenceClass": "Untitled 13",
+        "toEquivalenceClass": "Untitled 11"
+      },
+      {
+        "id": "e13",
+        "type": "map-edge",
+        "relationType": "attack",
+        "from": "n14",
+        "to": "n11",
+        "fromEquivalenceClass": "Untitled 14",
+        "toEquivalenceClass": "Untitled 11"
+      },
+      {
+        "id": "e14",
+        "type": "map-edge",
+        "relationType": "attack",
+        "from": "n15",
+        "to": "n11",
+        "fromEquivalenceClass": "Untitled 15",
+        "toEquivalenceClass": "Untitled 11"
+      },
+      {
+        "id": "e15",
+        "type": "map-edge",
+        "relationType": "attack",
+        "from": "n16",
+        "to": "n11",
+        "fromEquivalenceClass": "Untitled 16",
+        "toEquivalenceClass": "Untitled 11"
+      },
+      {
+        "id": "e16",
+        "type": "map-edge",
+        "relationType": "attack",
+        "from": "n11",
+        "to": "n0",
+        "fromEquivalenceClass": "Untitled 11",
+        "toEquivalenceClass": "Statement 1"
+      },
+      {
+        "id": "e17",
+        "type": "map-edge",
+        "relationType": "support",
+        "from": "n18",
+        "to": "n17",
+        "fromEquivalenceClass": "Untitled 18",
+        "toEquivalenceClass": "Untitled 17"
+      },
+      {
+        "id": "e18",
+        "type": "map-edge",
+        "relationType": "support",
+        "from": "n19",
+        "to": "n17",
+        "fromEquivalenceClass": "Untitled 19",
+        "toEquivalenceClass": "Untitled 17"
+      },
+      {
+        "id": "e19",
+        "type": "map-edge",
+        "relationType": "attack",
+        "from": "n20",
+        "to": "n17",
+        "fromEquivalenceClass": "Untitled 20",
+        "toEquivalenceClass": "Untitled 17"
+      },
+      {
+        "id": "e20",
+        "type": "map-edge",
+        "relationType": "attack",
+        "from": "n21",
+        "to": "n17",
+        "fromEquivalenceClass": "Untitled 21",
+        "toEquivalenceClass": "Untitled 17"
+      },
+      {
+        "id": "e21",
+        "type": "map-edge",
+        "relationType": "attack",
+        "from": "n17",
+        "to": "n0",
+        "fromEquivalenceClass": "Untitled 17",
+        "toEquivalenceClass": "Statement 1"
+      }
+    ]
+  },
+  "sections": [],
+  "tags": {}
+}

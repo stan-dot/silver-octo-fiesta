@@ -1,3 +1,5 @@
+
+# raw
 1. Fast food is unhealthy.
    2. Fast food is high in calories.
       3. Fast food contains large portions.
@@ -13,3 +15,5 @@
             5. Processing removes nutrients from food.
          4. Fast food is low in fiber.
             5. Fiber is important for digestive health.
+
+# argdown variant
