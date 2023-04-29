@@ -14,4 +14,6 @@
   - [ ] results and discussion
   - [ ] conclusion
 - [ ] add bibliography
-- [ ] add correct citations
+- [ ] add correct citations for research papers
+- [ ] add correct citations for links
+- [ ] 

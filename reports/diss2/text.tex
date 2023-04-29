@@ -62,37 +62,23 @@ I would like to thank my supervisor, Rob, for his patience and guidance, and Jon
 \newpage
 
 \chapter{Introduction}
-% todo change this
-How to get beyond bag-of-words approaches for meaning and sentiment analysis? How to get to the structure of the argument, that may escape even the utterer?
-These are questions that interested researches in discourse analysis for many years.
+How to make a machine understand argument structure?
+That is a very relevant question. Arugment mining does not have as much interest as other NLP (Natural Language Processing) areas, such as sentiment analysis, with market \href{https://www.polarismarketresearch.com/industry-analysis/sentiment-analytics-market}{valued} at \$3.15 billion in 2021.
 
-This is an exploratory project, as the design and functionalities list is not avaialbatble rightnow.
-Design is provided and some of the functoinalities were done as a proof-of-concept. 
-That is on the spectrum of design -> proof of concept -> prototype -> MVP.
+The base resource for any NLP task is the dataset, its quality and size impactful on any subsequent processing. Argument mining does not have enough open access datasets with high quality structured argument data.  Expert annotation is high quality but costly, and crowdsourcing suffers from low quality. 
 
-goal - besides argumetn mining - is critical thinking skills imporovement
+The goal of this project is to explore the possiblities for a tool that solve this tradeoff and deliver high-volume, high-quality data at a low cost. 
+The main concept behind this is the use of Games with A Purpose Paradigm to drive user engagement as opposed to using paid workers. User acquisition, retention and engagement is managed through various incentives. 
 
-Argument mining is importnat,
-% todo add reasons
-add bottleneck is the data
+The resulting corpus could be used by NLP researchers as a labeled dataset. NLP programs trained with it should be able to comprehend and create debate-like discourses across domains.
 
-list of capabilities
-- argument tree view
-- import from a format
-- games design
+This project is an exploratory one, aiming to create a design and functionalities list, rather than a full-fledged product.
+Design is provided and some of the functionalities were done as a proof-of-concept. 
+That is on the spectrum of design -> proof of concept -> prototype -> MVP (Minimum Viable Product).
 
-The goal of this project is to build a tool to crowdsource a dataset of structured argument data, to be used by NLP researchers as a labeled dataset.
-NLP programs trained with it should be able to comprehend and create debate-like discourses across domains.
-Data science has been applied with incredible success in many NLP tasks, sentiment analysis market \href{https://www.polarismarketresearch.com/industry-analysis/sentiment-analytics-market}{valued} at \$3.15 billion in 2021 
+Functionalities include but are not limited to: users viewing a constructed argument tree and interacting with it to expand it, import of data from existing argument schema projects, a variety of minigames that compose the corpus. 
 
-The App will be optimized for generation of Labeled Argument Data (LAD). That will be obtained by driving user engagement through various incentives. 
-Structure of incentives is the more non-standard part of the project, more novel than just construing the interactive website.
-
-Based on the combination of the factors we can imagine two approaches, the Expert Approach and Crowdsourcing Approach.  Expert Approach puts nearly all of App functionality into data-creation. 
-On the other hand, Crowdsourcing Approach is about optimizing the User Experience to get a high number in the Monthly Users and Average Time factor, with a lower third factor.  Under this approach, a substantial minority, or even majority of app functionalities would be about structuring gamified incentives: progression, competition, achievement and altruism.
-
-This project is focused on data gathering. The goal is to investigate the 'games with purpose' paradigm to make crowdsourcing viable in this area.
-This report will go over the relevant literature, including human annotation schemas, and semi-supervised learning approaches, then review similar software. Based on that an outline of requirements is given. 
+This report will go over the relevant literature, including human annotation schemas, and semi-supervised learning approaches, then review similar software. That is used to create a list of capabilities to explore, grouped by priority. Based on that a broad-scope design is created, and implementation presented of the highest priority aspects of the project.
 That section will be the basis for development of a more technical design document on a later date.
 Report will end with a description of achievements to date and plans for the future.
 
@@ -404,7 +390,11 @@ These numbers highlight the difficult nature of these projects and the scale reu
 
 \section{literature survey summary}
 
-% todo expert vs crowdsourced model
+
+Based on the combination of the factors we can imagine two approaches, the Expert Approach and Crowdsourcing Approach.  Expert Approach puts nearly all of App functionality into data-creation. 
+On the other hand, Crowdsourcing Approach is about optimizing the User Experience to get a high number in the Monthly Users and Average Time factor, with a lower third factor.  Under this approach, a substantial minority, or even majority of app functionalities would be about structuring gamified incentives: progression, competition, achievement and altruism.
+
+% todo a pros and cons table
 For the crowdsourced model the 5 steps can be traced for each of the parts of the test corpus. 
 
 \section{Argdown}
@@ -426,6 +416,7 @@ And the other categories:
 - Developers of the application 
 - Researchers - all users of the data produced by Lully
 - Society at large, as the project can be expected to promote in effect mutual understanding and ethical decision-making, which can be expected to have wide scope positive impacts.
+
 \section{Requirements}
 To avoid the pitfalls of human annotation, a quantitative approach should be pursued. A diverse range of both source texts and human participants is needed.  Through the 'games with purpose' paradigm, we can expect users/ players to contribute for their own enjoyment (von Ahn, 2014). Enjoyment maximization should result in a higher number of Average Lifetime Contribution(ibid.).  A spotless user flow and an intuivie application are of the highest priority to achieve that.
 
@@ -472,6 +463,9 @@ Tree confirmation is when user sees an argument and can confirm whether it makes
 
 These games cover most of the 5 steps of argument mining. 
 Argument extraction is not covered, or is covered implicitly when users submit sections from source texts. Argument segmentation is handled in the makeADUS game. Identification of relations and labeling is done through SwipeGame. The last step, argument completion is performed through the syllogism based games, and confirmed through the tree confirmation game.
+
+
+Critical thinking skills as imcreasing user interest.
 
 \subsection{Non-Functional requirements}
 Performance: The system shall respond to user presses under half a second for most of the interactions.

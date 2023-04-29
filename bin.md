@@ -1,3 +1,18 @@
+
+# from final text
+
+This project is focused on data gathering. The goal is to investigate the 'games with purpose' paradigm to make crowdsourcing viable in this area.
+These are questions that interested researches in discourse analysis for many years.
+How to get beyond bag-of-words approaches for meaning and sentiment analysis? How to get to the structure of the argument, that may escape even the utterer?
+
+The App will be optimized for generation of Labeled Argument Data (LAD). 
+Structure of incentives is the more non-standard part of the project, more novel than just construing the interactive website.
+
+Argument mining is importnat,
+% todo add reasons
+add bottleneck is the data
+
+
 ### too specific for this
 https://en.wikipedia.org/wiki/X.690#BER_encoding
 https://en.wikipedia.org/wiki/Propositional_calculus
