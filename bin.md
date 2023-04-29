@@ -12,6 +12,14 @@ Argument mining is importnat,
 % todo add reasons
 add bottleneck is the data
 
+% todo write this out, need to implement
+There is the option for a debate mode for the app.  That would be a type of game, where addition of a node to the argument tree would constitute a move.
+
+Study by Siddarthan and Tidhar from 2006 'automatic classification of citation function' describes use of Kappa coefficient for that purpose.
+The paper describes the use of Kappa coefficient thus:
+\begin{quote}
+  coefficient κ (Fleiss, 1971; Siegel and Castellan, 1988), the agreement measure predominantly used in natural language processing research (Carletta, 1996). κ corrects raw agreement P(A) for agreement by chance P(E)
+\end{quote}
 
 ### too specific for this
 https://en.wikipedia.org/wiki/X.690#BER_encoding

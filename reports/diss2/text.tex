@@ -147,15 +147,7 @@ As the next step, annotators are selected. Some studies choose discipline expert
 That is done in order to increase domain-independence of the annotation schema.
 The following step is usually to collate the annotations created by the annotators. 
 
-% todo write this out, need to implement
-inter-annotator agreemetn from 2008
-https://direct.mit.edu/coli/article/34/4/555/1999/Inter-Coder-Agreement-for-Computational
-
-Study by Siddarthan and Tidhar from 2006 'automatic classification of citation function' describes use of Kappa coefficient for that purpose.
-The paper describes the use of Kappa coefficient thus:
-\begin{quote}
-  coefficient κ (Fleiss, 1971; Siegel and Castellan, 1988), the agreement measure predominantly used in natural language processing research (Carletta, 1996). κ corrects raw agreement P(A) for agreement by chance P(E)
-\end{quote}
+Artstein&Poesio 2008 discuss various algorithms for this purpose.
 
 In summary, the pure annotation strategy is costly but its experiences are quite helpful. The basic information flow pipeline is shown in (Razuvayevskaya and Teufel 2017 - finding enthymemes in real-world text - a feasibility study) as a 5 part process.
 \begin{quote}
@@ -177,10 +169,12 @@ Following (von Ahn, 2008), we can distinguish between 3 types of approches to cr
 There is the financial approach, the altruistic approach, and the gamification (enjoyment) approach. Papers reviewed did not feature the enjoyment approach.
 
 Starting chronologically, the first paper is Anand et al 2011 "How can you say such things?!?: Recognizing Disagreement in Informal Political Argument".
-One of the features of this paper to note is its use of Amazon's "Mechanical Turk" service for contributions. Paid volunteers did the annotations. THat was compared to expert performance
+One of the features of this paper to note is its use of Amazon's "Mechanical Turk" service for contributions. Paid volunteers ('Turkers') did the annotations. 
+Corpus derived from a form '4formums.com' and focused on US dicourse on topics such as: evolution, gun contorl, abortion and gay marriage. A collection of posts and comments was used to define QR (quote-response) pairs where one user's text Q was quoted by another one, with some added commentary R. The Turkers had a [-5, 5] scale to indicate agreement or disagreement in the pair.
 
-% todo elaborate on this
-Another one is the choice of possible labels. Thse are 'agree/disagree', 'fact/emotion/, 'attack/insult', 'sarcasm', 'nice/nasty'
+Other dimenions of the QR relationship were explored beyond 'agree/disagree': 'fact/emotion/, 'attack/insult', 'sarcasm', 'nice/nasty'
+
+That was compared to expert performance, using Krippendorff's 'alpha' indicator.
 
 Another example comes from (Wyner, Peters, and Price 2015 - arugment discovery and extraction with the Argument Workbench).
 Quotes are a description of the tool
@@ -326,12 +320,20 @@ On the other hand, \href{https://infranodus.com/}{Infranodus} is a multi-purpose
 
 \href{https://en.wikipedia.org/wiki/Crowdsource_(app)}{Google Crowdsource} is a tool created by Google to create datasets for their ML team. The app features multiple tasks of varying difficulty, focusing mainly on image labeling, but also audio recognition. What is the most relevant in this project in the context of Lully is the reward scheme, or gamification. It is quite simple indeed, especially compared to many purely games. The whole mechanism has two parts: stats and badges. Stats are for number of contributions and their accuracy. There is little use in data from a user that does creates many labels that aren't validated by others as correct. Badges provide more of the granular feedback, encouraging the user to explore different areas of the application. These features are quite easy to transplant.
 
-\section{Single vs multi reply}
-% todo write out more
-There is the option for a debate mode for the app.  That would be a type of game, where addition of a node to the argument tree would constitute a move.
-That type of games was examined in Prakken 2005. Distinguished different types of 'reply protocols' were shown: unique vs multi-reply, immediate and non-immediate, uniqe, multi-move.
+\section{Reply protocols}
+That type of games was examined in Prakken 2005. Distinguished different types of 'reply protocols':
+\begin{quotation}
+  Dialogue systems can vary in their structural properties
+in several ways: whether players can reply just once to the other player’s moves or may try
+alternative replies (unique vs. multi-reply protocols); whether players can make just one or may
+make several moves before the turn shifts (unique vs. multi-move protocols); and whether the turn
+shifts as soon as the player-to-move has made himself the winning side or may shift later (immediate
+vs. non-immediate-reply protocols)
+\end{quotation}
+\cite[page 1010]{Prakken2005}
+
+% todo add example with different reply modes
 The configuration space is non-trivial, and the choice which of these protocols would be implemented in the game needs to be pondered.
-(Prakken 2005, Coherence and Flexibility in Dialogue Games for Argumentation)
 Playtesting is needed to make sure these assumptions work out, maybe 2 or 3 move points per player (new node allowance) would be better.
 
 Another distinction between game-states comes from Rienks, Heylen and Weijden 2005 - argument diagramming of meeting conversations.
@@ -418,11 +420,18 @@ And the other categories:
 - Society at large, as the project can be expected to promote in effect mutual understanding and ethical decision-making, which can be expected to have wide scope positive impacts.
 
 \section{Requirements}
-To avoid the pitfalls of human annotation, a quantitative approach should be pursued. A diverse range of both source texts and human participants is needed.  Through the 'games with purpose' paradigm, we can expect users/ players to contribute for their own enjoyment (von Ahn, 2014). Enjoyment maximization should result in a higher number of Average Lifetime Contribution(ibid.).  A spotless user flow and an intuivie application are of the highest priority to achieve that.
+To avoid the pitfalls of human annotation, a quantitative approach should be pursued. A diverse range of both source texts and human participants is needed. Through the 'games with purpose' paradigm, we can expect users/ players to contribute for their own enjoyment (von Ahn, 2014). Enjoyment maximization should result in a higher number of Average Lifetime Contribution(ibid.).  A spotless user flow and an intuivie application are of the highest priority to achieve that.
+
+
 
 \subsection{Functional requirements}
+
+Annotation takes two fundamental forms: the opinions on particular statements, and the judgement on the relations between any two given statements.
+% todo elaborate
 global opinions on every statement
-% todo describe interaction with AIFdb
+
+Application should be able to import data from other formats, such as Argdown or AIFdb. That import could be user side, when a file conforming to either standard is uploaded, or on the backend as a admin tool where big chunks of data can be imported.
+There is also the export angle, where arguments made in Lully can be safely exported into a file conforming to either standard. That would allow researchers that use the data downstream to more easily feed it into their processing pipelines.
 
 A sample user flow can be imaged as the following:
 - Player finds the landing page
@@ -581,7 +590,6 @@ Seasonal modes could be statements or topics algorithmically suggested to player
 Debate mode would be a type of game where two players aim to prove / disprove a given statement, the root node of an otherwise empty argument tree.  A snapshot of the global support for a statement is gauged at the start of a debate, then two players each add new statement nodes to the argument. Each addition of a node to the argument tree would constitute a move.
 A node can be added to any node in the tree that the opponent put, or the root node. Otherwise a new support node can be added to an existing move.
 
-
 Another distinction between game-states comes from Rienks, Heylen and Weijden 2005 - argument diagramming of meeting conversations. That is the observations that there are more types of issues than just 'yes/no' issues. They call them: A/B issues, yes-no issue, open issue. It is obvious that the yes-no issue might be the simplest to implement, yet it would be a lost opportunity to forsake the other modes.
 Such issues are defined as Investigations, with many possible Statements being the candidate solutions to them. After a certain time elapses the Investigation is closed. As a community event this can be expected to be quite engaging.
 
@@ -607,7 +615,29 @@ The proof of concept also highlighted some of the challenges of working with Sup
 In this chapter, I will discuss the implementation and testing of the application. The goal of the implementation phase was to build a functional and user-friendly application that fulfilled the design outlined in the previous chapter.
 
 \section{Software choice}
+
+\subsection{Frontend}
+
+FLutter is a popular frameowrk, yet it is written in Dart. Learning a new language would be a bottleneck on the whole project
+https://en.wikipedia.org/wiki/Flutter_(software)
+
+NativeScript isanother frontend mobile frameowkr, rejected because of
+https://en.wikipedia.org/wiki/NativeScript
+
+
+https://expo.dev/
+
+\subsection{Backend}
 % todo copmare supabase with alternatives
+pocketbase - only self-hosted, so harder setup. also no cloud functions, so a bit limited.
+
+https://pocketbase.io/faq
+
+AWS Amplify
+https://aws.amazon.com/amplify/
+
+hasura io - graphql interface, possibly a new thing ot learn
+https://hasura.io/
 
 \section{Architecture}
 
@@ -685,5 +715,10 @@ The Lully project team learned several important lessons during the implementati
 Overall, the Lully project proof of concept represents an important step towards the development of crowdsourced tools for dataset generation critical thinking. While there are still challenges to be addressed, the results of the proof of concept demonstrate the potential of the approach.
 
 \newpage
+
+\bibliography{}
+inter-annotator agreemetn from 2008
+https://direct.mit.edu/coli/article/34/4/555/1999/Inter-Coder-Agreement-for-Computational
+(Prakken 2005, Coherence and Flexibility in Dialogue Games for Argumentation)
 
 \end{document}
