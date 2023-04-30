@@ -94,25 +94,28 @@ Various iterations of the arguments for this statement and associated data struc
 
 \chapter{Literature Survey}
 Argument structure analysis goes back to antiquity. \cite{angelelli_techniques_1970}
-Analysis of argumentation has been an active topic in numerous research areas, such as philosophy \cite{van_eemeren_systematic_2003}, communication studies (Mercier and Sperber, 2011), and informal logic (Blair, 2004), among others This chapter will cover the areas that this project touches. There are several types of approaches. Fully annotated and semi-supervised approaches.
+Analysis of argumentation has been an active topic in numerous research areas, such as philosophy \cite{van_eemeren_systematic_2003}, communication studies \cite{mercier_why_2011}, and informal logic \cite{blair_informal_2000}, among others. This chapter will cover the areas that this project touches. There are several types of approaches. Fully annotated and semi-supervised approaches.
 
 \href{https://en.wikipedia.org/wiki/Semantic_network}{Semantic network} are graphical representations of concepts and their interrelationships, often used in natural language processing and artificial intelligence. It is closely related to 'formal concept analysis', which is an activity in philosophy aiming at a similar results. Finally ontology languages are the static, completed equivalent. They are often created synthetically, as opposed to the analytic origin of the previous ones.
 
 \section{Background}
 From Stoic Logic to Leibniz's Characteristica Universalis, there were attempts to understand, map and summarize arguments expressed in common language. 
-*Elements of Logic*, a logic textbook from 1826 by Richard Whatley introduced the modern arrow based logic notation. It was elaborated in 1913 by John Henry Wigmore in \href{https://archive.org/details/principlesjudic00wigmgoog}{*The Principles of Judicial Proof*}
+\cite{woltzenlogel_paleo_leibnizs_2016}
+*Elements of Logic*, a logic textbook from 1826 by Richard Whatley introduced the modern arrow based logic notation. It was elaborated in 1913 by John Henry Wigmore.
+\cite{wigmore_principles_1913}
 
 \href{https://commons.wikimedia.org/wiki/File:Whatley.png}{Whatley's notations image}
 
 Second half of the 20c saw a computerized analysis become a reality. Bag of word approaches have been seen \href{https://www.tandfonline.com/doi/abs/10.1080/00437956.1954.11659520}{as early as 1954}...
-Harris distributional structure 1954
+\cite{harris_distributional_1954}
 
 Logic programming languages were the next step, with \href{https://en.wikipedia.org/wiki/Planner_(programming_language)}{Planner} as the pioneer in the field, even if not exactly with *personal* applications in mind.  It was created in 1969 with the main feature being forward and backward chaining of statements to prove a given goal statement.
-% todo add planner link
+\cite{hewitt_planner_1970}
+
 Its function was *synthetic*, not analytic - so the reverse of argument mining. Nevertheless, it is an interesting reference point.
 
 Jumping forward, after AI winters Machine Learning revolution of the 2010s going into 2020s has been fueled by data created by the previous decades of the internet. Image diffusion models such as Stable Diffusion are using existing works of art, a legally controversial issue. LLMs such as GPT series use Wikipedia and \href{https://paperswithcode.com/dataset/webtext}{WebText} dataset.
-% todo add stable diffusion high-resolution image synthesis 
+\cite{rombach_high-resolution_2022}
 
 Argument mining is lagging behind the trailblazing subdisciplines of machine learning. The problem in many studies of argumentation is the undersupply of data. Yet there is plenty of online discourse.
 There is abundance of linear, monologue data but adversarial labeled data is scarce. That is an obstacle to development of adversarial NLP models that could be used in chatbots. 
@@ -127,6 +130,7 @@ Notable projects in the area include IBM's \href{https://research.ibm.com/intera
 The results obtained in this project, the proof of concept for crowdourced sourcing of argument mining labeled data, play into the previous papers in the argument mining field.
 Lully avoids the multi-page annotation pitfall of 2009 Teufel et al.
 The main intellectual debt is to von Ahn 2008 'Games with a purpose, as well as \href{https://dl.acm.org/doi/10.1145/2448116.2448119}{Phrase detectives}.
+\cite{poesio_phrase_2013}
 
 When taking features of Lully that aggregate input of multiple users, (Wyner et al 2015 - arugment discovery and extraction with the Argument Workbench) seems quite similar. Argument Workbench also focuses on textual data, not adversarial one. 
 
@@ -267,18 +271,20 @@ Of note is also the source of the data. Authors say
 This source is highly specifc. That argumentative discourse is not a representative sample of human argument space. Verbal arguments
 also experts 
 
-These arguments are put into the search system using the PageRank algorithm (Brin et al 1998).  That gives grounds to considering that algorithm a good basis for a ranking of arugments in other circumstances.
+These arguments are put into the search system using the PageRank algorithm \cite{brin_anatomy_1998}.  That gives grounds to considering that algorithm a good basis for a ranking of arugments in other circumstances.
 
 \section{Games with purpose to the rescue}
-How to apply GWP approach?
-A guiding paper to this area of literature review was \href{https://dl.acm.org/doi/10.1145/1378704.1378719}{2008 paper by von Ahn et al, Designing games with a purpose} 
-Main takeaways from this paper is what makes games successful.
+A guiding paper to this area of literature review was \cite{von_ahn_designing_2008} 
+In the 'games with purpose' paradigm, we expect users to contribute for their own enjoyment. Enjoyment maximization should result in a higher number of Average Lifetime Contribution.  A spotless user flow and an intuivie application are of the highest priority to achieve that.
+
+How to apply this approach? The paper describes what makes games successful.
 These are three main factors: enjoyment, timed response, ELO system.
 "Enjoyment" is not defined formally there, but simply a result of knowing the games by their fruits:
+
 \begin{quote}
  The key property of games is that people want to play them. We therefore sidestep any philosophical discussions about “fun” and “enjoyable,” defining a game as “successful” if enough human-hours are spent playing it
 \end{quote}
-That  *a posteriori* feature can be predicted by keeping the right level of challenge in front of the player. (Locke, E.A. and Latham, G.P. A Theory of Goal Setting and Task Performance. Prentice Hall, Englewood Cliffs, NJ, 1990.)
+That  *a posteriori* feature can be predicted by keeping the right level of challenge in front of the player.  \cite{locke_theory_1991}
 Right level of challenge is measured through a 'timed response' mechanic built into the game.
 The player's skill is evaulated on the basis of duration of the task. 
 Self awareness of the speed of execution and the increasingly narrowing bar representing time left provides live feedback.
@@ -301,12 +307,16 @@ Study describes the latter as
 \end{quote}
 Average score of 91 minutes is a good benchmark to compare with.
 
-\href{https://dl.acm.org/doi/10.1145/2448116.2448119}{Phrase detectives} as the leading example of the use of the 'game with purpose' paradigm in order to gather data for NLP research.
+Phrase detectives \cite{poesio_phrase_2013} is the leading example of the use of the 'game with purpose' paradigm in order to gather data for NLP research.
 ALP of only 30 minutes. It seems there is a a headspeace to improve on that. nothing indicates that this area has hit a ceiling.
 What they excel at is: 'task completion, scoring and storyline as a seamless experience'
 These are qualities worth emulating. Task completion and scoring are the easiest to implement. 
 In contrast, creating a coherent and engaging storyline would require a specific skillset that might not always be available.
 Possibly emphasizing social features could substitute this.
+
+% todo similar game, only web
+tileattack game
+https://tileattack.com/?ref=ldc
 
 \section{Similar software review}
 There is a plethora of similar software. These can be found in many types, differing by platform and target audience. Many of those are outdated.
@@ -338,7 +348,7 @@ make several moves before the turn shifts (unique vs. multi-move protocols); and
 shifts as soon as the player-to-move has made himself the winning side or may shift later (immediate
 vs. non-immediate-reply protocols)
 \end{quotation}
-\cite[page 1010]{Prakken2005}
+\cite[page 1010]{prakken_coherence_2005}
 
 The configuration space is non-trivial, and the choice which of these protocols would be implemented in the game needs to be pondered.
 Playtesting is needed to make sure these assumptions work out, maybe 2 or 3 move points per player (new node allowance) would be better.
@@ -347,7 +357,6 @@ These can be conceputalized as restrictions compared to a 'multi-reply, multi-mo
 Let us illustrate this with an example using the above UBI statement. Imagine two players, Alice and Bob in a game.
 Alice supports the statement ("Universal basic income should be implemented."). And presented an argument for it, A:
 UBI can reduce poverty and inequality.
-
 
 She has one more argument to support it in mind, B.
 UBI can promote entrepreneurship and innovation by allowing individuals to take risks without the fear of financial insecurity.
@@ -365,7 +374,7 @@ Now depending on the different reply protocols, different things can happen
 - under immediate reply restriction he cannot respond to the root node A //
 - under multi-move he can add all 4 statements, from sets X and Y to the argument tree //
 
-Another distinction between game-states comes from Rienks, Heylen and Weijden 2005 - argument diagramming of meeting conversations.
+Another distinction between game-states comes from \cite{wyner_argument_2015}
 That is the observations that there are more types of issues than just 'yes/no' issues.
 They call them: A/B issues, yes-no issue, open issue.
 It is obvious that the yes-no issue might be the simplest to implement, yet it would be a lost opportunity to forsake the other modes.
@@ -429,7 +438,7 @@ On the other hand, Crowdsourcing Approach is about optimizing the User Experienc
 For the crowdsourced model the 5 steps can be traced for each of the parts of the test corpus. 
 \begin{figure}[h]
     \centering
-    \includegraphics[width=0.5\textwidth]{../good-data/experts-vs-crowdsource.png}
+    \includegraphics[width=0.5\textwidth]{./images/experts-vs-crowdsource.png}
     \caption{Differences between approaches}
     \label{fig:example}
 \end{figure}
@@ -482,8 +491,7 @@ And the other categories:
 - Society at large, as the project can be expected to promote in effect mutual understanding and ethical decision-making, which can be expected to have wide scope positive impacts.
 
 \section{Requirements}
-To avoid the pitfalls of human annotation, a quantitative approach should be pursued. A diverse range of both source texts and human participants is needed. Through the 'games with purpose' paradigm, we can expect users/ players to contribute for their own enjoyment (von Ahn, 2014). Enjoyment maximization should result in a higher number of Average Lifetime Contribution(ibid.).  A spotless user flow and an intuivie application are of the highest priority to achieve that.
-
+To avoid the pitfalls of human annotation, a quantitative approach should be pursued. A diverse range of both source texts and human participants is needed. 
 
 \subsection{Functional requirements}
 
@@ -580,9 +588,11 @@ Pre-collection measures:  & \begin{itemize}[left=0pt,topsep=0pt]\item only verif
   \item putting users in adversarial scenarios where their performance is assessed by peers (social status as \href{https://dictionary.cambridge.org/dictionary/english/have-skin-in-the-game}{`skin in the game'})
 \end{itemize} \\
 \midrule
-       Post-collection measures:  & \begin{itemize}[left=0pt,topsep=0pt]
+
+ Post-collection measures:  & \begin{itemize}[left=0pt,topsep=0pt]
   \item validation of each input by multiple validators.  
-  \item rewarding user input on the basis of agreement with other users (adapting the \href{https://en.wikipedia.org/wiki/Keynesian_beauty_contest}{Keynesian Beauty Contest}\cite{Keynes1936})
+  \item rewarding user input on the basis of agreement with other users (adapting the Keynesian Beauty Contest \cite{keynes_general_1935})
+
 \end{itemize} \\
 \bottomrule
     \end{tabular}
@@ -658,7 +668,7 @@ Seasonal modes could be statements or topics algorithmically suggested to player
 Debate mode would be a type of game where two players aim to prove / disprove a given statement, the root node of an otherwise empty argument tree.  A snapshot of the global support for a statement is gauged at the start of a debate, then two players each add new statement nodes to the argument. Each addition of a node to the argument tree would constitute a move.
 A node can be added to any node in the tree that the opponent put, or the root node. Otherwise a new support node can be added to an existing move.
 
-Another distinction between game-states comes from Rienks, Heylen and Weijden 2005 - argument diagramming of meeting conversations. That is the observations that there are more types of issues than just 'yes/no' issues. They call them: A/B issues, yes-no issue, open issue. It is obvious that the yes-no issue might be the simplest to implement, yet it would be a lost opportunity to forsake the other modes.
+Another distinction between game-states comes from  \cite{rienks_argument_2005}. That is the observations that there are more types of issues than just 'yes/no' issues. They call them: A/B issues, yes-no issue, open issue. It is obvious that the yes-no issue might be the simplest to implement, yet it would be a lost opportunity to forsake the other modes.
 Such issues are defined as Investigations, with many possible Statements being the candidate solutions to them. After a certain time elapses the Investigation is closed. As a community event this can be expected to be quite engaging.
 
 \section{Gamification design}
@@ -769,7 +779,6 @@ Overall the authentication flow was less plug-and-play than expected and require
 
 Argdown implementation is one of the biggest failures of the project. The repository is not developed fully and not updated regularily. The API is not complete, that is not all of the operations thatn can be done through text interface can be done with Argdown. Another effort to create a complete interfacing library would be necessary.
 
-
 \section{Further directions}
 Several next steps for this project can be outlined. The first objective is to expand the scope of the proof of concept to make it accessible to a larger user base. This may involve actions such as improving the user interface smoothness and clarity, optimizing performance, adding multiplayer features.
 
@@ -789,7 +798,6 @@ The Lully project is a proof of concept for mobile app crowdsourcing tool design
 The proof of concept is on a mobile application that allows users to explore different topics, from philosophical problems and dilemmas, to policy questions for small towns. Users can evaluate the ethical and epistemic implications of their preferences and see how much other people agree with them. The app uses the Games With A Purpose paradigm to motivate the players. Gamification elements in Lully are constituted by a linear experience system and complimentary granular achievement system. This combination aims to encourage users to engage with the content and explore different games inside Lully. It is worth noting that 'gamification' is primarily a user retention measure and more classical marketing approaches would be necessary for user acquisition.
 
 The proof of concept was designed and implemented using Supabase, a cloud database service, and React Native, a mobile application development framework. React Native was used with Expo library, an open source configuration suite that allows developers to code once and deploy to both mobile and web. I faced some challenges working with these technologies, as it took some time to work out edge cases and get intuition for how some aspects work.
-
 
 The Lully project team learned several important lessons during the implementation and testing of the proof of concept. They gained experience in working with Supabase and React Native, and learned about the importance of a smooth user flow and logical order of screens. They also gained insights into the challenges of using the Argdown library and working with the AI-Framework Database (AIFDB) for data translation.
 

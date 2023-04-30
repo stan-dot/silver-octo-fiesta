@@ -12,8 +12,8 @@
   - [x] implementation
   - [x] results and discussion
   - [x] conclusion
-- [ ] add bibliography
-- [ ] add correct citations for research papers
+- [x] add bibliography
+- [x] add correct citations for research papers
 - [ ] add correct citations for links
 - [ ] make the diagrams needed
 - [ ] get a beta reader 
