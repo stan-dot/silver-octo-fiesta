@@ -17,3 +17,6 @@
 - [ ] add correct citations for links
 - [ ] make the diagrams needed
 - [ ] get a beta reader 
+
+- [ ] add that realized that snappy games better than elabrate interface
+- [ ] 

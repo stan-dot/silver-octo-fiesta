@@ -30,6 +30,7 @@
 
 \usepackage{biblatex}
 \addbibresource{Dissertation.bib}
+\addbibresource{Diss_links.bib}
 
 \usepackage{booktabs}
 \usepackage{enumitem}
@@ -66,7 +67,8 @@ I would like to thank my supervisor, Rob, for his patience and guidance, and Jon
 
 \chapter{Introduction}
 How to make a machine understand argument structure?
-That is a very relevant question. Arugment mining does not have as much interest as other NLP (Natural Language Processing) areas, such as sentiment analysis, with market \href{https://www.polarismarketresearch.com/industry-analysis/sentiment-analytics-market}{valued} at \$3.15 billion in 2021.
+That is a very relevant question. Arugment mining does not have as much interest as other NLP (Natural Language Processing) areas, such as sentiment analysis, with market \href{https://www.polarismarketresearch.com/industry-analysis/sentiment-analytics-market}{valued at \$3.15 billion in 2021.
+\cite{noauthor_sentiment_nodate}
 
 The base resource for any NLP task is the dataset, its quality and size impactful on any subsequent processing. Argument mining does not have enough open access datasets with high quality structured argument data.  Expert annotation is high quality but costly, and crowdsourcing suffers from low quality. 
 
@@ -104,18 +106,22 @@ From Stoic Logic to Leibniz's Characteristica Universalis, there were attempts t
 *Elements of Logic*, a logic textbook from 1826 by Richard Whatley introduced the modern arrow based logic notation. It was elaborated in 1913 by John Henry Wigmore.
 \cite{wigmore_principles_1913}
 
-\href{https://commons.wikimedia.org/wiki/File:Whatley.png}{Whatley's notations image}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.5\textwidth]{./images/Whatley.png}
+    \caption{Whatley's notations image}
+\end{figure}
 
-Second half of the 20c saw a computerized analysis become a reality. Bag of word approaches have been seen \href{https://www.tandfonline.com/doi/abs/10.1080/00437956.1954.11659520}{as early as 1954}...
-\cite{harris_distributional_1954}
 
-Logic programming languages were the next step, with \href{https://en.wikipedia.org/wiki/Planner_(programming_language)}{Planner} as the pioneer in the field, even if not exactly with *personal* applications in mind.  It was created in 1969 with the main feature being forward and backward chaining of statements to prove a given goal statement.
-\cite{hewitt_planner_1970}
+Second half of the 20c saw a computerized analysis become a reality. Bag of word approaches have been seen as early as 1954... \cite{harris_distributional_1954}
+
+Logic programming languages were the next step, with Planner \cite{hewitt_planner_1970} as the pioneer in the field, even if not exactly with *personal* applications in mind.  It was created in 1969 with the main feature being forward and backward chaining of statements to prove a given goal statement.
+
 
 Its function was *synthetic*, not analytic - so the reverse of argument mining. Nevertheless, it is an interesting reference point.
 
 Jumping forward, after AI winters Machine Learning revolution of the 2010s going into 2020s has been fueled by data created by the previous decades of the internet. Image diffusion models such as Stable Diffusion are using existing works of art, a legally controversial issue. LLMs such as GPT series use Wikipedia and \href{https://paperswithcode.com/dataset/webtext}{WebText} dataset.
-\cite{rombach_high-resolution_2022}
+Or models based on diffusion \cite{rombach_high-resolution_2022}.
 
 Argument mining is lagging behind the trailblazing subdisciplines of machine learning. The problem in many studies of argumentation is the undersupply of data. Yet there is plenty of online discourse.
 There is abundance of linear, monologue data but adversarial labeled data is scarce. That is an obstacle to development of adversarial NLP models that could be used in chatbots. 
@@ -124,13 +130,12 @@ Online platforms, such as reddit, quora, twitter are host to the most resounding
 Previous studies included attempts to automatically derive representations of the discourse structure from unstructrued text \cite{abbott_how_2011}
 The main drawback is the annotation cost, using dozens of hours of expert work, and tens of pages of annotation manuals.
 
-Notable projects in the area include IBM's \href{https://research.ibm.com/interactive/project-debater/}{Project Debater} \cite{slonim2021autonomous}, yet these are not open sourced.
+Notable projects in the area include IBM's \cite{slonim2021autonomous}, yet these are not open sourced.
 
 \section{Comparison to previous papers}
 The results obtained in this project, the proof of concept for crowdourced sourcing of argument mining labeled data, play into the previous papers in the argument mining field.
 Lully avoids the multi-page annotation pitfall of other studies \cite{teufel_towards_2009}.
-The main intellectual debt is to von Ahn 2008 'Games with a purpose, as well as \href{https://dl.acm.org/doi/10.1145/2448116.2448119}{Phrase detectives}.
-\cite{poesio_phrase_2013}
+The main intellectual debt is to \cite{von_ahn_designing_2008}, as well as \cite{poesio_phrase_2013}
 
 When taking features of Lully that aggregate input of multiple users, (Wyner et al 2015 - arugment discovery and extraction with the Argument Workbench) seems quite similar. Argument Workbench also focuses on textual data, not adversarial one. 
 
@@ -199,6 +204,13 @@ Quotes are a description of the tool
 It is worth noticing that they used a desktop application. The other option being mobile application. There are tradeoffs visible.
 Mobile applications do not have the 'screen real estate' for complex interfaces, yet higher number of people use them. Over \href{https://gs.statcounter.com/platform-market-share/desktop-mobile-tablet}{50\% more people use mobile}.
 
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.5\textwidth]{./images/StatCounter-comparison-ww-monthly-202203-202303.png}
+    \caption{Figure from statcounter.com}
+\end{figure}
+
+
 For low-entry-cost crowdsourcing approach that is essential.
 Then the authors mention the workflow, and attach a diagram.
 \begin{quote}
@@ -218,14 +230,15 @@ say the following:
  For matching names in text sources against canonical entities, we leverage existing knowledge bases like DBpedia, Freebase, or Yago.
 \end{quote}
 
-Moreover, \href{https://direct.mit.edu/coli/article/45/4/765/93362/Argument-Mining-A-Survey}{Argument mining survey} mentions many of them.
+Moreover, 2020 Argument mining survey paper \cite{lawrence_argument_2020} mentions many of them.
+
 \begin{quote}
  Internet Argument Corpus (IAC) (Walker et al. 2012) is a corpus for research in political debate on Internet forums. It consists of approximately 11,000 discussions, 390,000 posts, and some 73,000,000 words
 \end{quote}
 \begin{quote}
  AIFdb17 (Lawrence et al. 2012), containing over 14,000 Argument Interchange Format (AIF) argument maps, with over 1.6m words and 160,000 claims in 14 different languages.18 These numbers are growing rapidly, thanks to both the increase in analysis tools interacting directly with AIFdb and the ability to import analyses produced with the Rationale and Carneades tools (Bex et al. 2012). Indeed, AIFdb aims to provide researchers with a facility to store large quantities of argument data in a uniform way. AIFdb Web services allow data to be imported and exported in a range of formats to encourage re-use and collaboration between researchers independent of the specific tools and data format that they require.
 \end{quote}
-\href{https://corpora.aifdb.org/}{Link to AIFdb}.
+https://corpora.aifdb.org/ - Link to AIFdb, possibly broken
 
 Both corpora focus on manual labeling.
 The Argument Interchange Format is a valid standard for any argument crowdsourcing project to follow.  This standardized JSON graph format make data transport and display easier. That is a great opportunity as their platform features a display tool.  The project can leverage this external tool and standard and focus on other features of the crowdsourcing process.
@@ -234,7 +247,7 @@ Its creation was described in Wachsmuth et al 2017
 
 Args.me has an exposed search API and database schemas. The paper also emphasises the ethical choice contained in the construction of personalized search.
 It also mentions the high cost of the long hours of expert time.
-Another resource is the \href{http://araucaria.computing.dundee.ac.uk/}{Araucaria} program, mentioned by several papers. Link provided seems to be broken, though. 
+Another resource is the  Araucaria (with broken link  http://araucaria.computing.dundee.ac.uk/) program, mentioned by several papers. Link provided seems to be broken, though. 
 
 There are cons to the current corpora, though.
 Only few publicly available argumentation corpora exist, as annotations are costly, error-prone, and require skilled human annotators (Stab and Gurevych, 2014a; Habernal et al., 2014).
@@ -250,9 +263,8 @@ That reflects the wider industry shift towards the use of Machine Learning over 
 Researchers conceded that manual analysis is not feasuble some studies (Habernal and Gurevych 2015 - exploiting debate portals for semi-supervised).
 They attempted to bypass that problem using semi-supervised learning.
 
-Another approach is a blending approach. That consists in adding small amount of high quality and manually labeled data.
-That vein of thought is explored in (Will it Blend? Blending Weak and Strong Labeled Data in a Neural Network for Argumentation Mining Eyal Shnarch et al.
-ACL, 2018 http://aclweb.org/anthology/P18-2095)
+Another approach is a blending approach.\cite{shnarch_will_2018} That consists of adding small amount of high quality and manually labeled data.
+
 Existence of this approach fares well for the crowdsourcing approach. Primarily the data will be strongly labeled, but if it proves weak for training using ML techniques, 
 supplementation with weakly labeled data will be saving the utility of crowdsourced data.
 
