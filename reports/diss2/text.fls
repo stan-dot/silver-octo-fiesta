@@ -5,8 +5,8 @@ INPUT /usr/share/texlive/texmf-dist/web2c/texmf.cnf
 INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
 INPUT /home/stan-dot/uni/silver-octo-fiesta/reports/diss2/text.tex
 OUTPUT /home/stan-dot/uni/silver-octo-fiesta/reports/diss2/text.log
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/article.cls
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+INPUT /usr/share/texlive/texmf-dist/tex/latex/base/report.cls
+INPUT /usr/share/texlive/texmf-dist/tex/latex/base/report.cls
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
 INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
@@ -21,11 +21,3 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
 INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty

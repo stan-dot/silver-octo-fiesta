@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.12.4)  30 APR 2023 00:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.12.4)  30 APR 2023 12:30
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -6,19 +6,20 @@ entering extended mode
 **/home/stan-dot/uni/silver-octo-fiesta/reports/diss2/text.tex
 (/home/stan-dot/uni/silver-octo-fiesta/reports/diss2/text.tex
 LaTeX2e <2020-02-02> patch level 2
-L3 programming layer <2020-02-14> (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
-Document Class: article 2019/12/20 v1.4l Standard LaTeX document class
+L3 programming layer <2020-02-14> (/usr/share/texlive/texmf-dist/tex/latex/base/report.cls
+Document Class: report 2019/12/20 v1.4l Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
 File: size10.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
 )
 \c@part=\count167
-\c@section=\count168
-\c@subsection=\count169
-\c@subsubsection=\count170
-\c@paragraph=\count171
-\c@subparagraph=\count172
-\c@figure=\count173
-\c@table=\count174
+\c@chapter=\count168
+\c@section=\count169
+\c@subsection=\count170
+\c@subsubsection=\count171
+\c@paragraph=\count172
+\c@subparagraph=\count173
+\c@figure=\count174
+\c@table=\count175
 \abovecaptionskip=\skip47
 \belowcaptionskip=\skip48
 \bibindent=\dimen134
@@ -40,38 +41,28 @@ File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen135
 \Gin@req@width=\dimen136
-) (/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
-Package: inputenc 2018/08/11 v1.3c Input encoding file
-\inpenc@prehook=\toks15
-\inpenc@posthook=\toks16
-) (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
-Package: hyperref 2020/01/14 v7.00d Hypertext links for LaTeX
- (/usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
-Package: ltxcmds 2019/12/15 v1.24 LaTeX kernel commands for general use (HO)
-) (/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
-Package: iftex 2019/11/07 v1.0c TeX engine tests
 )
 
-! LaTeX Error: File `pdftexcmds.sty' not found.
+! LaTeX Error: File `assymb.sty' not found.
 
 Type X to quit or <RETURN> to proceed,
 or enter new name. (Default extension: sty)
 
 Enter file name: 
-/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty:108: Emergency stop.
+/home/stan-dot/uni/silver-octo-fiesta/reports/diss2/text.tex:4: Emergency stop.
 <read *> 
          
-l.108 \RequirePackage{pdftexcmds}[2009/04/10]
-                                             ^^M
+l.4 ^^M
+       
 *** (cannot \read from terminal in nonstop modes)
 
  
 Here is how much of TeX's memory you used:
- 847 strings out of 483183
- 11383 string characters out of 5966292
- 238212 words of memory out of 5000000
- 15918 multiletter control sequences out of 15000+600000
+ 638 strings out of 483183
+ 8088 string characters out of 5966292
+ 235911 words of memory out of 5000000
+ 15724 multiletter control sequences out of 15000+600000
  532338 words of font info for 24 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 30i,0n,25p,233b,36s stack positions out of 5000i,500n,10000p,200000b,80000s
-/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty:108:  ==> Fatal error occurred, no output PDF file produced!
+ 30i,0n,25p,252b,36s stack positions out of 5000i,500n,10000p,200000b,80000s
+/home/stan-dot/uni/silver-octo-fiesta/reports/diss2/text.tex:4:  ==> Fatal error occurred, no output PDF file produced!

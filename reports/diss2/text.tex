@@ -1,5 +1,6 @@
-\documentclass{article}
+\documentclass{report}
 \usepackage{graphicx}
+\usepackage{assymb}
 
 \usepackage[utf8]{inputenc}
 \usepackage{hyperref}
@@ -28,7 +29,7 @@
   {\end{tabular}\par\vspace{\belowdisplayskip}}
 
 \usepackage{biblatex}
-\addbibresource{references.bib}
+\addbibresource{Dissertation.bib}
 
 \usepackage{booktabs}
 \usepackage{enumitem}
@@ -92,8 +93,8 @@ Various iterations of the arguments for this statement and associated data struc
 \newpage
 
 \chapter{Literature Survey}
-Argument structure analysis goes back to antiquity. I. Angelelli. The techniques of disputation in the history of logic, 1970.
-Analysis of argumentation has been an active topic in numerous research areas, such as philosophy (van Eemeren et al., 2014), communication studies (Mercier and Sperber, 2011), and informal logic (Blair, 2004), among others This chapter will cover the areas that this project touches. There are several types of approaches. Fully annotated and semi-supervised approaches.
+Argument structure analysis goes back to antiquity. \cite{angelelli_techniques_1970}
+Analysis of argumentation has been an active topic in numerous research areas, such as philosophy \cite{van_eemeren_systematic_2003}, communication studies (Mercier and Sperber, 2011), and informal logic (Blair, 2004), among others This chapter will cover the areas that this project touches. There are several types of approaches. Fully annotated and semi-supervised approaches.
 
 \href{https://en.wikipedia.org/wiki/Semantic_network}{Semantic network} are graphical representations of concepts and their interrelationships, often used in natural language processing and artificial intelligence. It is closely related to 'formal concept analysis', which is an activity in philosophy aiming at a similar results. Finally ontology languages are the static, completed equivalent. They are often created synthetically, as opposed to the analytic origin of the previous ones.
 
@@ -104,16 +105,19 @@ From Stoic Logic to Leibniz's Characteristica Universalis, there were attempts t
 \href{https://commons.wikimedia.org/wiki/File:Whatley.png}{Whatley's notations image}
 
 Second half of the 20c saw a computerized analysis become a reality. Bag of word approaches have been seen \href{https://www.tandfonline.com/doi/abs/10.1080/00437956.1954.11659520}{as early as 1954}...
+Harris distributional structure 1954
 
 Logic programming languages were the next step, with \href{https://en.wikipedia.org/wiki/Planner_(programming_language)}{Planner} as the pioneer in the field, even if not exactly with *personal* applications in mind.  It was created in 1969 with the main feature being forward and backward chaining of statements to prove a given goal statement.
+% todo add planner link
 Its function was *synthetic*, not analytic - so the reverse of argument mining. Nevertheless, it is an interesting reference point.
 
 Jumping forward, after AI winters Machine Learning revolution of the 2010s going into 2020s has been fueled by data created by the previous decades of the internet. Image diffusion models such as Stable Diffusion are using existing works of art, a legally controversial issue. LLMs such as GPT series use Wikipedia and \href{https://paperswithcode.com/dataset/webtext}{WebText} dataset.
+% todo add stable diffusion high-resolution image synthesis 
 
 Argument mining is lagging behind the trailblazing subdisciplines of machine learning. The problem in many studies of argumentation is the undersupply of data. Yet there is plenty of online discourse.
 There is abundance of linear, monologue data but adversarial labeled data is scarce. That is an obstacle to development of adversarial NLP models that could be used in chatbots. 
 
-Online platforms, such as reddit, quora, twitter are host to the most resounding debates, heard by hundreds of millions.  Discussions topics include current political controversies, religious questions and [lore discussions]. These discussions form the core of the public discourse in modern society.  The results are limited, as opinions gathered in this way are devoid of explicit reasoning structure.  The act of commenting online corresponds to 'claiming ownership for a new piece of knowledge' (Teufel et al, 2009). Expressing arguments for, negotiating compromises, pursuing social shifts, finding or failing-to-find common ground - are all different types of discourses. The usual output is a series of posts, comments or tweets, that are under structured. 
+Online platforms, such as reddit, quora, twitter are host to the most resounding debates, heard by hundreds of millions.  Discussions topics include current political controversies, religious questions and lore discussions. These discussions form the core of the public discourse in modern society.  The results are limited, as opinions gathered in this way are devoid of explicit reasoning structure.  The act of commenting online corresponds to 'claiming ownership for a new piece of knowledge' (Teufel et al, 2009). Expressing arguments for, negotiating compromises, pursuing social shifts, finding or failing-to-find common ground - are all different types of discourses. The usual output is a series of posts, comments or tweets, that are under structured. 
 Previous studies included attempts to automatically derive representations of the discourse structure from unstructrued text (Anand et al 2011).
 The main drawback is the annotation cost, using dozens of hours of expert work, and tens of pages of annotation manuals.
 
@@ -128,25 +132,21 @@ When taking features of Lully that aggregate input of multiple users, (Wyner et 
 
 In fact the PostgresSQL schema arrived at is quite similar to the one by 
 
-\href{ https://aclanthology.org/L16-1704/ }{ Rob Abbott, Brian Ecker, Pranav Anand, and Marilyn Walker. 2016. Internet Argument Corpus 2.0: An SQL schema for Dialogic Social Media and the Corpora to go with it. In Proceedings of the Tenth International Conference on Language Resources and Evaluation (LREC'16), pages 4445–4452, Portorož, Slovenia. European Language Resources Association (ELRA).  }
+% todo Internet argument corpus 2.0
 
 An approach directly competing with the one Lully takes is by Wachsmuth et al 2017 'building an argument search engine for the Web' that scrapes existing data sand serves it through a ssearch engine.
-Henning Wachsmuth, Martin Potthast, Khalid Al-Khatib, Yamen Ajjour, Jana Puschmann, Jiani Qu, Jonas Dorsch, Viorel Morari, Janek Bevendorff, and Benno Stein. 2017. Building an Argument Search Engine for the Web. In Proceedings of the 4th Workshop on Argument Mining, pages 49–59, Copenhagen, Denmark. Association for Computational Linguistics.
+% todo building arguemtn search engine
 
-\href{ https://aclanthology.org/W17-5106.pdf }{paper link}
-
-\href{https://www.semanticscholar.org/paper/Towards-a-Holistic-View-on-Argument-Quality-Fromm-Berrendorf/660fcd097881e7388f91b3724cdb0e2aeb9ff688}{Holistic View paper}
+% todo holistic view on argument quality prediction
 
 Another recent approach to the issue is the TARGER project, a native PyTorch embedding that uses neural networks for argument mining
 
-\href{https://github.com/achernodub/targer}{Targer github repository}
+% todo targer
 
-Artem Chernodub, Oleksiy Oliynyk, Philipp Heidenreich, Alexander Bondarenko, Matthias Hagen, Chris Biemann, and Alexander Panchenko. 2019. TARGER: Neural Argument Mining at Your Fingertips. In Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics: System Demonstrations, pages 195–200, Florence, Italy. Association for Computational Linguistics.
-Chernodub, Artem N., Oleksiy Oliynyk, Philipp Heidenreich, Alexander Bondarenko, Matthias Hagen, Chris Biemann and Alexander Panchenko. “TARGER: Neural Argument Mining at Your Fingertips.” Annual Meeting of the Association for Computational Linguistics (2019).
-\href{https://aclanthology.org/P19-3031/}{paper pdf}
 
 \section{Annotation}
 There are different strategies for annotation. Much of the study of argument annotation has focused on citation function in scientific papers.
+% todo teufel missingji
 Many annotation schemas for argument citation motivation have been created (Teufel et al 2010, Mann and Thompson 1987) and had success in research.
 These studies work by outlining analytically from a sample of essays, articles or other texts, an exhaustive list of types of roles of statements.
 Then the researchers proceed to create a long, multi-page annotation guidelines. Up to 111 sides of A4 in some cases! (Teufel et al 2009).
@@ -182,7 +182,8 @@ Other dimenions of the QR relationship were explored beyond 'agree/disagree': 'f
 
 That was compared to expert performance, using Krippendorff's 'alpha' indicator.
 
-Another example comes from (Wyner, Peters, and Price 2015 - arugment discovery and extraction with the Argument Workbench).
+Another example comes from (Wyner et al 2015 ).
+
 Quotes are a description of the tool
 \begin{quote}
  ArgumentWorkbench, which is a interactive, integrated, modular tool set to extract, reconstruct, and visualise arguments. [...]
@@ -228,7 +229,8 @@ Moreover, \href{https://direct.mit.edu/coli/article/45/4/765/93362/Argument-Mini
 Both corpora focus on manual labeling.
 The Argument Interchange Format is a valid standard for any argument crowdsourcing project to follow.  This standardized JSON graph format make data transport and display easier. That is a great opportunity as their platform features a display tool.  The project can leverage this external tool and standard and focus on other features of the crowdsourcing process.
 Another resource of arguments online is the `args.me` online resource. 
-Its creation was described in Wachsmuth, Stein, and Ajjour 2017 - building an argument search engine for the WEB.
+Its creation was described in Wachsmuth et al 2017
+
 Args.me has an exposed search API and database schemas. The paper also emphasises the ethical choice contained in the construction of personalized search.
 It also mentions the high cost of the long hours of expert time.
 Another resource is the \href{http://araucaria.computing.dundee.ac.uk/}{Araucaria} program, mentioned by several papers. Link provided seems to be broken, though. 
@@ -351,17 +353,17 @@ She has one more argument to support it in mind, B.
 UBI can promote entrepreneurship and innovation by allowing individuals to take risks without the fear of financial insecurity.
 
 Bob has in mind the following arguments against the root statement, let us call this set X:
-- UBI can lead to inflation and decrease the value of currency, causing more harm than good.
-- UBI can discourage people from working and contribute to a decline in productivity, which can have negative effects on the economy.
+- UBI can lead to inflation and decrease the value of currency, causing more harm than good. //
+- UBI can discourage people from working and contribute to a decline in productivity, which can have  negative effects on the economy.//
 
 And the following responses to Alice's new statement, let us call this set Y:
-- UBI can create a disincentive for work, as individuals may choose not to work if they have a guaranteed basic income, which can actually increase poverty levels.
-- UBI can be expensive to implement and may require significant tax increases, which can be a burden on working individuals and families.
+- UBI can create a disincentive for work, as individuals may choose not to work if they have a guaranteed basic income, which can actually increase poverty levels. //
+- UBI can be expensive to implement and may require significant tax increases, which can be a burden on working individuals and families. //
 
 Now depending on the different reply protocols, different things can happen
-- under single-reply restriction he can only respond with one of set Y to statement B
-- under immediate reply restriction he cannot respond to the root node A
-- under multi-move he can add all 4 statements, from sets X and Y to the argument tree
+- under single-reply restriction he can only respond with one of set Y to statement B //
+- under immediate reply restriction he cannot respond to the root node A //
+- under multi-move he can add all 4 statements, from sets X and Y to the argument tree //
 
 Another distinction between game-states comes from Rienks, Heylen and Weijden 2005 - argument diagramming of meeting conversations.
 That is the observations that there are more types of issues than just 'yes/no' issues.
@@ -399,7 +401,7 @@ Other projects have focused on personal data organization systems, such as \href
 
 \href{http://www.argunet.org/}{Argunet}, started in 2006 by a researcher in argument theory, Christian Voigt. with the number of downloads exceeding 50'000 it enjoyed niche yet strong enjoyment from enthusiasts of argument structurization. It has been used by the authors for conferences and seminars, demonstrating the practical application of the system. It was based on Java and Eclipse application network. Authors mention the difficulties in establishing interoperativity with other software. Using these lessons, a new project was started.
 
-\href{https://argdown.org/}{Argudown} is a successsor project to argunet and a tool for argument representation. It is not software, but a standard for syntax, that can be used to structure arguments of any complexity into text files. It is a superset of markdown, adding features such as support or opposition relation between statements by indentation and `+` or `-` sign.
+\href{https://argdown.org/}{Argdown} is a successsor project to argunet and a tool for argument representation. It is not software, but a standard for syntax, that can be used to structure arguments of any complexity into text files. It is a superset of markdown, adding features such as support or opposition relation between statements by indentation and `+` or `-` sign.
 
 \section{Other ways used so far to the same purpose}
 
@@ -795,22 +797,6 @@ Overall, the Lully project proof of concept represents an important step towards
 
 \newpage
 
-\bibliography{}
-inter-annotator agreemetn from 2008
-https://direct.mit.edu/coli/article/34/4/555/1999/Inter-Coder-Agreement-for-Computational
-(Prakken 2005, Coherence and Flexibility in Dialogue Games for Argumentation)
-
-@article{Priest2008-PRIMML-2,
-	title = {Many-Valued Modal Logics: A Simple Approach: Many-Valued Modal Logics: A Simple Approach},
-	year = {2008},
-	doi = {10.1017/s1755020308080179},
-	publisher = {Cambridge University Press},
-	journal = {Review of Symbolic Logic},
-	volume = {1},
-	author = {Graham Priest},
-	pages = {190--203},
-	number = {2}
-}
-
+\printbibliography
 
 \end{document}
