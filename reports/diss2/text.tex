@@ -120,45 +120,42 @@ Jumping forward, after AI winters Machine Learning revolution of the 2010s going
 Argument mining is lagging behind the trailblazing subdisciplines of machine learning. The problem in many studies of argumentation is the undersupply of data. Yet there is plenty of online discourse.
 There is abundance of linear, monologue data but adversarial labeled data is scarce. That is an obstacle to development of adversarial NLP models that could be used in chatbots. 
 
-Online platforms, such as reddit, quora, twitter are host to the most resounding debates, heard by hundreds of millions.  Discussions topics include current political controversies, religious questions and lore discussions. These discussions form the core of the public discourse in modern society.  The results are limited, as opinions gathered in this way are devoid of explicit reasoning structure.  The act of commenting online corresponds to 'claiming ownership for a new piece of knowledge' (Teufel et al, 2009). Expressing arguments for, negotiating compromises, pursuing social shifts, finding or failing-to-find common ground - are all different types of discourses. The usual output is a series of posts, comments or tweets, that are under structured. 
-Previous studies included attempts to automatically derive representations of the discourse structure from unstructrued text (Anand et al 2011).
+Online platforms, such as reddit, quora, twitter are host to the most resounding debates, heard by hundreds of millions.  Discussions topics include current political controversies, religious questions and lore discussions. These discussions form the core of the public discourse in modern society.  The results are limited, as opinions gathered in this way are devoid of explicit reasoning structure.  The act of commenting online corresponds to 'claiming ownership for a new piece of knowledge' \cite{teufel_scientific_2014} Expressing arguments for, negotiating compromises, pursuing social shifts, finding or failing-to-find common ground - are all different types of discourses. The usual output is a series of posts, comments or tweets, that are under structured. 
+Previous studies included attempts to automatically derive representations of the discourse structure from unstructrued text \cite{abbott_how_2011}
 The main drawback is the annotation cost, using dozens of hours of expert work, and tens of pages of annotation manuals.
 
 Notable projects in the area include IBM's \href{https://research.ibm.com/interactive/project-debater/}{Project Debater} \cite{slonim2021autonomous}, yet these are not open sourced.
 
 \section{Comparison to previous papers}
 The results obtained in this project, the proof of concept for crowdourced sourcing of argument mining labeled data, play into the previous papers in the argument mining field.
-Lully avoids the multi-page annotation pitfall of 2009 Teufel et al.
+Lully avoids the multi-page annotation pitfall of other studies \cite{teufel_towards_2009}.
 The main intellectual debt is to von Ahn 2008 'Games with a purpose, as well as \href{https://dl.acm.org/doi/10.1145/2448116.2448119}{Phrase detectives}.
 \cite{poesio_phrase_2013}
 
 When taking features of Lully that aggregate input of multiple users, (Wyner et al 2015 - arugment discovery and extraction with the Argument Workbench) seems quite similar. Argument Workbench also focuses on textual data, not adversarial one. 
 
 In fact the PostgresSQL schema arrived at is quite similar to the one by 
-
-% todo Internet argument corpus 2.0
+\cite{abbott_internet_2016}
 
 An approach directly competing with the one Lully takes is by Wachsmuth et al 2017 'building an argument search engine for the Web' that scrapes existing data sand serves it through a ssearch engine.
-% todo building arguemtn search engine
+\cite{wachsmuth_building_2017}
 
-% todo holistic view on argument quality prediction
+\cite{fromm_towards_2022}
 
 Another recent approach to the issue is the TARGER project, a native PyTorch embedding that uses neural networks for argument mining
 
-% todo targer
-
+\cite{chernodub_targer_2019}
 
 \section{Annotation}
 There are different strategies for annotation. Much of the study of argument annotation has focused on citation function in scientific papers.
-% todo teufel missingji
-Many annotation schemas for argument citation motivation have been created (Teufel et al 2010, Mann and Thompson 1987) and had success in research.
+Many annotation schemas for argument citation motivation have been created \cite{teufel_scientific_2014}, \cite{mann_rhetorical_1987} and had success in research.
 These studies work by outlining analytically from a sample of essays, articles or other texts, an exhaustive list of types of roles of statements.
-Then the researchers proceed to create a long, multi-page annotation guidelines. Up to 111 sides of A4 in some cases! (Teufel et al 2009).
+Then the researchers proceed to create a long, multi-page annotation guidelines. Up to 111 sides of A4 in some cases! \cite{teufel_towards_2009}
 As the next step, annotators are selected. Some studies choose discipline experts, some on purpose select persons not familiar with the discipline.
 That is done in order to increase domain-independence of the annotation schema.
 The following step is usually to collate the annotations created by the annotators. 
 
-Artstein&Poesio 2008 discuss various algorithms for this purpose.
+There is existent discussion \cite{artstein_inter-coder_2008} of various algorithms for this purpose.
 
 In summary, the pure annotation strategy is costly but its experiences are quite helpful. The basic information flow pipeline is shown in (Razuvayevskaya and Teufel 2017 - finding enthymemes in real-world text - a feasibility study) as a 5 part process.
 \begin{quote}
@@ -496,7 +493,7 @@ To avoid the pitfalls of human annotation, a quantitative approach should be pur
 \subsection{Functional requirements}
 
 Annotation takes two fundamental forms: the opinions on particular statements, and the judgement on the relations between any two given statements.
-The former can  take a boolean form, as under classical logic, or more exotic ones, such as four valued logic, as outlined in  \cite{Priest2008}
+The former can  take a boolean form, as under classical logic, or more exotic ones, such as four valued logic, as outlined in  \cite{priest_many-valued_2008}
 Having collection of such data points would allow to gauge global opinions on every statement in the database.
 
 Judgement on the relations of two statment has been tried many times before, as is outlined above. That could be whether the relation is expressing agreement, disagreement, sarcasm, or an emotion.
@@ -642,10 +639,10 @@ Data can be imported from AIFdb. The exact data structure is not preserved in th
 
 It is structured into these PostgresSQL tables:
 - achievements
-- gamer_profiles 
-- top_gamers 
-Achievements is a simple table listing possible achievements each user may have. They are referenced to the gamer_profiles in a linker table. Gamer_profiles recounts the number of user's contributions as experience points.
-Top_gamers is a PostgresSQL View, that is a custom query, which in this case returns a leaderboard of all players, sorted by number of experience points.
+- gamer profiles 
+- top gamers 
+Achievements is a simple table listing possible achievements each user may have. They are referenced to the gamer_profiles in a linker table. Gamer profiles recounts the number of user's contributions as experience points.
+Top gamers is a PostgresSQL View, that is a custom query, which in this case returns a leaderboard of all players, sorted by number of experience points.
 
 \section{Frontend interactions with the backend}
 
