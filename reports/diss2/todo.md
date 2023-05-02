@@ -15,6 +15,10 @@
 - [x] add bibliography
 - [x] add correct citations for research papers
 - [x] add correct citations for links
+- [x] get a beta reader 
+- [x] add that realized that snappy games better than elabrate interface
 - [ ] make the diagrams needed
-- [ ] get a beta reader 
-- [ ] add that realized that snappy games better than elabrate interface
+  - [ ] add the data on the backend - and represent the diagram with this https://github.com/zernonia/supabase-schema
+  - [ ] display a basic tree on the frontend - maybe just from argdown
+- [ ] create the presentation
+- [ ] incorporate beta reader comments

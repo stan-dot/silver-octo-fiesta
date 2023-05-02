@@ -1,4 +1,5 @@
 
+Although argumentation mining in user-generated Web discourse has a long way to go (my  methods currently achieve only about 50\% of human performance)
 # from final text
 
 It then moves on to describe the backend data structures and gamification system, which serve as the foundation for the app's functionality.

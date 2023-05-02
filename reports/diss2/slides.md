@@ -9,4 +9,4 @@ also a demo setup that runs quickly
 
 few diagrams
 
-meeting on TUesday with a draft of that
+meeting on Tuesday with a draft of that

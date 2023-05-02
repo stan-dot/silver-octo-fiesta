@@ -67,10 +67,10 @@ I would like to thank my supervisor, Rob, for his patience and guidance, and Jon
 
 \chapter{Introduction}
 How to make a machine understand argument structure?
-That is a very relevant question. Arugment mining does not have as much interest as other NLP (Natural Language Processing) areas, such as sentiment analysis, with market \href{https://www.polarismarketresearch.com/industry-analysis/sentiment-analytics-market}{valued at \$3.15 billion in 2021.
+That is a very relevant question. Arugment mining does not have as much interest as other NLP (Natural Language Processing) areas, such as sentiment analysis, with market \href{https:\\www.polarismarketresearch.com/industry-analysis/sentiment-analytics-market}{valued at \$3.15 billion in 2021.
 \cite{noauthor_sentiment_nodate}
 
-The base resource for any NLP task is the dataset, its quality and size impactful on any subsequent processing. Argument mining does not have enough open access datasets with high quality structured argument data.  Expert annotation is high quality but costly, and crowdsourcing suffers from low quality. 
+The base resource for any NLP task is the dataset, its quality and size impacts on any subsequent processing. Argument mining does not have enough open access datasets with high quality structured argument data.  Expert annotation is high quality but costly, and crowdsourcing suffers from low quality. 
 
 The goal of this project is to explore the possiblities for a tool that solve this tradeoff and deliver high-volume, high-quality data at a low cost. 
 The main concept behind this is the use of Games with A Purpose Paradigm to drive user engagement as opposed to using paid workers. User acquisition, retention and engagement is managed through various incentives. 
@@ -79,31 +79,30 @@ The resulting corpus could be used by NLP researchers as a labeled dataset. NLP 
 
 This project is an exploratory one, aiming to create a design and functionalities list, rather than a full-fledged product.
 Design is provided and some of the functionalities were done as a proof-of-concept. 
-That is on the spectrum of design -> proof of concept -> prototype -> MVP (Minimum Viable Product).
+That is on the spectrum of design $\rightarrow$ proof of concept $\rightarrow$ prototype $\rightarrow$ MVP (Minimum Viable Product).
 
 Functionalities include but are not limited to: users viewing a constructed argument tree and interacting with it to expand it, import of data from existing argument schema projects, a variety of minigames that compose the corpus. 
 
-This report will go over the relevant literature, including human annotation schemas, and semi-supervised learning approaches, then review similar software. That is used to create a list of capabilities to explore, grouped by priority. Based on that a broad-scope design is created, and implementation presented of the highest priority aspects of the project.
+This report goes over the relevant literature, including human annotation schemas, and semi-supervised learning approaches, then review similar software. That is used to create a list of capabilities to explore, grouped by priority. Based on that a broad-scope design is created, and implementation presented of the highest priority aspects of the project.
 That section will be the basis for development of a more technical design document on a later date.
 Report will end with a description of achievements to date and plans for the future.
 
-\section{Guding example}
+\section{Guiding example}
 
-Let us take a topic frequently mentioned in current debates: Universal basic income should be implemented.
-Various iterations of the arguments for this statement and associated data structures will accompany many sections of this paper.
-
-\newpage
+Here is a topic frequently mentioned in current debates: Universal basic income should be implemented.
+This statement and arguments for it are discussed in various data structures throughout this paper.
 
 \chapter{Literature Survey}
 Argument structure analysis goes back to antiquity. \cite{angelelli_techniques_1970}
 Analysis of argumentation has been an active topic in numerous research areas, such as philosophy \cite{van_eemeren_systematic_2003}, communication studies \cite{mercier_why_2011}, and informal logic \cite{blair_informal_2000}, among others. This chapter will cover the areas that this project touches. There are several types of approaches. Fully annotated and semi-supervised approaches.
 
-\href{https://en.wikipedia.org/wiki/Semantic_network}{Semantic network} are graphical representations of concepts and their interrelationships, often used in natural language processing and artificial intelligence. It is closely related to 'formal concept analysis', which is an activity in philosophy aiming at a similar results. Finally ontology languages are the static, completed equivalent. They are often created synthetically, as opposed to the analytic origin of the previous ones.
+\href{https:\\en.wikipedia.org/wiki/Semantic_network}{Semantic network} are graphical representations of concepts and their interrelationships, often used in natural language processing and artificial intelligence. It is closely related to \textit{formal concept analysis}, which is an activity in philosophy aiming at a similar results. Finally ontology languages are the static, completed equivalent. They are often created synthetically, as opposed to the analytic origin of the previous ones.
 
 \section{Background}
-From Stoic Logic to Leibniz's Characteristica Universalis, there were attempts to understand, map and summarize arguments expressed in common language. 
+From Stoic Logic to Leibniz's \textit{Characteristica Universalis}, there were attempts to understand, map and summarize arguments expressed in common language. 
+
 \cite{woltzenlogel_paleo_leibnizs_2016}
-*Elements of Logic*, a logic textbook from 1826 by Richard Whatley introduced the modern arrow based logic notation. It was elaborated in 1913 by John Henry Wigmore.
+\textit{Elements of Logic}, a logic textbook from 1826 by Richard Whatley introduced the modern arrow based logic notation. It was elaborated in 1913 by John Henry Wigmore.
 \cite{wigmore_principles_1913}
 
 \begin{figure}[h]
@@ -113,14 +112,14 @@ From Stoic Logic to Leibniz's Characteristica Universalis, there were attempts t
 \end{figure}
 
 
-Second half of the 20c saw a computerized analysis become a reality. Bag of word approaches have been seen as early as 1954... \cite{harris_distributional_1954}
+Second half of the 20th century saw a computerized analysis become a reality. Bag of word approaches have been seen as early as 1954... \cite{harris_distributional_1954}
+These were used in machine translation and speech recognition, especially through n-gram method. \cite{r_costa-jussa_analysis_2007}
 
 Logic programming languages were the next step, with Planner \cite{hewitt_planner_1970} as the pioneer in the field, even if not exactly with *personal* applications in mind.  It was created in 1969 with the main feature being forward and backward chaining of statements to prove a given goal statement.
 
-
 Its function was *synthetic*, not analytic - so the reverse of argument mining. Nevertheless, it is an interesting reference point.
 
-Jumping forward, after AI winters Machine Learning revolution of the 2010s going into 2020s has been fueled by data created by the previous decades of the internet. Image diffusion models such as Stable Diffusion are using existing works of art, a legally controversial issue. LLMs such as GPT series use Wikipedia and \href{https://paperswithcode.com/dataset/webtext}{WebText} dataset.
+Jumping forward, after AI winters Machine Learning revolution of the 2010s going into 2020s has been fueled by data created by the previous decades of the internet. Image diffusion models such as Stable Diffusion are using existing works of art, a legally controversial issue. LLMs such as GPT series use Wikipedia and \href{https:\\paperswithcode.com/dataset/webtext}{WebText} dataset.
 Or models based on diffusion \cite{rombach_high-resolution_2022}.
 
 Argument mining is lagging behind the trailblazing subdisciplines of machine learning. The problem in many studies of argumentation is the undersupply of data. Yet there is plenty of online discourse.
@@ -142,7 +141,7 @@ When taking features of Lully that aggregate input of multiple users, (Wyner et 
 In fact the PostgresSQL schema arrived at is quite similar to the one by 
 \cite{abbott_internet_2016}
 
-An approach directly competing with the one Lully takes is by Wachsmuth et al 2017 'building an argument search engine for the Web' that scrapes existing data sand serves it through a ssearch engine.
+An approach directly competing with the one Lully takes is by Wachsmuth et al 2017 \textit{Building an argument search engine for the Web} that scrapes existing data sand serves it through a ssearch engine.
 \cite{wachsmuth_building_2017}
 
 \cite{fromm_towards_2022}
@@ -155,7 +154,7 @@ Another recent approach to the issue is the TARGER project, a native PyTorch emb
 There are different strategies for annotation. Much of the study of argument annotation has focused on citation function in scientific papers.
 Many annotation schemas for argument citation motivation have been created \cite{teufel_scientific_2014}, \cite{mann_rhetorical_1987} and had success in research.
 These studies work by outlining analytically from a sample of essays, articles or other texts, an exhaustive list of types of roles of statements.
-Then the researchers proceed to create a long, multi-page annotation guidelines. Up to 111 sides of A4 in some cases! \cite{teufel_towards_2009}
+Then the researchers proceed to create a long, multi-page annotation guidelines, with up to 111 sides of A4 in some cases \cite{teufel_towards_2009}
 As the next step, annotators are selected. Some studies choose discipline experts, some on purpose select persons not familiar with the discipline.
 That is done in order to increase domain-independence of the annotation schema.
 The following step is usually to collate the annotations created by the annotators. 
@@ -181,12 +180,12 @@ Following (von Ahn, 2008), we can distinguish between 3 types of approches to cr
 There is the financial approach, the altruistic approach, and the gamification (enjoyment) approach. Papers reviewed did not feature the enjoyment approach.
 
 Starting chronologically, the first paper is Anand et al 2011 "How can you say such things?!?: Recognizing Disagreement in Informal Political Argument".
-One of the features of this paper to note is its use of Amazon's "Mechanical Turk" service for contributions. Paid volunteers ('Turkers') did the annotations. 
+One of the features of this paper to note is its use of Amazon's "Mechanical Turk" service for contributions. Paid volunteers (\textit{Turkers}) did the annotations. 
 Corpus derived from a form '4formums.com' and focused on US dicourse on topics such as: evolution, gun contorl, abortion and gay marriage. A collection of posts and comments was used to define QR (quote-response) pairs where one user's text Q was quoted by another one, with some added commentary R. The Turkers had a [-5, 5] scale to indicate agreement or disagreement in the pair.
 
 Other dimenions of the QR relationship were explored beyond 'agree/disagree': 'fact/emotion/, 'attack/insult', 'sarcasm', 'nice/nasty'
 
-That was compared to expert performance, using Krippendorff's 'alpha' indicator.
+That was compared to expert performance, using Krippendorff's \textit{alpha} indicator matrices for inter-annotator agreement.
 
 Another example comes from (Wyner et al 2015 ).
 
@@ -202,7 +201,7 @@ Quotes are a description of the tool
 \end{quote}
 
 It is worth noticing that they used a desktop application. The other option being mobile application. There are tradeoffs visible.
-Mobile applications do not have the 'screen real estate' for complex interfaces, yet higher number of people use them. Over \href{https://gs.statcounter.com/platform-market-share/desktop-mobile-tablet}{50\% more people use mobile}.
+Mobile applications do not have the \textit{screen real estate} for complex interfaces, yet higher number of people use them. Over \href{https:\\gs.statcounter.com/platform-market-share/desktop-mobile-tablet}{50\% more people use mobile}.
 
 \begin{figure}[h]
     \centering
@@ -238,7 +237,7 @@ Moreover, 2020 Argument mining survey paper \cite{lawrence_argument_2020} mentio
 \begin{quote}
  AIFdb17 (Lawrence et al. 2012), containing over 14,000 Argument Interchange Format (AIF) argument maps, with over 1.6m words and 160,000 claims in 14 different languages.18 These numbers are growing rapidly, thanks to both the increase in analysis tools interacting directly with AIFdb and the ability to import analyses produced with the Rationale and Carneades tools (Bex et al. 2012). Indeed, AIFdb aims to provide researchers with a facility to store large quantities of argument data in a uniform way. AIFdb Web services allow data to be imported and exported in a range of formats to encourage re-use and collaboration between researchers independent of the specific tools and data format that they require.
 \end{quote}
-https://corpora.aifdb.org/ - Link to AIFdb, possibly broken
+https:\\corpora.aifdb.org/ - Link to AIFdb, possibly broken
 
 Both corpora focus on manual labeling.
 The Argument Interchange Format is a valid standard for any argument crowdsourcing project to follow.  This standardized JSON graph format make data transport and display easier. That is a great opportunity as their platform features a display tool.  The project can leverage this external tool and standard and focus on other features of the crowdsourcing process.
@@ -247,11 +246,10 @@ Its creation was described in Wachsmuth et al 2017
 
 Args.me has an exposed search API and database schemas. The paper also emphasises the ethical choice contained in the construction of personalized search.
 It also mentions the high cost of the long hours of expert time.
-Another resource is the  Araucaria (with broken link  http://araucaria.computing.dundee.ac.uk/) program, mentioned by several papers. Link provided seems to be broken, though. 
+Another resource is the  Araucaria (with broken link  http:\\araucaria.computing.dundee.ac.uk/) program, mentioned by several papers. Link provided seems to be broken, though. 
 
 There are cons to the current corpora, though.
 Only few publicly available argumentation corpora exist, as annotations are costly, error-prone, and require skilled human annotators (Stab and Gurevych, 2014a; Habernal et al., 2014).
-Although argumentation mining in user-generated Web discourse has a long way to go (my  methods currently achieve only about 50\% of human performance)
 
 \section{Mixed approaches}
 The above approaches were deemed to be limited. In fact, there seems to have been a shift in approaches around 2014.
@@ -260,7 +258,7 @@ There has been an argument that automatic processing is preffered due to the cos
 With that being the turining point, the efforts thereafter have focused on putting the main weight of the process on automatized process. 
 That reflects the wider industry shift towards the use of Machine Learning over the past 10 years.
 
-Researchers conceded that manual analysis is not feasuble some studies (Habernal and Gurevych 2015 - exploiting debate portals for semi-supervised).
+Researchers conceded that manual analysis is not feasible some studies (Habernal and Gurevych 2015 - exploiting debate portals for semi-supervised).
 They attempted to bypass that problem using semi-supervised learning.
 
 Another approach is a blending approach.\cite{shnarch_will_2018} That consists of adding small amount of high quality and manually labeled data.
@@ -268,7 +266,7 @@ Another approach is a blending approach.\cite{shnarch_will_2018} That consists o
 Existence of this approach fares well for the crowdsourcing approach. Primarily the data will be strongly labeled, but if it proves weak for training using ML techniques, 
 supplementation with weakly labeled data will be saving the utility of crowdsourced data.
 
-Another attempt was this paper (Al-Khatib et al 2016 - crossdomain mining of argumentative text through Distant Supervision).
+Another attempt presented in Al-Khatib et al (2016) \cite{al-khatib_cross-domain_2016}
 This study makes the strongest case for the exclusion of crowdsourcing as a means of data acquisition.
 \begin{quote}
  Studies reveal that annotators need multiple training sessions to identify and classify argumentative segments with moderate inter-annotator agreement, and crowdsourcing-based annotation does not help notably (Habernal et al., 2014)
@@ -277,8 +275,7 @@ Of note is also the source of the data. Authors say
 \begin{quote}
  we acquire a large corpus with 28,689 argumentative text segments from the online debate portal idebate.org. The corpus covers 14 separate domains with strongly varying feature distributions.
 \end{quote}
-This source is highly specifc. That argumentative discourse is not a representative sample of human argument space. Verbal arguments
-also experts 
+This source is highly specifc. That argumentative discourse is not a representative sample of human argument space.  
 
 These arguments are put into the search system using the PageRank algorithm \cite{brin_anatomy_1998}.  That gives grounds to considering that algorithm a good basis for a ranking of arugments in other circumstances.
 
@@ -293,11 +290,11 @@ These are three main factors: enjoyment, timed response, ELO system.
 \begin{quote}
  The key property of games is that people want to play them. We therefore sidestep any philosophical discussions about “fun” and “enjoyable,” defining a game as “successful” if enough human-hours are spent playing it
 \end{quote}
-That  *a posteriori* feature can be predicted by keeping the right level of challenge in front of the player.  \cite{locke_theory_1991}
+That  \textit{a posteriori} feature can be predicted by keeping the right level of challenge in front of the player.  \cite{locke_theory_1991}
 Right level of challenge is measured through a 'timed response' mechanic built into the game.
 The player's skill is evaulated on the basis of duration of the task. 
 Self awareness of the speed of execution and the increasingly narrowing bar representing time left provides live feedback.
-ELO system \cite{noauthor_elo_2023} ensures that in player versus player games there is balance. Each player can't go against player very far from their own skill level.
+ELO system \cite{noauthor_elo_2023} created in the 60s by Hungarian-American Arpad Elo, ensures that in player versus player games there is balance. Each player can't go against player very far from their own skill level.
 Moreover, it exploits the competitive desire in humans.
 The social factor seems valued in games as competitive sports are a growing market, with nearly 2 million US dollars revenue predicted \cite{noauthor_global_nodate} in 2025
 
@@ -307,8 +304,10 @@ There was no incentive for agreement between annotators.
 This is a limnitation that could be overcome.
 
 The other takewaway is a set of metrics. These are
-- labels per human hour
-- Average Lifetime Play
+\begin{itemize}
+  \item labels per human hour
+  \item Average Lifetime Play (ALP)
+\end{itemize}
 While the first one is self-explanatory, the second might not be.
 Study describes the latter as 
 \begin{quote}
@@ -317,22 +316,23 @@ Study describes the latter as
 Average score of 91 minutes is a good benchmark to compare with.
 
 Phrase detectives \cite{poesio_phrase_2013} is the leading example of the use of the 'game with purpose' paradigm in order to gather data for NLP research.
-ALP of only 30 minutes. It seems there is a a headspeace to improve on that. nothing indicates that this area has hit a ceiling.
+ALP of only 30 minutes. It seems there is a a headspeace to improve on that, nothing indicates that this area has plateaued.
 What they excel at is: 'task completion, scoring and storyline as a seamless experience'
 These are qualities worth emulating. Task completion and scoring are the easiest to implement. 
 In contrast, creating a coherent and engaging storyline would require a specific skillset that might not always be available.
-Possibly emphasizing social features could substitute this.
+Not all games use that, though as some use social features.
 
-% todo similar game, only web
-tileattack game
+Example of a game using that strategy, with web-only platform, is  \textit{Tileattack}. There users identify noun phrases inside sentences. The dataset collected serves the Named Entity Extraction. The game is competitive with two users playing against one another. Players are additionally incentivized through the chance of winning monetary prizes.
 \cite{noauthor_tileattack_nodate}
 
 \section{Similar software review}
 There is a plethora of similar software. These can be found in many types, differing by platform and target audience. Many of those are outdated.
-The similar software can be dividd intothe following types:
-- commercial B2B SAAS solutions
-- hacker-ethics personal knowledge management tools.
-- is also a record of software developed specifically for research.
+The similar software can be divided into the following types:
+\begin{itemize}
+  \item  commercial B2B (Business to Business) SaaS (Software as a Service) solutions 
+  \item  hacker-ethics personal knowledge management tools.
+  \item  is also a record of software developed specifically for research.
+\end{itemize}
 
 \subsection{Business solutions}
 Commercial solutions aim to help in meetings, by providing a way to write structured notes and diagrams. These often have a rich user interface, focusing on graphics and interactivity.
@@ -359,7 +359,7 @@ vs. non-immediate-reply protocols)
 \end{quotation}
 \cite[page 1010]{prakken_coherence_2005}
 
-The configuration space is non-trivial, and the choice which of these protocols would be implemented in the game needs to be pondered.
+The configuration space - the list of possible combinations here is non-trivial, and the choice which of these protocols would be implemented in the game needs to be pondered.
 Playtesting is needed to make sure these assumptions work out, maybe 2 or 3 move points per player (new node allowance) would be better.
 These can be conceputalized as restrictions compared to a 'multi-reply, multi-move, non-immediate-reply' variant.
 
@@ -371,21 +371,21 @@ She has one more argument to support it in mind, B.
 UBI can promote entrepreneurship and innovation by allowing individuals to take risks without the fear of financial insecurity.
 
 Bob has in mind the following arguments against the root statement, let us call this set X:
-- UBI can lead to inflation and decrease the value of currency, causing more harm than good. //
-- UBI can discourage people from working and contribute to a decline in productivity, which can have  negative effects on the economy.//
+- UBI can lead to inflation and decrease the value of currency, causing more harm than good. \\
+- UBI can discourage people from working and contribute to a decline in productivity, which can have  negative effects on the economy.\\
 
-And the following responses to Alice's new statement, let us call this set Y:
-- UBI can create a disincentive for work, as individuals may choose not to work if they have a guaranteed basic income, which can actually increase poverty levels. //
-- UBI can be expensive to implement and may require significant tax increases, which can be a burden on working individuals and families. //
+Bob also has in mind the following responses to Alice's new statement, let us call this set Y:
+- UBI can create a disincentive for work, as individuals may choose not to work if they have a guaranteed basic income, which can actually increase poverty levels. \\
+- UBI can be expensive to implement and may require significant tax increases, which can be a burden on working individuals and families. \\
 
 Now depending on the different reply protocols, different things can happen
-- under single-reply restriction he can only respond with one of set Y to statement B //
-- under immediate reply restriction he cannot respond to the root node A //
-- under multi-move he can add all 4 statements, from sets X and Y to the argument tree //
+- under single-reply restriction he can only respond with one of set Y to statement B \\
+- under immediate reply restriction he cannot respond to the root node A \\
+- under multi-move he can add all 4 statements, from sets X and Y to the argument tree \\
 
 Another distinction between game-states comes from \cite{wyner_argument_2015}
 That is the observations that there are more types of issues than just 'yes/no' issues.
-They call them: A/B issues, yes-no issue, open issue.
+The complete set is: A/B issues, yes-no issue, open issue.
 It is obvious that the yes-no issue might be the simplest to implement, yet it would be a lost opportunity to forsake the other modes.
 Some consideration should be given to incorporating them into the space of possible arguments on the app.
 
@@ -410,7 +410,7 @@ They have a long list of arguments on their website, gathered through years of u
 This huge collection of public maps is of limited use as a dataset for studies in English, as most of the data is not in English.
 
 \subsection{Personal knowledge management tools}
-Next come the personal knowledge mangement tools, which focus on aggregative approach to knowledge not onle offf educational projects or business decisions.
+Next come the personal knowledge mangement tools, which focus on aggregative approach to knowledge not only of educational projects or business decisions.
 Deepro App \cite{noauthor_deepro_nodate} is a unique mobile app quiz and self-reflection tool developed by French philosopher Vincent Cespedes \cite{noauthor_vincent_2023} in 2017. Unlike most knowledge-based systems, Deepro is not an open platform where users can create their own content. Instead, it relies on pre-defined knowledge and questions that prompt users to reflect on their personal values, beliefs, and experiences. The app is closed source, meaning that the code is not publicly available for review or modification.
 
 Other projects have focused on personal data organization systems, such as reorg.el \cite{noauthor_reorg_2023} which is a system for organizing and navigating through personal files in Emacs. It is immediately visible that what can be extracted from there are the ideas about the invidiual user interface and the algorithms for reconciliation between different concepts, but nothing for interpersonal adversarial dynamics.
@@ -424,7 +424,7 @@ Argdown \cite{noauthor_argdown_nodate} is a successsor project to argunet and a 
 \section{Other ways used so far to the same purpose}
 
 \subsection{Relevancy}
-The App will fill the niche of the Dataset landscape and provide NLP researchers will a valuable resource.
+Completed stage of the app would fill the niche of the Dataset landscape and provide NLP researchers with a valuable resource.
 
 \subsection{Research software}
 
@@ -436,8 +436,6 @@ Too esoteric syntax in the age where all cutting edge research is done in Python
 
 Zooniverse \cite{noauthor_zooniverse_nodate} is a thriving crowsourcing platform. It is used in the ethos of citizen science. There are many projects in the categories such as medicine, nature, climate and history.  Not many projects in language processing domain have been found. One example is an Optical Character Recognition crowdscouring project dealing with 19th cenutry newspapers \cite{noauthor_zooniverse_nodate-1}. With over 3'000 volunteers and 103'000 classifications the project is at 73\% of newspapers scanned at the time of writing this passage.
 These numbers highlight the difficult nature of these projects and the scale reuquired to reach usable results.
-
-\newpage
 
 \section{Literature survey summary}
 
@@ -481,7 +479,6 @@ The UBI topic could be represented like this in Argdown:
     - UBI can provide a more stable source of income, which can encourage individuals to pursue creative and entrepreneurial endeavors that can contribute to the economy.
     `
 
-\section{AIFdb}
 
 \chapter{Requirements and analysis}
 
@@ -489,15 +486,19 @@ The UBI topic could be represented like this in Argdown:
 The stakeholders can be listed as:
 
 Users of the Lully application, including the various use cases:
-- team leaders working to build compatible teams
-- technical and fiction writers seeking to invent new arguments
-- developers seeking to align artificial intelligences with a given set of values 
-- open-minded individuals trying to better understand others' positions, for instance in a value conflict in a team
+\begin{itemize}
+  \item team leaders working to build compatible teams
+  \item technical and fiction writers seeking to invent new arguments
+  \item developers seeking to align artificial intelligences with a given set of values 
+  \item open-minded individuals trying to better understand others' positions, for instance in a value conflict in a team
+\end{itemize}
 
 And the other categories:
-- Developers of the application 
-- Researchers - all users of the data produced by Lully
-- Society at large, as the project can be expected to promote in effect mutual understanding and ethical decision-making, which can be expected to have wide scope positive impacts.
+\begin{itemize}
+  \item Developers of the application 
+  \item Researchers - all users of the data produced by Lully
+  \item Society at large, as the project can be expected to promote in effect mutual understanding and ethical decision-making, which can be expected to have wide scope positive impacts.
+\end{itemize}
 
 \section{Requirements}
 To avoid the pitfalls of human annotation, a quantitative approach should be pursued. A diverse range of both source texts and human participants is needed. 
@@ -511,50 +512,62 @@ Having collection of such data points would allow to gauge global opinions on ev
 Judgement on the relations of two statment has been tried many times before, as is outlined above. That could be whether the relation is expressing agreement, disagreement, sarcasm, or an emotion.
 
 Application should be able to import data from other formats, such as Argdown or AIFdb. That import could be user side, when a file conforming to either standard is uploaded, or on the backend as a admin tool where big chunks of data can be imported.
+Another way of import of data could be allowing the users to submit snippets of text from a given URL, for instance a blog post.
 There is also the export angle, where arguments made in Lully can be safely exported into a file conforming to either standard. That would allow researchers that use the data downstream to more easily feed it into their processing pipelines.
 
+
 A sample user flow can be imaged as the following:
-- Player finds the landing page
-- Browses the list of topics popular at the moment
-- clicks to read more, is redirected to the app page
-- there is presented with a tutorial how to engage with the systemn: read, and contribute.
+\begin{itemize}
+  \item Player finds the landing page
+  \item Browses the list of topics popular at the moment
+  \item clicks to read more, is redirected to the app page
+  \item there is presented with a tutorial how to engage with the systemn: read, and contribute.
+\end{itemize}
+
+\begin{itemize}
+  \item user completes a small number of interactions with the application
+  \item user integrates the app importing some content on their own, be it from Twitter or other dynamic corpora (for instance a blog article to annotate to understand it better)
+  \item user continues to grow their use of the app, perhaps using it as a note taking app
+\end{itemize}
 
 Over the following week:
-- user completes a small number of interactions with the application
-- user integrates the app importing some content on their own, be it from Twitter or other dynamic corpora (for instance a blog article to annotate to understand it better)
-- user continues to grow their use of the app, perhaps using it as a note taking app
-
+\begin{itemize}
+  \item allow users to see and add new statements
+  \item have a basic gamification feature with stats about the number of contributions and badges
+\end{itemize}
 Proof of concept stage:
-- allow users to see and add new statements
-- have a basic gamification feature with stats about the number of contributions and badges
 
 If the project progresses beyond the proof-of-concept stage:
-- allow users to flag inappropriate content
-- provide administrative analytics 
-- provide a way for information outflow for the researchers to access data
+\begin{itemize}
+\item allow users to flag inappropriate content
+\item provide administrative analytics 
+\item provide a way for information outflow for the researchers to access data
+\end{itemize}
 
 \subsubsection{Games}
 \begin{itemize}
   \item Make ADUs game
   \item Swipe Game
   \item TruthGame 
-  \item (pending) Syllogism based games
-  \item (pending) Tree confirmation game
-  \item (pending) combined game SwipeTruth
+  \item (design only) Syllogism based games
+  \item (design only) Tree confirmation game
+  \item (design only) combined game SwipeTruth
 \end{itemize}
-Swipe game is about deciding whether 2 statemnts are in support or attack relation to one another, or altogether not related.
-TruthGame is about the user telling their opinion about a given statement. It is not the core feature compared to the relation one, but logically necessary.
-
-SwipeTruth is a combination of the two games, SwipeGame and TruthGame, where the user first orients themselves with respect to a statement and then is presented with multiple statements that can either support it or reject it.
-Make ADUs (Argumentative Discourse Units) is about performing the argument extraction from a given section.
-Syllogism based games serve to uncover enthymemes as mentioned before \cite{noauthor_finding_nodate}. 
-Tree confirmation is when user sees an argument and can confirm whether it makes sense as a whole. If not, the user can adjust relations between individual statements within the argument tree.
+The detailed descriptions are:
+\begin{itemize}
+  \item Make ADUs (Argumentative Discourse Units) is about performing the argument extraction from a given section.
+  \item Swipe game is about deciding whether 2 statemnts are in support or attack relation to one another, or altogether not related.
+  \item TruthGame is about the user telling their opinion about a given statement. It is not the core feature compared to the relation one, but logically necessary.
+  \item Syllogism based games serve to uncover enthymemes as mentioned before \cite{noauthor_finding_nodate}. 
+  \item Tree confirmation is the reality check where the previous relations affirmed by the player are laid out in a tree fashion, allowing the user to either accept or go back to changing the tree
+  \item SwipeTruth is a combination of the two games, SwipeGame and TruthGame, where the user first orients themselves with respect to a statement and then is presented with multiple statements that can either support it or reject it.
+\end{itemize}
 
 These games cover most of the 5 steps of argument mining. 
 Argument extraction is not covered, or is covered implicitly when users submit sections from source texts. Argument segmentation is handled in the makeADUS game. Identification of relations and labeling is done through SwipeGame. The last step, argument completion is performed through the syllogism based games, and confirmed through the tree confirmation game.
 
-
-Critical thinking skills as imcreasing user interest.
+The games can be used alongside of motivational snippets, such as proclaiming that the use of the app increases 'critical thinking skills'. 
+That exploits the drive to self-improvement to keep user interest.
 
 \subsection{Non-Functional requirements}
 Performance: The system shall respond to user presses under half a second for most of the interactions.
@@ -569,7 +582,7 @@ Greatly outside of the scope of a BSc project, possibly requiring thousands of p
 Given that, many of the features of the complete data collection system can be only outlined without implementation.
 That type centers on the live multiplayer features. Two players would be able to adversarially create 2 branches of a root node, one for support and one in response, as mentioned in the literature reivew. 
 This could be extended for the purpose of live streamed debates, with stakes. Such events have a niche following on platforms such as Twitch or Twitter Spaces.
-Debate handled there could be reflected live in the tree. This would not necessarily require the speakers themselves would type - the moderators could fill that role.
+Debate handled there could be reflected live in the tree. This task could be performed by the speakers themselves, but not necessarily. The moderators could fill that role.
 Impact of the debate could be measured empirically by usingthe global statustics feature to guage the agreement status on a debate item before and after the debate
 This could be narrowed to only the users who have been watching the debate as well.
 
@@ -577,7 +590,7 @@ This could be narrowed to only the users who have been watching the debate as we
 The final criteria is the volume of quality annotated corpus. It could be uploaded to AIFdb. 
 This will be known after performing quality control on the main argument database created through the lifetime of the app. 
 
-The other criterion is the number of downloads - if larger than 150 it is better than global average, if more than 1300, over global average \cite{noauthor_average_nodate}.
+The other criterion is the number of downloads - if larger than 150 it is better than global average \cite{noauthor_average_nodate}.
 
 These data will be achieved from app publisher analytics.
 
@@ -609,7 +622,6 @@ Pre-collection measures:  & \begin{itemize}[left=0pt,topsep=0pt]\item only verif
 
  \end{table}\label{tab:collection}
 
-\newpage
 
 \chapter{Design}
 This section will be aboud...... top down view of organization and functional capabilities.
@@ -618,9 +630,6 @@ Frontend is composed of 2 parts, 2 different capabilities - the games for data c
 
 \section{User journey}
 \begin{itemize}
-  \item user discovers Lully through channels such as app stores or word of the mouth
-  \item user downdloads tha app and makes a account
-  \item user logs in
   \item user browses the available topics
   \item user click on topic they like
   \item user plays the SwipeGame for a couple of minutes in the context of that topic
@@ -640,7 +649,7 @@ Backend is structured in terms of tables in a relational database with PostgresS
   \item topics
   \item user relation
 \end{itemize}
-Authors table contains author's name and reference to their wikipedia page for reference. It is linked to the source texts table as each texts has 1 author. That table also links to some external page the text itself is available - be it a public domain text or a blogpost on author's page. source texts are referenced in turn in 'sections', which are short passages used as quotes by the users.
+Authors table contains author's name and reference to their wikipedia page for reference. It is linked to the source texts table as each text has one author. That table also links to some external page the text itself is available - be it a public domain text or a blogpost on author's page. source texts are referenced in turn in 'sections', which are short passages used as quotes by the users.
 Each statement can reference a section so that its origin can be tracked. Statements contain a reference to the user who added them and to the section of the source text they belong to (if applicable), as well as data fields: text contents and number of views. Topics contain references to statements of a common theme.
 user relation is the key element of the application. It is the table where users provide support/attack relations between a pair of statements. 
 Supabase provides authentication mechanism inbuilt into the backend.
@@ -663,6 +672,7 @@ Contents of the tables about source texts (with their authors) and topics are re
 Notable packages include Tailwindcss for styling, Typescript for types and Jest for testing. 
 
 \section{Data inputs - Game Modes}
+It w
 \subsection{Multiplayer features}
 \begin{itemize}
   \item Daily challenge mode
@@ -677,7 +687,7 @@ Seasonal modes could be statements or topics algorithmically suggested to player
 Debate mode would be a type of game where two players aim to prove / disprove a given statement, the root node of an otherwise empty argument tree.  A snapshot of the global support for a statement is gauged at the start of a debate, then two players each add new statement nodes to the argument. Each addition of a node to the argument tree would constitute a move.
 A node can be added to any node in the tree that the opponent put, or the root node. Otherwise a new support node can be added to an existing move.
 
-Another distinction between game-states comes from  \cite{rienks_argument_2005}. That is the observations that there are more types of issues than just 'yes/no' issues. They call them: A/B issues, yes-no issue, open issue. It is obvious that the yes-no issue might be the simplest to implement, yet it would be a lost opportunity to forsake the other modes.
+Another distinction between game-states was discussed before, as A/B issues, yes-no issue, open issue. It is obvious that the yes-no issue might be the simplest to implement, yet it would be a lost opportunity to forsake the other modes.
 Such issues are defined as Investigations, with many possible Statements being the candidate solutions to them. After a certain time elapses the Investigation is closed. As a community event this can be expected to be quite engaging.
 
 \section{Gamification design}
@@ -695,17 +705,20 @@ For optimization of user satisfaction a tagging system is added to the topics an
 \newpage
 
 \chapter{Implementation}
+In this chapter, I will discuss the implementation and testing of the application. The goal of the implementation phase was to build a functional and user-friendly application that fulfilled the design outlined in the previous chapter.
+
 Platform choice - there is a possibility of a web appplication or a mobile one.
 
 The proof of concept also highlighted some of the challenges of working with Supabase and React Native, particularly in terms of data transmission and validation, cross-update of topics, and update algorithms for the data structure and gamification part.
 
-In this chapter, I will discuss the implementation and testing of the application. The goal of the implementation phase was to build a functional and user-friendly application that fulfilled the design outlined in the previous chapter.
+\section{Methodology}
+The problem was approached through prototype development. Prototypes of new games were presented in varying intervals. The stack of React Native plus Supabase was not decided from the start, only from December on. It was a partly new stack for me, which caused a learning curve and led to many of the lessons listed below.
 
 \section{Software choice}
 
 \subsection{Frontend}
 The choice of the platoform is the first concern. The best way is to address many of them - that is a website and mobile format. Choosing only one would drive away some users. 
-There is a limited but developed choice in software solutions that allow developers to deliver multi-platform software. They all offer roughly similar levels of user experience, performance, crossplatforms, customizabiltiy. Likewise, accessibility and community support are all attested for these libraries.
+There is a limited but developed choice in software solutions that allow developers to deliver multi-platform software. They all offer roughly similar levels of user experience, performance, crossplatform deployment, customizabiltiy. Likewise, accessibility and community support are all attested for these libraries.
 Therefore other considerations can come into play, taking into account the constraints of the projects. Frameworks with easier onboarding experience and more automation are easier to fit in given the limited time. Easy onboarding experience means good documentation and familiar syntax.
 Author is the most familiar with the Javascript / Typescript language and React as the state management system.
 
@@ -722,47 +735,29 @@ Moreover it provids deployment options as part of the SDK. That is the feature t
 \subsection{Backend}
 
 Bakcend needs to be able to maange the data, and integrate well with the frontend, implying a well-maintained javascript client library.
-Moreover, the usual desiderata for software choice in this domain apply, which are: scalablity, security, reliablity, cost-effectiveness, degree of technical support, flexibility. 
-
-comparison of SDKs
-\cite{noauthor_firebase_2023}
-\cite{noauthor_supabase-js_2023}
-\cite{noauthor_pocketbase_2023}
-\cite{noauthor_aws-amplifyamplify-js_2023}
+Moreover, the usual desiderata for software choice in this domain apply, which are: scalablity, security, reliablity, cost-effectiveness, degree of technical support and flexibility. 
 
 Platforms that have these features are many, most notably AWS Amplify and Firebase. WHat is problematic about these two is that they are closed source and force vendor lock-in. 
-That is inflexible. There is a number of open source alternatives, most prominently Supabase and Pocketbase. The advantage of the latter is that is a more mature project. What is more, a free tier hosting is offered, offering an escape from the complexities of self-hosting. 
+\cite{noauthor_firebase_2023}
+\cite{noauthor_aws-amplifyamplify-js_2023}
+That is inflexible. There is a number of open source alternatives, most prominently Supabase and Pocketbase. 
+\cite{noauthor_supabase-js_2023} \cite{noauthor_pocketbase_2023}
+The advantage of the former is that is a more mature project. What is more, a free tier hosting is offered, providing an escape from the complexities of self-hosting. 
 \cite{noauthor_pocketbase_nodate}
 
 \section{Architecture}
+\subsection{Tree display prototype}
+The first idea was to create a movable tree of the argument. There user could drag statements-nodes and change the text on the nodes, as well as the relation.
+Use of mobile app was not decided yet then. That prototype was not retained in images. It was using web-specific APIs, and at that point the vision was to use a mobile version. That and the discovery of multiple projects already implementing that feature meant that focusing effort just on that task is not innovative. 
 
-\section{Frontend screenshots and snippets}
-% todo add the example here
+\subsection{Mobile app}
+The mobile app prototype was setup with shuort tasks in mind. One can expect that for gamification short term focus is easier, and a structured activity with limited action space has advantages over giving the user a sandbox. Mini-tasks are where the user is given only a couple of choices, best if 2, but 4 is also acceptable, and can make fast decisions. That provides immediate feedback which is addictive. 
 
-\section{Backend screenshots and snippets}
-% todo add the example here
+\subsection{Challenges}
 
-\section{challenges}
-% todo outline this more, delete from code traps
-- reading AIFdb and the 80 characters 
-- choosing the backend data representation
-- readign in files from remote to use many possible text sources for arguments
-- not using supabase types from the start, but doing a frontend only prototype. that created more work for later.
-
-\section{Code traps}
-One of the main challenges faced during the implementation was dealing with code traps, which slowed down the development process. Another important aspect was the design of the interface and screens in the application in a logical way to ensure a smooth user experience. Data transmission and validation cross-update of topics were also significant considerations to ensure the reliability of the application.
-
-Furthermore, I had to develop update algorithms for both the data structure and gamification bit. These allowed the users to track their progress using their place on the contributor leaderboard. To achieve this, I had to ensure that the algorithms were efficient and effective in updating user data, and that the progress bars reflected user progress accurately.
-
-I also integrated AIFdb to translate the data from the AIF database to the application, which was a lossy translation.
-
-Finally, I worked with the Argdown library, which proved to be a challenging but powerful tool for structuring and visualizing arguments. Despite the challenges of working with this library, it provided significant benefits in helping us to structure and present complex arguments in a user-friendly way.
-
-In summary, the implementation phase of the project involved a range of challenges and considerations, from designing an intuitive user interface to developing update algorithms for gamification elements. I also had to work with a variety of tools and libraries, including AIFdb and Argdown. 
-
-Ultimately, I was unable to achieve the goals and create a functional and user-friendly application that has the potential to help users better understand complex arguments. The lessons learned from this phase will be valuable for potential future development efforts focused on adding new functionalities.
-
-\newpage
+One of the challenges was translation of data from the AIFdb format. That assumed that text is split into columns and rows, not full string.
+Choice of schema was another difficult one, especially as it was attempted to combine all 3: Argdown, AIFdb
+\cite{abbott_internet_2016}
 
 \chapter{Results and discussion}
 
@@ -770,12 +765,21 @@ The proof of concept version of the  project yielded cautiously optimistic resul
 
 User feedback was the last part of the project. I recognize the importance of creating a smooth user flow and ensuring that the order of screens is logical and intuitive. Beyond limited the testing on humans, multiplayer features are one aspect of the application that was considered in the beginning yet failed to materialize due to time constraints. 
 
-\section{Methodology}
-The problem was approached through prototype development. Prototypes of new games were presented in varying intervals. The stack of React Native plus Supabase was not decided from the start, only from December on. It was a partly new stack for me, which caused a learning curve and led to many of the lessons listed below.
+Having created a frontend with Expo React Native, February saw effforts toward backend integration. Read access was a success, while write access required adjustment of permissions. AIFdb integration was tried in parallel, as has Argdown been. These two venues have been largely unfruitful, as the communities behind these projects aren't quite alive anymore. The only data extractable from there is the statements themselves, but which are often in very niche topics. That causes limited applicability to the Lully project. 
 
-Having created a frontend with Expo React Native February saw effforts toward backend integration. Read access was a success, while write access required adjustment of permissions. AIFdb integration was tried in parallel, as has Argdown been. These two venues have been largely unfruitful, as the communities behind these projects aren't quite alive anymore. The only data extractable from there is the statements themselves, but which are often in very niche topics. That causes limited applicability to the Lully project. 
+\section{Code traps}
+One of the main challenges faced during the implementation was dealing with code traps, which slowed down the development process. Another important aspect was the design of the interface and screens in the application in a logical way to ensure a smooth user experience. Data transmission and validation cross-update of topics were also significant considerations to ensure the reliability of the application.
 
-\subsection{Lessons learned in design}
+Furthermore, update algorithms had to be developed for both the data structure and gamification bit. These allow the users to track their progress using their place on the contributor leaderboard. 
+
+I also integrated AIFdb to translate the data from the AIF database to the application, which was a lossy translation.
+Another capability was the Argdown library, which is powerful tool for structuring and visualizing arguments, yet there its maintainance status is suboptimal.
+
+In summary, the implementation phase of the project involved a range of challenges and considerations, from designing an intuitive user interface to developing update algorithms for gamification elements. A variety of tools and libraries was used including AIFdb and Argdown. 
+
+Ultimately, the goal of design was met, and some prototypes were implemented. This venue of effort has the potential to help users better understand complex arguments. The lessons learned from this phase will be valuable for potential future development efforts focused on adding new functionalities.
+
+\section{Lessons learned in design}
 Theere is a number of pitfalls I ran into concerning both the frontend and the backend of the application. The main issue in the frontend of the application was the layout of the screens. It needs to be logical for the user and allow for a maintainable and clear keeping of state between the screens for the developer experience. Querying supabase, that is the backend, is not as straightforward as one might imagine in edge cases with many join tables. Supabase uses PostgresSQL as the relational database and interacting with it, writing SQL queries was not easy. 
 
 Overall the authentication flow was less plug-and-play than expected and required some tweaking. 
@@ -792,7 +796,6 @@ Not only human debaters could be available on Lully. Training an AI agent could 
 
 Having validated the proof of concept, it is seen that there is value in the expanding the reach and improving capabilities of Lully. It can become a compelling tool that will benefit users across many topics and create datasets more research can be based on.
 
-\newpage
 
 \chapter{Conclusions}
 
@@ -802,11 +805,9 @@ The proof of concept is on a mobile application that allows users to explore dif
 
 The proof of concept was designed and implemented using Supabase, a cloud database service, and React Native, a mobile application development framework. React Native was used with Expo library, an open source configuration suite that allows developers to code once and deploy to both mobile and web. I faced some challenges working with these technologies, as it took some time to work out edge cases and get intuition for how some aspects work.
 
-The Lully project team learned several important lessons during the implementation and testing of the proof of concept. They gained experience in working with Supabase and React Native, and learned about the importance of a smooth user flow and logical order of screens. They also gained insights into the challenges of using the Argdown library and working with the AI-Framework Database (AIFDB) for data translation.
 
 Overall, the Lully project proof of concept represents an important step towards the development of crowdsourced tools for dataset generation critical thinking. While there are still challenges to be addressed, the results of the proof of concept demonstrate the potential of the approach.
 
-\newpage
 
 \printbibliography
 
