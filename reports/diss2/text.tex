@@ -67,25 +67,24 @@ I would like to thank my supervisor, Rob, for his patience and guidance, and Jon
 
 \chapter{Introduction}
 How to make a machine understand argument structure?
-That is a very relevant question. Arugment mining does not have as much interest as other NLP (Natural Language Processing) areas, such as sentiment analysis, with market \href{https:\\www.polarismarketresearch.com/industry-analysis/sentiment-analytics-market}{valued at \$3.15 billion in 2021.
-\cite{noauthor_sentiment_nodate}
+That is a very relevant question. Arugment mining does not have as much interest as other NLP (Natural Language Processing) areas, such as sentiment analysis, with market valued at \$3.15 billion in 2021. \cite{noauthor_sentiment_nodate}
 
 The base resource for any NLP task is the dataset, its quality and size impacts on any subsequent processing. Argument mining does not have enough open access datasets with high quality structured argument data.  Expert annotation is high quality but costly, and crowdsourcing suffers from low quality. 
 
-The goal of this project is to explore the possiblities for a tool that solve this tradeoff and deliver high-volume, high-quality data at a low cost. 
+The goal of this project is to explore the possiblities for a tool that solves this tradeoff and deliver high-volume, high-quality data at a low cost. 
 The main concept behind this is the use of Games with A Purpose Paradigm to drive user engagement as opposed to using paid workers. User acquisition, retention and engagement is managed through various incentives. 
 
 The resulting corpus could be used by NLP researchers as a labeled dataset. NLP programs trained with it should be able to comprehend and create debate-like discourses across domains.
 
 This project is an exploratory one, aiming to create a design and functionalities list, rather than a full-fledged product.
-Design is provided and some of the functionalities were done as a proof-of-concept. 
+Design is provided and some of the functionalities were implemented as a proof-of-concept. 
 That is on the spectrum of design $\rightarrow$ proof of concept $\rightarrow$ prototype $\rightarrow$ MVP (Minimum Viable Product).
 
 Functionalities include but are not limited to: users viewing a constructed argument tree and interacting with it to expand it, import of data from existing argument schema projects, a variety of minigames that compose the corpus. 
 
-This report goes over the relevant literature, including human annotation schemas, and semi-supervised learning approaches, then review similar software. That is used to create a list of capabilities to explore, grouped by priority. Based on that a broad-scope design is created, and implementation presented of the highest priority aspects of the project.
-That section will be the basis for development of a more technical design document on a later date.
-Report will end with a description of achievements to date and plans for the future.
+This report goes over the relevant literature, including human annotation schemas, and semi-supervised learning approaches, then reviews similar software. That is used to create a list of capabilities to explore, grouped by priority. Based on that a broad-scope design is created, and implementation presented of the highest priority aspects of the project.
+That section will be the basis for development of a more technical design document at a later date.
+Report ends with a description of achievements to date and plans for the future.
 
 \section{Guiding example}
 
@@ -93,10 +92,11 @@ Here is a topic frequently mentioned in current debates: Universal basic income 
 This statement and arguments for it are discussed in various data structures throughout this paper.
 
 \chapter{Literature Survey}
+% todo this intro does not make much sense right now
 Argument structure analysis goes back to antiquity. \cite{angelelli_techniques_1970}
 Analysis of argumentation has been an active topic in numerous research areas, such as philosophy \cite{van_eemeren_systematic_2003}, communication studies \cite{mercier_why_2011}, and informal logic \cite{blair_informal_2000}, among others. This chapter will cover the areas that this project touches. There are several types of approaches. Fully annotated and semi-supervised approaches.
 
-\href{https:\\en.wikipedia.org/wiki/Semantic_network}{Semantic network} are graphical representations of concepts and their interrelationships, often used in natural language processing and artificial intelligence. It is closely related to \textit{formal concept analysis}, which is an activity in philosophy aiming at a similar results. Finally ontology languages are the static, completed equivalent. They are often created synthetically, as opposed to the analytic origin of the previous ones.
+Semantic network \cite{noauthor_semantic_2023} are graphical representations of concepts and their interrelationships, often used in natural language processing and artificial intelligence. It is closely related to \textit{formal concept analysis}, which is an activity in philosophy aiming at a similar results. Finally ontology languages are the static, completed equivalent. They are often created synthetically, as opposed to the analytic origin of the previous ones.
 
 \section{Background}
 From Stoic Logic to Leibniz's \textit{Characteristica Universalis}, there were attempts to understand, map and summarize arguments expressed in common language. 
@@ -132,6 +132,7 @@ The main drawback is the annotation cost, using dozens of hours of expert work, 
 Notable projects in the area include IBM's \cite{slonim2021autonomous}, yet these are not open sourced.
 
 \section{Comparison to previous papers}
+% todo move this to the end of the chapter
 The results obtained in this project, the proof of concept for crowdourced sourcing of argument mining labeled data, play into the previous papers in the argument mining field.
 Lully avoids the multi-page annotation pitfall of other studies \cite{teufel_towards_2009}.
 The main intellectual debt is to \cite{von_ahn_designing_2008}, as well as \cite{poesio_phrase_2013}
@@ -334,6 +335,7 @@ The similar software can be divided into the following types:
   \item  is also a record of software developed specifically for research.
 \end{itemize}
 
+% todo add other sections for clarity
 \subsection{Business solutions}
 Commercial solutions aim to help in meetings, by providing a way to write structured notes and diagrams. These often have a rich user interface, focusing on graphics and interactivity.
 Data portability and breadth of access are less of a concern in that case.
@@ -423,6 +425,7 @@ Argdown \cite{noauthor_argdown_nodate} is a successsor project to argunet and a 
 
 \section{Other ways used so far to the same purpose}
 
+% todo change this - point of subsection not clear
 \subsection{Relevancy}
 Completed stage of the app would fill the niche of the Dataset landscape and provide NLP researchers with a valuable resource.
 
@@ -439,7 +442,7 @@ These numbers highlight the difficult nature of these projects and the scale reu
 
 \section{Literature survey summary}
 
-Based on the combination of the factors we can imagine two approaches, the Expert Approach and Crowdsourcing Approach.  Expert Approach puts nearly all of App functionality into data-creation. 
+Based on the combination of the factors we can imagine two approaches, the Expert Approach and the Crowdsourcing Approach.  Expert Approach puts nearly all of App functionality into data-creation. 
 On the other hand, Crowdsourcing Approach is about optimizing the User Experience to get a high number in the Monthly Users and Average Time factor, with a lower third factor.  Under this approach, a substantial minority, or even majority of app functionalities would be about structuring gamified incentives: progression, competition, achievement and altruism.
 
 For the crowdsourced model the 5 steps can be traced for each of the parts of the test corpus. 
@@ -505,7 +508,7 @@ To avoid the pitfalls of human annotation, a quantitative approach should be pur
 
 Annotation takes two fundamental forms: the opinions on particular statements, and the judgement on the relations between any two given statements.
 The former can  take a boolean form, as under classical logic, or more exotic ones, such as four valued logic, as outlined in  \cite{priest_many-valued_2008}
-Having collection of such data points would allow to gauge global opinions on every statement in the database.
+Having a collection of such data points would allow to gauge global opinions on every statement in the database.
 
 Judgement on the relations of two statment has been tried many times before, as is outlined above. That could be whether the relation is expressing agreement, disagreement, sarcasm, or an emotion.
 
@@ -551,10 +554,11 @@ If the project progresses beyond the proof-of-concept stage:
   \item (design only) Tree confirmation game
   \item (design only) combined game SwipeTruth
 \end{itemize}
+If as the start data we have a piece of text, and as a final data - the target - a formatted tree.
 The detailed descriptions are:
 \begin{itemize}
   \item Make ADUs (Argumentative Discourse Units) is about performing the argument extraction from a given section.
-  \item Swipe game is about deciding whether 2 statemnts are in support or attack relation to one another, or altogether not related.
+  \item Swipe game is about deciding whether 2 statements are in support or attack relation to one another, or altogether not related.
   \item TruthGame is about the user telling their opinion about a given statement. It is not the core feature compared to the relation one, but logically necessary.
   \item Syllogism based games serve to uncover enthymemes as mentioned before \cite{noauthor_finding_nodate}. 
   \item Tree confirmation is the reality check where the previous relations affirmed by the player are laid out in a tree fashion, allowing the user to either accept or go back to changing the tree
@@ -568,11 +572,14 @@ The games can be used alongside of motivational snippets, such as proclaiming th
 That exploits the drive to self-improvement to keep user interest.
 
 \subsection{Non-Functional requirements}
-Performance: The system shall respond to user presses under half a second for most of the interactions.
-Usability: The user interface shall be intuitive and easy to navigate
-Security and data privacy: The system shall implement robust user authentication and access control measures to protect user data, prevent unauthorized access.
-Compatibility: The system shall be compatible with a range of devices, including iOS and Android and web.
-Maintainability: The codebase shall be well-documented with consistent coding standards to make it easy to maintain and update in the future.
+These can be listed as:
+\begin{itemize}
+  \item Performance: The system shall respond to user presses under half a second for most of the interactions.
+  \item Usability: The user interface shall be intuitive and easy to navigate
+  \item Security and data privacy: The system shall implement robust user authentication and access control measures to protect user data, prevent unauthorized access.
+  \item Compatibility: The system shall be compatible with a range of devices, including iOS and Android and web.
+  \item Maintainability: The codebase shall be well-documented with consistent coding standards to make it easy to maintain and update in the future.
+\end{itemize}
 
 \section{Stretch goals}
 The goal of creating a full fledge application, an 'argument suite' so to speak, comparable to products like Microsoft Word or Miscrosoft Powerpoint, but for arguments is a collosal one.
@@ -581,7 +588,7 @@ Given that, many of the features of the complete data collection system can be o
 That type centers on the live multiplayer features. Two players would be able to adversarially create 2 branches of a root node, one for support and one in response, as mentioned in the literature reivew. 
 This could be extended for the purpose of live streamed debates, with stakes. Such events have a niche following on platforms such as Twitch or Twitter Spaces.
 Debate handled there could be reflected live in the tree. This task could be performed by the speakers themselves, but not necessarily. The moderators could fill that role.
-Impact of the debate could be measured empirically by usingthe global statustics feature to guage the agreement status on a debate item before and after the debate
+Impact of the debate could be measured empirically by using the global statistics feature to guage the agreement status on a debate item before and after the debate
 This could be narrowed to only the users who have been watching the debate as well.
 
 \section{Success criteria}
@@ -599,7 +606,9 @@ Potential approaches to ensuring data is of sufficient quality can be split into
 
   \begin{table}[h!]
       \centering
-    \begin{tabular}{|l|p{4cm}|}
+      \begin{center}
+        
+    \begin{tabular}{|l|p{8cm}|}
 
 \toprule
 Pre-collection measures:  & \begin{itemize}[left=0pt,topsep=0pt]\item only verified users being able to use the App
@@ -616,13 +625,27 @@ Pre-collection measures:  & \begin{itemize}[left=0pt,topsep=0pt]\item only verif
 \end{itemize} \\
 \bottomrule
     \end{tabular}
+      \end{center}
     \caption{A summary of collection measures}
 
  \end{table}\label{tab:collection}
 
-
 \chapter{Design}
-This section will be aboud...... top down view of organization and functional capabilities.
+% todo user journey for every app
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.5\textwidth]{./images/browse-texts.png}
+    \caption{Texts browsing screen}
+\end{figure}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.5\textwidth]{./images/section-reader.png}
+    \caption{Section browsing game}
+\end{figure}
+
+This section will be about top down view of the app, its organization and functional capabilities.
 Design of the app is before all about the user journey. That process is outlined below. Based on that as a constraint, we can plan out the frontend and then a compatible backend.
 Frontend is composed of 2 parts, 2 different capabilities - the games for data collection and the experience points system. The first is gamification on small timescale, the latter on long.
 
@@ -637,30 +660,40 @@ Frontend is composed of 2 parts, 2 different capabilities - the games for data c
 \end{itemize}
 
 \section{Backend data structures related to the arguments}
-By sectioning off the data structured related to the purpose, excluded are authentication structures such as passwords and gamification structures.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.5\textwidth]{./images/Supabase-Schema-2.png}
+    \caption{Backend database schema}
+\end{figure}
+
+By sectioning off the data structures related to the purpose, excluded are authentication structures such as passwords and gamification structures.
 Backend is structured in terms of tables in a relational database with PostgresSQL:
 \begin{itemize}
-  \item authors
-  \item sections
-  \item source texts
-  \item statements
-  \item topics
-  \item user relation
+  \item authors - self explanatory
+  \item sections - snippets of text, at most a couple of paragraphs long that contain statements
+  \item source texts - books or blogposts that can contain many statements
+  \item statements - a sentence on a topic
+  \item topics - a named set of statements, but source text can also relate to these
+  \item user relation - one user's opiniion on a given pair of statements
 \end{itemize}
 Authors table contains author's name and reference to their wikipedia page for reference. It is linked to the source texts table as each text has one author. That table also links to some external page the text itself is available - be it a public domain text or a blogpost on author's page. source texts are referenced in turn in 'sections', which are short passages used as quotes by the users.
 Each statement can reference a section so that its origin can be tracked. Statements contain a reference to the user who added them and to the section of the source text they belong to (if applicable), as well as data fields: text contents and number of views. Topics contain references to statements of a common theme.
 user relation is the key element of the application. It is the table where users provide support/attack relations between a pair of statements. 
-Supabase provides authentication mechanism inbuilt into the backend.
+There are some additional backend data structures not shown here as they are inbuilt, provided by Supabase.
 
-Data can be imported from AIFdb. The exact data structure is not preserved in the current version of Lully, as AIFdb uses text coordinate system and a complex syntax. Making Lully align with it would be effort-heavy yet does not add much to the core functionality. Lossy data import must be good enough for the current purposes.
+Data can be imported from AIFdb. The exact data structure is not preserved in the current version of Lully, as AIFdb uses text coordinate system and a complex syntax. Making Lully align with it would be effort-heavy yet does not add much to the core functionality. Data import that is lossy with respect to that coordinate system must be good enough for the current purposes.
 
 \section{Backend gamification representation}
 
 It is structured into these PostgresSQL tables:
-- achievements
-- gamer profiles 
-- top gamers 
-Achievements is a simple table listing possible achievements each user may have. They are referenced to the gamer_profiles in a linker table. Gamer profiles recounts the number of user's contributions as experience points.
+\begin{itemize}
+  \item achievements
+  \item gamer profiles 
+  \item top gamers 
+\end{itemize}
+Achievements is a simple table listing possible achievements each user may have. They are referenced to the gamer_profiles in a linker table.
+ Gamer profiles recounts the number of user's contributions as experience points.
 Top gamers is a PostgresSQL View, that is a custom query, which in this case returns a leaderboard of all players, sorted by number of experience points.
 
 \section{Frontend interactions with the backend}
@@ -703,6 +736,21 @@ For optimization of user satisfaction a tagging system is added to the topics an
 \newpage
 
 \chapter{Implementation}
+% todo describe these screenshots
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.5\textwidth]{./images/swipe-game.png}
+    \caption{Argument swipe game}
+\end{figure}
+
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.5\textwidth]{./images/truth-game.png}
+    \caption{True or false game}
+\end{figure}
+
 In this chapter, I will discuss the implementation and testing of the application. The goal of the implementation phase was to build a functional and user-friendly application that fulfilled the design outlined in the previous chapter.
 
 Platform choice - there is a possibility of a web appplication or a mobile one.
@@ -732,7 +780,7 @@ Moreover it provids deployment options as part of the SDK. That is the feature t
 
 \subsection{Backend}
 
-Bakcend needs to be able to maange the data, and integrate well with the frontend, implying a well-maintained javascript client library.
+Bakcend needs to be able to manage the data, and integrate well with the frontend, implying a well-maintained javascript client library.
 Moreover, the usual desiderata for software choice in this domain apply, which are: scalablity, security, reliablity, cost-effectiveness, degree of technical support and flexibility. 
 
 Platforms that have these features are many, most notably AWS Amplify and Firebase. WHat is problematic about these two is that they are closed source and force vendor lock-in. 
@@ -749,7 +797,7 @@ The first idea was to create a movable tree of the argument. There user could dr
 Use of mobile app was not decided yet then. That prototype was not retained in images. It was using web-specific APIs, and at that point the vision was to use a mobile version. That and the discovery of multiple projects already implementing that feature meant that focusing effort just on that task is not innovative. 
 
 \subsection{Mobile app}
-The mobile app prototype was setup with shuort tasks in mind. One can expect that for gamification short term focus is easier, and a structured activity with limited action space has advantages over giving the user a sandbox. Mini-tasks are where the user is given only a couple of choices, best if 2, but 4 is also acceptable, and can make fast decisions. That provides immediate feedback which is addictive. 
+The mobile app prototype was setup with shorti tasks in mind. One can expect that for gamification short term focus is easier, and a structured activity with limited action space has advantages over giving the user a sandbox. Mini-tasks are where the user is given only a couple of choices, best if 2, but 4 is also acceptable, and can make fast decisions. That provides immediate feedback which is addictive. 
 
 \subsection{Challenges}
 

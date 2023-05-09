@@ -17,16 +17,27 @@
 - [x] add correct citations for links
 - [x] get a beta reader 
 - [x] add that realized that snappy games better than elabrate interface
-- [ ] make the diagrams needed
-  - [ ] add the data on the backend - and represent the diagram with this https://github.com/zernonia/supabase-schema
-  - [ ] display a basic tree on the frontend - maybe just from argdown
-- [x] create the presentation
+  - [x] create the presentation
 - [x] incorporate beta reader comments
+- [x] make the diagrams needed
+  - [x] add the data on the backend - and represent the diagram with this https://github.com/zernonia/supabase-schema
+  - [x] display a basic tree on the frontend - maybe just from argdown
+- [x] > Much better but it still had (when you sent it) much to be completed. Structure however is much improved.
+- [x] > Just make sure you provide concrete evidence of what you have done  > (e.g.so include screen shots of interface where available, or database schema etc.). 
 
-> Much better but it still had (when you sent it) much to be
-completed. Structure however is much improved.
+> Also provide more detailed specifications of how you see the various games working and what data they consume and produce.
+rewriting stuff
+- [ ] rewrite the intro for literature survery
+- [ ] separate hacker ethics and bsuiness solutions
+- [ ] change the relevancy section
+- [ ] move that chapter towards the end
+- [ ] make photos better
 
-> Just make sure you provide concrete evidence of what you have done (e.g.
-so include screen shots of interface where available, or database schema
-etc.). Also provide more detailed specifications of how you see the
-various games working and what data they consume and produce.
+specifications for games
+- [ ] swipe game
+- [ ] truth game
+- [ ] accept tree game
+- [ ] section extraction game
+
+run again through spellchecker
+
