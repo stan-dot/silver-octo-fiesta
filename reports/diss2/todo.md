@@ -20,5 +20,13 @@
 - [ ] make the diagrams needed
   - [ ] add the data on the backend - and represent the diagram with this https://github.com/zernonia/supabase-schema
   - [ ] display a basic tree on the frontend - maybe just from argdown
-- [ ] create the presentation
-- [ ] incorporate beta reader comments
+- [x] create the presentation
+- [x] incorporate beta reader comments
+
+> Much better but it still had (when you sent it) much to be
+completed. Structure however is much improved.
+
+> Just make sure you provide concrete evidence of what you have done (e.g.
+so include screen shots of interface where available, or database schema
+etc.). Also provide more detailed specifications of how you see the
+various games working and what data they consume and produce.
