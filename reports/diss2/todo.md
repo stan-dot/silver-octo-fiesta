@@ -27,13 +27,13 @@
 
 > Also provide more detailed specifications of how you see the various games working and what data they consume and produce.
 rewriting stuff
-- [ ] rewrite the intro for literature survery
-- [ ] separate hacker ethics and bsuiness solutions
-- [ ] change the relevancy section
-- [ ] move that chapter towards the end
-- [ ] make photos better
+- [x] rewrite the intro for literature survery
+- [x] separate hacker ethics and bsuiness solutions
+- [x] change the relevancy section
+- [x] move that chapter towards the end
+- [x] make photos better
 
-specifications for games
+specifications and user journeys for games - how work and what data they consume and produce
 - [ ] swipe game
 - [ ] truth game
 - [ ] accept tree game

@@ -74,7 +74,8 @@ The base resource for any NLP task is the dataset, its quality and size impacts 
 The goal of this project is to explore the possiblities for a tool that solves this tradeoff and deliver high-volume, high-quality data at a low cost. 
 The main concept behind this is the use of Games with A Purpose Paradigm to drive user engagement as opposed to using paid workers. User acquisition, retention and engagement is managed through various incentives. 
 
-The resulting corpus could be used by NLP researchers as a labeled dataset. NLP programs trained with it should be able to comprehend and create debate-like discourses across domains.
+Completed stage of the app would fill the niche of the Dataset landscape and provide NLP researchers with a valuable resource.
+The resulting corpus could be used as a labeled dataset. NLP programs trained with it should be able to comprehend and create debate-like discourses across domains.
 
 This project is an exploratory one, aiming to create a design and functionalities list, rather than a full-fledged product.
 Design is provided and some of the functionalities were implemented as a proof-of-concept. 
@@ -92,11 +93,27 @@ Here is a topic frequently mentioned in current debates: Universal basic income 
 This statement and arguments for it are discussed in various data structures throughout this paper.
 
 \chapter{Literature Survey}
-% todo this intro does not make much sense right now
 Argument structure analysis goes back to antiquity. \cite{angelelli_techniques_1970}
 Analysis of argumentation has been an active topic in numerous research areas, such as philosophy \cite{van_eemeren_systematic_2003}, communication studies \cite{mercier_why_2011}, and informal logic \cite{blair_informal_2000}, among others. This chapter will cover the areas that this project touches. There are several types of approaches. Fully annotated and semi-supervised approaches.
 
-Semantic network \cite{noauthor_semantic_2023} are graphical representations of concepts and their interrelationships, often used in natural language processing and artificial intelligence. It is closely related to \textit{formal concept analysis}, which is an activity in philosophy aiming at a similar results. Finally ontology languages are the static, completed equivalent. They are often created synthetically, as opposed to the analytic origin of the previous ones.
+The concept of the argument structure can be elucidated further with a contrast to a different but similar field of study.
+Argument structure is a graph of statement - statement relations.
+In constrast, semantic networks \cite{noauthor_semantic_2023} are graphical representations of concepts and their interrelationships. Therefore two nodes of semantic network - for instance object and its property can be contained in one statement, but also two statements.
+
+Argument structure example
+\begin{itemize}
+  \item There is a chair.
+  \item Chair has 4 legs.
+\end{itemize}
+
+Constrasted with semantic network equivalent
+\begin{itemize}
+  \item chair
+  \item four legs
+\end{itemize}
+We can see that the argument structure is a more flexible approach.
+
+Semantic networks are closely related to \textit{formal concept analysis}, which is an activity in philosophy aiming at a similar results. A semantic network can be formalized in many ways, among them through ontology languages.
 
 \section{Background}
 From Stoic Logic to Leibniz's \textit{Characteristica Universalis}, there were attempts to understand, map and summarize arguments expressed in common language. 
@@ -107,7 +124,7 @@ From Stoic Logic to Leibniz's \textit{Characteristica Universalis}, there were a
 
 \begin{figure}[h]
     \centering
-    \includegraphics[width=0.5\textwidth]{./images/Whatley.png}
+    \includegraphics[width=0.8\textwidth]{./images/Whatley.png}
     \caption{Whatley's notations image}
 \end{figure}
 
@@ -130,26 +147,6 @@ Previous studies included attempts to automatically derive representations of th
 The main drawback is the annotation cost, using dozens of hours of expert work, and tens of pages of annotation manuals.
 
 Notable projects in the area include IBM's \cite{slonim2021autonomous}, yet these are not open sourced.
-
-\section{Comparison to previous papers}
-% todo move this to the end of the chapter
-The results obtained in this project, the proof of concept for crowdourced sourcing of argument mining labeled data, play into the previous papers in the argument mining field.
-Lully avoids the multi-page annotation pitfall of other studies \cite{teufel_towards_2009}.
-The main intellectual debt is to \cite{von_ahn_designing_2008}, as well as \cite{poesio_phrase_2013}
-
-When taking features of Lully that aggregate input of multiple users, (Wyner et al 2015 - arugment discovery and extraction with the Argument Workbench) seems quite similar. Argument Workbench also focuses on textual data, not adversarial one. 
-
-In fact the PostgresSQL schema arrived at is quite similar to the one by 
-\cite{abbott_internet_2016}
-
-An approach directly competing with the one Lully takes is by Wachsmuth et al 2017 \textit{Building an argument search engine for the Web} that scrapes existing data sand serves it through a ssearch engine.
-\cite{wachsmuth_building_2017}
-
-\cite{fromm_towards_2022}
-
-Another recent approach to the issue is the TARGER project, a native PyTorch embedding that uses neural networks for argument mining
-
-\cite{chernodub_targer_2019}
 
 \section{Annotation}
 There are different strategies for annotation. Much of the study of argument annotation has focused on citation function in scientific papers.
@@ -206,7 +203,7 @@ Mobile applications do not have the \textit{screen real estate} for complex inte
 
 \begin{figure}[h]
     \centering
-    \includegraphics[width=0.5\textwidth]{./images/StatCounter-comparison-ww-monthly-202203-202303.png}
+    \includegraphics[width=0.8\textwidth]{./images/StatCounter-comparison-ww-monthly-202203-202303.png}
     \caption{Figure from statcounter.com}
 \end{figure}
 
@@ -326,30 +323,7 @@ Not all games use that, though as some use social features.
 Example of a game using that strategy, with web-only platform, is  \textit{Tileattack}. There users identify noun phrases inside sentences. The dataset collected serves the Named Entity Extraction. The game is competitive with two users playing against one another. Players are additionally incentivized through the chance of winning monetary prizes.
 \cite{noauthor_tileattack_nodate}
 
-\section{Similar software review}
-There is a plethora of similar software. These can be found in many types, differing by platform and target audience. Many of those are outdated.
-The similar software can be divided into the following types:
-\begin{itemize}
-  \item  commercial B2B (Business to Business) SaaS (Software as a Service) solutions 
-  \item  hacker-ethics personal knowledge management tools.
-  \item  is also a record of software developed specifically for research.
-\end{itemize}
-
-% todo add other sections for clarity
-\subsection{Business solutions}
-Commercial solutions aim to help in meetings, by providing a way to write structured notes and diagrams. These often have a rich user interface, focusing on graphics and interactivity.
-Data portability and breadth of access are less of a concern in that case.
-There are many companies offering business-to-business services in NLP.  These range from meeting minutes or report summaries, live structured note taking, visualization software, or customer sentiment analysis.  Business model is frequently 'freemium', where users can use the app for free, but some features are hidden behind a paywall.
-
-Lexikat \cite{noauthor_lexikat_nodate} provides "no-code concept maps and text analysis models from any document." It is a Natural Language Processing platform that companies pay for access to in order to analyze data and create reports. There is not much that can be applied to the Lully project from this technology.
-
-On the other hand, Infranodus \cite{noauthor_infranodus_nodate} is a multi-purpose analytics tool for extracting arguments and enhancing them through various AI techniques. Their main selling point is visualization capabilities and network representation of knowledge. That holistic approach is definitely useful in many contexts, yet the argument structure for argument mining seems more tree-like in most cases.
-
-Mindup \cite{noauthor_mindmup_nodate} is a browser based tool for creating mind maps for individuals and organizations. It was to be open source until 2017 with limited use clause, but since then has gone to a freemium model and closed source. They provide a website and a chrome extension. The web version provided is theoretically dedicated to argument struture, yet in practice similar results could be achieved with other free software, such as Canva \cite{noauthor_home_nodate}. One can create an argument representation and save it as an image, possibly share it with other users, but that is all.
-
-Google Crowdsource \cite{noauthor_crowdsource_2023} is a tool created by Google to create datasets for their ML team. The app features multiple tasks of varying difficulty, focusing mainly on image labeling, but also audio recognition. What is the most relevant in this project in the context of Lully is the reward scheme, or gamification. It is quite simple indeed, especially compared to many purely games. The whole mechanism has two parts: stats and badges. Stats are for number of contributions and their accuracy. There is little use in data from a user that does creates many labels that aren't validated by others as correct. Badges provide more of the granular feedback, encouraging the user to explore different areas of the application. These features are quite easy to transplant.
-
-\section{Reply protocols}
+\subsection{Reply protocols}
 That type of games was examined in Prakken 2005 \cite{prakken_coherence_2005}. Distinguished different types of 'reply protocols':
 \begin{quotation}
   Dialogue systems can vary in their structural properties
@@ -393,8 +367,31 @@ Some consideration should be given to incorporating them into the space of possi
 
 As mentioned above, AIFdb format may be used for data portability, and Argdown for markdown notation.
 
+\section{Similar software review}
+There is a plethora of similar software. These can be found in many types, differing by platform and target audience. Many of those are outdated.
+The similar software can be divided into the following types:
+\begin{itemize}
+  \item  commercial B2B (Business to Business) SaaS (Software as a Service) solutions 
+  \item  consultancies offering knowledge mapp
+  \item  is also a record of software developed specifically for research.
+  \item  hacker-culture personal knowledge management tools.
+\end{itemize}
 
-\subsection{Consultancies}
+\subsection{Business solutions}
+Commercial solutions aim to help in meetings, by providing a way to write structured notes and diagrams. These often have a rich user interface, focusing on graphics and interactivity.
+Data portability and breadth of access are less of a concern in that case.
+There are many companies offering business-to-business services in NLP.  These range from meeting minutes or report summaries, live structured note taking, visualization software, or customer sentiment analysis.  Business model is frequently 'freemium', where users can use the app for free, but some features are hidden behind a paywall.
+
+Lexikat \cite{noauthor_lexikat_nodate} provides "no-code concept maps and text analysis models from any document." It is a Natural Language Processing platform that companies pay for access to in order to analyze data and create reports. There is not much that can be applied to the Lully project from this technology.
+
+On the other hand, Infranodus \cite{noauthor_infranodus_nodate} is a multi-purpose analytics tool for extracting arguments and enhancing them through various AI techniques. Their main selling point is visualization capabilities and network representation of knowledge. That holistic approach is definitely useful in many contexts, yet the argument structure for argument mining seems more tree-like in most cases.
+
+Mindup \cite{noauthor_mindmup_nodate} is a browser based tool for creating mind maps for individuals and organizations. It was to be open source until 2017 with limited use clause, but since then has gone to a freemium model and closed source. They provide a website and a chrome extension. The web version provided is theoretically dedicated to argument struture, yet in practice similar results could be achieved with other free software, such as Canva \cite{noauthor_home_nodate}. One can create an argument representation and save it as an image, possibly share it with other users, but that is all.
+
+Google Crowdsource \cite{noauthor_crowdsource_2023} is a tool created by Google to create datasets for their ML team. The app features multiple tasks of varying difficulty, focusing mainly on image labeling, but also audio recognition. What is the most relevant in this project in the context of Lully is the reward scheme, or gamification. It is quite simple indeed, especially compared to many purely games. The whole mechanism has two parts: stats and badges. Stats are for number of contributions and their accuracy. There is little use in data from a user that does creates many labels that aren't validated by others as correct. Badges provide more of the granular feedback, encouraging the user to explore different areas of the application. These features are quite easy to transplant.
+
+
+\subsubsection{Specific Consultancies}
 Summetix \cite{schiller_stance_2021} uses Argument Mining to provide summaries of trends in customer behaviour, and other business related research. They specialize in summaries of customer reviews, to extract trends and identify main problems. They do not provide an open source SDK, their code is closed source.
 
 \cite{noauthor_crowdee_nodate} is a service providing crowdsourced contributions to business customers, with the specific niche of creating ML training datasets. That is quite similar to Lully's concept, yet it uses work of paid paricipants, not volunteers enganged with a gamified system.
@@ -402,7 +399,8 @@ Summetix \cite{schiller_stance_2021} uses Argument Mining to provide summaries o
 Amazon Mechanical Turk \cite{noauthor_amazon_nodate} is a relatively well known service acting as a middleman between business seeking temporary increase in workforce to solve a specific issue.
 The service accomplishes this through splitting the workload into 'microtasks' that are then handled by a destributed workforce. That is quite similar to Google Crowdsource but differs in the incentive mechanism. Crowdscouring often relies on 'good deed' in a similar vein to charity, sometimes reinforced with gamification elements.
 
-\subsection{Reasoning Lab}
+\subsection{Research tools}
+\subsubsection{Reasoning Lab}
 Reasoning lab \cite{noauthor_argument_nodate} is a website that describes itself as 'Tools for critical thinking, writing and decision making'. They provide two services, bCisive and Rationaleonline.
 Bcisive \cite{noauthor_bcisive_nodate} is a platform that provides a visual framework for organization of business information for meeings and planning.
 
@@ -423,11 +421,6 @@ Argunet \cite{noauthor_argunet_2018}, started in 2006 by a researcher in argumen
 
 Argdown \cite{noauthor_argdown_nodate} is a successsor project to argunet and a tool for argument representation. It is not software, but a standard for syntax, that can be used to structure arguments of any complexity into text files. It is a superset of markdown, adding features such as support or opposition relation between statements by indentation and `+` or `-` sign.
 
-\section{Other ways used so far to the same purpose}
-
-% todo change this - point of subsection not clear
-\subsection{Relevancy}
-Completed stage of the app would fill the niche of the Dataset landscape and provide NLP researchers with a valuable resource.
 
 \subsection{Research software}
 
@@ -448,7 +441,7 @@ On the other hand, Crowdsourcing Approach is about optimizing the User Experienc
 For the crowdsourced model the 5 steps can be traced for each of the parts of the test corpus. 
 \begin{figure}[h]
     \centering
-    \includegraphics[width=0.5\textwidth]{./images/experts-vs-crowdsource.png}
+    \includegraphics[width=0.8\textwidth]{./images/experts-vs-crowdsource.png}
     \caption{Differences between approaches}
     \label{fig:example}
 \end{figure}
@@ -458,29 +451,49 @@ For the crowdsourced model the 5 steps can be traced for each of the parts of th
 
 The UBI topic could be represented like this in Argdown:
 
-`[Statement 1]: Universal basic income should be implemented.
-  + UBI can reduce poverty and inequality.
-    + UBI can provide a safety net for individuals who are struggling to make ends meet, which can help reduce poverty and inequality.
-    + UBI can reduce the bureaucratic costs associated with means-tested welfare programs, which can make it easier and more cost-effective to provide assistance to those in need.
-    - UBI can create a disincentive for work, as individuals may choose not to work if they have a guaranteed basic income, which can actually increase poverty levels.
-    - UBI can be expensive to implement and may require significant tax increases, which can be a burden on working individuals and families.
-  + UBI can promote entrepreneurship and innovation.
-    + UBI can provide a financial cushion that allows individuals to take risks and pursue entrepreneurial ventures without worrying about financial insecurity.
-    + UBI can reduce income inequality, which can provide more opportunities for individuals from all socioeconomic backgrounds to start businesses and innovate.
-    - UBI can decrease the incentive for individuals to work hard and innovate, as they may feel comfortable living off their basic income and not pursuing other opportunities.
-    - UBI can increase taxes and government spending, which can stifle economic growth and discourage innovation.
-  - UBI can lead to inflation and decrease the value of currency, causing more harm than good.
-    + UBI can increase demand for goods and services, which can lead to price increases and inflation.
-    + UBI can reduce the incentive to work and increase consumption, leading to an excess of money in the economy which can also contribute to inflation.
-    - UBI can provide a more stable source of income for individuals, which can lead to less economic volatility and decrease the likelihood of inflation.
-    - UBI can reduce the need for government welfare programs, which can lead to cost savings and help to mitigate inflationary pressures.
-    - UBI can discourage people from working and contribute to a decline in productivity, which can have negative effects on the economy.
-  - UBI can discourage people from working and contribute to a decline in productivity, which can have negative effects on the economy.
-    + UBI can reduce the incentive for individuals to work, leading to a decrease in productivity and economic output.
-    + UBI can create a disincentive for individuals to pursue higher education and acquire skills that can contribute to the economy.
-    - UBI can provide a safety net for individuals who may have difficulty finding work or need to take time off to care for family members, which can actually increase productivity by reducing financial stress.
-    - UBI can provide a more stable source of income, which can encourage individuals to pursue creative and entrepreneurial endeavors that can contribute to the economy.
-    `
+\begin{enumerate}
+\item \textbf{Statement 1:} Universal basic income should be implemented.
+  \begin{itemize}
+
+  \item[+] UBI can reduce poverty and inequality.
+  \begin{itemize}
+      \item[+] UBI can provide a safety net for individuals who are struggling to make ends meet, which can help reduce poverty and inequality.
+      \item[+] UBI can reduce the bureaucratic costs associated with means-tested welfare programs, which can make it easier and more cost-effective to provide assistance to those in need.
+      \item[-] UBI can create a disincentive for work, as individuals may choose not to work if they have a guaranteed basic income, which can actually increase poverty levels.
+      \item[-] UBI can be expensive to implement and may require significant tax increases, which can be a burden on working individuals and families.
+  \end{itemize}
+
+  \item[+] UBI can promote entrepreneurship and innovation.
+  \begin{itemize}
+      \item[+] UBI can provide a financial cushion that allows individuals to take risks and pursue entrepreneurial ventures without worrying about financial insecurity.
+      \item[+] UBI can reduce income inequality, which can provide more opportunities for individuals from all socioeconomic backgrounds to start businesses and innovate.
+      \item[-] UBI can decrease the incentive for individuals to work hard and innovate, as they may feel comfortable living off their basic income and not pursuing other opportunities.
+      \item[-] UBI can increase taxes and government spending, which can stifle economic growth and discourage innovation.
+  \end{itemize}
+
+  \item[-] UBI can lead to inflation and decrease the value of currency, causing more harm than good.
+  \begin{itemize}
+      \item[+] UBI can increase demand for goods and services, which can lead to price increases and inflation.
+      \item[+] UBI can reduce the incentive to work and increase consumption, leading to an excess of money in the economy which can also contribute to inflation.
+      \item[-] UBI can provide a more stable source of income for individuals, which can lead to less economic volatility and decrease the likelihood of inflation.
+      \item[-] UBI can reduce the need for government welfare programs, which can lead to cost savings and help to mitigate inflationary pressures.
+      \item[-] UBI can discourage people from working and contribute to a decline in productivity, which can have negative effects on the economy.
+  \end{itemize}
+
+  \item[-] UBI can discourage people from working and contribute to a decline in productivity, which can have negative effects on the economy.
+  \begin{itemize}
+      \item[+] UBI can reduce the incentive for individuals to work, leading to a decrease in productivity and economic output.
+      \item[+] UBI can create a disincentive for individuals to pursue higher education and acquire skills that can contribute to the economy.
+      \item[-] UBI can provide a safety net for individuals who may have difficulty finding work or need to take time off to care for family members, which can actually increase productivity by reducing financial stress.
+      \item[-] UBI can provide a more stable source of income, which can encourage individuals to pursue creative and entrepreneurial endeavors that can contribute to the economy.
+  \end{itemize}
+
+  \end{itemize}
+\end{enumerate}
+
+As we can see the syntax is very simple, and nested. It is not recursive, so cyclical graphs are not representable this way. Other language features deliver that capability.
+These are outside of the scope of this overview.
+
 \chapter{Requirements and analysis}
 
 \section{Stakeholder analysis}
@@ -630,21 +643,27 @@ Pre-collection measures:  & \begin{itemize}[left=0pt,topsep=0pt]\item only verif
 
  \end{table}\label{tab:collection}
 
+\section{Comparison to previous papers}
+The results obtained in this project, the proof of concept for crowdourced sourcing of argument mining labeled data, play into the previous papers in the argument mining field.
+Lully avoids the multi-page annotation pitfall of other studies \cite{teufel_towards_2009}.
+The main intellectual debt is to \cite{von_ahn_designing_2008}, as well as \cite{poesio_phrase_2013}
+
+When taking features of Lully that aggregate input of multiple users, (Wyner et al 2015 - arugment discovery and extraction with the Argument Workbench) seems quite similar. Argument Workbench also focuses on textual data, not adversarial one. 
+
+In fact the PostgresSQL schema arrived at is quite similar to the one by 
+\cite{abbott_internet_2016}
+
+An approach directly competing with the one Lully takes is by Wachsmuth et al 2017 \textit{Building an argument search engine for the Web} that scrapes existing data sand serves it through a ssearch engine.
+\cite{wachsmuth_building_2017}
+
+\cite{fromm_towards_2022}
+
+Another recent approach to the issue is the TARGER project, a native PyTorch embedding that uses neural networks for argument mining
+
+\cite{chernodub_targer_2019}
+
+
 \chapter{Design}
-% todo user journey for every app
-
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=0.5\textwidth]{./images/browse-texts.png}
-    \caption{Texts browsing screen}
-\end{figure}
-
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=0.5\textwidth]{./images/section-reader.png}
-    \caption{Section browsing game}
-\end{figure}
-
 This section will be about top down view of the app, its organization and functional capabilities.
 Design of the app is before all about the user journey. That process is outlined below. Based on that as a constraint, we can plan out the frontend and then a compatible backend.
 Frontend is composed of 2 parts, 2 different capabilities - the games for data collection and the experience points system. The first is gamification on small timescale, the latter on long.
@@ -663,7 +682,7 @@ Frontend is composed of 2 parts, 2 different capabilities - the games for data c
 
 \begin{figure}[h]
     \centering
-    \includegraphics[width=0.5\textwidth]{./images/Supabase-Schema-2.png}
+    \includegraphics[width=0.8\textwidth]{./images/Supabase-Schema-2.png}
     \caption{Backend database schema}
 \end{figure}
 
@@ -722,8 +741,7 @@ Another distinction between game-states was discussed before, as A/B issues, yes
 Such issues are defined as Investigations, with many possible Statements being the candidate solutions to them. After a certain time elapses the Investigation is closed. As a community event this can be expected to be quite engaging.
 
 \section{Gamification design}
-
-\section{User Resources}
+\subsection{User Resources}
 \begin{itemize}
   \item experience points 
   \item competition - leaderboard feature, in different game modes
@@ -731,23 +749,34 @@ Such issues are defined as Investigations, with many possible Statements being t
 \end{itemize}
 
 User can access their account panel and see their achievements as well as experience points. These are not public. The leaderboard is public though, and a user's place can be seen, alongside the list of top 10 players. On the backend a trigger happens whenever a user makes an action so that their experience points are updated.
-\section{User satisfaction}
+\subsection{User satisfaction}
 For optimization of user satisfaction a tagging system is added to the topics and the source text tables, which points at various trigger warnings \cite{annemieke_small_2019}.
 \newpage
 
 \chapter{Implementation}
-% todo describe these screenshots
 
 \begin{figure}[h]
     \centering
-    \includegraphics[width=0.5\textwidth]{./images/swipe-game.png}
+    \includegraphics[width=0.8\textwidth]{./images/browse-texts.png}
+    \caption{Texts browsing screen}
+\end{figure}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\textwidth]{./images/section-reader.png}
+    \caption{Section browsing game}
+\end{figure}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\textwidth]{./images/swipe-game.png}
     \caption{Argument swipe game}
 \end{figure}
 
 
 \begin{figure}[h]
     \centering
-    \includegraphics[width=0.5\textwidth]{./images/truth-game.png}
+    \includegraphics[width=0.8\textwidth]{./images/truth-game.png}
     \caption{True or false game}
 \end{figure}
 
@@ -797,13 +826,7 @@ The first idea was to create a movable tree of the argument. There user could dr
 Use of mobile app was not decided yet then. That prototype was not retained in images. It was using web-specific APIs, and at that point the vision was to use a mobile version. That and the discovery of multiple projects already implementing that feature meant that focusing effort just on that task is not innovative. 
 
 \subsection{Mobile app}
-The mobile app prototype was setup with shorti tasks in mind. One can expect that for gamification short term focus is easier, and a structured activity with limited action space has advantages over giving the user a sandbox. Mini-tasks are where the user is given only a couple of choices, best if 2, but 4 is also acceptable, and can make fast decisions. That provides immediate feedback which is addictive. 
-
-\subsection{Challenges}
-
-One of the challenges was translation of data from the AIFdb format. That assumed that text is split into columns and rows, not full string.
-Choice of schema was another difficult one, especially as it was attempted to combine all 3: Argdown, AIFdb
-\cite{abbott_internet_2016}
+The mobile app prototype was setup with short tasks in mind. One can expect that for gamification short term focus is easier, and a structured activity with limited action space has advantages over giving the user a sandbox. Mini-tasks are where the user is given only a couple of choices, best if 2, but 4 is also acceptable, and can make fast decisions. That provides immediate feedback which is addictive. 
 
 \chapter{Results and discussion}
 
@@ -825,8 +848,13 @@ In summary, the implementation phase of the project involved a range of challeng
 
 Ultimately, the goal of design was met, and some prototypes were implemented. This venue of effort has the potential to help users better understand complex arguments. The lessons learned from this phase will be valuable for potential future development efforts focused on adding new functionalities.
 
+
 \section{Lessons learned in design}
 Theere is a number of pitfalls I ran into concerning both the frontend and the backend of the application. The main issue in the frontend of the application was the layout of the screens. It needs to be logical for the user and allow for a maintainable and clear keeping of state between the screens for the developer experience. Querying supabase, that is the backend, is not as straightforward as one might imagine in edge cases with many join tables. Supabase uses PostgresSQL as the relational database and interacting with it, writing SQL queries was not easy. 
+
+One of the challenges was translation of data from the AIFdb format. That assumed that text is split into columns and rows, not full string.
+Choice of schema was another difficult one, especially as it was attempted to combine all 3: Argdown, AIFdb
+\cite{abbott_internet_2016}
 
 Overall the authentication flow was less plug-and-play than expected and required some tweaking. 
 
@@ -841,7 +869,6 @@ Users will be challenged on their assumptions in an organic way, hopefully leadi
 Not only human debaters could be available on Lully. Training an AI agent could result in a brilliant and entertaining conversation partner. Technically that could be approached through using a pretrained model and fine-tuning it on Lully data.
 
 Having validated the proof of concept, it is seen that there is value in the expanding the reach and improving capabilities of Lully. It can become a compelling tool that will benefit users across many topics and create datasets more research can be based on.
-
 
 \chapter{Conclusions}
 
