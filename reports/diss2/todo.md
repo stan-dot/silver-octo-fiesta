@@ -34,10 +34,15 @@ rewriting stuff
 - [x] make photos better
 
 specifications and user journeys for games - how work and what data they consume and produce
-- [ ] swipe game
-- [ ] truth game
-- [ ] accept tree game
-- [ ] section extraction game
+- [x] swipe game
+- [x] truth game
+- [x] accept tree game
+- [x] section extraction game
+- [x] add a section about two apps or two screens - uniting the screens in a smooth experience is the hardset part. Google Crowdsource has just 1 screen with a list of games and in the games you only make 1 choice.
 
-run again through spellchecker
-
+submission prep
+- [x] run again through spellchecker
+- [ ] remove personal information
+- [ ] fill in the dissertation submission form
+- [ ] prepare the zip file of code
+- [ ] submit 2.30pm as upload can be long
