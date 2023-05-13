@@ -1,0 +1,13 @@
+
+https://sites.google.com/sheffield.ac.uk/softwarehuthandbook2023/assessment/individual-critical-reflection?pli=1&authuser=1
+The majority of your assessment for this module is for you as a team (adjusted as described). However 30% of the mark is an individual reflective report. This report is expected to be a critical reflection upon your experiences in the module, particularly highlighting any new insights you have gained about software engineering and professional issues.
+
+ Your report should start with a brief introduction, setting the context - a second year Computer Science student, for example, will have come in to this module with different prior experiences to a third year GEE student. A third year AI&CS student who has just completed a year in industry will have different experiences again.
+
+ You should pick a small number of specific examples that illustrate lessons you learned during the progress of your project. These might be things that took you totally by surprise, that you knew in theory but had not experienced in practice, or that you think will change the way you approach certain situations in future. You should briefly summarise the key points and explain how you will use the knowledge gained from that experience in future.
+
+ You should include a section on professional issues, including security, privacy, and ethics. While we always advise clients that if they wish to use the software that you develop in production they should first conduct a full independent security audit, we do expect you to have considered security, privacy and ethical issues. For your particular project, what can you say about these issues? For example, are there any particular considerations with respect to GDPR, or might there be some potential users who could be affected by any aspect of the design you have chosen?
+
+ Remember to conclude your report in such a way that it feels finished - a brief paragraph summarising key lessons learned (which should already have been discussed in detail earlier in the document), or a summary of strengths and weaknesses in your team's performance would be a good way of doing this.
+
+The overall document should be about 1500 words (roughly three sides of A4 at 12pt). This word count is a guideline, not a strict limit, but if you find yourself writing significantly more than this you are probably putting in more effort than is required.
